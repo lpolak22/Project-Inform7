@@ -314,20 +314,20 @@ Global match_length = 0;
 Global match_from = 0;
 Global parsetoken_nesting = 0;
 Array Global_Vars --> 0
-  (0) ! -->1 = V59_number_understood (V59_number_understood)
-  (0) ! -->2 = V60_real_number_understood (V60_real_number_understood)
-  (0) ! -->3 = V61_truth_state_understood (V61_truth_state_understood)
-  (0) ! -->4 = V62_external_file_understood (V62_external_file_understood)
-  (540) ! -->5 = V63_time_understood (V63_time_understood)
-  (I_entire_game_U1) ! -->6 = V64_scene_understood (V64_scene_understood)
-  (I_figure_of_cover_U1) ! -->7 = V65_figure_name_understood (V65_figure_name_understood)
-  (0) ! -->8 = V66_sound_name_understood (V66_sound_name_understood)
-  (I_english_language_U1) ! -->9 = V67_natural_language_understo (V67_natural_language_understo)
-  (I_present_tense_U1) ! -->10 = V68_grammatical_tense_underst (V68_grammatical_tense_underst)
-  (I_first_person_singular_U1) ! -->11 = V69_narrative_viewpoint_under (V69_narrative_viewpoint_under)
-  (I_nominative_U1) ! -->12 = V70_grammatical_case_understo (V70_grammatical_case_understo)
-  (I_neuter_gender_U1) ! -->13 = V71_grammatical_gender_unders (V71_grammatical_gender_unders)
-  (I_didn_t_understand_error_U1) ! -->14 = V72_command_parser_error_unde (V72_command_parser_error_unde)
+  (0) ! -->1 = V60_number_understood (V60_number_understood)
+  (0) ! -->2 = V61_real_number_understood (V61_real_number_understood)
+  (0) ! -->3 = V62_truth_state_understood (V62_truth_state_understood)
+  (0) ! -->4 = V63_external_file_understood (V63_external_file_understood)
+  (540) ! -->5 = V64_time_understood (V64_time_understood)
+  (I_entire_game_U1) ! -->6 = V65_scene_understood (V65_scene_understood)
+  (I_figure_of_cover_U1) ! -->7 = V66_figure_name_understood (V66_figure_name_understood)
+  (0) ! -->8 = V67_sound_name_understood (V67_sound_name_understood)
+  (I_english_language_U1) ! -->9 = V68_natural_language_understo (V68_natural_language_understo)
+  (I_present_tense_U1) ! -->10 = V69_grammatical_tense_underst (V69_grammatical_tense_underst)
+  (I_first_person_singular_U1) ! -->11 = V70_narrative_viewpoint_under (V70_narrative_viewpoint_under)
+  (I_nominative_U1) ! -->12 = V71_grammatical_case_understo (V71_grammatical_case_understo)
+  (I_neuter_gender_U1) ! -->13 = V72_grammatical_gender_unders (V72_grammatical_gender_unders)
+  (I_didn_t_understand_error_U1) ! -->14 = V73_command_parser_error_unde (V73_command_parser_error_unde)
   (I_english_language_U1) ! -->15 = V1_language_of_play (V1_language_of_play)
   (0) ! -->16 = V12_darkness_witnessed (V12_darkness_witnessed)
   (bc_U152) ! -->17 = V26_command_prompt (V26_command_prompt)
@@ -349,16 +349,17 @@ Array Global_Vars --> 0
   (0) ! -->33 = V52_visibility_level_count (V52_visibility_level_count)
   (0) ! -->34 = V53_visibility_ceiling (V53_visibility_ceiling)
   (0) ! -->35 = V54_examine_text_printed (V54_examine_text_printed)
-  (selfobj) ! -->36 = V73_actor (V73_actor)
-  (0) ! -->37 = V74_action_in_world (V74_action_in_world)
-  (0) ! -->38 = V75_action_keeping_silent (V75_action_keeping_silent)
-  (0) ! -->39 = V76_specific_check_rulebook (V76_specific_check_rulebook)
-  (0) ! -->40 = V77_specific_carry_out_rulebo (V77_specific_carry_out_rulebo)
-  (0) ! -->41 = V78_specific_report_rulebook (V78_specific_report_rulebook)
-  (0) ! -->42 = V79_within_the_player_s_sight (V79_within_the_player_s_sight)
+  (selfobj) ! -->36 = V74_actor (V74_actor)
+  (0) ! -->37 = V75_action_in_world (V75_action_in_world)
+  (0) ! -->38 = V76_action_keeping_silent (V76_action_keeping_silent)
+  (0) ! -->39 = V77_specific_check_rulebook (V77_specific_check_rulebook)
+  (0) ! -->40 = V78_specific_carry_out_rulebo (V78_specific_carry_out_rulebo)
+  (0) ! -->41 = V79_specific_report_rulebook (V79_specific_report_rulebook)
+  (0) ! -->42 = V80_within_the_player_s_sight (V80_within_the_player_s_sight)
   (0) ! -->43 = V56_trap_revealed (V56_trap_revealed)
   (0) ! -->44 = V57_trap_timer (V57_trap_timer)
-  (0) ! -->45 = V58_character_chosen (V58_character_chosen)
+  (1) ! -->45 = V58_box_empty (V58_box_empty)
+  (0) ! -->46 = V59_character_chosen (V59_character_chosen)
 ;
 Constant subterfuge_1 = absent;
 Constant subterfuge_2 = animate;
@@ -587,7 +588,7 @@ Constant relation_id_U15 = 118;
 Constant relation_id_U16 = 119;
 Constant kind_ref_U1 = 561;
 Constant OBJECT_TY = 23;
-Constant ICOUNT_OBJECT = 25;
+Constant ICOUNT_OBJECT = 28;
 Constant kind_ref_U2 = 561;
 Constant SCENE_TY = 24;
 Constant ICOUNT_SCENE = 1;
@@ -2456,11 +2457,11 @@ Constant anchor_U348 = 1105;
 Constant anchor_U349 = 1105;
 Constant kind_ref_U51 = 561;
 Constant WEAK_ID_52 = 3;
-Constant ICOUNT_ROOM = 4;
+Constant ICOUNT_ROOM = 5;
 Constant K1_room_First = I_starting_room_U1;
 Constant kind_ref_U52 = 561;
 Constant WEAK_ID_53 = 4;
-Constant ICOUNT_THING = 9;
+Constant ICOUNT_THING = 10;
 Constant K2_thing_First = selfobj;
 Constant kind_ref_U53 = 561;
 Constant WEAK_ID_54 = 5;
@@ -2468,11 +2469,12 @@ Constant ICOUNT_DIRECTION = 12;
 Constant K3_direction_First = I_north_U1;
 Constant kind_ref_U54 = 561;
 Constant WEAK_ID_55 = 6;
-Constant ICOUNT_DOOR = 1;
+Constant ICOUNT_DOOR = 2;
 Constant K4_door_First = I_trap_door_U1;
 Constant kind_ref_U55 = 561;
 Constant WEAK_ID_56 = 7;
-Constant ICOUNT_CONTAINER = 0;
+Constant ICOUNT_CONTAINER = 1;
+Constant K5_container_First = I_box_U1;
 Constant kind_ref_U56 = 561;
 Constant WEAK_ID_57 = 8;
 Constant ICOUNT_SUPPORTER = 1;
@@ -2486,7 +2488,8 @@ Constant ICOUNT_PERSON = 3;
 Constant K8_person_First = selfobj;
 Constant kind_ref_U59 = 561;
 Constant WEAK_ID_60 = 11;
-Constant ICOUNT_REGION = 0;
+Constant ICOUNT_REGION = 1;
+Constant K9_region_First = I_trap_zone_U1;
 Constant kind_ref_U60 = 561;
 Constant WEAK_ID_61 = 12;
 Constant ICOUNT_MAN = 2;
@@ -2551,6 +2554,10 @@ Constant anchor_U357 = 1105;
 Constant anchor_U358 = 1105;
 Constant anchor_U359 = 1105;
 Constant anchor_U360 = 1105;
+Constant anchor_U361 = 1105;
+Constant anchor_U362 = 1105;
+Constant anchor_U363 = 1105;
+Constant anchor_U364 = 1105;
 Constant relation_id_U92 = 75;
 Constant relation_id_U93 = 76;
 Constant relation_id_U94 = 77;
@@ -3772,47 +3779,52 @@ Constant Computed_Constant_Value_0_U4 = 1;
 Constant EMPTY_TEXT_PACKED = "";
 Constant I7_VERSION_NUMBER = "10.1.2";
 Constant I7_FULL_VERSION_NUMBER = "10.1.2";
-Serial "260107";
+Serial "260108";
 Constant alphabetised_text_0 = ">";
-Constant alphabetised_text_1 = "A small stool made of solid gold.";
-Constant alphabetised_text_2 = "An Interactive Fiction";
-Constant alphabetised_text_3 = "An old, run-down wooden box sits on the floor.";
-Constant alphabetised_text_4 = "As good-looking as ever.";
-Constant alphabetised_text_5 = "Fiction";
-Constant alphabetised_text_6 = "Golden apple";
-Constant alphabetised_text_7 = "Golden stool";
-Constant alphabetised_text_8 = "Ivan";
-Constant alphabetised_text_9 = "Lucija Polak";
-Constant alphabetised_text_10 = "Petar";
-Constant alphabetised_text_11 = "Pit Room";
-Constant alphabetised_text_12 = "Projekt iz kolegija Deklarativno programiranje";
-Constant alphabetised_text_13 = "QUIT";
-Constant alphabetised_text_14 = "RESTART";
-Constant alphabetised_text_15 = "RESTORE a saved game";
-Constant alphabetised_text_16 = "Starting Room";
-Constant alphabetised_text_17 = "The Dark Room";
-Constant alphabetised_text_18 = "The Light Room";
-Constant alphabetised_text_19 = "The golden apple has ~RUN~ inscribed on it!";
-Constant alphabetised_text_20 = "The room is well-lit and empty except for an old wooden box on the floor.";
-Constant alphabetised_text_21 = "UNDO the last command";
-Constant alphabetised_text_22 = "Wooden box";
-Constant alphabetised_text_23 = "You fell into a dark pit. A trap door closed above you.";
-Constant alphabetised_text_24 = "Your adventure begins here.";
-Constant alphabetised_text_25 = "Yourself";
+Constant alphabetised_text_1 = "A newly appeared wooden door.";
+Constant alphabetised_text_2 = "A small stool made of solid gold.";
+Constant alphabetised_text_3 = "An Interactive Fiction";
+Constant alphabetised_text_4 = "An old, run-down wooden box sits on the floor.";
+Constant alphabetised_text_5 = "As good-looking as ever.";
+Constant alphabetised_text_6 = "Box";
+Constant alphabetised_text_7 = "Fiction";
+Constant alphabetised_text_8 = "Forest";
+Constant alphabetised_text_9 = "Golden apple";
+Constant alphabetised_text_10 = "Golden stool";
+Constant alphabetised_text_11 = "Ivan";
+Constant alphabetised_text_12 = "Lucija Polak";
+Constant alphabetised_text_13 = "NorthDoor";
+Constant alphabetised_text_14 = "Petar";
+Constant alphabetised_text_15 = "Pit Room";
+Constant alphabetised_text_16 = "Projekt iz kolegija Deklarativno programiranje";
+Constant alphabetised_text_17 = "QUIT";
+Constant alphabetised_text_18 = "RESTART";
+Constant alphabetised_text_19 = "RESTORE a saved game";
+Constant alphabetised_text_20 = "Starting Room";
+Constant alphabetised_text_21 = "The Dark Room";
+Constant alphabetised_text_22 = "The Light Room";
+Constant alphabetised_text_23 = "The golden apple has ~RUN~ inscribed on it!";
+Constant alphabetised_text_24 = "The room is well-lit and empty except for an old wooden box on the floor.";
+Constant alphabetised_text_25 = "Trap Zone";
+Constant alphabetised_text_26 = "UNDO the last command";
+Constant alphabetised_text_27 = "You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.";
+Constant alphabetised_text_28 = "You fell into a dark pit. A trap door closed above you.";
+Constant alphabetised_text_29 = "Your adventure begins here.";
+Constant alphabetised_text_30 = "Yourself";
 Constant outcome_allow_access_U1 = "allow access";
 Constant outcome_allow_startup_U1 = "allow startup";
-Constant alphabetised_text_26 = "animals";
-Constant alphabetised_text_27 = "backdrops";
-Constant alphabetised_text_28 = "containers";
+Constant alphabetised_text_31 = "animals";
+Constant alphabetised_text_32 = "backdrops";
+Constant alphabetised_text_33 = "containers";
 Constant outcome_deny_access_U1 = "deny access";
 Constant outcome_deny_startup_U1 = "deny startup";
-Constant alphabetised_text_29 = "devices";
-Constant alphabetised_text_30 = "directions";
-Constant alphabetised_text_31 = "doors";
-Constant alphabetised_text_32 = "down";
-Constant alphabetised_text_33 = "east";
-Constant alphabetised_text_34 = "gold coin";
-Constant alphabetised_text_35 = "inside";
+Constant alphabetised_text_34 = "devices";
+Constant alphabetised_text_35 = "directions";
+Constant alphabetised_text_36 = "doors";
+Constant alphabetised_text_37 = "down";
+Constant alphabetised_text_38 = "east";
+Constant alphabetised_text_39 = "gold coin";
+Constant alphabetised_text_40 = "inside";
 Constant outcome_it_does_U1 = "it does";
 Constant outcome_it_does_not_U1 = "it does not";
 Constant outcome_it_is_likely_U1 = "it is likely";
@@ -3820,75 +3832,75 @@ Constant outcome_it_is_possible_U1 = "it is possible";
 Constant outcome_it_is_unlikely_U1 = "it is unlikely";
 Constant outcome_it_is_very_likely_U1 = "it is very likely";
 Constant outcome_it_is_very_unlikely_U1 = "it is very unlikely";
-Constant alphabetised_text_36 = "men";
-Constant alphabetised_text_37 = "north";
-Constant alphabetised_text_38 = "northeast";
-Constant alphabetised_text_39 = "northwest";
-Constant alphabetised_text_40 = "outside";
-Constant alphabetised_text_41 = "people";
+Constant alphabetised_text_41 = "men";
+Constant alphabetised_text_42 = "north";
+Constant alphabetised_text_43 = "northeast";
+Constant alphabetised_text_44 = "northwest";
+Constant alphabetised_text_45 = "outside";
+Constant alphabetised_text_46 = "people";
 Constant outcome_persuasion_fails_U1 = "persuasion fails";
 Constant outcome_persuasion_succeeds_U1 = "persuasion succeeds";
-Constant alphabetised_text_42 = "player's holdalls";
-Constant alphabetised_text_43 = "regions";
-Constant alphabetised_text_44 = "see some suggestions for AMUSING things to do";
-Constant alphabetised_text_45 = "south";
-Constant alphabetised_text_46 = "southeast";
-Constant alphabetised_text_47 = "southwest";
-Constant alphabetised_text_48 = "supporters";
-Constant alphabetised_text_49 = "the";
+Constant alphabetised_text_47 = "player's holdalls";
+Constant alphabetised_text_48 = "regions";
+Constant alphabetised_text_49 = "see some suggestions for AMUSING things to do";
+Constant alphabetised_text_50 = "south";
+Constant alphabetised_text_51 = "southeast";
+Constant alphabetised_text_52 = "southwest";
+Constant alphabetised_text_53 = "supporters";
+Constant alphabetised_text_54 = "the";
 Constant outcome_there_is_insufficien_U1 = "there is insufficient light";
 Constant outcome_there_is_sufficient__U1 = "there is sufficient light";
-Constant alphabetised_text_50 = "torch";
-Constant alphabetised_text_51 = "trap door";
-Constant alphabetised_text_52 = "up";
-Constant alphabetised_text_53 = "vehicles";
-Constant alphabetised_text_54 = "west";
-Constant alphabetised_text_55 = "women";
-Constant alphabetised_text_56 = "yourself";
+Constant alphabetised_text_55 = "torch";
+Constant alphabetised_text_56 = "trap door";
+Constant alphabetised_text_57 = "up";
+Constant alphabetised_text_58 = "vehicles";
+Constant alphabetised_text_59 = "west";
+Constant alphabetised_text_60 = "women";
+Constant alphabetised_text_61 = "yourself";
 Constant V1_starting_the_virtual_mach = activity_id_U1;
 Constant V2_printing_the_name = activity_id_U2;
 Constant V3_printing_the_plural_name = activity_id_U3;
-Constant text_U1 = alphabetised_text_37;
-Constant text_U2 = alphabetised_text_49;
-Constant text_U3 = alphabetised_text_30;
-Constant text_U4 = alphabetised_text_38;
-Constant text_U5 = alphabetised_text_49;
-Constant text_U6 = alphabetised_text_30;
-Constant text_U7 = alphabetised_text_39;
-Constant text_U8 = alphabetised_text_49;
-Constant text_U9 = alphabetised_text_30;
-Constant text_U10 = alphabetised_text_45;
-Constant text_U11 = alphabetised_text_49;
-Constant text_U12 = alphabetised_text_30;
-Constant text_U13 = alphabetised_text_46;
-Constant text_U14 = alphabetised_text_49;
-Constant text_U15 = alphabetised_text_30;
-Constant text_U16 = alphabetised_text_47;
-Constant text_U17 = alphabetised_text_49;
-Constant text_U18 = alphabetised_text_30;
-Constant text_U19 = alphabetised_text_33;
-Constant text_U20 = alphabetised_text_49;
-Constant text_U21 = alphabetised_text_30;
-Constant text_U22 = alphabetised_text_54;
-Constant text_U23 = alphabetised_text_49;
-Constant text_U24 = alphabetised_text_30;
-Constant text_U25 = alphabetised_text_52;
-Constant text_U26 = alphabetised_text_49;
-Constant text_U27 = alphabetised_text_30;
-Constant text_U28 = alphabetised_text_32;
-Constant text_U29 = alphabetised_text_49;
-Constant text_U30 = alphabetised_text_30;
-Constant text_U31 = alphabetised_text_35;
-Constant text_U32 = alphabetised_text_49;
-Constant text_U33 = alphabetised_text_30;
-Constant text_U34 = alphabetised_text_40;
-Constant text_U35 = alphabetised_text_49;
-Constant text_U36 = alphabetised_text_30;
-Constant text_U37 = alphabetised_text_56;
-Constant text_U38 = alphabetised_text_4;
-Constant text_U39 = alphabetised_text_25;
-Constant text_U40 = alphabetised_text_56;
-Constant text_U41 = alphabetised_text_41;
+Constant text_U1 = alphabetised_text_42;
+Constant text_U2 = alphabetised_text_54;
+Constant text_U3 = alphabetised_text_35;
+Constant text_U4 = alphabetised_text_43;
+Constant text_U5 = alphabetised_text_54;
+Constant text_U6 = alphabetised_text_35;
+Constant text_U7 = alphabetised_text_44;
+Constant text_U8 = alphabetised_text_54;
+Constant text_U9 = alphabetised_text_35;
+Constant text_U10 = alphabetised_text_50;
+Constant text_U11 = alphabetised_text_54;
+Constant text_U12 = alphabetised_text_35;
+Constant text_U13 = alphabetised_text_51;
+Constant text_U14 = alphabetised_text_54;
+Constant text_U15 = alphabetised_text_35;
+Constant text_U16 = alphabetised_text_52;
+Constant text_U17 = alphabetised_text_54;
+Constant text_U18 = alphabetised_text_35;
+Constant text_U19 = alphabetised_text_38;
+Constant text_U20 = alphabetised_text_54;
+Constant text_U21 = alphabetised_text_35;
+Constant text_U22 = alphabetised_text_59;
+Constant text_U23 = alphabetised_text_54;
+Constant text_U24 = alphabetised_text_35;
+Constant text_U25 = alphabetised_text_57;
+Constant text_U26 = alphabetised_text_54;
+Constant text_U27 = alphabetised_text_35;
+Constant text_U28 = alphabetised_text_37;
+Constant text_U29 = alphabetised_text_54;
+Constant text_U30 = alphabetised_text_35;
+Constant text_U31 = alphabetised_text_40;
+Constant text_U32 = alphabetised_text_54;
+Constant text_U33 = alphabetised_text_35;
+Constant text_U34 = alphabetised_text_45;
+Constant text_U35 = alphabetised_text_54;
+Constant text_U36 = alphabetised_text_35;
+Constant text_U37 = alphabetised_text_61;
+Constant text_U38 = alphabetised_text_5;
+Constant text_U39 = alphabetised_text_30;
+Constant text_U40 = alphabetised_text_61;
+Constant text_U41 = alphabetised_text_46;
 Constant RBNO0_OUTCOME_U1 = outcome_it_is_very_unlikely_U1;
 Constant RBNO4_OUTCOME_U1 = outcome_it_is_very_likely_U1;
 Constant RBNO3_OUTCOME_U1 = outcome_it_is_likely_U1;
@@ -3925,72 +3937,78 @@ Constant V31_handling_the_final_questi = activity_id_U31;
 Constant V32_printing_the_locale_descr = activity_id_U32;
 Constant V33_choosing_notable_locale_o = activity_id_U33;
 Constant V34_printing_a_locale_paragra = activity_id_U34;
-Constant text_U42 = alphabetised_text_30;
-Constant text_U43 = alphabetised_text_31;
-Constant K5_container_First = nothing;
-Constant text_U44 = alphabetised_text_28;
-Constant text_U45 = alphabetised_text_48;
+Constant text_U42 = alphabetised_text_35;
+Constant text_U43 = alphabetised_text_36;
+Constant text_U44 = alphabetised_text_33;
+Constant text_U45 = alphabetised_text_53;
 Constant K7_backdrop_First = nothing;
-Constant text_U46 = alphabetised_text_27;
-Constant text_U47 = alphabetised_text_41;
-Constant K9_region_First = nothing;
-Constant text_U48 = alphabetised_text_43;
-Constant text_U49 = alphabetised_text_36;
+Constant text_U46 = alphabetised_text_32;
+Constant text_U47 = alphabetised_text_46;
+Constant text_U48 = alphabetised_text_48;
+Constant text_U49 = alphabetised_text_41;
 Constant K11_woman_First = nothing;
-Constant text_U50 = alphabetised_text_55;
+Constant text_U50 = alphabetised_text_60;
 Constant K12_animal_First = nothing;
-Constant text_U51 = alphabetised_text_26;
+Constant text_U51 = alphabetised_text_31;
 Constant K13_device_First = nothing;
-Constant text_U52 = alphabetised_text_29;
+Constant text_U52 = alphabetised_text_34;
 Constant K14_vehicle_First = nothing;
-Constant text_U53 = alphabetised_text_53;
+Constant text_U53 = alphabetised_text_58;
 Constant K15_player_s_holdall_First = nothing;
-Constant text_U54 = alphabetised_text_42;
+Constant text_U54 = alphabetised_text_47;
 Constant text_U55 = alphabetised_text_0;
-Constant text_U56 = alphabetised_text_9;
-Constant text_U57 = alphabetised_text_2;
-Constant text_U58 = alphabetised_text_5;
+Constant text_U56 = alphabetised_text_12;
+Constant text_U57 = alphabetised_text_3;
+Constant text_U58 = alphabetised_text_7;
 Constant column_identity_U1 = table_column_id_U1;
-Constant text_U59 = alphabetised_text_14;
-Constant text_U60 = alphabetised_text_15;
-Constant text_U61 = alphabetised_text_44;
-Constant text_U62 = alphabetised_text_13;
-Constant text_U63 = alphabetised_text_21;
+Constant text_U59 = alphabetised_text_18;
+Constant text_U60 = alphabetised_text_19;
+Constant text_U61 = alphabetised_text_49;
+Constant text_U62 = alphabetised_text_17;
+Constant text_U63 = alphabetised_text_26;
 Constant column_identity_U2 = table_column_id_U2;
 Constant column_identity_U3 = table_column_id_U3;
 Constant column_identity_U4 = table_column_id_U4;
 Constant column_identity_U5 = table_column_id_U5;
 Constant column_identity_U6 = table_column_id_U6;
 Constant column_identity_U7 = table_column_id_U7;
-Constant text_U64 = alphabetised_text_16;
-Constant text_U65 = alphabetised_text_24;
-Constant text_U66 = alphabetised_text_8;
-Constant text_U67 = alphabetised_text_36;
-Constant text_U68 = alphabetised_text_10;
-Constant text_U69 = alphabetised_text_36;
-Constant text_U70 = alphabetised_text_50;
-Constant text_U71 = alphabetised_text_34;
-Constant text_U72 = alphabetised_text_11;
-Constant text_U73 = alphabetised_text_23;
-Constant text_U74 = alphabetised_text_51;
-Constant text_U75 = alphabetised_text_31;
-Constant text_U76 = alphabetised_text_17;
-Constant text_U77 = alphabetised_text_18;
-Constant text_U78 = alphabetised_text_20;
-Constant text_U79 = alphabetised_text_7;
-Constant text_U80 = alphabetised_text_1;
-Constant text_U81 = alphabetised_text_48;
-Constant text_U82 = alphabetised_text_6;
-Constant text_U83 = alphabetised_text_19;
-Constant text_U84 = alphabetised_text_22;
-Constant text_U85 = alphabetised_text_3;
+Constant text_U64 = alphabetised_text_20;
+Constant text_U65 = alphabetised_text_29;
+Constant text_U66 = alphabetised_text_11;
+Constant text_U67 = alphabetised_text_41;
+Constant text_U68 = alphabetised_text_14;
+Constant text_U69 = alphabetised_text_41;
+Constant text_U70 = alphabetised_text_25;
+Constant text_U71 = alphabetised_text_48;
+Constant text_U72 = alphabetised_text_22;
+Constant text_U73 = alphabetised_text_24;
+Constant text_U74 = alphabetised_text_21;
+Constant text_U75 = alphabetised_text_55;
+Constant text_U76 = alphabetised_text_39;
+Constant text_U77 = alphabetised_text_15;
+Constant text_U78 = alphabetised_text_28;
+Constant text_U79 = alphabetised_text_56;
+Constant text_U80 = alphabetised_text_36;
+Constant text_U81 = alphabetised_text_13;
+Constant text_U82 = alphabetised_text_1;
+Constant text_U83 = alphabetised_text_36;
+Constant text_U84 = alphabetised_text_8;
+Constant text_U85 = alphabetised_text_27;
+Constant text_U86 = alphabetised_text_10;
+Constant text_U87 = alphabetised_text_2;
+Constant text_U88 = alphabetised_text_53;
+Constant text_U89 = alphabetised_text_9;
+Constant text_U90 = alphabetised_text_23;
+Constant text_U91 = alphabetised_text_6;
+Constant text_U92 = alphabetised_text_4;
+Constant text_U93 = alphabetised_text_33;
 Constant abilities_U3 = (RELS_TEST);
 Constant abilities_U4 = (RELS_TEST);
 Constant abilities_U6 = (RELS_TEST);
 Constant abilities_U7 = (RELS_TEST);
-Constant text_U86 = alphabetised_text_12;
-Constant text_U87 = alphabetised_text_2;
-Constant text_U88 = alphabetised_text_9;
+Constant text_U94 = alphabetised_text_16;
+Constant text_U95 = alphabetised_text_3;
+Constant text_U96 = alphabetised_text_12;
 Constant GPR_REPARSE = REPARSE_CODE;
 Constant TABLE_NOVALUE = IMPROBABLE_VALUE;
 Constant RC_INFINITY = MAX_POSITIVE_NUMBER;
@@ -4100,9 +4118,9 @@ Constant Computed_Constant_Value_23_U1 = (BLK_DATA_OFFSET + Computed_Constant_Va
 Constant VALENCY_MASK = Computed_Constant_Value_60_U1;
 Constant Computed_Constant_Value_39_U1 = (Computed_Constant_Value_38_U1 * TEXT_TY_NoBuffers);
 Constant BLK_DATA_MULTI_OFFSET = Computed_Constant_Value_23_U1;
-Constant Story = bc_U229;
-Constant Headline = bc_U230;
-Constant Story_Author = bc_U231;
+Constant Story = bc_U244;
+Constant Headline = bc_U245;
+Constant Story_Author = bc_U246;
 Constant Computed_Constant_Value_24_U1 = (MEMORY_HEAP_SIZE + BLK_DATA_MULTI_OFFSET);
 Constant abilities_U5 = (RELS_TEST + RELS_LOOKUP_ANY + RELS_LOOKUP_ALL_X + RELS_LOOKUP_ALL_X + RELS_LIST + RELS_ASSERT_TRUE + RELS_ASSERT_FALSE + RELS_LOOKUP_ANY);
 Constant abilities_U8 = (RELS_TEST + RELS_LOOKUP_ANY + RELS_LOOKUP_ALL_X + RELS_LOOKUP_ALL_X + RELS_LIST + RELS_ASSERT_TRUE + RELS_ASSERT_FALSE + RELS_LOOKUP_ANY);
@@ -4242,7 +4260,7 @@ Array activity_var_creators --> [ 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0
 Array TimedEventsTable table [ 0; 0; ];
 Array TimedEventTimesTable table [ 0; 0; ];
 Array PastActionsI6Routines --> [ 0; 0; ];
-Array TableOfVerbs --> [ call_U133; call_U134; call_U135; call_U136; call_U137; call_U138; call_U139; call_U140; call_U141; call_U142; call_U143; call_U144; call_U145; call_U146; call_U147; call_U148; call_U149; call_U150; call_U151; call_U1851; call_U1852; call_U1853; call_U1854; call_U1855; call_U1856; call_U1857; call_U1858; call_U1859; call_U1860; call_U1861; call_U1862; call_U1863; call_U1864; call_U1865; call_U1866; call_U1867; call_U1868; call_U1869; call_U1870; call_U1871; call_U1872; call_U1873; call_U1874; call_U1875; call_U1876; call_U1877; call_U1878; call_U1879; call_U1880; call_U1881; call_U1882; call_U1883; call_U1884; call_U1885; call_U1886; call_U1887; call_U1888; call_U1889; call_U1890; call_U1891; call_U1892; call_U1893; call_U1894; call_U1895; call_U1896; call_U1897; call_U1898; call_U1899; call_U1900; call_U1901; call_U1902; call_U1903; call_U1904; call_U1905; call_U1906; call_U1907; call_U1908; call_U1909; call_U1910; call_U1911; call_U1912; call_U1913; call_U1914; call_U1915; call_U1916; call_U1917; call_U1918; call_U1919; call_U1920; call_U1921; call_U204; call_U205; call_U206; call_U207; call_U208; call_U209; call_U1958; call_U1959; call_U1960; call_U1961; call_U1962; call_U1963; 0; ];
+Array TableOfVerbs --> [ call_U133; call_U134; call_U135; call_U136; call_U137; call_U138; call_U139; call_U140; call_U141; call_U142; call_U143; call_U144; call_U145; call_U146; call_U147; call_U148; call_U149; call_U150; call_U151; call_U1851; call_U1852; call_U1853; call_U1854; call_U1855; call_U1856; call_U1857; call_U1858; call_U1859; call_U1860; call_U1861; call_U1862; call_U1863; call_U1864; call_U1865; call_U1866; call_U1867; call_U1868; call_U1869; call_U1870; call_U1871; call_U1872; call_U1873; call_U1874; call_U1875; call_U1876; call_U1877; call_U1878; call_U1879; call_U1880; call_U1881; call_U1882; call_U1883; call_U1884; call_U1885; call_U1886; call_U1887; call_U1888; call_U1889; call_U1890; call_U1891; call_U1892; call_U1893; call_U1894; call_U1895; call_U1896; call_U1897; call_U1898; call_U1899; call_U1900; call_U1901; call_U1902; call_U1903; call_U1904; call_U1905; call_U1906; call_U1907; call_U1908; call_U1909; call_U1910; call_U1911; call_U1912; call_U1913; call_U1914; call_U1915; call_U1916; call_U1917; call_U1918; call_U1919; call_U1920; call_U1921; call_U204; call_U205; call_U206; call_U207; call_U208; call_U209; call_U1962; call_U1963; call_U1964; call_U1965; call_U1966; call_U1967; 0; ];
 Array KindHierarchy --> [ K0_kind; 0; K1_room; 0; K2_thing; 0; K3_direction; 0; K4_door; 2; K5_container; 2; K6_supporter; 2; K7_backdrop; 2; K8_person; 2; K9_region; 0; K10_man; 8; K11_woman; 8; K12_animal; 8; K13_device; 2; K14_vehicle; 5; K15_player_s_holdall; 5; ];
 Array ResourceIDsOfFigures --> [ 0; 1; 0; ];
 Array ResourceIDsOfSounds --> [ 0; 0; ];
@@ -4253,7 +4271,7 @@ Array rulebooks_array --> [ call_U113; call_U114; call_U115; call_U116; call_U11
 Array ResponseTexts --> [ ts_array_U1; ts_array_U2; ts_array_U3; ts_array_U4; ts_array_U5; ts_array_U6; ts_array_U7; ts_array_U8; ts_array_U9; ts_array_U10; ts_array_U11; ts_array_U12; ts_array_U13; ts_array_U14; ts_array_U15; ts_array_U16; ts_array_U17; ts_array_U18; ts_array_U19; ts_array_U20; ts_array_U21; ts_array_U22; ts_array_U23; ts_array_U24; ts_array_U25; ts_array_U26; ts_array_U27; ts_array_U28; ts_array_U29; ts_array_U30; ts_array_U31; ts_array_U32; ts_array_U33; ts_array_U34; ts_array_U35; ts_array_U36; ts_array_U37; ts_array_U38; ts_array_U39; ts_array_U40; ts_array_U41; ts_array_U42; ts_array_U43; ts_array_U44; ts_array_U45; ts_array_U46; ts_array_U47; ts_array_U48; ts_array_U49; ts_array_U50; ts_array_U51; ts_array_U52; ts_array_U53; ts_array_U54; ts_array_U55; ts_array_U56; ts_array_U57; ts_array_U58; ts_array_U59; ts_array_U60; ts_array_U61; ts_array_U62; ts_array_U63; ts_array_U64; ts_array_U65; ts_array_U66; ts_array_U67; ts_array_U68; ts_array_U69; ts_array_U70; ts_array_U71; ts_array_U72; ts_array_U73; ts_array_U74; ts_array_U75; ts_array_U76; ts_array_U77; ts_array_U78; ts_array_U79; ts_array_U80; ts_array_U81; ts_array_U82; ts_array_U83; ts_array_U84; ts_array_U85; ts_array_U86; ts_array_U87; ts_array_U88; ts_array_U89; ts_array_U90; ts_array_U91; ts_array_U92; ts_array_U93; ts_array_U94; ts_array_U95; ts_array_U96; ts_array_U97; ts_array_U98; ts_array_U99; ts_array_U100; ts_array_U101; ts_array_U102; ts_array_U103; ts_array_U104; ts_array_U105; ts_array_U106; ts_array_U107; ts_array_U108; ts_array_U109; ts_array_U110; ts_array_U111; ts_array_U112; ts_array_U113; ts_array_U114; ts_array_U115; ts_array_U116; ts_array_U117; ts_array_U118; ts_array_U119; ts_array_U120; ts_array_U121; ts_array_U122; ts_array_U123; ts_array_U124; ts_array_U125; ts_array_U126; ts_array_U127; ts_array_U128; ts_array_U129; ts_array_U130; ts_array_U131; ts_array_U132; ts_array_U133; ts_array_U134; ts_array_U135; ts_array_U136; ts_array_U137; ts_array_U138; ts_array_U139; ts_array_U140; ts_array_U141; ts_array_U142; ts_array_U143; ts_array_U144; ts_array_U145; ts_array_U146; ts_array_U147; ts_array_U148; ts_array_U149; ts_array_U150; ts_array_U151; ts_array_U152; ts_array_U153; ts_array_U154; ts_array_U155; ts_array_U156; ts_array_U157; ts_array_U158; ts_array_U159; ts_array_U160; ts_array_U161; ts_array_U162; ts_array_U163; ts_array_U164; ts_array_U165; ts_array_U166; ts_array_U167; ts_array_U168; ts_array_U169; ts_array_U170; ts_array_U171; ts_array_U172; ts_array_U173; ts_array_U174; ts_array_U175; ts_array_U176; ts_array_U177; ts_array_U178; ts_array_U179; ts_array_U180; ts_array_U181; ts_array_U182; ts_array_U183; ts_array_U184; ts_array_U185; ts_array_U186; ts_array_U187; ts_array_U188; ts_array_U189; ts_array_U190; ts_array_U191; ts_array_U192; ts_array_U193; ts_array_U194; ts_array_U195; ts_array_U196; ts_array_U197; ts_array_U198; ts_array_U199; ts_array_U200; ts_array_U201; ts_array_U202; ts_array_U203; ts_array_U204; ts_array_U205; ts_array_U206; ts_array_U207; ts_array_U208; ts_array_U209; ts_array_U210; ts_array_U211; ts_array_U212; ts_array_U213; ts_array_U214; ts_array_U215; ts_array_U216; ts_array_U217; ts_array_U218; ts_array_U219; ts_array_U220; ts_array_U221; ts_array_U222; ts_array_U223; ts_array_U224; ts_array_U225; ts_array_U226; ts_array_U227; ts_array_U228; ts_array_U229; ts_array_U230; ts_array_U231; ts_array_U232; ts_array_U233; ts_array_U234; ts_array_U235; ts_array_U236; ts_array_U237; ts_array_U238; ts_array_U239; ts_array_U240; ts_array_U241; ts_array_U242; ts_array_U243; ts_array_U244; ts_array_U245; ts_array_U246; ts_array_U247; ts_array_U248; ts_array_U249; ts_array_U250; ts_array_U251; ts_array_U252; ts_array_U253; ts_array_U254; ts_array_U255; ts_array_U256; ts_array_U257; ts_array_U258; ts_array_U259; ts_array_U260; ts_array_U261; ts_array_U262; ts_array_U263; ts_array_U264; ts_array_U265; ts_array_U266; ts_array_U267; ts_array_U268; ts_array_U269; ts_array_U270; ts_array_U271; ts_array_U272; ts_array_U273; ts_array_U274; ts_array_U275; ts_array_U276; ts_array_U277; ts_array_U278; ts_array_U279; ts_array_U280; ts_array_U281; ts_array_U282; ts_array_U283; ts_array_U284; ts_array_U285; ts_array_U286; ts_array_U287; ts_array_U288; ts_array_U289; ts_array_U290; ts_array_U291; ts_array_U292; ts_array_U293; ts_array_U294; ts_array_U295; ts_array_U296; ts_array_U297; ts_array_U298; ts_array_U299; ts_array_U300; ts_array_U301; ts_array_U302; ts_array_U303; ts_array_U304; ts_array_U305; ts_array_U306; ts_array_U307; ts_array_U308; ts_array_U309; ts_array_U310; ts_array_U311; ts_array_U312; ts_array_U313; ts_array_U314; ts_array_U315; ts_array_U316; ts_array_U317; ts_array_U318; ts_array_U319; ts_array_U320; ts_array_U321; ts_array_U322; ts_array_U323; ts_array_U324; ts_array_U325; ts_array_U326; ts_array_U327; ts_array_U328; ts_array_U329; ts_array_U330; ts_array_U331; ts_array_U332; ts_array_U333; ts_array_U334; ts_array_U335; ts_array_U336; ts_array_U337; ts_array_U338; ts_array_U339; ts_array_U340; ts_array_U341; ts_array_U342; ts_array_U343; ts_array_U344; ts_array_U345; ts_array_U346; ts_array_U347; ts_array_U348; ts_array_U349; ts_array_U350; ts_array_U351; ts_array_U352; ts_array_U353; ts_array_U354; ts_array_U355; ts_array_U356; ts_array_U357; ts_array_U358; ts_array_U359; ts_array_U360; ts_array_U361; ts_array_U362; ts_array_U363; ts_array_U364; ts_array_U365; ts_array_U366; ts_array_U367; ts_array_U368; ts_array_U369; ts_array_U370; ts_array_U371; ts_array_U372; ts_array_U373; ts_array_U374; ts_array_U375; ts_array_U376; ts_array_U377; ts_array_U378; ts_array_U379; ts_array_U380; ts_array_U381; ts_array_U382; ts_array_U383; ts_array_U384; ts_array_U385; ts_array_U386; ts_array_U387; ts_array_U388; ts_array_U389; ts_array_U390; ts_array_U391; ts_array_U392; ts_array_U393; 0; 0; ];
 Array ResponseDivisions --> [ "Standard Rules"; 1; 393; 0; 0; 0; ];
 Array TableOfTables --> [ TheEmptyTable; table_data_U1; table_data_U2; 0; 0; ];
-Array TB_Blanks -> [ 0; 0; 0; 4; 27; 255; 3; 0; 0; ];
+Array TB_Blanks -> [ 0; 0; 0; 4; 27; 255; 7; 0; 0; ];
 Array closure_data_U1 --> [ DK3_phrase_real_number____re; call_U129; "rsqr function"; ];
 Array closure_data_U2 --> [ DK3_phrase_real_number____re; call_U130; "arcsinh function"; ];
 Array closure_data_U3 --> [ DK3_phrase_real_number____re; call_U131; "arccosh function"; ];
@@ -5241,8 +5259,8 @@ Array column_data_U3 table [ column_bits_U3; column_blanks_U3; Consult_Grammar1;
 Array column_data_U4 table [ column_bits_U4; column_blanks_U4; IMMEDIATELY_RESTART_VM_R; IMMEDIATELY_RESTORE_SAVED_R; TABLE_NOVALUE; IMMEDIATELY_QUIT_R; IMMEDIATELY_UNDO_R; ];
 Array column_data_U5 table [ column_bits_U5; column_blanks_U5; TABLE_NOVALUE; TABLE_NOVALUE; V29_amusing_a_victorious_play; TABLE_NOVALUE; TABLE_NOVALUE; ];
 Array table_data_U1 table [ column_data_U1; column_data_U2; column_data_U3; column_data_U4; column_data_U5; ];
-Array column_data_U6 table [ column_bits_U6; NULL; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; ];
-Array column_data_U7 table [ column_bits_U7; column_blanks_U6; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; ];
+Array column_data_U6 table [ column_bits_U6; NULL; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; ];
+Array column_data_U7 table [ column_bits_U7; column_blanks_U6; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; TABLE_NOVALUE; ];
 Array table_data_U2 table [ column_data_U6; column_data_U7; ];
 Array bc_U162 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U64; ];
 Array bc_U163 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U65; ];
@@ -5265,62 +5283,80 @@ Array bc_U177 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
 Array bc_U178 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
 Array inline_U17 --> [ 0; 0; 0; 0; 0; ];
 Array bc_U179 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U70; ];
-Array bc_U180 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array bc_U180 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U71; ];
 Array bc_U181 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
 Array bc_U182 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array bc_U183 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array bc_U184 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array inline_U18 --> [ 0; 0; 0; 0; 0; ];
-Array bc_U185 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U71; ];
+Array bc_U183 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U72; ];
+Array bc_U184 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U73; ];
+Array bc_U185 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
 Array bc_U186 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
 Array bc_U187 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array bc_U188 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array bc_U188 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U74; ];
+Array ts_array_U394 --> [ CONSTANT_PACKED_TEXT_STORAGE; call_U1922; ];
 Array bc_U189 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
 Array bc_U190 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array bc_U191 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U72; ];
-Array bc_U192 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U73; ];
+Array bc_U191 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array inline_U18 --> [ 0; 0; 0; 0; 0; ];
+Array bc_U192 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U75; ];
 Array bc_U193 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
 Array bc_U194 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
 Array bc_U195 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array inline_U19 --> [ I_pit_room_U1; I_darkchamber_U1; ];
-Array inline_U20 --> [ 0; 0; 0; 0; 0; ];
-Array bc_U196 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U74; ];
+Array bc_U196 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
 Array bc_U197 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array bc_U198 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array bc_U199 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U75; ];
+Array inline_U19 --> [ 0; 0; 0; 0; 0; ];
+Array bc_U198 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U76; ];
+Array bc_U199 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
 Array bc_U200 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
 Array bc_U201 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array bc_U202 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U76; ];
-Array ts_array_U394 --> [ CONSTANT_PACKED_TEXT_STORAGE; call_U1922; ];
+Array bc_U202 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
 Array bc_U203 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array bc_U204 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array bc_U205 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array bc_U206 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U77; ];
-Array bc_U207 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U78; ];
+Array bc_U204 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U77; ];
+Array bc_U205 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U78; ];
+Array bc_U206 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array bc_U207 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
 Array bc_U208 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array bc_U209 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array bc_U210 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array inline_U20 --> [ I_pit_room_U1; I_darkchamber_U1; ];
 Array inline_U21 --> [ 0; 0; 0; 0; 0; ];
-Array bc_U211 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U79; ];
+Array bc_U209 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U79; ];
+Array bc_U210 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array bc_U211 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
 Array bc_U212 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U80; ];
 Array bc_U213 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array bc_U214 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U81; ];
-Array bc_U215 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array bc_U216 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array inline_U22 --> [ 0; 0; 0; 0; 0; ];
-Array bc_U217 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U82; ];
+Array bc_U214 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array inline_U22 --> [ I_forest_U1; I_lightroom_U1; ];
+Array inline_U23 --> [ 0; 0; 0; 0; 0; ];
+Array bc_U215 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U81; ];
+Array bc_U216 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U82; ];
+Array bc_U217 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
 Array bc_U218 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U83; ];
 Array bc_U219 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
 Array bc_U220 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array bc_U221 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array bc_U222 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array inline_U23 --> [ 0; 0; 0; 0; 0; ];
-Array bc_U223 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U84; ];
-Array bc_U224 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U85; ];
+Array bc_U221 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U84; ];
+Array bc_U222 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U85; ];
+Array bc_U223 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array bc_U224 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
 Array bc_U225 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array bc_U226 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array bc_U227 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array inline_U24 --> [ 0; 0; 0; 0; 0; ];
+Array bc_U226 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U86; ];
+Array bc_U227 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U87; ];
 Array bc_U228 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array bc_U229 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U88; ];
+Array bc_U230 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array bc_U231 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array inline_U25 --> [ 0; 0; 0; 0; 0; ];
+Array bc_U232 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U89; ];
+Array bc_U233 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U90; ];
+Array bc_U234 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array bc_U235 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array bc_U236 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array bc_U237 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array inline_U26 --> [ 0; 0; 0; 0; 0; ];
+Array bc_U238 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U91; ];
+Array bc_U239 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U92; ];
+Array bc_U240 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array bc_U241 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U93; ];
+Array bc_U242 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array bc_U243 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
 Array DK3_phrase_real_number____re --> [ PHRASE_TY; 2; REAL_NUMBER_TY; ];
 Array DK4_phrase_real_number____nu --> [ PHRASE_TY; 2; NUMBER_TY; ];
 Array DK5_relation_of_values --> [ RELATION_TY; 2; VALUE_TY; VALUE_TY; ];
@@ -5328,28 +5364,28 @@ Array DK6_relation_of_objects --> [ RELATION_TY; 2; OBJECT_TY; OBJECT_TY; ];
 Array DK7_relation_of_supporters_t --> [ RELATION_TY; 2; OBJECT_TY; OBJECT_TY; ];
 Array DK8_relation_of_things --> [ RELATION_TY; 2; OBJECT_TY; OBJECT_TY; ];
 Array DK9_relation_of_people_to_th --> [ RELATION_TY; 2; OBJECT_TY; OBJECT_TY; ];
-Array Rel_Record3 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "equality relation"; abilities_U3; 0; DK5_relation_of_values; call_U1964; "is"; ];
-Array Rel_Record4 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "meaning relation"; abilities_U4; 0; DK6_relation_of_objects; call_U1965; "means"; ];
-Array Rel_Record5 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "possession relation"; abilities_U5; 0; DK6_relation_of_objects; call_U1966; "has"; ];
-Array Rel_Record6 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "universal relation"; abilities_U6; 0; DK6_relation_of_objects; call_U1967; "relates"; ];
-Array Rel_Record7 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "provision relation"; abilities_U7; 0; DK6_relation_of_objects; call_U1968; "provides"; ];
-Array Rel_Record8 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "containment relation"; abilities_U8; 0; DK6_relation_of_objects; call_U1969; "contains"; ];
-Array Rel_Record9 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "support relation"; abilities_U9; 0; DK7_relation_of_supporters_t; call_U1970; "supports"; ];
-Array Rel_Record10 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "incorporation relation"; abilities_U10; 0; DK8_relation_of_things; call_U1971; "incorporates"; ];
-Array Rel_Record11 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "enclosure relation"; abilities_U11; 0; DK6_relation_of_objects; call_U1972; "encloses"; ];
-Array Rel_Record12 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "carrying relation"; abilities_U12; 0; DK9_relation_of_people_to_th; call_U1973; "carries"; ];
-Array Rel_Record13 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "holding relation"; abilities_U13; 0; DK9_relation_of_people_to_th; call_U1974; "holds"; ];
-Array Rel_Record14 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "wearing relation"; abilities_U14; 0; DK9_relation_of_people_to_th; call_U1975; "wears"; ];
-Array Rel_Record15 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "visibility relation"; abilities_U15; 0; DK8_relation_of_things; call_U1976; "can-see"; ];
-Array Rel_Record16 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "touchability relation"; abilities_U16; 0; DK8_relation_of_things; call_U1977; "can-touch"; ];
-Array Rel_Record17 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "concealment relation"; abilities_U17; 0; DK8_relation_of_things; call_U1978; "conceals"; ];
-Array Rel_Record18 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "never-holding relation"; abilities_U18; 0; DK5_relation_of_values; call_U1979; "is"; ];
-Array bc_U229 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U86; ];
-Array bc_U230 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U87; ];
-Array bc_U231 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U88; ];
+Array Rel_Record3 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "equality relation"; abilities_U3; 0; DK5_relation_of_values; call_U1968; "is"; ];
+Array Rel_Record4 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "meaning relation"; abilities_U4; 0; DK6_relation_of_objects; call_U1969; "means"; ];
+Array Rel_Record5 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "possession relation"; abilities_U5; 0; DK6_relation_of_objects; call_U1970; "has"; ];
+Array Rel_Record6 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "universal relation"; abilities_U6; 0; DK6_relation_of_objects; call_U1971; "relates"; ];
+Array Rel_Record7 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "provision relation"; abilities_U7; 0; DK6_relation_of_objects; call_U1972; "provides"; ];
+Array Rel_Record8 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "containment relation"; abilities_U8; 0; DK6_relation_of_objects; call_U1973; "contains"; ];
+Array Rel_Record9 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "support relation"; abilities_U9; 0; DK7_relation_of_supporters_t; call_U1974; "supports"; ];
+Array Rel_Record10 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "incorporation relation"; abilities_U10; 0; DK8_relation_of_things; call_U1975; "incorporates"; ];
+Array Rel_Record11 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "enclosure relation"; abilities_U11; 0; DK6_relation_of_objects; call_U1976; "encloses"; ];
+Array Rel_Record12 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "carrying relation"; abilities_U12; 0; DK9_relation_of_people_to_th; call_U1977; "carries"; ];
+Array Rel_Record13 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "holding relation"; abilities_U13; 0; DK9_relation_of_people_to_th; call_U1978; "holds"; ];
+Array Rel_Record14 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "wearing relation"; abilities_U14; 0; DK9_relation_of_people_to_th; call_U1979; "wears"; ];
+Array Rel_Record15 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "visibility relation"; abilities_U15; 0; DK8_relation_of_things; call_U1980; "can-see"; ];
+Array Rel_Record16 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "touchability relation"; abilities_U16; 0; DK8_relation_of_things; call_U1981; "can-touch"; ];
+Array Rel_Record17 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "concealment relation"; abilities_U17; 0; DK8_relation_of_things; call_U1982; "conceals"; ];
+Array Rel_Record18 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "never-holding relation"; abilities_U18; 0; DK5_relation_of_values; call_U1983; "is"; ];
+Array bc_U244 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U94; ];
+Array bc_U245 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U95; ];
+Array bc_U246 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U96; ];
 Array UUID_ARRAY -> [ 45; 'U'; 'U'; 'I'; 'D'; ':'; '/'; '/'; '9'; 'B'; 'B'; '1'; '6'; '2'; 'C'; '9'; '-'; '0'; '7'; '3'; '3'; '-'; '4'; 'B'; '6'; 'E'; '-'; 'A'; '9'; 'D'; 'E'; '-'; 'D'; 'C'; 'C'; '4'; '9'; 'D'; 'B'; 'B'; '2'; '7'; '8'; '2'; '/'; '/'; ];
 Array InitialSituation --> [ selfobj; 0; I_starting_room_U1; 540; 0; ];
-Array Map_Storage --> [ 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; I_trap_door_U1; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; I_trap_door_U1; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; ];
+Array Map_Storage --> [ 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; I_northdoor_U1; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; I_trap_door_U1; 0; 0; 0; 0; 0; 0; 0; 0; I_trap_door_U1; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; I_northdoor_U1; 0; 0; 0; 0; 0; 0; 0; 0; ];
 Array name_array1 --> [ 'north'; 'directions//p'; 'n//'; ];
 Array name_array2 --> [ 'northeast'; 'directions//p'; 'ne'; ];
 Array name_array3 --> [ 'northwest'; 'directions//p'; 'nw'; ];
@@ -5365,15 +5401,18 @@ Array name_array12 --> [ 'outside'; 'directions//p'; 'out'; ];
 Array name_array13 --> [ 'starting'; 'room'; 'rooms//p'; ];
 Array name_array14 --> [ 'ivan'; 'men//p'; ];
 Array name_array15 --> [ 'petar'; 'men//p'; ];
-Array name_array16 --> [ 'torch'; 'things//p'; ];
-Array name_array17 --> [ 'gold'; 'coin'; 'things//p'; ];
-Array name_array18 --> [ 'pit'; 'room'; 'rooms//p'; ];
-Array name_array19 --> [ 'trap'; 'door'; 'doors//p'; ];
-Array name_array20 --> [ 'darkchamber'; 'rooms//p'; ];
-Array name_array21 --> [ 'lightroom'; 'rooms//p'; ];
-Array name_array22 --> [ 'golden'; 'stool'; 'supporters//p'; ];
-Array name_array23 --> [ 'golden'; 'apple'; 'things//p'; ];
-Array name_array24 --> [ 'wooden'; 'box'; 'things//p'; ];
+Array name_array16 --> [ 'trap'; 'zone'; 'regions//p'; ];
+Array name_array17 --> [ 'lightroom'; 'rooms//p'; ];
+Array name_array18 --> [ 'darkchamber'; 'rooms//p'; ];
+Array name_array19 --> [ 'torch'; 'things//p'; ];
+Array name_array20 --> [ 'gold'; 'coin'; 'things//p'; ];
+Array name_array21 --> [ 'pit'; 'room'; 'rooms//p'; ];
+Array name_array22 --> [ 'trap'; 'door'; 'doors//p'; ];
+Array name_array23 --> [ 'northdoor'; 'doors//p'; ];
+Array name_array24 --> [ 'forest'; 'rooms//p'; ];
+Array name_array25 --> [ 'golden'; 'stool'; 'supporters//p'; ];
+Array name_array26 --> [ 'golden'; 'apple'; 'things//p'; ];
+Array name_array27 --> [ 'box'; 'containers//p'; ];
 Array LocalParking --> [ 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; ];
 Array PowersOfTwo_TB --> [ 2048; 1024; 512; 256; 128; 64; 32; 16; 8; 4; 2; 1; ];
 Array IncreasingPowersOfTwo_TB --> [ 1; 2; 4; 8; 16; 32; 64; 128; 256; 512; 1024; 2048; 4096; 8192; 16384; 32768; ];
@@ -5417,7 +5456,7 @@ Array scene_endings --> 3; ! blank with extent 3
 Array scene_latest_ending --> 3; ! blank with extent 3
 Array multiple_object --> 100; ! blank with extent 100
 Array parser_results --> 16; ! blank with extent 16
-Array requisition_stack --> 75; ! blank with extent 75
+Array requisition_stack --> 84; ! blank with extent 84
 Array LWI_Storage --> [ 1; -1; Computed_Constant_Value_4_U2; ];
 Array Details_of_Specific_Action --> 5; ! blank with extent 5
 Array activities_stack --> 20; ! blank with extent 20
@@ -5426,8 +5465,8 @@ Array ResourceUsageFlags -> 6; ! blank with extent 6
 Array T_SL_Score_Moves --> [ CONSTANT_PACKED_TEXT_STORAGE; SL_Score_Moves; ];
 Array T_SL_Location --> [ CONSTANT_PACKED_TEXT_STORAGE; SL_Location; ];
 Array StorageForShortName buffer 250; ! blank with extent 250
-Array DoorRoutingViable -> 2; ! blank with extent 2
-Array FWMatrix --> 16; ! blank with extent 16
+Array DoorRoutingViable -> 3; ! blank with extent 3
+Array FWMatrix --> 25; ! blank with extent 25
 Array test_stack --> 128; ! blank with extent 128
 Array TimesActionHasHappened --> 1; ! blank with extent 1
 Array TurnsActionHasBeenHappening --> 1; ! blank with extent 1
@@ -5848,7 +5887,7 @@ K1_room I_starting_room_U1    with short_name bc_U162
     has mark_as_room
     with KD_Count 1
     with IK1_Count 0
-    with K1_room_Next I_pit_room_U1
+    with K1_room_Next I_lightroom_U1
     with name 'starting' 'room' 'rooms//p'
     with plural bc_U164
     with article bc_U165
@@ -5875,7 +5914,7 @@ K10_man -> I_ivan_U1    with short_name bc_U167
     with article bc_U171
     with list_together bc_U172
 ;
-K2_thing -> -> I_torch_U1    with short_name bc_U179
+K2_thing -> -> I_torch_U1    with short_name bc_U192
     has ~light
     has ~static
     with vector 0
@@ -5885,11 +5924,11 @@ K2_thing -> -> I_torch_U1    with short_name bc_U179
     with K2_thing_Next I_petar_U1
     with action_bitmap 0 0 0 0 0
     with name 'torch' 'things//p'
-    with description bc_U180
-    with initial bc_U181
-    with plural bc_U182
-    with article bc_U183
-    with list_together bc_U184
+    with description bc_U193
+    with initial bc_U194
+    with plural bc_U195
+    with article bc_U196
+    with list_together bc_U197
 ;
 K10_man -> I_petar_U1    with short_name bc_U173
     has proper
@@ -5912,23 +5951,36 @@ K10_man -> I_petar_U1    with short_name bc_U173
     with article bc_U177
     with list_together bc_U178
 ;
-K2_thing -> -> I_gold_coin_U1    with short_name bc_U185
+K2_thing -> -> I_gold_coin_U1    with short_name bc_U198
     has ~static
     with vector 0
     has mark_as_thing
     with KD_Count 2
     with IK2_Count 4
-    with K2_thing_Next I_trap_door_U1
+    with K2_thing_Next I_box_U1
     with action_bitmap 0 0 0 0 0
     with name 'gold' 'coin' 'things//p'
-    with description bc_U186
-    with initial bc_U187
-    with plural bc_U188
-    with article bc_U189
-    with list_together bc_U190
+    with description bc_U199
+    with initial bc_U200
+    with plural bc_U201
+    with article bc_U202
+    with list_together bc_U203
 ;
-K1_room I_pit_room_U1    with short_name bc_U191
-    with description bc_U192
+K9_region I_trap_zone_U1    with short_name bc_U179
+    with vector 0
+    with regional_found_in RFI_for_I1
+    with KD_Count 9
+    with IK9_Count 0
+    with K9_region_Next 0
+    with action_bitmap 0 0 0 0 0
+    with name 'trap' 'zone' 'regions//p'
+    with plural bc_U180
+    with article bc_U181
+    with list_together bc_U182
+;
+K1_room I_lightroom_U1    with short_name bc_U183
+    with description bc_U184
+    with map_region I_trap_zone_U1
     has proper
     with vector 0
     with room_index -1
@@ -5936,12 +5988,99 @@ K1_room I_pit_room_U1    with short_name bc_U191
     with KD_Count 1
     with IK1_Count 1
     with K1_room_Next I_darkchamber_U1
-    with name 'pit' 'room' 'rooms//p'
-    with plural bc_U193
-    with article bc_U194
-    with list_together bc_U195
+    with name 'lightroom' 'rooms//p'
+    with plural bc_U185
+    with article bc_U186
+    with list_together bc_U187
 ;
-K4_door I_trap_door_U1    with short_name bc_U196
+K5_container -> I_box_U1    with short_name bc_U238
+    with initial bc_U239
+    has proper
+    has open
+    with vector 0
+    has mark_as_thing
+    has container
+    with KD_Count 5
+    with IK2_Count 9
+    with K2_thing_Next I_golden_stool_U1
+    with IK5_Count 0
+    with K5_container_Next 0
+    with action_bitmap 0 0 0 0 0
+    with name 'box' 'containers//p'
+    with description bc_U240
+    with plural bc_U241
+    with article bc_U242
+    with list_together bc_U243
+;
+K1_room I_darkchamber_U1    with short_name bc_U188
+    with description ts_array_U394
+    with map_region I_trap_zone_U1
+    has proper
+    has ~light
+    with vector 0
+    with room_index -1
+    has mark_as_room
+    with KD_Count 1
+    with IK1_Count 2
+    with K1_room_Next I_pit_room_U1
+    with name 'darkchamber' 'rooms//p'
+    with plural bc_U189
+    with article bc_U190
+    with list_together bc_U191
+;
+K6_supporter -> I_golden_stool_U1    with short_name bc_U226
+    with description bc_U227
+    has proper
+    has static
+    has scenery
+    with vector 0
+    has mark_as_thing
+    has supporter
+    with KD_Count 6
+    with IK2_Count 7
+    with K2_thing_Next I_golden_apple_U1
+    with IK6_Count 0
+    with K6_supporter_Next 0
+    with action_bitmap 0 0 0 0 0
+    with parse_name parse_name26
+    with name 'golden' 'stool' 'supporters//p'
+    with initial bc_U228
+    with plural bc_U229
+    with article bc_U230
+    with list_together bc_U231
+;
+K2_thing -> -> I_golden_apple_U1    with short_name bc_U232
+    with description bc_U233
+    has proper
+    has static
+    has scenery
+    with vector 0
+    has mark_as_thing
+    with KD_Count 2
+    with IK2_Count 8
+    with K2_thing_Next I_trap_door_U1
+    with action_bitmap 0 0 0 0 0
+    with name 'golden' 'apple' 'things//p'
+    with initial bc_U234
+    with plural bc_U235
+    with article bc_U236
+    with list_together bc_U237
+;
+K1_room I_pit_room_U1    with short_name bc_U204
+    with description bc_U205
+    has proper
+    with vector 0
+    with room_index -1
+    has mark_as_room
+    with KD_Count 1
+    with IK1_Count 3
+    with K1_room_Next I_forest_U1
+    with name 'pit' 'room' 'rooms//p'
+    with plural bc_U206
+    with article bc_U207
+    with list_together bc_U208
+;
+K4_door I_trap_door_U1    with short_name bc_U209
     has scenery
     has lockable
     has locked
@@ -5953,99 +6092,52 @@ K4_door I_trap_door_U1    with short_name bc_U196
     has mark_as_thing
     with KD_Count 4
     with IK2_Count 5
-    with K2_thing_Next I_golden_stool_U1
+    with K2_thing_Next I_northdoor_U1
     with IK4_Count 0
-    with K4_door_Next 0
-    with action_bitmap 0 0 0 0 0
-    with parse_name parse_name20
-    with name 'trap' 'door' 'doors//p'
-    with description bc_U197
-    with initial bc_U198
-    with plural bc_U199
-    with article bc_U200
-    with list_together bc_U201
-;
-K1_room I_darkchamber_U1    with short_name bc_U202
-    with description ts_array_U394
-    has proper
-    has ~light
-    with vector 0
-    with room_index -1
-    has mark_as_room
-    with KD_Count 1
-    with IK1_Count 2
-    with K1_room_Next I_lightroom_U1
-    with name 'darkchamber' 'rooms//p'
-    with plural bc_U203
-    with article bc_U204
-    with list_together bc_U205
-;
-K6_supporter -> I_golden_stool_U1    with short_name bc_U211
-    with description bc_U212
-    has proper
-    has static
-    has scenery
-    with vector 0
-    has mark_as_thing
-    has supporter
-    with KD_Count 6
-    with IK2_Count 6
-    with K2_thing_Next I_golden_apple_U1
-    with IK6_Count 0
-    with K6_supporter_Next 0
+    with K4_door_Next I_northdoor_U1
     with action_bitmap 0 0 0 0 0
     with parse_name parse_name23
-    with name 'golden' 'stool' 'supporters//p'
-    with initial bc_U213
-    with plural bc_U214
-    with article bc_U215
-    with list_together bc_U216
+    with name 'trap' 'door' 'doors//p'
+    with description bc_U210
+    with initial bc_U211
+    with plural bc_U212
+    with article bc_U213
+    with list_together bc_U214
 ;
-K2_thing -> -> I_golden_apple_U1    with short_name bc_U217
-    with description bc_U218
-    has proper
-    has static
+K4_door I_northdoor_U1    with short_name bc_U215
+    with description bc_U216
     has scenery
     with vector 0
+    has door
+    with door_dir TSD_door_dir_value2
+    with door_to TSD_door_to_value2
+    with found_in I_forest_U1 I_lightroom_U1
     has mark_as_thing
-    with KD_Count 2
-    with IK2_Count 7
-    with K2_thing_Next I_wooden_box_U1
+    with KD_Count 4
+    with IK2_Count 6
+    with K2_thing_Next 0
+    with IK4_Count 1
+    with K4_door_Next 0
     with action_bitmap 0 0 0 0 0
-    with name 'golden' 'apple' 'things//p'
-    with initial bc_U219
-    with plural bc_U220
-    with article bc_U221
-    with list_together bc_U222
+    with name 'northdoor' 'doors//p'
+    with initial bc_U217
+    with plural bc_U218
+    with article bc_U219
+    with list_together bc_U220
 ;
-K1_room I_lightroom_U1    with short_name bc_U206
-    with description bc_U207
+K1_room I_forest_U1    with short_name bc_U221
+    with description bc_U222
     has proper
     with vector 0
     with room_index -1
     has mark_as_room
     with KD_Count 1
-    with IK1_Count 3
+    with IK1_Count 4
     with K1_room_Next 0
-    with name 'lightroom' 'rooms//p'
-    with plural bc_U208
-    with article bc_U209
-    with list_together bc_U210
-;
-K2_thing -> I_wooden_box_U1    with short_name bc_U223
-    with initial bc_U224
-    has proper
-    with vector 0
-    has mark_as_thing
-    with KD_Count 2
-    with IK2_Count 8
-    with K2_thing_Next 0
-    with action_bitmap 0 0 0 0 0
-    with name 'wooden' 'box' 'things//p'
-    with description bc_U225
-    with plural bc_U226
-    with article bc_U227
-    with list_together bc_U228
+    with name 'forest' 'rooms//p'
+    with plural bc_U223
+    with article bc_U224
+    with list_together bc_U225
 ;
 #ifndef cap_short_name; Constant cap_short_name = 0; #endif;
 #ifndef before; Constant before = 0; #endif;
@@ -8723,6 +8815,22 @@ Global max_z_object;
         }
         if ((R == call_U1957)) {
             print "Every turn when Trap timer > 0";
+            rtrue;
+        }
+        if ((R == call_U1958)) {
+            print "After inserting something into the box";
+            rtrue;
+        }
+        if ((R == call_U1959)) {
+            print "Instead of going north in LightRoom when the box empty is true";
+            rtrue;
+        }
+        if ((R == call_U1960)) {
+            print "Carry out going the NorthDoor";
+            rtrue;
+        }
+        if ((R == call_U1961)) {
+            print "Instead of taking the box";
             rtrue;
         }
         print "(nameless rule at address ";
@@ -26542,7 +26650,48 @@ Global max_z_object;
     }
     rfalse;
 ];
-[ call_U382 forbid_breaks rv;
+[ call_U382 forbid_breaks rv original_deadflag;
+    (original_deadflag = deadflag);
+    if ((action == ##Go)) {
+        (rv = (call_U1959)());
+        if (rv) {
+            if ((rv == 2)) {
+                return reason_the_action_failed;
+            }
+            return call_U1959;
+        }
+        ((latest_rule_result-->(0)) = 0);
+    } else {
+        if (say__p) {
+            RulebookParBreak(forbid_breaks);
+        }
+    }
+    if ((action == ##Take)) {
+        if ((original_deadflag ~= deadflag)) {
+            rfalse;
+        }
+        if (say__p) {
+            RulebookParBreak(forbid_breaks);
+        }
+        (rv = (call_U1961)());
+        if (rv) {
+            if ((rv == 2)) {
+                return reason_the_action_failed;
+            }
+            return call_U1961;
+        }
+        ((latest_rule_result-->(0)) = 0);
+    } else {
+        if (say__p) {
+            RulebookParBreak(forbid_breaks);
+        }
+    }
+    if ((original_deadflag ~= deadflag)) {
+        rfalse;
+    }
+    if (say__p) {
+        RulebookParBreak(forbid_breaks);
+    }
     (rv = (call_U1950)());
     if (rv) {
         if ((rv == 2)) {
@@ -26553,8 +26702,29 @@ Global max_z_object;
     ((latest_rule_result-->(0)) = 0);
     rfalse;
 ];
-[ call_U385 forbid_breaks rv;
+[ call_U385 forbid_breaks rv original_deadflag;
+    (original_deadflag = deadflag);
+    if ((action == ##Insert)) {
+        (rv = (call_U1958)());
+        if (rv) {
+            if ((rv == 2)) {
+                return reason_the_action_failed;
+            }
+            return call_U1958;
+        }
+        ((latest_rule_result-->(0)) = 0);
+    } else {
+        if (say__p) {
+            RulebookParBreak(forbid_breaks);
+        }
+    }
     if ((action == ##Examine)) {
+        if ((original_deadflag ~= deadflag)) {
+            rfalse;
+        }
+        if (say__p) {
+            RulebookParBreak(forbid_breaks);
+        }
         (rv = (call_U1954)());
         if (rv) {
             if ((rv == 2)) {
@@ -28046,6 +28216,20 @@ Global max_z_object;
 ];
 [ call_U506 forbid_breaks rv original_deadflag;
     (original_deadflag = deadflag);
+    (rv = (call_U1960)());
+    if (rv) {
+        if ((rv == 2)) {
+            return reason_the_action_failed;
+        }
+        return call_U1960;
+    }
+    ((latest_rule_result-->(0)) = 0);
+    if ((original_deadflag ~= deadflag)) {
+        rfalse;
+    }
+    if (say__p) {
+        RulebookParBreak(forbid_breaks);
+    }
     (rv = (call_U1267)());
     if (rv) {
         if ((rv == 2)) {
@@ -32858,7 +33042,7 @@ Global max_z_object;
     ParaContent();
     print " ";
     ParaContent();
-    (call_U1958)(CV_POS,I_third_person_plural_U1,story_tense);
+    (call_U1962)(CV_POS,I_third_person_plural_U1,story_tense);
     ParaContent();
     print " none at all available!";
     rtrue;
@@ -56481,25 +56665,11 @@ Global max_z_object;
     (x = noun);
     return (((noun ofclass K2_thing)) && (call_U334(noun)));
 ];
-[ TSD_door_dir_value1 loc;
-    (loc = location);
-    if ((loc == thedark)) {
-        (loc = real_location);
+[ RFI_for_I1;
+    if (TestRegionalContainment(location, I_trap_zone_U1)) {
+        rtrue;
     }
-    if ((loc == I_pit_room_U1)) {
-        return I_north_U1;
-    }
-    return I_south_U1;
-];
-[ TSD_door_to_value1 loc;
-    (loc = location);
-    if ((loc == thedark)) {
-        (loc = real_location);
-    }
-    if ((loc == I_pit_room_U1)) {
-        return I_darkchamber_U1;
-    }
-    return I_pit_room_U1;
+    rfalse;
 ];
 [ call_U1922;
     #ifdef DEBUG;
@@ -56520,6 +56690,46 @@ Global max_z_object;
     print "The room is dark. You can barely make out a small golden stool in the faint light.";
     .L_SayX0;
     rtrue;
+];
+[ TSD_door_dir_value1 loc;
+    (loc = location);
+    if ((loc == thedark)) {
+        (loc = real_location);
+    }
+    if ((loc == I_pit_room_U1)) {
+        return I_north_U1;
+    }
+    return I_south_U1;
+];
+[ TSD_door_to_value1 loc;
+    (loc = location);
+    if ((loc == thedark)) {
+        (loc = real_location);
+    }
+    if ((loc == I_pit_room_U1)) {
+        return I_darkchamber_U1;
+    }
+    return I_pit_room_U1;
+];
+[ TSD_door_dir_value2 loc;
+    (loc = location);
+    if ((loc == thedark)) {
+        (loc = real_location);
+    }
+    if ((loc == I_forest_U1)) {
+        return I_south_U1;
+    }
+    return I_north_U1;
+];
+[ TSD_door_to_value2 loc;
+    (loc = location);
+    if ((loc == thedark)) {
+        (loc = real_location);
+    }
+    if ((loc == I_forest_U1)) {
+        return I_lightroom_U1;
+    }
+    return I_forest_U1;
 ];
 [ call_U1924 forbid_breaks rv;
     (rv = (call_U1949)());
@@ -56726,7 +56936,7 @@ Global max_z_object;
         if (debug_rules) {
             DB_Rule(call_U1949, 802, 0);
         }
-        if (((Global_Vars-->45) == 1)) {
+        if (((Global_Vars-->46) == 1)) {
             (say__p = 1);
             ParaContent();
             print "You have already chosen your character.";
@@ -56734,7 +56944,7 @@ Global max_z_object;
         } else {
             if ((parsed_number == 1)) {
                 ChangePlayer(I_ivan_U1);
-                ((Global_Vars-->45) = 1);
+                ((Global_Vars-->46) = 1);
                 call_U221(I_petar_U1);
                 MoveObject(player, I_darkchamber_U1, 0, 0);
                 (say__p = 1);
@@ -56744,7 +56954,7 @@ Global max_z_object;
             } else {
                 if ((parsed_number == 2)) {
                     ChangePlayer(I_petar_U1);
-                    ((Global_Vars-->45) = 1);
+                    ((Global_Vars-->46) = 1);
                     call_U221(I_ivan_U1);
                     MoveObject(player, I_lightroom_U1, 0, 0);
                     (say__p = 1);
@@ -56767,7 +56977,7 @@ Global max_z_object;
     rfalse;
 ];
 [ call_U1950;
-    if ((((actor == player)) && ((((~~((action == ##A_choosing)))) && (((((self = actor),1)) && (((Global_Vars-->45) == 0)))))))) {
+    if ((((actor == player)) && ((((~~((action == ##A_choosing)))) && (((((self = actor),1)) && (((Global_Vars-->46) == 0)))))))) {
         (self = noun);
         if (debug_rules) {
             DB_Rule(call_U1950, 803, 0);
@@ -56878,7 +57088,7 @@ Global max_z_object;
             ParaContent();
             style underline;
             ParaContent();
-            print "Don't do it...";
+            print "Don't do it... In 3..";
             ParaContent();
             style roman;
         }
@@ -56968,6 +57178,95 @@ Global max_z_object;
     } else {
         if ((debug_rules > 1)) {
             DB_Rule(call_U1957, 810, 4);
+        }
+    }
+    rfalse;
+];
+[ call_U1958;
+    if ((((action == ##Insert)) && ((((actor == player)) && ((((noun ofclass K2_thing)) && ((second == I_box_U1)))))))) {
+        (self = noun);
+        if (debug_rules) {
+            DB_Rule(call_U1958, 811, 0);
+        }
+        if ((noun == I_gold_coin_U1)) {
+            if (((Global_Vars-->45) == 1)) {
+                ((Global_Vars-->45) = 0);
+                call_U323(I_northdoor_U1);
+                call_U305(I_northdoor_U1);
+                (say__p = 1);
+                ParaContent();
+                print "You put the gold coin in the box. A door appears to the north!";
+                print "^";
+            } else {
+                (say__p = 1);
+                ParaContent();
+                print "The box already contains the gold coin.";
+                print "^";
+            }
+        }
+        RulebookSucceeds(0, 0);
+        rtrue;
+    } else {
+        if ((debug_rules > 1)) {
+            DB_Rule(call_U1958, 811, 2);
+        }
+    }
+    rfalse;
+];
+[ call_U1959;
+    if ((((action == ##Go)) && ((((actor == player)) && ((((((noun == I_north_U1)) && ((real_location == I_lightroom_U1)))) && (((((self = actor),1)) && (((Global_Vars-->45) == 1)))))))))) {
+        (self = noun);
+        if (debug_rules) {
+            DB_Rule(call_U1959, 812, 0);
+        }
+        (say__p = 1);
+        ParaContent();
+        print "There is no way north.";
+        print "^";
+        RulebookFails(0, 0);
+        rtrue;
+    } else {
+        if ((debug_rules > 1)) {
+            DB_Rule(call_U1959, 812, 2);
+        }
+    }
+    rfalse;
+];
+[ call_U1960;
+    if ((((actor == player)) && ((noun == I_northdoor_U1)))) {
+        (self = noun);
+        if (debug_rules) {
+            DB_Rule(call_U1960, 813, 0);
+        }
+        call_U320(I_northdoor_U1);
+        (say__p = 1);
+        ParaContent();
+        print "(The door locks behind you.)";
+        print "^";
+    } else {
+        if ((debug_rules > 1)) {
+            DB_Rule(call_U1960, 813, 2);
+        }
+    }
+    rfalse;
+];
+[ call_U1961;
+    if ((((action == ##Take)) && ((((actor == player)) && ((noun == I_box_U1)))))) {
+        (self = noun);
+        if (debug_rules) {
+            DB_Rule(call_U1961, 814, 0);
+        }
+        (say__p = 1);
+        ParaContent();
+        print "As you lift the box, the floor beneath you collapses!";
+        print "^";
+        call_U221(I_box_U1);
+        MoveObject(player, I_pit_room_U1, 0, 0);
+        RulebookFails(0, 0);
+        rtrue;
+    } else {
+        if ((debug_rules > 1)) {
+            DB_Rule(call_U1961, 814, 2);
         }
     }
     rfalse;
@@ -57113,7 +57412,7 @@ Global max_z_object;
             ;
     }
 ];
-[ call_U1958 fn vp t modal_to;
+[ call_U1962 fn vp t modal_to;
     (t = ConjugateVerb1(fn, vp, t, modal_to));
     if ((fn == CV_MODAL)) {
         return t;
@@ -57242,7 +57541,7 @@ Global max_z_object;
             ;
     }
 ];
-[ call_U1959 fn vp t modal_to;
+[ call_U1963 fn vp t modal_to;
     (t = ConjugateVerb59(fn, vp, t, modal_to));
     if ((fn == CV_MODAL)) {
         return t;
@@ -57324,7 +57623,7 @@ Global max_z_object;
             ;
     }
 ];
-[ call_U1960 fn vp t modal_to;
+[ call_U1964 fn vp t modal_to;
     (t = ConjugateVerb60(fn, vp, t, modal_to));
     if ((fn == CV_MODAL)) {
         return t;
@@ -57333,7 +57632,7 @@ Global max_z_object;
         return MEANINGLESS_RR;
     }
 ];
-[ call_U1961 fn vp t modal_to;
+[ call_U1965 fn vp t modal_to;
     (t = ConjugateVerb60(fn, vp, t, modal_to));
     if ((fn == CV_MODAL)) {
         return t;
@@ -57342,7 +57641,7 @@ Global max_z_object;
         return MEANINGLESS_RR;
     }
 ];
-[ call_U1962 fn vp t modal_to;
+[ call_U1966 fn vp t modal_to;
     (t = ConjugateVerb60(fn, vp, t, modal_to));
     if ((fn == CV_MODAL)) {
         return t;
@@ -57351,7 +57650,7 @@ Global max_z_object;
         return MEANINGLESS_RR;
     }
 ];
-[ call_U1963 fn vp t modal_to;
+[ call_U1967 fn vp t modal_to;
     (t = ConjugateVerb60(fn, vp, t, modal_to));
     if ((fn == CV_MODAL)) {
         return t;
@@ -57360,7 +57659,7 @@ Global max_z_object;
         return MEANINGLESS_RR;
     }
 ];
-[ call_U1964 rr task X Y Z1 Z2 Z3 Z4;
+[ call_U1968 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
             if ((X == Y)) {
@@ -57374,7 +57673,7 @@ Global max_z_object;
     }
     rfalse;
 ];
-[ call_U1965 rr task X Y Z1 Z2 Z3 Z4;
+[ call_U1969 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
             if ((BlkValueCompare((X)(CV_MEANING), Y) == 0)) {
@@ -57388,7 +57687,7 @@ Global max_z_object;
     }
     rfalse;
 ];
-[ call_U1966 rr task X Y Z1 Z2 Z3 Z4;
+[ call_U1970 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
             if ((X == OwnerOf(Y))) {
@@ -57442,7 +57741,7 @@ Global max_z_object;
     }
     rfalse;
 ];
-[ call_U1967 rr task X Y Z1 Z2 Z3 Z4;
+[ call_U1971 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
             if ((RlnGetF(X, RR_HANDLER))(X,RELS_TEST,Y,0)) {
@@ -57456,7 +57755,7 @@ Global max_z_object;
     }
     rfalse;
 ];
-[ call_U1968 rr task X Y Z1 Z2 Z3 Z4;
+[ call_U1972 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
             if (0) {
@@ -57470,7 +57769,7 @@ Global max_z_object;
     }
     rfalse;
 ];
-[ call_U1969 rr task X Y Z1 Z2 Z3 Z4;
+[ call_U1973 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
             if ((X == ContainerOf(Y))) {
@@ -57481,399 +57780,6 @@ Global max_z_object;
         RELS_LOOKUP_ANY:
             if ((((Y == RLANY_GET_X)) || ((Y == RLANY_CAN_GET_X)))) {
                 objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
-                    if ((call_U1969)(rr,RELS_TEST,Z1,X)) {
-                        if ((Y == RLANY_CAN_GET_X)) {
-                            rtrue;
-                        }
-                        if ((Y == RLANY_CAN_GET_Y)) {
-                            rtrue;
-                        }
-                        return Z1;
-                    }
-                }
-                if ((Y == RLANY_CAN_GET_X)) {
-                    rfalse;
-                }
-                if ((Y == RLANY_CAN_GET_Y)) {
-                    rfalse;
-                }
-                return DefaultValueOfKOV(OBJECT_TY);
-            } else {
-                objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
-                    if ((call_U1969)(rr,RELS_TEST,X,Z1)) {
-                        if ((Y == RLANY_CAN_GET_X)) {
-                            rtrue;
-                        }
-                        if ((Y == RLANY_CAN_GET_Y)) {
-                            rtrue;
-                        }
-                        return Z1;
-                    }
-                }
-                if ((Y == RLANY_CAN_GET_X)) {
-                    rfalse;
-                }
-                if ((Y == RLANY_CAN_GET_Y)) {
-                    rfalse;
-                }
-                return DefaultValueOfKOV(OBJECT_TY);
-            }
-            ;
-        RELS_LOOKUP_ALL_X:
-            LIST_OF_TY_SetLength(Y, 0);
-            objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
-                if ((call_U1969)(rr,RELS_TEST,Z1,X)) {
-                    LIST_OF_TY_InsertItem(Y, Z1);
-                }
-            }
-            return Y;
-            ;
-        RELS_LOOKUP_ALL_Y:
-            LIST_OF_TY_SetLength(Y, 0);
-            objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
-                if ((call_U1969)(rr,RELS_TEST,X,Z1)) {
-                    LIST_OF_TY_InsertItem(Y, Z1);
-                }
-            }
-            return Y;
-            ;
-        RELS_LIST:
-            LIST_OF_TY_SetLength(X, 0);
-            if ((Y == RLIST_ALL_X)) {
-                objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
-                    objectloop (Z3 ofclass Object && (Z3 ofclass Object)) {
-                        if ((call_U1969)(rr,RELS_TEST,Z1,Z3)) {
-                            LIST_OF_TY_InsertItem(X, Z1, 0, 0, 1);
-                        }
-                    }
-                }
-            } else {
-                if ((Y == RLIST_ALL_Y)) {
-                    objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
-                        objectloop (Z3 ofclass Object && (Z3 ofclass Object)) {
-                            if ((call_U1969)(rr,RELS_TEST,Z1,Z3)) {
-                                LIST_OF_TY_InsertItem(X, Z3, 0, 0, 1);
-                            }
-                        }
-                    }
-                }
-            }
-            return X;
-            ;
-        RELS_ASSERT_TRUE:
-            MoveObject(Y, X);
-            rtrue;
-            ;
-        RELS_ASSERT_FALSE:
-            rfalse;
-            ;
-    }
-    rfalse;
-];
-[ call_U1970 rr task X Y Z1 Z2 Z3 Z4;
-    switch (task) {
-        RELS_TEST:
-            if ((X == SupporterOf(Y))) {
-                rtrue;
-            }
-            rfalse;
-            ;
-        RELS_LOOKUP_ANY:
-            if ((((Y == RLANY_GET_X)) || ((Y == RLANY_CAN_GET_X)))) {
-                for ((Z1 = K6_supporter_First):Z1:(Z1 = (Z1.K6_supporter_Next))) {
-                    if ((call_U1970)(rr,RELS_TEST,Z1,X)) {
-                        if ((Y == RLANY_CAN_GET_X)) {
-                            rtrue;
-                        }
-                        if ((Y == RLANY_CAN_GET_Y)) {
-                            rtrue;
-                        }
-                        return Z1;
-                    }
-                }
-                if ((Y == RLANY_CAN_GET_X)) {
-                    rfalse;
-                }
-                if ((Y == RLANY_CAN_GET_Y)) {
-                    rfalse;
-                }
-                return DefaultValueOfKOV(OBJECT_TY);
-            } else {
-                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
-                    if ((call_U1970)(rr,RELS_TEST,X,Z1)) {
-                        if ((Y == RLANY_CAN_GET_X)) {
-                            rtrue;
-                        }
-                        if ((Y == RLANY_CAN_GET_Y)) {
-                            rtrue;
-                        }
-                        return Z1;
-                    }
-                }
-                if ((Y == RLANY_CAN_GET_X)) {
-                    rfalse;
-                }
-                if ((Y == RLANY_CAN_GET_Y)) {
-                    rfalse;
-                }
-                return DefaultValueOfKOV(OBJECT_TY);
-            }
-            ;
-        RELS_LOOKUP_ALL_X:
-            LIST_OF_TY_SetLength(Y, 0);
-            for ((Z1 = K6_supporter_First):Z1:(Z1 = (Z1.K6_supporter_Next))) {
-                if ((call_U1970)(rr,RELS_TEST,Z1,X)) {
-                    LIST_OF_TY_InsertItem(Y, Z1);
-                }
-            }
-            return Y;
-            ;
-        RELS_LOOKUP_ALL_Y:
-            LIST_OF_TY_SetLength(Y, 0);
-            for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
-                if ((call_U1970)(rr,RELS_TEST,X,Z1)) {
-                    LIST_OF_TY_InsertItem(Y, Z1);
-                }
-            }
-            return Y;
-            ;
-        RELS_LIST:
-            LIST_OF_TY_SetLength(X, 0);
-            if ((Y == RLIST_ALL_X)) {
-                for ((Z1 = K6_supporter_First):Z1:(Z1 = (Z1.K6_supporter_Next))) {
-                    for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
-                        if ((call_U1970)(rr,RELS_TEST,Z1,Z3)) {
-                            LIST_OF_TY_InsertItem(X, Z1, 0, 0, 1);
-                        }
-                    }
-                }
-            } else {
-                if ((Y == RLIST_ALL_Y)) {
-                    for ((Z1 = K6_supporter_First):Z1:(Z1 = (Z1.K6_supporter_Next))) {
-                        for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
-                            if ((call_U1970)(rr,RELS_TEST,Z1,Z3)) {
-                                LIST_OF_TY_InsertItem(X, Z3, 0, 0, 1);
-                            }
-                        }
-                    }
-                }
-            }
-            return X;
-            ;
-        RELS_ASSERT_TRUE:
-            MoveObject(Y, X);
-            rtrue;
-            ;
-        RELS_ASSERT_FALSE:
-            rfalse;
-            ;
-    }
-    rfalse;
-];
-[ call_U1971 rr task X Y Z1 Z2 Z3 Z4;
-    switch (task) {
-        RELS_TEST:
-            if ((X == PartOf(Y))) {
-                rtrue;
-            }
-            rfalse;
-            ;
-        RELS_LOOKUP_ANY:
-            if ((((Y == RLANY_GET_X)) || ((Y == RLANY_CAN_GET_X)))) {
-                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
-                    if ((call_U1971)(rr,RELS_TEST,Z1,X)) {
-                        if ((Y == RLANY_CAN_GET_X)) {
-                            rtrue;
-                        }
-                        if ((Y == RLANY_CAN_GET_Y)) {
-                            rtrue;
-                        }
-                        return Z1;
-                    }
-                }
-                if ((Y == RLANY_CAN_GET_X)) {
-                    rfalse;
-                }
-                if ((Y == RLANY_CAN_GET_Y)) {
-                    rfalse;
-                }
-                return DefaultValueOfKOV(OBJECT_TY);
-            } else {
-                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
-                    if ((call_U1971)(rr,RELS_TEST,X,Z1)) {
-                        if ((Y == RLANY_CAN_GET_X)) {
-                            rtrue;
-                        }
-                        if ((Y == RLANY_CAN_GET_Y)) {
-                            rtrue;
-                        }
-                        return Z1;
-                    }
-                }
-                if ((Y == RLANY_CAN_GET_X)) {
-                    rfalse;
-                }
-                if ((Y == RLANY_CAN_GET_Y)) {
-                    rfalse;
-                }
-                return DefaultValueOfKOV(OBJECT_TY);
-            }
-            ;
-        RELS_LOOKUP_ALL_X:
-            LIST_OF_TY_SetLength(Y, 0);
-            for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
-                if ((call_U1971)(rr,RELS_TEST,Z1,X)) {
-                    LIST_OF_TY_InsertItem(Y, Z1);
-                }
-            }
-            return Y;
-            ;
-        RELS_LOOKUP_ALL_Y:
-            LIST_OF_TY_SetLength(Y, 0);
-            for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
-                if ((call_U1971)(rr,RELS_TEST,X,Z1)) {
-                    LIST_OF_TY_InsertItem(Y, Z1);
-                }
-            }
-            return Y;
-            ;
-        RELS_LIST:
-            LIST_OF_TY_SetLength(X, 0);
-            if ((Y == RLIST_ALL_X)) {
-                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
-                    for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
-                        if ((call_U1971)(rr,RELS_TEST,Z1,Z3)) {
-                            LIST_OF_TY_InsertItem(X, Z1, 0, 0, 1);
-                        }
-                    }
-                }
-            } else {
-                if ((Y == RLIST_ALL_Y)) {
-                    for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
-                        for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
-                            if ((call_U1971)(rr,RELS_TEST,Z1,Z3)) {
-                                LIST_OF_TY_InsertItem(X, Z3, 0, 0, 1);
-                            }
-                        }
-                    }
-                }
-            }
-            return X;
-            ;
-        RELS_ASSERT_TRUE:
-            MakePart(Y, X);
-            rtrue;
-            ;
-        RELS_ASSERT_FALSE:
-            rfalse;
-            ;
-    }
-    rfalse;
-];
-[ call_U1972 rr task X Y Z1 Z2 Z3 Z4;
-    switch (task) {
-        RELS_TEST:
-            if (IndirectlyContains(X, Y)) {
-                rtrue;
-            }
-            rfalse;
-            ;
-        RELS_LOOKUP_ANY:
-            if ((((Y == RLANY_GET_X)) || ((Y == RLANY_CAN_GET_X)))) {
-                objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
-                    if ((call_U1972)(rr,RELS_TEST,Z1,X)) {
-                        if ((Y == RLANY_CAN_GET_X)) {
-                            rtrue;
-                        }
-                        if ((Y == RLANY_CAN_GET_Y)) {
-                            rtrue;
-                        }
-                        return Z1;
-                    }
-                }
-                if ((Y == RLANY_CAN_GET_X)) {
-                    rfalse;
-                }
-                if ((Y == RLANY_CAN_GET_Y)) {
-                    rfalse;
-                }
-                return DefaultValueOfKOV(OBJECT_TY);
-            } else {
-                objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
-                    if ((call_U1972)(rr,RELS_TEST,X,Z1)) {
-                        if ((Y == RLANY_CAN_GET_X)) {
-                            rtrue;
-                        }
-                        if ((Y == RLANY_CAN_GET_Y)) {
-                            rtrue;
-                        }
-                        return Z1;
-                    }
-                }
-                if ((Y == RLANY_CAN_GET_X)) {
-                    rfalse;
-                }
-                if ((Y == RLANY_CAN_GET_Y)) {
-                    rfalse;
-                }
-                return DefaultValueOfKOV(OBJECT_TY);
-            }
-            ;
-        RELS_LOOKUP_ALL_X:
-            LIST_OF_TY_SetLength(Y, 0);
-            objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
-                if ((call_U1972)(rr,RELS_TEST,Z1,X)) {
-                    LIST_OF_TY_InsertItem(Y, Z1);
-                }
-            }
-            return Y;
-            ;
-        RELS_LOOKUP_ALL_Y:
-            LIST_OF_TY_SetLength(Y, 0);
-            objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
-                if ((call_U1972)(rr,RELS_TEST,X,Z1)) {
-                    LIST_OF_TY_InsertItem(Y, Z1);
-                }
-            }
-            return Y;
-            ;
-        RELS_LIST:
-            LIST_OF_TY_SetLength(X, 0);
-            if ((Y == RLIST_ALL_X)) {
-                objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
-                    objectloop (Z3 ofclass Object && (Z3 ofclass Object)) {
-                        if ((call_U1972)(rr,RELS_TEST,Z1,Z3)) {
-                            LIST_OF_TY_InsertItem(X, Z1, 0, 0, 1);
-                        }
-                    }
-                }
-            } else {
-                if ((Y == RLIST_ALL_Y)) {
-                    objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
-                        objectloop (Z3 ofclass Object && (Z3 ofclass Object)) {
-                            if ((call_U1972)(rr,RELS_TEST,Z1,Z3)) {
-                                LIST_OF_TY_InsertItem(X, Z3, 0, 0, 1);
-                            }
-                        }
-                    }
-                }
-            }
-            return X;
-            ;
-    }
-    rfalse;
-];
-[ call_U1973 rr task X Y Z1 Z2 Z3 Z4;
-    switch (task) {
-        RELS_TEST:
-            if ((X == CarrierOf(Y))) {
-                rtrue;
-            }
-            rfalse;
-            ;
-        RELS_LOOKUP_ANY:
-            if ((((Y == RLANY_GET_X)) || ((Y == RLANY_CAN_GET_X)))) {
-                for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
                     if ((call_U1973)(rr,RELS_TEST,Z1,X)) {
                         if ((Y == RLANY_CAN_GET_X)) {
                             rtrue;
@@ -57892,7 +57798,7 @@ Global max_z_object;
                 }
                 return DefaultValueOfKOV(OBJECT_TY);
             } else {
-                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
                     if ((call_U1973)(rr,RELS_TEST,X,Z1)) {
                         if ((Y == RLANY_CAN_GET_X)) {
                             rtrue;
@@ -57914,7 +57820,7 @@ Global max_z_object;
             ;
         RELS_LOOKUP_ALL_X:
             LIST_OF_TY_SetLength(Y, 0);
-            for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
+            objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
                 if ((call_U1973)(rr,RELS_TEST,Z1,X)) {
                     LIST_OF_TY_InsertItem(Y, Z1);
                 }
@@ -57923,7 +57829,7 @@ Global max_z_object;
             ;
         RELS_LOOKUP_ALL_Y:
             LIST_OF_TY_SetLength(Y, 0);
-            for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+            objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
                 if ((call_U1973)(rr,RELS_TEST,X,Z1)) {
                     LIST_OF_TY_InsertItem(Y, Z1);
                 }
@@ -57933,8 +57839,8 @@ Global max_z_object;
         RELS_LIST:
             LIST_OF_TY_SetLength(X, 0);
             if ((Y == RLIST_ALL_X)) {
-                for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
-                    for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
+                objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
+                    objectloop (Z3 ofclass Object && (Z3 ofclass Object)) {
                         if ((call_U1973)(rr,RELS_TEST,Z1,Z3)) {
                             LIST_OF_TY_InsertItem(X, Z1, 0, 0, 1);
                         }
@@ -57942,8 +57848,8 @@ Global max_z_object;
                 }
             } else {
                 if ((Y == RLIST_ALL_Y)) {
-                    for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
-                        for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
+                    objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
+                        objectloop (Z3 ofclass Object && (Z3 ofclass Object)) {
                             if ((call_U1973)(rr,RELS_TEST,Z1,Z3)) {
                                 LIST_OF_TY_InsertItem(X, Z3, 0, 0, 1);
                             }
@@ -57966,14 +57872,14 @@ Global max_z_object;
 [ call_U1974 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
-            if ((X == HolderOf(Y))) {
+            if ((X == SupporterOf(Y))) {
                 rtrue;
             }
             rfalse;
             ;
         RELS_LOOKUP_ANY:
             if ((((Y == RLANY_GET_X)) || ((Y == RLANY_CAN_GET_X)))) {
-                for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
+                for ((Z1 = K6_supporter_First):Z1:(Z1 = (Z1.K6_supporter_Next))) {
                     if ((call_U1974)(rr,RELS_TEST,Z1,X)) {
                         if ((Y == RLANY_CAN_GET_X)) {
                             rtrue;
@@ -58014,7 +57920,7 @@ Global max_z_object;
             ;
         RELS_LOOKUP_ALL_X:
             LIST_OF_TY_SetLength(Y, 0);
-            for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
+            for ((Z1 = K6_supporter_First):Z1:(Z1 = (Z1.K6_supporter_Next))) {
                 if ((call_U1974)(rr,RELS_TEST,Z1,X)) {
                     LIST_OF_TY_InsertItem(Y, Z1);
                 }
@@ -58033,7 +57939,7 @@ Global max_z_object;
         RELS_LIST:
             LIST_OF_TY_SetLength(X, 0);
             if ((Y == RLIST_ALL_X)) {
-                for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
+                for ((Z1 = K6_supporter_First):Z1:(Z1 = (Z1.K6_supporter_Next))) {
                     for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
                         if ((call_U1974)(rr,RELS_TEST,Z1,Z3)) {
                             LIST_OF_TY_InsertItem(X, Z1, 0, 0, 1);
@@ -58042,7 +57948,7 @@ Global max_z_object;
                 }
             } else {
                 if ((Y == RLIST_ALL_Y)) {
-                    for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
+                    for ((Z1 = K6_supporter_First):Z1:(Z1 = (Z1.K6_supporter_Next))) {
                         for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
                             if ((call_U1974)(rr,RELS_TEST,Z1,Z3)) {
                                 LIST_OF_TY_InsertItem(X, Z3, 0, 0, 1);
@@ -58066,14 +57972,14 @@ Global max_z_object;
 [ call_U1975 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
-            if ((X == WearerOf(Y))) {
+            if ((X == PartOf(Y))) {
                 rtrue;
             }
             rfalse;
             ;
         RELS_LOOKUP_ANY:
             if ((((Y == RLANY_GET_X)) || ((Y == RLANY_CAN_GET_X)))) {
-                for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
+                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
                     if ((call_U1975)(rr,RELS_TEST,Z1,X)) {
                         if ((Y == RLANY_CAN_GET_X)) {
                             rtrue;
@@ -58114,7 +58020,7 @@ Global max_z_object;
             ;
         RELS_LOOKUP_ALL_X:
             LIST_OF_TY_SetLength(Y, 0);
-            for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
+            for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
                 if ((call_U1975)(rr,RELS_TEST,Z1,X)) {
                     LIST_OF_TY_InsertItem(Y, Z1);
                 }
@@ -58133,7 +58039,7 @@ Global max_z_object;
         RELS_LIST:
             LIST_OF_TY_SetLength(X, 0);
             if ((Y == RLIST_ALL_X)) {
-                for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
+                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
                     for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
                         if ((call_U1975)(rr,RELS_TEST,Z1,Z3)) {
                             LIST_OF_TY_InsertItem(X, Z1, 0, 0, 1);
@@ -58142,7 +58048,7 @@ Global max_z_object;
                 }
             } else {
                 if ((Y == RLIST_ALL_Y)) {
-                    for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
+                    for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
                         for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
                             if ((call_U1975)(rr,RELS_TEST,Z1,Z3)) {
                                 LIST_OF_TY_InsertItem(X, Z3, 0, 0, 1);
@@ -58154,7 +58060,7 @@ Global max_z_object;
             return X;
             ;
         RELS_ASSERT_TRUE:
-            WearObject(Y, X);
+            MakePart(Y, X);
             rtrue;
             ;
         RELS_ASSERT_FALSE:
@@ -58166,14 +58072,14 @@ Global max_z_object;
 [ call_U1976 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
-            if (TestVisibility(X, Y)) {
+            if (IndirectlyContains(X, Y)) {
                 rtrue;
             }
             rfalse;
             ;
         RELS_LOOKUP_ANY:
             if ((((Y == RLANY_GET_X)) || ((Y == RLANY_CAN_GET_X)))) {
-                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
                     if ((call_U1976)(rr,RELS_TEST,Z1,X)) {
                         if ((Y == RLANY_CAN_GET_X)) {
                             rtrue;
@@ -58192,7 +58098,7 @@ Global max_z_object;
                 }
                 return DefaultValueOfKOV(OBJECT_TY);
             } else {
-                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
                     if ((call_U1976)(rr,RELS_TEST,X,Z1)) {
                         if ((Y == RLANY_CAN_GET_X)) {
                             rtrue;
@@ -58214,7 +58120,7 @@ Global max_z_object;
             ;
         RELS_LOOKUP_ALL_X:
             LIST_OF_TY_SetLength(Y, 0);
-            for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+            objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
                 if ((call_U1976)(rr,RELS_TEST,Z1,X)) {
                     LIST_OF_TY_InsertItem(Y, Z1);
                 }
@@ -58223,7 +58129,7 @@ Global max_z_object;
             ;
         RELS_LOOKUP_ALL_Y:
             LIST_OF_TY_SetLength(Y, 0);
-            for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+            objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
                 if ((call_U1976)(rr,RELS_TEST,X,Z1)) {
                     LIST_OF_TY_InsertItem(Y, Z1);
                 }
@@ -58233,8 +58139,8 @@ Global max_z_object;
         RELS_LIST:
             LIST_OF_TY_SetLength(X, 0);
             if ((Y == RLIST_ALL_X)) {
-                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
-                    for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
+                objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
+                    objectloop (Z3 ofclass Object && (Z3 ofclass Object)) {
                         if ((call_U1976)(rr,RELS_TEST,Z1,Z3)) {
                             LIST_OF_TY_InsertItem(X, Z1, 0, 0, 1);
                         }
@@ -58242,8 +58148,8 @@ Global max_z_object;
                 }
             } else {
                 if ((Y == RLIST_ALL_Y)) {
-                    for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
-                        for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
+                    objectloop (Z1 ofclass Object && (Z1 ofclass Object)) {
+                        objectloop (Z3 ofclass Object && (Z3 ofclass Object)) {
                             if ((call_U1976)(rr,RELS_TEST,Z1,Z3)) {
                                 LIST_OF_TY_InsertItem(X, Z3, 0, 0, 1);
                             }
@@ -58259,14 +58165,14 @@ Global max_z_object;
 [ call_U1977 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
-            if (TestTouchability(X, Y)) {
+            if ((X == CarrierOf(Y))) {
                 rtrue;
             }
             rfalse;
             ;
         RELS_LOOKUP_ANY:
             if ((((Y == RLANY_GET_X)) || ((Y == RLANY_CAN_GET_X)))) {
-                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
                     if ((call_U1977)(rr,RELS_TEST,Z1,X)) {
                         if ((Y == RLANY_CAN_GET_X)) {
                             rtrue;
@@ -58307,7 +58213,7 @@ Global max_z_object;
             ;
         RELS_LOOKUP_ALL_X:
             LIST_OF_TY_SetLength(Y, 0);
-            for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+            for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
                 if ((call_U1977)(rr,RELS_TEST,Z1,X)) {
                     LIST_OF_TY_InsertItem(Y, Z1);
                 }
@@ -58326,7 +58232,7 @@ Global max_z_object;
         RELS_LIST:
             LIST_OF_TY_SetLength(X, 0);
             if ((Y == RLIST_ALL_X)) {
-                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
                     for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
                         if ((call_U1977)(rr,RELS_TEST,Z1,Z3)) {
                             LIST_OF_TY_InsertItem(X, Z1, 0, 0, 1);
@@ -58335,7 +58241,7 @@ Global max_z_object;
                 }
             } else {
                 if ((Y == RLIST_ALL_Y)) {
-                    for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                    for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
                         for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
                             if ((call_U1977)(rr,RELS_TEST,Z1,Z3)) {
                                 LIST_OF_TY_InsertItem(X, Z3, 0, 0, 1);
@@ -58346,20 +58252,27 @@ Global max_z_object;
             }
             return X;
             ;
+        RELS_ASSERT_TRUE:
+            MoveObject(Y, X);
+            rtrue;
+            ;
+        RELS_ASSERT_FALSE:
+            rfalse;
+            ;
     }
     rfalse;
 ];
 [ call_U1978 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
-            if (TestConcealment(X, Y)) {
+            if ((X == HolderOf(Y))) {
                 rtrue;
             }
             rfalse;
             ;
         RELS_LOOKUP_ANY:
             if ((((Y == RLANY_GET_X)) || ((Y == RLANY_CAN_GET_X)))) {
-                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
                     if ((call_U1978)(rr,RELS_TEST,Z1,X)) {
                         if ((Y == RLANY_CAN_GET_X)) {
                             rtrue;
@@ -58400,7 +58313,7 @@ Global max_z_object;
             ;
         RELS_LOOKUP_ALL_X:
             LIST_OF_TY_SetLength(Y, 0);
-            for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+            for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
                 if ((call_U1978)(rr,RELS_TEST,Z1,X)) {
                     LIST_OF_TY_InsertItem(Y, Z1);
                 }
@@ -58419,7 +58332,7 @@ Global max_z_object;
         RELS_LIST:
             LIST_OF_TY_SetLength(X, 0);
             if ((Y == RLIST_ALL_X)) {
-                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
                     for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
                         if ((call_U1978)(rr,RELS_TEST,Z1,Z3)) {
                             LIST_OF_TY_InsertItem(X, Z1, 0, 0, 1);
@@ -58428,9 +58341,209 @@ Global max_z_object;
                 }
             } else {
                 if ((Y == RLIST_ALL_Y)) {
-                    for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                    for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
                         for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
                             if ((call_U1978)(rr,RELS_TEST,Z1,Z3)) {
+                                LIST_OF_TY_InsertItem(X, Z3, 0, 0, 1);
+                            }
+                        }
+                    }
+                }
+            }
+            return X;
+            ;
+        RELS_ASSERT_TRUE:
+            MoveObject(Y, X);
+            rtrue;
+            ;
+        RELS_ASSERT_FALSE:
+            rfalse;
+            ;
+    }
+    rfalse;
+];
+[ call_U1979 rr task X Y Z1 Z2 Z3 Z4;
+    switch (task) {
+        RELS_TEST:
+            if ((X == WearerOf(Y))) {
+                rtrue;
+            }
+            rfalse;
+            ;
+        RELS_LOOKUP_ANY:
+            if ((((Y == RLANY_GET_X)) || ((Y == RLANY_CAN_GET_X)))) {
+                for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
+                    if ((call_U1979)(rr,RELS_TEST,Z1,X)) {
+                        if ((Y == RLANY_CAN_GET_X)) {
+                            rtrue;
+                        }
+                        if ((Y == RLANY_CAN_GET_Y)) {
+                            rtrue;
+                        }
+                        return Z1;
+                    }
+                }
+                if ((Y == RLANY_CAN_GET_X)) {
+                    rfalse;
+                }
+                if ((Y == RLANY_CAN_GET_Y)) {
+                    rfalse;
+                }
+                return DefaultValueOfKOV(OBJECT_TY);
+            } else {
+                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                    if ((call_U1979)(rr,RELS_TEST,X,Z1)) {
+                        if ((Y == RLANY_CAN_GET_X)) {
+                            rtrue;
+                        }
+                        if ((Y == RLANY_CAN_GET_Y)) {
+                            rtrue;
+                        }
+                        return Z1;
+                    }
+                }
+                if ((Y == RLANY_CAN_GET_X)) {
+                    rfalse;
+                }
+                if ((Y == RLANY_CAN_GET_Y)) {
+                    rfalse;
+                }
+                return DefaultValueOfKOV(OBJECT_TY);
+            }
+            ;
+        RELS_LOOKUP_ALL_X:
+            LIST_OF_TY_SetLength(Y, 0);
+            for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
+                if ((call_U1979)(rr,RELS_TEST,Z1,X)) {
+                    LIST_OF_TY_InsertItem(Y, Z1);
+                }
+            }
+            return Y;
+            ;
+        RELS_LOOKUP_ALL_Y:
+            LIST_OF_TY_SetLength(Y, 0);
+            for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                if ((call_U1979)(rr,RELS_TEST,X,Z1)) {
+                    LIST_OF_TY_InsertItem(Y, Z1);
+                }
+            }
+            return Y;
+            ;
+        RELS_LIST:
+            LIST_OF_TY_SetLength(X, 0);
+            if ((Y == RLIST_ALL_X)) {
+                for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
+                    for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
+                        if ((call_U1979)(rr,RELS_TEST,Z1,Z3)) {
+                            LIST_OF_TY_InsertItem(X, Z1, 0, 0, 1);
+                        }
+                    }
+                }
+            } else {
+                if ((Y == RLIST_ALL_Y)) {
+                    for ((Z1 = K8_person_First):Z1:(Z1 = (Z1.K8_person_Next))) {
+                        for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
+                            if ((call_U1979)(rr,RELS_TEST,Z1,Z3)) {
+                                LIST_OF_TY_InsertItem(X, Z3, 0, 0, 1);
+                            }
+                        }
+                    }
+                }
+            }
+            return X;
+            ;
+        RELS_ASSERT_TRUE:
+            WearObject(Y, X);
+            rtrue;
+            ;
+        RELS_ASSERT_FALSE:
+            rfalse;
+            ;
+    }
+    rfalse;
+];
+[ call_U1980 rr task X Y Z1 Z2 Z3 Z4;
+    switch (task) {
+        RELS_TEST:
+            if (TestVisibility(X, Y)) {
+                rtrue;
+            }
+            rfalse;
+            ;
+        RELS_LOOKUP_ANY:
+            if ((((Y == RLANY_GET_X)) || ((Y == RLANY_CAN_GET_X)))) {
+                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                    if ((call_U1980)(rr,RELS_TEST,Z1,X)) {
+                        if ((Y == RLANY_CAN_GET_X)) {
+                            rtrue;
+                        }
+                        if ((Y == RLANY_CAN_GET_Y)) {
+                            rtrue;
+                        }
+                        return Z1;
+                    }
+                }
+                if ((Y == RLANY_CAN_GET_X)) {
+                    rfalse;
+                }
+                if ((Y == RLANY_CAN_GET_Y)) {
+                    rfalse;
+                }
+                return DefaultValueOfKOV(OBJECT_TY);
+            } else {
+                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                    if ((call_U1980)(rr,RELS_TEST,X,Z1)) {
+                        if ((Y == RLANY_CAN_GET_X)) {
+                            rtrue;
+                        }
+                        if ((Y == RLANY_CAN_GET_Y)) {
+                            rtrue;
+                        }
+                        return Z1;
+                    }
+                }
+                if ((Y == RLANY_CAN_GET_X)) {
+                    rfalse;
+                }
+                if ((Y == RLANY_CAN_GET_Y)) {
+                    rfalse;
+                }
+                return DefaultValueOfKOV(OBJECT_TY);
+            }
+            ;
+        RELS_LOOKUP_ALL_X:
+            LIST_OF_TY_SetLength(Y, 0);
+            for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                if ((call_U1980)(rr,RELS_TEST,Z1,X)) {
+                    LIST_OF_TY_InsertItem(Y, Z1);
+                }
+            }
+            return Y;
+            ;
+        RELS_LOOKUP_ALL_Y:
+            LIST_OF_TY_SetLength(Y, 0);
+            for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                if ((call_U1980)(rr,RELS_TEST,X,Z1)) {
+                    LIST_OF_TY_InsertItem(Y, Z1);
+                }
+            }
+            return Y;
+            ;
+        RELS_LIST:
+            LIST_OF_TY_SetLength(X, 0);
+            if ((Y == RLIST_ALL_X)) {
+                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                    for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
+                        if ((call_U1980)(rr,RELS_TEST,Z1,Z3)) {
+                            LIST_OF_TY_InsertItem(X, Z1, 0, 0, 1);
+                        }
+                    }
+                }
+            } else {
+                if ((Y == RLIST_ALL_Y)) {
+                    for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                        for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
+                            if ((call_U1980)(rr,RELS_TEST,Z1,Z3)) {
                                 LIST_OF_TY_InsertItem(X, Z3, 0, 0, 1);
                             }
                         }
@@ -58442,7 +58555,193 @@ Global max_z_object;
     }
     rfalse;
 ];
-[ call_U1979 rr task X Y Z1 Z2 Z3 Z4;
+[ call_U1981 rr task X Y Z1 Z2 Z3 Z4;
+    switch (task) {
+        RELS_TEST:
+            if (TestTouchability(X, Y)) {
+                rtrue;
+            }
+            rfalse;
+            ;
+        RELS_LOOKUP_ANY:
+            if ((((Y == RLANY_GET_X)) || ((Y == RLANY_CAN_GET_X)))) {
+                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                    if ((call_U1981)(rr,RELS_TEST,Z1,X)) {
+                        if ((Y == RLANY_CAN_GET_X)) {
+                            rtrue;
+                        }
+                        if ((Y == RLANY_CAN_GET_Y)) {
+                            rtrue;
+                        }
+                        return Z1;
+                    }
+                }
+                if ((Y == RLANY_CAN_GET_X)) {
+                    rfalse;
+                }
+                if ((Y == RLANY_CAN_GET_Y)) {
+                    rfalse;
+                }
+                return DefaultValueOfKOV(OBJECT_TY);
+            } else {
+                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                    if ((call_U1981)(rr,RELS_TEST,X,Z1)) {
+                        if ((Y == RLANY_CAN_GET_X)) {
+                            rtrue;
+                        }
+                        if ((Y == RLANY_CAN_GET_Y)) {
+                            rtrue;
+                        }
+                        return Z1;
+                    }
+                }
+                if ((Y == RLANY_CAN_GET_X)) {
+                    rfalse;
+                }
+                if ((Y == RLANY_CAN_GET_Y)) {
+                    rfalse;
+                }
+                return DefaultValueOfKOV(OBJECT_TY);
+            }
+            ;
+        RELS_LOOKUP_ALL_X:
+            LIST_OF_TY_SetLength(Y, 0);
+            for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                if ((call_U1981)(rr,RELS_TEST,Z1,X)) {
+                    LIST_OF_TY_InsertItem(Y, Z1);
+                }
+            }
+            return Y;
+            ;
+        RELS_LOOKUP_ALL_Y:
+            LIST_OF_TY_SetLength(Y, 0);
+            for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                if ((call_U1981)(rr,RELS_TEST,X,Z1)) {
+                    LIST_OF_TY_InsertItem(Y, Z1);
+                }
+            }
+            return Y;
+            ;
+        RELS_LIST:
+            LIST_OF_TY_SetLength(X, 0);
+            if ((Y == RLIST_ALL_X)) {
+                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                    for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
+                        if ((call_U1981)(rr,RELS_TEST,Z1,Z3)) {
+                            LIST_OF_TY_InsertItem(X, Z1, 0, 0, 1);
+                        }
+                    }
+                }
+            } else {
+                if ((Y == RLIST_ALL_Y)) {
+                    for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                        for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
+                            if ((call_U1981)(rr,RELS_TEST,Z1,Z3)) {
+                                LIST_OF_TY_InsertItem(X, Z3, 0, 0, 1);
+                            }
+                        }
+                    }
+                }
+            }
+            return X;
+            ;
+    }
+    rfalse;
+];
+[ call_U1982 rr task X Y Z1 Z2 Z3 Z4;
+    switch (task) {
+        RELS_TEST:
+            if (TestConcealment(X, Y)) {
+                rtrue;
+            }
+            rfalse;
+            ;
+        RELS_LOOKUP_ANY:
+            if ((((Y == RLANY_GET_X)) || ((Y == RLANY_CAN_GET_X)))) {
+                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                    if ((call_U1982)(rr,RELS_TEST,Z1,X)) {
+                        if ((Y == RLANY_CAN_GET_X)) {
+                            rtrue;
+                        }
+                        if ((Y == RLANY_CAN_GET_Y)) {
+                            rtrue;
+                        }
+                        return Z1;
+                    }
+                }
+                if ((Y == RLANY_CAN_GET_X)) {
+                    rfalse;
+                }
+                if ((Y == RLANY_CAN_GET_Y)) {
+                    rfalse;
+                }
+                return DefaultValueOfKOV(OBJECT_TY);
+            } else {
+                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                    if ((call_U1982)(rr,RELS_TEST,X,Z1)) {
+                        if ((Y == RLANY_CAN_GET_X)) {
+                            rtrue;
+                        }
+                        if ((Y == RLANY_CAN_GET_Y)) {
+                            rtrue;
+                        }
+                        return Z1;
+                    }
+                }
+                if ((Y == RLANY_CAN_GET_X)) {
+                    rfalse;
+                }
+                if ((Y == RLANY_CAN_GET_Y)) {
+                    rfalse;
+                }
+                return DefaultValueOfKOV(OBJECT_TY);
+            }
+            ;
+        RELS_LOOKUP_ALL_X:
+            LIST_OF_TY_SetLength(Y, 0);
+            for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                if ((call_U1982)(rr,RELS_TEST,Z1,X)) {
+                    LIST_OF_TY_InsertItem(Y, Z1);
+                }
+            }
+            return Y;
+            ;
+        RELS_LOOKUP_ALL_Y:
+            LIST_OF_TY_SetLength(Y, 0);
+            for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                if ((call_U1982)(rr,RELS_TEST,X,Z1)) {
+                    LIST_OF_TY_InsertItem(Y, Z1);
+                }
+            }
+            return Y;
+            ;
+        RELS_LIST:
+            LIST_OF_TY_SetLength(X, 0);
+            if ((Y == RLIST_ALL_X)) {
+                for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                    for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
+                        if ((call_U1982)(rr,RELS_TEST,Z1,Z3)) {
+                            LIST_OF_TY_InsertItem(X, Z1, 0, 0, 1);
+                        }
+                    }
+                }
+            } else {
+                if ((Y == RLIST_ALL_Y)) {
+                    for ((Z1 = K2_thing_First):Z1:(Z1 = (Z1.K2_thing_Next))) {
+                        for ((Z3 = K2_thing_First):Z3:(Z3 = (Z3.K2_thing_Next))) {
+                            if ((call_U1982)(rr,RELS_TEST,Z1,Z3)) {
+                                LIST_OF_TY_InsertItem(X, Z3, 0, 0, 1);
+                            }
+                        }
+                    }
+                }
+            }
+            return X;
+            ;
+    }
+    rfalse;
+];
+[ call_U1983 rr task X Y Z1 Z2 Z3 Z4;
     switch (task) {
         RELS_TEST:
             if (0) {
@@ -59497,7 +59796,7 @@ Global max_z_object;
     DetectPluralWord(original_wn, n);
     return n;
 ];
-[ parse_name20 original_wn group_wn try_from_wn n f w rv g ss spn pass pass1_n pass2_n;
+[ parse_name23 original_wn group_wn try_from_wn n f w rv g ss spn pass pass1_n pass2_n;
     #ifdef DEBUG;
         if ((parser_trace >= 3)) {
             print "Parse_name called^";
@@ -59581,7 +59880,7 @@ Global max_z_object;
     DetectPluralWord(original_wn, n);
     return n;
 ];
-[ parse_name23 original_wn group_wn try_from_wn n f w rv g ss spn pass pass1_n pass2_n;
+[ parse_name26 original_wn group_wn try_from_wn n f w rv g ss spn pass pass1_n pass2_n;
     #ifdef DEBUG;
         if ((parser_trace >= 3)) {
             print "Parse_name called^";
