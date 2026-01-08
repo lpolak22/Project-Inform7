@@ -1,5 +1,15 @@
 "Projekt iz kolegija Deklarativno programiranje" by Lucija Polak
 
+Use scoring.
+The maximum score is 100.
+
+To apply fall damage:
+	decrease the score by 10;
+	if the score < 0:
+		now the score is 0;
+	if the score is 0:
+		end the story saying "You succumb to your injuries. Pro tip: take care of yourself";
+
 The Starting Room is a room. "Your adventure begins here."
 
 Ivan is a man in the Starting Room.
@@ -34,10 +44,19 @@ The box empty is a truth state that varies. The box empty is true.
 The NorthDoor is a door.
 The NorthDoor is scenery. 
 NorthDoor is south of Forest and north of LightRoom.
-The NorthDoor is scenery.
 The description is "A newly appeared wooden door."
 
 Forest is a room. "You are in a dense forest. You hear a waterfall nearby and voices talking in the distance."
+
+ForestDoor is a door. ForestDoor is west of DarkChamber and east of Forest. 
+ForestDoor is locked.
+
+Knock count is a number that varies. Knock count is 0.
+Knock number is a number that varies.
+
+Understand "knock [ForestDoor]" or "knock on the door" as knocking it.
+
+Knocking it is an action applying to one thing.
 
 The player is a person.
 
@@ -45,6 +64,7 @@ Character-chosen is a truth state that varies.
 Character-chosen is false.
 
 When play begins:
+	 now the score is 30;
 	now the player is in the Starting Room;
 	say "Welcome to the game! It was created as a project for the Declarative Programming course. However, I hope you will still enjoy playing it.[paragraph break] ";
 	say "Choose your character:[line break]";
@@ -92,6 +112,9 @@ Golden apple is a scenery thing on the Golden stool."The golden apple has 'RUN' 
 Box is an open container in LightRoom. "An old, run-down wooden box sits on the floor."
 The block burning rule does nothing when the noun is not the torch.
 
+Before going somewhere when in darkness:
+	say "It's too dark, light the torch first!" instead.
+
 Check burning the torch:
 	if the torch is lit, say "The torch is already lit." instead;
 	now the torch is lit;
@@ -124,6 +147,7 @@ Before taking the golden apple when Trap revealed is true:
 
 Instead of taking a trap-triggering thing when the location is in the Trap Zone:
 	say "As you touch it, the floor beneath you collapses!";
+	apply fall damage;
 	if the noun is the golden apple:
 		say "The apple crumbles to dust!";
 		now Trap timer is 0;
@@ -140,12 +164,35 @@ Every turn when Trap timer > 0:
 		say "The floor creaks ominously...";
 	otherwise if Trap timer is 1:
 		say "The floor collapses! You fall through a hole!";
+		apply fall damage;
 		move the player to Pit Room;
 		if the player carries the torch:
 			try dropping the torch;
 			now the torch is off-stage;
 		now the trap door is locked.
 		
+Carry out knocking it:
+	increase knock count by 1;
+	if the noun is ForestDoor:
+		if ForestDoor is locked:
+			if knock count is 1:
+				let N be a random number from 1 to 5;
+				now knock number is N;
+				say "[italic type]Voice through the wind: Knock [knock number] times![roman type][line break]";
+			otherwise if knock count is knock number:
+				say "[italic type]CLICK! The door unlocks![roman type][line break]";
+				say "Huh, did I count right?";
+				now ForestDoor is unlocked;
+				now ForestDoor is open;
+				now knock count is 0;
+			otherwise:
+				say "Knocked [knock count] of [knock number] times.[line break]";
+		otherwise:
+			say "The door is already unlocked.[line break]".
+
+Instead of opening the ForestDoor when the ForestDoor is locked:
+	say "It's locked.".
+	
 After inserting something into the box:
 	if the noun is the gold coin:
 		if the box empty is true:
@@ -159,7 +206,4 @@ After inserting something into the box:
 Instead of going north in LightRoom when the box empty is true:
 	say "There is no way north.";
 
-Carry out going the NorthDoor:
-	now the NorthDoor is locked;
-	say "(The door locks behind you.)";
 
