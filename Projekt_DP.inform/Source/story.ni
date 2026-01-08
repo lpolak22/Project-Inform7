@@ -5,6 +5,12 @@ The Starting Room is a room. "Your adventure begins here."
 Ivan is a man in the Starting Room.
 Petar is a man in the Starting Room.
 
+A thing can be trap-triggering.
+
+The box is trap-triggering.
+The golden stool is trap-triggering.
+The golden apple is trap-triggering.
+
 The Trap Zone is a region.
 LightRoom is in the Trap Zone.
 DarkChamber is in the Trap Zone.
@@ -116,16 +122,17 @@ After examining the golden apple:
 Before taking the golden apple when Trap revealed is true:
 	say "[italic type]Ignoring the warning...[roman type]".
 
-Check taking the golden apple:
-	say "The apple crumbles to dust!";
-	now Trap timer is 0;
-	say "The floor collapses! You fall through a hole!";
+Instead of taking a trap-triggering thing when the location is in the Trap Zone:
+	say "As you touch it, the floor beneath you collapses!";
+	if the noun is the golden apple:
+		say "The apple crumbles to dust!";
+		now Trap timer is 0;
+	now the noun is off-stage;
 	move the player to Pit Room;
 	if the player carries the torch:
 		try dropping the torch;
 		now the torch is off-stage;
-	now the trap door is locked;
-	stop the action. 
+	now the trap door is locked.
 
 Every turn when Trap timer > 0:
 	decrease Trap timer by 1;
@@ -156,7 +163,3 @@ Carry out going the NorthDoor:
 	now the NorthDoor is locked;
 	say "(The door locks behind you.)";
 
-Instead of taking the box:
-	say "As you lift the box, the floor beneath you collapses!";
-	now the box is off-stage;
-	move the player to Pit Room;
