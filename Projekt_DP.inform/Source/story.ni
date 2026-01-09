@@ -3,6 +3,15 @@
 Use scoring.
 The maximum score is 100.
 
+Food-score is a number that varies.
+Max-food-score is a number that varies.
+
+Status-checking is an action applying to nothing.
+Understand "status" or "stats" as status-checking.
+
+Carry out status-checking:
+	say "Score: [score]/[maximum score]. Food: [Food-score]/[Max-food-score]. Time: [time of day].";
+
 To apply fall damage:
 	decrease the score by 10;
 	if the score < 0:
@@ -97,7 +106,8 @@ When Room Exit Scene ends:
 	now NorthDoor is locked;
 	say "You hear a soft click behind you.";
 	say "You seem to be hungry, find something to eat.";
-	decrease the score by 5;
+	decrease the Food-score by 5;
+	say "Food: [Food-score]/[Max-food-score].";
 	
 Room Exit Scene ends when the player is in Forest.
 
@@ -114,7 +124,9 @@ Character-chosen is a truth state that varies.
 Character-chosen is false.
 
 When play begins:
-	 now the score is 30;
+	now score is 30;
+	now Food-score is 10;
+	now Max-food-score is 10;
 	now the player is in the Starting Room;
 	say "Welcome to the game! It was created as a project for the Declarative Programming course. However, I hope you will still enjoy playing it.[paragraph break] ";
 	say "Choose your character:[line break]";
@@ -124,6 +136,13 @@ When play begins:
 
 Choosing is an action applying to one number.
 Understand "[number]" as choosing.
+
+Every turn when Character-chosen is true:
+	if the minutes part of the time of day is 0:
+		decrease Food-score by 1;
+	if Food-score <= 0:
+		now Food-score is 0;
+		end the story saying "You have starved to death. Next time, eat more";
 
 [Use undo prevention.]
 
@@ -164,7 +183,7 @@ The block burning rule does nothing when the noun is not the torch.
 
 Before going somewhere when in darkness:
 	say "It's too dark, light the torch first!" instead.
-
+	
 Check burning the torch:
 	if the torch is lit, say "The torch is already lit." instead;
 	now the torch is lit;
@@ -294,3 +313,41 @@ After inserting something into the box:
 		otherwise:
 			say "The box already contains the gold coin.";
 			
+Chapter 2 - A new friend
+
+A berry is a kind of thing. The description is "A small juicy fruit hanging from a bush."
+A berry can be ripe or unripe. A berry is usually ripe.
+A berry is edible.
+
+The BerryBush is a supporter in Forest. "A bush heavy with small berries. Some look ripe, some unripe."
+Understand "bush" or "berry bush" as the BerryBush.
+
+A bush-container is a container. It is part of the BerryBush. It is open and enterable.
+
+There are 100 berries.
+
+When play begins:
+	repeat with B running through berries:
+		move B to the bush-container;
+		now B is ripe;
+		if a random chance of 1 in 3 succeeds:
+			now B is unripe;
+
+Understand "eat [something]" as eating.
+
+Check eating:
+	if the noun is not a berry:
+		say "You can't eat that." instead;
+	if Food-score >= Max-food-score:
+		say "You are already full and cannot eat any more berries." instead.
+
+Carry out eating:
+	if the noun is ripe:
+		increase Food-score by 2;
+		say "You eat the ripe berry. You feel fuller (+2 food).";
+	otherwise:
+		decrease Food-score by 1;
+		if Food-score < 0:
+			now Food-score is 0;
+		say "You eat an unripe berry. Yuck! (-1 food).";
+	now the noun is off-stage;
