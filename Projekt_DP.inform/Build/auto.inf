@@ -366,7 +366,7 @@ Array Global_Vars --> 0
   (0) ! -->49 = V62_knock_count (V62_knock_count)
   (0) ! -->50 = V63_knock_number (V63_knock_number)
   (0) ! -->51 = V64_character_chosen (V64_character_chosen)
-  (bc_U261) ! -->52 = V65_lala_response (V65_lala_response)
+  (bc_U266) ! -->52 = V65_lala_response (V65_lala_response)
 ;
 Constant subterfuge_1 = absent;
 Constant subterfuge_2 = animate;
@@ -597,7 +597,7 @@ Constant relation_id_U15 = 118;
 Constant relation_id_U16 = 119;
 Constant kind_ref_U1 = 561;
 Constant OBJECT_TY = 23;
-Constant ICOUNT_OBJECT = 31;
+Constant ICOUNT_OBJECT = 32;
 Constant kind_ref_U2 = 561;
 Constant SCENE_TY = 24;
 Constant ICOUNT_SCENE = 2;
@@ -2466,7 +2466,7 @@ Constant anchor_U348 = 1105;
 Constant anchor_U349 = 1105;
 Constant kind_ref_U51 = 561;
 Constant WEAK_ID_52 = 3;
-Constant ICOUNT_ROOM = 6;
+Constant ICOUNT_ROOM = 7;
 Constant K1_room_First = I_starting_room_U1;
 Constant kind_ref_U52 = 561;
 Constant WEAK_ID_53 = 4;
@@ -2987,6 +2987,7 @@ Constant id_U176 = 561;
 Constant id_U177 = 561;
 Constant id_U178 = 561;
 Constant id_U179 = 561;
+Constant id_U180 = 561;
 Constant MEMORY_HEAP_SIZE = 32768;
 Constant BASICINFORMKIT = 1;
 Constant HDR_MAGICNUMBER = 0;
@@ -3822,55 +3823,58 @@ Constant I7_VERSION_NUMBER = "10.1.2";
 Constant I7_FULL_VERSION_NUMBER = "10.1.2";
 Serial "260109";
 Constant alphabetised_text_0 = ">";
-Constant alphabetised_text_1 = "A newly appeared wooden door.";
-Constant alphabetised_text_2 = "A small stool made of solid gold.";
-Constant alphabetised_text_3 = "An Interactive Fiction";
-Constant alphabetised_text_4 = "An old, run-down wooden box sits on the floor.";
-Constant alphabetised_text_5 = "As good-looking as ever.";
-Constant alphabetised_text_6 = "Fiction";
-Constant alphabetised_text_7 = "Forest";
-Constant alphabetised_text_8 = "ForestDoor";
-Constant alphabetised_text_9 = "Hidden chamber";
-Constant alphabetised_text_10 = "Ivan";
-Constant alphabetised_text_11 = "Lala";
-Constant alphabetised_text_12 = "Lucija Polak";
-Constant alphabetised_text_13 = "NorthDoor";
-Constant alphabetised_text_14 = "Petar";
-Constant alphabetised_text_15 = "Pit Room";
-Constant alphabetised_text_16 = "Projekt iz kolegija Deklarativno programiranje";
-Constant alphabetised_text_17 = "QUIT";
-Constant alphabetised_text_18 = "RESTART";
-Constant alphabetised_text_19 = "RESTORE a saved game";
-Constant alphabetised_text_20 = "Starting Room";
-Constant alphabetised_text_21 = "The Dark Room";
-Constant alphabetised_text_22 = "The Light Room";
-Constant alphabetised_text_23 = "The golden apple has ~RUN~ inscribed on it!";
-Constant alphabetised_text_24 = "The room is well-lit and empty except for an old wooden box on the floor.";
-Constant alphabetised_text_25 = "Trap Zone";
-Constant alphabetised_text_26 = "UNDO the last command";
-Constant alphabetised_text_27 = "You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.";
-Constant alphabetised_text_28 = "You fell into a dark pit. A trap door closed above you.";
-Constant alphabetised_text_29 = "You sense her presence, even though she is nowhere nearby.";
-Constant alphabetised_text_30 = "You succumb to your injuries. Pro tip: take care of yourself";
-Constant alphabetised_text_31 = "Your adventure begins here.";
-Constant alphabetised_text_32 = "Yourself";
+Constant alphabetised_text_1 = "A newly appeared frozen door.";
+Constant alphabetised_text_2 = "A newly appeared wooden door.";
+Constant alphabetised_text_3 = "A small stool made of solid gold.";
+Constant alphabetised_text_4 = "A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.";
+Constant alphabetised_text_5 = "An Interactive Fiction";
+Constant alphabetised_text_6 = "An old, run-down wooden box sits on the floor.";
+Constant alphabetised_text_7 = "As good-looking as ever.";
+Constant alphabetised_text_8 = "Fiction";
+Constant alphabetised_text_9 = "FlowerValley";
+Constant alphabetised_text_10 = "Forest";
+Constant alphabetised_text_11 = "ForestDoor";
+Constant alphabetised_text_12 = "Hidden chamber";
+Constant alphabetised_text_13 = "Ivan";
+Constant alphabetised_text_14 = "Lala";
+Constant alphabetised_text_15 = "Lucija Polak";
+Constant alphabetised_text_16 = "NorthDoor";
+Constant alphabetised_text_17 = "Petar";
+Constant alphabetised_text_18 = "Pit Room";
+Constant alphabetised_text_19 = "Projekt iz kolegija Deklarativno programiranje";
+Constant alphabetised_text_20 = "QUIT";
+Constant alphabetised_text_21 = "RESTART";
+Constant alphabetised_text_22 = "RESTORE a saved game";
+Constant alphabetised_text_23 = "Starting Room";
+Constant alphabetised_text_24 = "The Dark Room";
+Constant alphabetised_text_25 = "The Light Room";
+Constant alphabetised_text_26 = "The golden apple has ~RUN~ inscribed on it!";
+Constant alphabetised_text_27 = "The room is well-lit and empty except for an old wooden box on the floor.";
+Constant alphabetised_text_28 = "Trap Zone";
+Constant alphabetised_text_29 = "UNDO the last command";
+Constant alphabetised_text_30 = "You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.";
+Constant alphabetised_text_31 = "You fell into a dark pit. A trap door closed above you.";
+Constant alphabetised_text_32 = "You sense her presence, even though she is nowhere nearby.";
+Constant alphabetised_text_33 = "You succumb to your injuries. Pro tip: take care of yourself";
+Constant alphabetised_text_34 = "Your adventure begins here.";
+Constant alphabetised_text_35 = "Yourself";
 Constant outcome_allow_access_U1 = "allow access";
 Constant outcome_allow_startup_U1 = "allow startup";
-Constant alphabetised_text_33 = "animals";
-Constant alphabetised_text_34 = "backdrops";
-Constant alphabetised_text_35 = "box";
-Constant alphabetised_text_36 = "containers";
+Constant alphabetised_text_36 = "animals";
+Constant alphabetised_text_37 = "backdrops";
+Constant alphabetised_text_38 = "box";
+Constant alphabetised_text_39 = "containers";
 Constant outcome_deny_access_U1 = "deny access";
 Constant outcome_deny_startup_U1 = "deny startup";
-Constant alphabetised_text_37 = "devices";
-Constant alphabetised_text_38 = "directions";
-Constant alphabetised_text_39 = "doors";
-Constant alphabetised_text_40 = "down";
-Constant alphabetised_text_41 = "east";
-Constant alphabetised_text_42 = "gold coin";
-Constant alphabetised_text_43 = "golden apple";
-Constant alphabetised_text_44 = "golden stool";
-Constant alphabetised_text_45 = "inside";
+Constant alphabetised_text_40 = "devices";
+Constant alphabetised_text_41 = "directions";
+Constant alphabetised_text_42 = "doors";
+Constant alphabetised_text_43 = "down";
+Constant alphabetised_text_44 = "east";
+Constant alphabetised_text_45 = "gold coin";
+Constant alphabetised_text_46 = "golden apple";
+Constant alphabetised_text_47 = "golden stool";
+Constant alphabetised_text_48 = "inside";
 Constant outcome_it_does_U1 = "it does";
 Constant outcome_it_does_not_U1 = "it does not";
 Constant outcome_it_is_likely_U1 = "it is likely";
@@ -3878,75 +3882,75 @@ Constant outcome_it_is_possible_U1 = "it is possible";
 Constant outcome_it_is_unlikely_U1 = "it is unlikely";
 Constant outcome_it_is_very_likely_U1 = "it is very likely";
 Constant outcome_it_is_very_unlikely_U1 = "it is very unlikely";
-Constant alphabetised_text_46 = "men";
-Constant alphabetised_text_47 = "north";
-Constant alphabetised_text_48 = "northeast";
-Constant alphabetised_text_49 = "northwest";
-Constant alphabetised_text_50 = "outside";
-Constant alphabetised_text_51 = "people";
+Constant alphabetised_text_49 = "men";
+Constant alphabetised_text_50 = "north";
+Constant alphabetised_text_51 = "northeast";
+Constant alphabetised_text_52 = "northwest";
+Constant alphabetised_text_53 = "outside";
+Constant alphabetised_text_54 = "people";
 Constant outcome_persuasion_fails_U1 = "persuasion fails";
 Constant outcome_persuasion_succeeds_U1 = "persuasion succeeds";
-Constant alphabetised_text_52 = "player's holdalls";
-Constant alphabetised_text_53 = "regions";
-Constant alphabetised_text_54 = "see some suggestions for AMUSING things to do";
-Constant alphabetised_text_55 = "south";
-Constant alphabetised_text_56 = "southeast";
-Constant alphabetised_text_57 = "southwest";
-Constant alphabetised_text_58 = "supporters";
-Constant alphabetised_text_59 = "the";
+Constant alphabetised_text_55 = "player's holdalls";
+Constant alphabetised_text_56 = "regions";
+Constant alphabetised_text_57 = "see some suggestions for AMUSING things to do";
+Constant alphabetised_text_58 = "south";
+Constant alphabetised_text_59 = "southeast";
+Constant alphabetised_text_60 = "southwest";
+Constant alphabetised_text_61 = "supporters";
+Constant alphabetised_text_62 = "the";
 Constant outcome_there_is_insufficien_U1 = "there is insufficient light";
 Constant outcome_there_is_sufficient__U1 = "there is sufficient light";
-Constant alphabetised_text_60 = "torch";
-Constant alphabetised_text_61 = "trap door";
-Constant alphabetised_text_62 = "up";
-Constant alphabetised_text_63 = "vehicles";
-Constant alphabetised_text_64 = "west";
-Constant alphabetised_text_65 = "women";
-Constant alphabetised_text_66 = "yourself";
+Constant alphabetised_text_63 = "torch";
+Constant alphabetised_text_64 = "trap door";
+Constant alphabetised_text_65 = "up";
+Constant alphabetised_text_66 = "vehicles";
+Constant alphabetised_text_67 = "west";
+Constant alphabetised_text_68 = "women";
+Constant alphabetised_text_69 = "yourself";
 Constant V1_starting_the_virtual_mach = activity_id_U1;
 Constant V2_printing_the_name = activity_id_U2;
 Constant V3_printing_the_plural_name = activity_id_U3;
-Constant text_U1 = alphabetised_text_47;
-Constant text_U2 = alphabetised_text_59;
-Constant text_U3 = alphabetised_text_38;
-Constant text_U4 = alphabetised_text_48;
-Constant text_U5 = alphabetised_text_59;
-Constant text_U6 = alphabetised_text_38;
-Constant text_U7 = alphabetised_text_49;
-Constant text_U8 = alphabetised_text_59;
-Constant text_U9 = alphabetised_text_38;
-Constant text_U10 = alphabetised_text_55;
-Constant text_U11 = alphabetised_text_59;
-Constant text_U12 = alphabetised_text_38;
-Constant text_U13 = alphabetised_text_56;
-Constant text_U14 = alphabetised_text_59;
-Constant text_U15 = alphabetised_text_38;
-Constant text_U16 = alphabetised_text_57;
-Constant text_U17 = alphabetised_text_59;
-Constant text_U18 = alphabetised_text_38;
-Constant text_U19 = alphabetised_text_41;
-Constant text_U20 = alphabetised_text_59;
-Constant text_U21 = alphabetised_text_38;
-Constant text_U22 = alphabetised_text_64;
-Constant text_U23 = alphabetised_text_59;
-Constant text_U24 = alphabetised_text_38;
-Constant text_U25 = alphabetised_text_62;
-Constant text_U26 = alphabetised_text_59;
-Constant text_U27 = alphabetised_text_38;
-Constant text_U28 = alphabetised_text_40;
-Constant text_U29 = alphabetised_text_59;
-Constant text_U30 = alphabetised_text_38;
-Constant text_U31 = alphabetised_text_45;
-Constant text_U32 = alphabetised_text_59;
-Constant text_U33 = alphabetised_text_38;
-Constant text_U34 = alphabetised_text_50;
-Constant text_U35 = alphabetised_text_59;
-Constant text_U36 = alphabetised_text_38;
-Constant text_U37 = alphabetised_text_66;
-Constant text_U38 = alphabetised_text_5;
-Constant text_U39 = alphabetised_text_32;
-Constant text_U40 = alphabetised_text_66;
-Constant text_U41 = alphabetised_text_51;
+Constant text_U1 = alphabetised_text_50;
+Constant text_U2 = alphabetised_text_62;
+Constant text_U3 = alphabetised_text_41;
+Constant text_U4 = alphabetised_text_51;
+Constant text_U5 = alphabetised_text_62;
+Constant text_U6 = alphabetised_text_41;
+Constant text_U7 = alphabetised_text_52;
+Constant text_U8 = alphabetised_text_62;
+Constant text_U9 = alphabetised_text_41;
+Constant text_U10 = alphabetised_text_58;
+Constant text_U11 = alphabetised_text_62;
+Constant text_U12 = alphabetised_text_41;
+Constant text_U13 = alphabetised_text_59;
+Constant text_U14 = alphabetised_text_62;
+Constant text_U15 = alphabetised_text_41;
+Constant text_U16 = alphabetised_text_60;
+Constant text_U17 = alphabetised_text_62;
+Constant text_U18 = alphabetised_text_41;
+Constant text_U19 = alphabetised_text_44;
+Constant text_U20 = alphabetised_text_62;
+Constant text_U21 = alphabetised_text_41;
+Constant text_U22 = alphabetised_text_67;
+Constant text_U23 = alphabetised_text_62;
+Constant text_U24 = alphabetised_text_41;
+Constant text_U25 = alphabetised_text_65;
+Constant text_U26 = alphabetised_text_62;
+Constant text_U27 = alphabetised_text_41;
+Constant text_U28 = alphabetised_text_43;
+Constant text_U29 = alphabetised_text_62;
+Constant text_U30 = alphabetised_text_41;
+Constant text_U31 = alphabetised_text_48;
+Constant text_U32 = alphabetised_text_62;
+Constant text_U33 = alphabetised_text_41;
+Constant text_U34 = alphabetised_text_53;
+Constant text_U35 = alphabetised_text_62;
+Constant text_U36 = alphabetised_text_41;
+Constant text_U37 = alphabetised_text_69;
+Constant text_U38 = alphabetised_text_7;
+Constant text_U39 = alphabetised_text_35;
+Constant text_U40 = alphabetised_text_69;
+Constant text_U41 = alphabetised_text_54;
 Constant RBNO0_OUTCOME_U1 = outcome_it_is_very_unlikely_U1;
 Constant RBNO4_OUTCOME_U1 = outcome_it_is_very_likely_U1;
 Constant RBNO3_OUTCOME_U1 = outcome_it_is_likely_U1;
@@ -3983,84 +3987,87 @@ Constant V31_handling_the_final_questi = activity_id_U31;
 Constant V32_printing_the_locale_descr = activity_id_U32;
 Constant V33_choosing_notable_locale_o = activity_id_U33;
 Constant V34_printing_a_locale_paragra = activity_id_U34;
-Constant text_U42 = alphabetised_text_38;
-Constant text_U43 = alphabetised_text_39;
-Constant text_U44 = alphabetised_text_36;
-Constant text_U45 = alphabetised_text_58;
+Constant text_U42 = alphabetised_text_41;
+Constant text_U43 = alphabetised_text_42;
+Constant text_U44 = alphabetised_text_39;
+Constant text_U45 = alphabetised_text_61;
 Constant K7_backdrop_First = nothing;
-Constant text_U46 = alphabetised_text_34;
-Constant text_U47 = alphabetised_text_51;
-Constant text_U48 = alphabetised_text_53;
-Constant text_U49 = alphabetised_text_46;
-Constant text_U50 = alphabetised_text_65;
+Constant text_U46 = alphabetised_text_37;
+Constant text_U47 = alphabetised_text_54;
+Constant text_U48 = alphabetised_text_56;
+Constant text_U49 = alphabetised_text_49;
+Constant text_U50 = alphabetised_text_68;
 Constant K12_animal_First = nothing;
-Constant text_U51 = alphabetised_text_33;
+Constant text_U51 = alphabetised_text_36;
 Constant K13_device_First = nothing;
-Constant text_U52 = alphabetised_text_37;
+Constant text_U52 = alphabetised_text_40;
 Constant K14_vehicle_First = nothing;
-Constant text_U53 = alphabetised_text_63;
+Constant text_U53 = alphabetised_text_66;
 Constant K15_player_s_holdall_First = nothing;
-Constant text_U54 = alphabetised_text_52;
+Constant text_U54 = alphabetised_text_55;
 Constant text_U55 = alphabetised_text_0;
-Constant text_U56 = alphabetised_text_12;
-Constant text_U57 = alphabetised_text_3;
-Constant text_U58 = alphabetised_text_6;
+Constant text_U56 = alphabetised_text_15;
+Constant text_U57 = alphabetised_text_5;
+Constant text_U58 = alphabetised_text_8;
 Constant column_identity_U1 = table_column_id_U1;
-Constant text_U59 = alphabetised_text_18;
-Constant text_U60 = alphabetised_text_19;
-Constant text_U61 = alphabetised_text_54;
-Constant text_U62 = alphabetised_text_17;
-Constant text_U63 = alphabetised_text_26;
+Constant text_U59 = alphabetised_text_21;
+Constant text_U60 = alphabetised_text_22;
+Constant text_U61 = alphabetised_text_57;
+Constant text_U62 = alphabetised_text_20;
+Constant text_U63 = alphabetised_text_29;
 Constant column_identity_U2 = table_column_id_U2;
 Constant column_identity_U3 = table_column_id_U3;
 Constant column_identity_U4 = table_column_id_U4;
 Constant column_identity_U5 = table_column_id_U5;
 Constant column_identity_U6 = table_column_id_U6;
 Constant column_identity_U7 = table_column_id_U7;
-Constant text_U64 = alphabetised_text_20;
-Constant text_U65 = alphabetised_text_31;
-Constant text_U66 = alphabetised_text_10;
-Constant text_U67 = alphabetised_text_46;
-Constant text_U68 = alphabetised_text_14;
-Constant text_U69 = alphabetised_text_46;
-Constant text_U70 = alphabetised_text_9;
-Constant text_U71 = alphabetised_text_11;
-Constant text_U72 = alphabetised_text_29;
-Constant text_U73 = alphabetised_text_65;
-Constant text_U74 = alphabetised_text_35;
-Constant text_U75 = alphabetised_text_4;
-Constant text_U76 = alphabetised_text_36;
-Constant text_U77 = alphabetised_text_44;
-Constant text_U78 = alphabetised_text_2;
-Constant text_U79 = alphabetised_text_58;
-Constant text_U80 = alphabetised_text_43;
-Constant text_U81 = alphabetised_text_23;
-Constant text_U82 = alphabetised_text_25;
-Constant text_U83 = alphabetised_text_53;
-Constant text_U84 = alphabetised_text_22;
-Constant text_U85 = alphabetised_text_24;
-Constant text_U86 = alphabetised_text_21;
-Constant text_U87 = alphabetised_text_60;
-Constant text_U88 = alphabetised_text_42;
-Constant text_U89 = alphabetised_text_15;
-Constant text_U90 = alphabetised_text_28;
-Constant text_U91 = alphabetised_text_61;
-Constant text_U92 = alphabetised_text_39;
-Constant text_U93 = alphabetised_text_13;
+Constant text_U64 = alphabetised_text_23;
+Constant text_U65 = alphabetised_text_34;
+Constant text_U66 = alphabetised_text_13;
+Constant text_U67 = alphabetised_text_49;
+Constant text_U68 = alphabetised_text_17;
+Constant text_U69 = alphabetised_text_49;
+Constant text_U70 = alphabetised_text_12;
+Constant text_U71 = alphabetised_text_14;
+Constant text_U72 = alphabetised_text_32;
+Constant text_U73 = alphabetised_text_68;
+Constant text_U74 = alphabetised_text_38;
+Constant text_U75 = alphabetised_text_6;
+Constant text_U76 = alphabetised_text_39;
+Constant text_U77 = alphabetised_text_47;
+Constant text_U78 = alphabetised_text_3;
+Constant text_U79 = alphabetised_text_61;
+Constant text_U80 = alphabetised_text_46;
+Constant text_U81 = alphabetised_text_26;
+Constant text_U82 = alphabetised_text_28;
+Constant text_U83 = alphabetised_text_56;
+Constant text_U84 = alphabetised_text_25;
+Constant text_U85 = alphabetised_text_27;
+Constant text_U86 = alphabetised_text_24;
+Constant text_U87 = alphabetised_text_63;
+Constant text_U88 = alphabetised_text_45;
+Constant text_U89 = alphabetised_text_18;
+Constant text_U90 = alphabetised_text_31;
+Constant text_U91 = alphabetised_text_64;
+Constant text_U92 = alphabetised_text_42;
+Constant text_U93 = alphabetised_text_16;
 Constant text_U94 = alphabetised_text_1;
-Constant text_U95 = alphabetised_text_39;
-Constant text_U96 = alphabetised_text_7;
-Constant text_U97 = alphabetised_text_27;
-Constant text_U98 = alphabetised_text_8;
-Constant text_U99 = alphabetised_text_39;
-Constant text_U100 = alphabetised_text_30;
+Constant text_U95 = alphabetised_text_42;
+Constant text_U96 = alphabetised_text_10;
+Constant text_U97 = alphabetised_text_30;
+Constant text_U98 = alphabetised_text_11;
+Constant text_U99 = alphabetised_text_2;
+Constant text_U100 = alphabetised_text_42;
+Constant text_U101 = alphabetised_text_9;
+Constant text_U102 = alphabetised_text_4;
+Constant text_U103 = alphabetised_text_33;
 Constant abilities_U3 = (RELS_TEST);
 Constant abilities_U4 = (RELS_TEST);
 Constant abilities_U6 = (RELS_TEST);
 Constant abilities_U7 = (RELS_TEST);
-Constant text_U101 = alphabetised_text_16;
-Constant text_U102 = alphabetised_text_3;
-Constant text_U103 = alphabetised_text_12;
+Constant text_U104 = alphabetised_text_19;
+Constant text_U105 = alphabetised_text_5;
+Constant text_U106 = alphabetised_text_15;
 Constant GPR_REPARSE = REPARSE_CODE;
 Constant TABLE_NOVALUE = IMPROBABLE_VALUE;
 Constant RC_INFINITY = MAX_POSITIVE_NUMBER;
@@ -4170,9 +4177,9 @@ Constant Computed_Constant_Value_23_U1 = (BLK_DATA_OFFSET + Computed_Constant_Va
 Constant VALENCY_MASK = Computed_Constant_Value_60_U1;
 Constant Computed_Constant_Value_39_U1 = (Computed_Constant_Value_38_U1 * TEXT_TY_NoBuffers);
 Constant BLK_DATA_MULTI_OFFSET = Computed_Constant_Value_23_U1;
-Constant Story = bc_U263;
-Constant Headline = bc_U264;
-Constant Story_Author = bc_U265;
+Constant Story = bc_U268;
+Constant Headline = bc_U269;
+Constant Story_Author = bc_U270;
 Constant Computed_Constant_Value_24_U1 = (MEMORY_HEAP_SIZE + BLK_DATA_MULTI_OFFSET);
 Constant abilities_U5 = (RELS_TEST + RELS_LOOKUP_ANY + RELS_LOOKUP_ALL_X + RELS_LOOKUP_ALL_X + RELS_LIST + RELS_ASSERT_TRUE + RELS_ASSERT_FALSE + RELS_LOOKUP_ANY);
 Constant abilities_U8 = (RELS_TEST + RELS_LOOKUP_ANY + RELS_LOOKUP_ALL_X + RELS_LOOKUP_ALL_X + RELS_LIST + RELS_ASSERT_TRUE + RELS_ASSERT_FALSE + RELS_LOOKUP_ANY);
@@ -5425,14 +5432,19 @@ Array bc_U253 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
 Array inline_U28 --> [ I_darkchamber_U1; I_forest_U1; ];
 Array inline_U29 --> [ 0; 0; 0; 0; 0; 0; ];
 Array bc_U254 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U98; ];
-Array bc_U255 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array bc_U255 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U99; ];
 Array bc_U256 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array bc_U257 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U99; ];
+Array bc_U257 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U100; ];
 Array bc_U258 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
 Array bc_U259 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
 Array bc_U260 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array bc_U261 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
-Array bc_U262 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U100; ];
+Array bc_U261 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U101; ];
+Array bc_U262 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U102; ];
+Array bc_U263 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array bc_U264 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array bc_U265 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array bc_U266 --> [ CONSTANT_PACKED_TEXT_STORAGE; EMPTY_TEXT_PACKED; ];
+Array bc_U267 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U103; ];
 Array DK3_phrase_real_number____re --> [ PHRASE_TY; 2; REAL_NUMBER_TY; ];
 Array DK4_phrase_real_number____nu --> [ PHRASE_TY; 2; NUMBER_TY; ];
 Array DK5_relation_of_values --> [ RELATION_TY; 2; VALUE_TY; VALUE_TY; ];
@@ -5456,12 +5468,12 @@ Array Rel_Record15 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; N
 Array Rel_Record16 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "touchability relation"; abilities_U16; 0; DK8_relation_of_things; call_U2006; "can-touch"; ];
 Array Rel_Record17 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "concealment relation"; abilities_U17; 0; DK8_relation_of_things; call_U2007; "conceals"; ];
 Array Rel_Record18 --> [ 0; 101515264; RELATION_TY; MAX_POSITIVE_NUMBER; NULL; NULL; "never-holding relation"; abilities_U18; 0; DK5_relation_of_values; call_U2008; "is"; ];
-Array bc_U263 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U101; ];
-Array bc_U264 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U102; ];
-Array bc_U265 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U103; ];
+Array bc_U268 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U104; ];
+Array bc_U269 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U105; ];
+Array bc_U270 --> [ CONSTANT_PACKED_TEXT_STORAGE; text_U106; ];
 Array UUID_ARRAY -> [ 45; 'U'; 'U'; 'I'; 'D'; ':'; '/'; '/'; '9'; 'B'; 'B'; '1'; '6'; '2'; 'C'; '9'; '-'; '0'; '7'; '3'; '3'; '-'; '4'; 'B'; '6'; 'E'; '-'; 'A'; '9'; 'D'; 'E'; '-'; 'D'; 'C'; 'C'; '4'; '9'; 'D'; 'B'; 'B'; '2'; '7'; '8'; '2'; '/'; '/'; ];
 Array InitialSituation --> [ selfobj; 0; I_starting_room_U1; 540; 0; ];
-Array Map_Storage --> [ 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; I_northdoor_U1; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; I_trap_door_U1; 0; 0; 0; I_forestdoor_U1; 0; 0; 0; 0; I_trap_door_U1; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; I_northdoor_U1; 0; 0; I_forestdoor_U1; 0; 0; 0; 0; 0; ];
+Array Map_Storage --> [ 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; I_northdoor_U1; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; I_trap_door_U1; 0; 0; 0; I_forestdoor_U1; 0; 0; 0; 0; I_trap_door_U1; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; I_northdoor_U1; 0; 0; I_forestdoor_U1; I_flowervalley_U1; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; I_forest_U1; 0; 0; 0; 0; 0; ];
 Array name_array1 --> [ 'north'; 'directions//p'; 'n//'; ];
 Array name_array2 --> [ 'northeast'; 'directions//p'; 'ne'; ];
 Array name_array3 --> [ 'northwest'; 'directions//p'; 'nw'; ];
@@ -5492,6 +5504,7 @@ Array name_array27 --> [ 'trap'; 'door'; 'doors//p'; ];
 Array name_array28 --> [ 'northdoor'; 'doors//p'; ];
 Array name_array29 --> [ 'forest'; 'rooms//p'; ];
 Array name_array30 --> [ 'forestdoor'; 'doors//p'; ];
+Array name_array31 --> [ 'flowervalley'; 'rooms//p'; ];
 Array LocalParking --> [ 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; ];
 Array PowersOfTwo_TB --> [ 2048; 1024; 512; 256; 128; 64; 32; 16; 8; 4; 2; 1; ];
 Array IncreasingPowersOfTwo_TB --> [ 1; 2; 4; 8; 16; 32; 64; 128; 256; 512; 1024; 2048; 4096; 8192; 16384; 32768; ];
@@ -5535,7 +5548,7 @@ Array scene_endings --> 4; ! blank with extent 4
 Array scene_latest_ending --> 4; ! blank with extent 4
 Array multiple_object --> 100; ! blank with extent 100
 Array parser_results --> 16; ! blank with extent 16
-Array requisition_stack --> 93; ! blank with extent 93
+Array requisition_stack --> 96; ! blank with extent 96
 Array LWI_Storage --> [ 1; -1; Computed_Constant_Value_4_U2; ];
 Array Details_of_Specific_Action --> 5; ! blank with extent 5
 Array activities_stack --> 20; ! blank with extent 20
@@ -5545,7 +5558,7 @@ Array T_SL_Score_Moves --> [ CONSTANT_PACKED_TEXT_STORAGE; SL_Score_Moves; ];
 Array T_SL_Location --> [ CONSTANT_PACKED_TEXT_STORAGE; SL_Location; ];
 Array StorageForShortName buffer 250; ! blank with extent 250
 Array DoorRoutingViable -> 4; ! blank with extent 4
-Array FWMatrix --> 36; ! blank with extent 36
+Array FWMatrix --> 49; ! blank with extent 49
 Array test_stack --> 128; ! blank with extent 128
 Array TimesActionHasHappened --> 1; ! blank with extent 1
 Array TurnsActionHasBeenHappening --> 1; ! blank with extent 1
@@ -6250,15 +6263,15 @@ K1_room I_forest_U1    with short_name bc_U249
     has mark_as_room
     with KD_Count 1
     with IK1_Count 5
-    with K1_room_Next 0
+    with K1_room_Next I_flowervalley_U1
     with name 'forest' 'rooms//p'
     with plural bc_U251
     with article bc_U252
     with list_together bc_U253
 ;
 K4_door I_forestdoor_U1    with short_name bc_U254
+    with description bc_U255
     has proper
-    has scenery
     has lockable
     has locked
     with vector 0
@@ -6274,11 +6287,23 @@ K4_door I_forestdoor_U1    with short_name bc_U254
     with K4_door_Next 0
     with action_bitmap 0 0 0 0 0 0
     with name 'forestdoor' 'doors//p'
-    with description bc_U255
     with initial bc_U256
     with plural bc_U257
     with article bc_U258
     with list_together bc_U259
+;
+K1_room I_flowervalley_U1    with short_name bc_U261
+    with description bc_U262
+    with vector 0
+    with room_index -1
+    has mark_as_room
+    with KD_Count 1
+    with IK1_Count 6
+    with K1_room_Next 0
+    with name 'flowervalley' 'rooms//p'
+    with plural bc_U263
+    with article bc_U264
+    with list_together bc_U265
 ;
 #ifndef cap_short_name; Constant cap_short_name = 0; #endif;
 #ifndef before; Constant before = 0; #endif;
@@ -57574,6 +57599,11 @@ Global max_z_object;
     ParaContent();
     print "You hear a soft click behind you.";
     print "^";
+    (say__p = 1);
+    ParaContent();
+    print "You seem to be hungry, find something to eat.";
+    print "^";
+    (score = (score - 5));
     rfalse;
 ];
 [ call_U1969;
@@ -58177,7 +58207,7 @@ Global max_z_object;
         (score = 0);
     }
     if ((score == 0)) {
-        (deadflag = bc_U262);
+        (deadflag = bc_U267);
         BlkValueIncRefCountPrimitive(deadflag);
         (story_complete = 0);
     }

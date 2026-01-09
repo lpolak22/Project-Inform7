@@ -26,11 +26,14 @@
       <child nodeId="node-3"/>
       <child nodeId="node-10"/>
       <child nodeId="node-293"/>
+      <child nodeId="node-810"/>
+      <child nodeId="node-849"/>
       <child nodeId="node-11"/>
       <child nodeId="node-31"/>
       <child nodeId="node-63"/>
       <child nodeId="node-264"/>
       <child nodeId="node-69"/>
+      <child nodeId="node-825"/>
       <child nodeId="node-75"/>
       <child nodeId="node-139"/>
       <child nodeId="node-143"/>
@@ -146,6 +149,207 @@
   <item nodeId="node-297">
     <command xml:space="preserve">examine trap door</command>
     <result xml:space="preserve">You see nothing special about the trap door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-810">
+    <command xml:space="preserve">extinguish torch</command>
+    <result xml:space="preserve">The torch is already unlit.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-811"/>
+    </children>
+  </item>
+  <item nodeId="node-811">
+    <command xml:space="preserve">light torch</command>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-812"/>
+    </children>
+  </item>
+  <item nodeId="node-812">
+    <command xml:space="preserve">extinguish torch</command>
+    <result xml:space="preserve">You extinguish the torch. Darkness surrounds you again.&#x000A;&#x000A;It is now pitch dark in here!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-813"/>
+    </children>
+  </item>
+  <item nodeId="node-813">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">What do you want to knock?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-814"/>
+    </children>
+  </item>
+  <item nodeId="node-814">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">What do you want to knock?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-815"/>
+    </children>
+  </item>
+  <item nodeId="node-815">
+    <command xml:space="preserve">knock on the door</command>
+    <result xml:space="preserve">Voice through the wind: Knock 4 times!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-816"/>
+    </children>
+  </item>
+  <item nodeId="node-816">
+    <command xml:space="preserve">knock on the door</command>
+    <result xml:space="preserve">Knocked 2 of 4 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-817"/>
+    </children>
+  </item>
+  <item nodeId="node-817">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-818"/>
+    </children>
+  </item>
+  <item nodeId="node-818">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-819"/>
+    </children>
+  </item>
+  <item nodeId="node-819">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-820"/>
+    </children>
+  </item>
+  <item nodeId="node-820">
+    <command xml:space="preserve">knock on the door</command>
+    <result xml:space="preserve">Knocked 3 of 4 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-821"/>
+    </children>
+  </item>
+  <item nodeId="node-821">
+    <command xml:space="preserve">knock on the door</command>
+    <result xml:space="preserve">CLICK! The door unlocks!&#x000A;Huh, did I count right?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-822"/>
+    </children>
+  </item>
+  <item nodeId="node-822">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">It's too dark, light the torch first!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-823"/>
+    </children>
+  </item>
+  <item nodeId="node-823">
+    <command xml:space="preserve">light torch</command>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-824"/>
+    </children>
+  </item>
+  <item nodeId="node-824">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-849">
+    <command xml:space="preserve">forest</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-850"/>
+    </children>
+  </item>
+  <item nodeId="node-850">
+    <command xml:space="preserve">light torch</command>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-851"/>
+    </children>
+  </item>
+  <item nodeId="node-851">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">What do you want to knock?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-852"/>
+    </children>
+  </item>
+  <item nodeId="node-852">
+    <command xml:space="preserve">knock on the forestdoor</command>
+    <result xml:space="preserve">Voice through the wind: Knock 4 times!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-853"/>
+    </children>
+  </item>
+  <item nodeId="node-853">
+    <command xml:space="preserve">knock on the forestdoor</command>
+    <result xml:space="preserve">Knocked 2 of 4 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-854"/>
+    </children>
+  </item>
+  <item nodeId="node-854">
+    <command xml:space="preserve">knock on the forestdoor</command>
+    <result xml:space="preserve">Knocked 3 of 4 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-855"/>
+    </children>
+  </item>
+  <item nodeId="node-855">
+    <command xml:space="preserve">knock on the forestdoor</command>
+    <result xml:space="preserve">CLICK! The door unlocks!&#x000A;Huh, did I count right?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-856"/>
+    </children>
+  </item>
+  <item nodeId="node-856">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;&#x000A;[Your score has just gone down by five points.]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -935,9 +1139,69 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-825">
+    <command xml:space="preserve">light the torch</command>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-826"/>
+    </children>
+  </item>
+  <item nodeId="node-826">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">What do you want to knock?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-827"/>
+    </children>
+  </item>
+  <item nodeId="node-827">
+    <command xml:space="preserve">knock on the door</command>
+    <result xml:space="preserve">Voice through the wind: Knock 4 times!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-828"/>
+    </children>
+  </item>
+  <item nodeId="node-828">
+    <command xml:space="preserve">knock on the door</command>
+    <result xml:space="preserve">Knocked 2 of 4 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-829"/>
+    </children>
+  </item>
+  <item nodeId="node-829">
+    <command xml:space="preserve">knock on the door</command>
+    <result xml:space="preserve">Knocked 3 of 4 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-830"/>
+    </children>
+  </item>
+  <item nodeId="node-830">
+    <command xml:space="preserve">knock on the door</command>
+    <result xml:space="preserve">CLICK! The door unlocks!&#x000A;Huh, did I count right?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-831"/>
+    </children>
+  </item>
+  <item nodeId="node-831">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-75">
     <command xml:space="preserve">light torch</command>
-    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;You can see ForestDoor here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -947,6 +1211,7 @@
       <child nodeId="node-494"/>
       <child nodeId="node-100"/>
       <child nodeId="node-714"/>
+      <child nodeId="node-832"/>
       <child nodeId="node-116"/>
       <child nodeId="node-119"/>
       <child nodeId="node-124"/>
@@ -1668,11 +1933,12 @@
   </item>
   <item nodeId="node-714">
     <command xml:space="preserve">knock</command>
-    <result xml:space="preserve">What do you want to knock?&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">(ForestDoor)&#x000A;Voice through the wind: Knock 4 times!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-715"/>
+      <child nodeId="node-877"/>
     </children>
   </item>
   <item nodeId="node-715">
@@ -1843,6 +2109,142 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-877">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(ForestDoor)&#x000A;Knocked 2 of 4 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-878"/>
+      <child nodeId="node-884"/>
+    </children>
+  </item>
+  <item nodeId="node-878">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(ForestDoor)&#x000A;Knocked 3 of 4 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-879"/>
+    </children>
+  </item>
+  <item nodeId="node-879">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-880"/>
+    </children>
+  </item>
+  <item nodeId="node-880">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-881"/>
+    </children>
+  </item>
+  <item nodeId="node-881">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(ForestDoor)&#x000A;CLICK! The door unlocks!&#x000A;Huh, did I count right?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-882"/>
+    </children>
+  </item>
+  <item nodeId="node-882">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;You can see ForestDoor here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;&#x000A;[Your score has just gone down by five points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-883"/>
+    </children>
+  </item>
+  <item nodeId="node-883">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-884">
+    <command xml:space="preserve">knock ForestDoor</command>
+    <result xml:space="preserve">Knocked 3 of 4 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-885"/>
+    </children>
+  </item>
+  <item nodeId="node-885">
+    <command xml:space="preserve">knock ForestDoor</command>
+    <result xml:space="preserve">CLICK! The door unlocks!&#x000A;Huh, did I count right?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-886"/>
+    </children>
+  </item>
+  <item nodeId="node-886">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;You can see ForestDoor here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;&#x000A;[Your score has just gone down by five points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-832">
+    <command xml:space="preserve">knock on the door</command>
+    <result xml:space="preserve">Voice through the wind: Knock 4 times!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-833"/>
+    </children>
+  </item>
+  <item nodeId="node-833">
+    <command xml:space="preserve">knock on the door</command>
+    <result xml:space="preserve">Knocked 2 of 4 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-834"/>
+    </children>
+  </item>
+  <item nodeId="node-834">
+    <command xml:space="preserve">knock on the door</command>
+    <result xml:space="preserve">Knocked 3 of 4 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-835"/>
+    </children>
+  </item>
+  <item nodeId="node-835">
+    <command xml:space="preserve">knock on the door</command>
+    <result xml:space="preserve">CLICK! The door unlocks!&#x000A;Huh, did I count right?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-836"/>
+    </children>
+  </item>
+  <item nodeId="node-836">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-837"/>
+    </children>
+  </item>
+  <item nodeId="node-837">
+    <command xml:space="preserve">knock on the door</command>
+    <result xml:space="preserve">The door is already unlocked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-116">
     <command xml:space="preserve">light torch</command>
     <result xml:space="preserve">&gt;</result>
@@ -1973,8 +2375,105 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-838"/>
       <child nodeId="node-455"/>
     </children>
+  </item>
+  <item nodeId="node-838">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">Somewhere above you, you hear slow footsteps. Someone is walking. Unhurried.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-839"/>
+    </children>
+  </item>
+  <item nodeId="node-839">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">Somewhere above you, you hear slow footsteps. Someone is walking. Unhurried.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-840"/>
+    </children>
+  </item>
+  <item nodeId="node-840">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">Somewhere above you, you hear slow footsteps. Someone is walking. Unhurried.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-841"/>
+    </children>
+  </item>
+  <item nodeId="node-841">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">Somewhere above you, you hear slow footsteps. Someone is walking. Unhurried.&#x000A;&#x000A;*** LALA VISION ***&#x000A;&#x000A;You see through Lala's eyes in her hidden chamber... She giggles and gestures toward a door above the pit.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-842"/>
+    </children>
+  </item>
+  <item nodeId="node-842">
+    <command xml:space="preserve">help</command>
+    <result xml:space="preserve">What's happening? Am I disappearing?&#x000A;You hear voice through the wind: Knock on the door!&#x000A;You escaped Lala for now. Find a way out.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-843"/>
+    </children>
+  </item>
+  <item nodeId="node-843">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">What do you want to knock?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-844"/>
+    </children>
+  </item>
+  <item nodeId="node-844">
+    <command xml:space="preserve">knock ForestDoor</command>
+    <result xml:space="preserve">Voice through the wind: Knock 4 times!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-845"/>
+    </children>
+  </item>
+  <item nodeId="node-845">
+    <command xml:space="preserve">knock ForestDoor</command>
+    <result xml:space="preserve">Knocked 2 of 4 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-846"/>
+    </children>
+  </item>
+  <item nodeId="node-846">
+    <command xml:space="preserve">knock ForestDoor</command>
+    <result xml:space="preserve">Knocked 3 of 4 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-847"/>
+    </children>
+  </item>
+  <item nodeId="node-847">
+    <command xml:space="preserve">knock ForestDoor</command>
+    <result xml:space="preserve">CLICK! The door unlocks!&#x000A;Huh, did I count right?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-848"/>
+    </children>
+  </item>
+  <item nodeId="node-848">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;&#x000A;[Your score has just gone down by five points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-455">
     <command xml:space="preserve">look</command>
@@ -2075,6 +2574,249 @@
   <item nodeId="node-131">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-775"/>
+    </children>
+  </item>
+  <item nodeId="node-775">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-776"/>
+    </children>
+  </item>
+  <item nodeId="node-776">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">(first opening the trap door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-777"/>
+    </children>
+  </item>
+  <item nodeId="node-777">
+    <command xml:space="preserve">go up</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-778"/>
+    </children>
+  </item>
+  <item nodeId="node-778">
+    <command xml:space="preserve">score</command>
+    <result xml:space="preserve">You have so far scored 20 out of a possible 100, in 8 turns.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-779"/>
+    </children>
+  </item>
+  <item nodeId="node-779">
+    <command xml:space="preserve">score</command>
+    <result xml:space="preserve">You have so far scored 20 out of a possible 100, in 8 turns.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-780"/>
+    </children>
+  </item>
+  <item nodeId="node-780">
+    <command xml:space="preserve">score</command>
+    <result xml:space="preserve">You have so far scored 20 out of a possible 100, in 8 turns.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-781"/>
+    </children>
+  </item>
+  <item nodeId="node-781">
+    <command xml:space="preserve">score</command>
+    <result xml:space="preserve">You have so far scored 20 out of a possible 100, in 8 turns.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-782"/>
+    </children>
+  </item>
+  <item nodeId="node-782">
+    <command xml:space="preserve">score</command>
+    <result xml:space="preserve">You have so far scored 20 out of a possible 100, in 8 turns.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-783"/>
+    </children>
+  </item>
+  <item nodeId="node-783">
+    <command xml:space="preserve">score</command>
+    <result xml:space="preserve">You have so far scored 20 out of a possible 100, in 8 turns.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-784"/>
+    </children>
+  </item>
+  <item nodeId="node-784">
+    <command xml:space="preserve">score</command>
+    <result xml:space="preserve">You have so far scored 20 out of a possible 100, in 8 turns.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-785"/>
+    </children>
+  </item>
+  <item nodeId="node-785">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">Somewhere above you, you hear slow footsteps. Someone is walking. Unhurried.&#x000A;&#x000A;*** LALA VISION ***&#x000A;&#x000A;You see through Lala's eyes in her hidden chamber... She giggles and gestures toward a door above the pit.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-786"/>
+    </children>
+  </item>
+  <item nodeId="node-786">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">Lala whispers: "It's no use..."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-787"/>
+    </children>
+  </item>
+  <item nodeId="node-787">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">Lala giggles: "Maybe you should ask for help."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-788"/>
+    </children>
+  </item>
+  <item nodeId="node-788">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">Lala whispers: "It's no use..."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-789"/>
+    </children>
+  </item>
+  <item nodeId="node-789">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">Lala whispers: "It's no use..."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-790"/>
+    </children>
+  </item>
+  <item nodeId="node-790">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-791"/>
+    </children>
+  </item>
+  <item nodeId="node-791">
+    <command xml:space="preserve">help</command>
+    <result xml:space="preserve">What's happening? Am I disappearing?&#x000A;You hear voice through the wind: Knock on the door!&#x000A;You escaped Lala for now. Find a way out.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-792"/>
+    </children>
+  </item>
+  <item nodeId="node-792">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">What do you want to knock?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-793"/>
+    </children>
+  </item>
+  <item nodeId="node-793">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-794"/>
+    </children>
+  </item>
+  <item nodeId="node-794">
+    <command xml:space="preserve">knock on the door</command>
+    <result xml:space="preserve">Voice through the wind: Knock 2 times!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-795"/>
+    </children>
+  </item>
+  <item nodeId="node-795">
+    <command xml:space="preserve">knock on the door</command>
+    <result xml:space="preserve">CLICK! The door unlocks!&#x000A;Huh, did I count right?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-796"/>
+    </children>
+  </item>
+  <item nodeId="node-796">
+    <command xml:space="preserve">knock on the door</command>
+    <result xml:space="preserve">The door is already unlocked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-797"/>
+    </children>
+  </item>
+  <item nodeId="node-797">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-798"/>
+    </children>
+  </item>
+  <item nodeId="node-798">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-799"/>
+    </children>
+  </item>
+  <item nodeId="node-799">
+    <command xml:space="preserve">knock on the door</command>
+    <result xml:space="preserve">The door is already unlocked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-800"/>
+    </children>
+  </item>
+  <item nodeId="node-800">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-801"/>
+    </children>
+  </item>
+  <item nodeId="node-801">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -2473,8 +3215,186 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-857"/>
       <child nodeId="node-576"/>
     </children>
+  </item>
+  <item nodeId="node-857">
+    <command xml:space="preserve">examine stool</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-858"/>
+    </children>
+  </item>
+  <item nodeId="node-858">
+    <command xml:space="preserve">light torch</command>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-859"/>
+    </children>
+  </item>
+  <item nodeId="node-859">
+    <command xml:space="preserve">take apple</command>
+    <result xml:space="preserve">As you touch it, the floor beneath you collapses!&#x000A;The apple crumbles to dust!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;[Your score has just gone down by ten points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-860"/>
+    </children>
+  </item>
+  <item nodeId="node-860">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">Somewhere above you, you hear slow footsteps. Someone is walking. Unhurried.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-861"/>
+    </children>
+  </item>
+  <item nodeId="node-861">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">Somewhere above you, you hear slow footsteps. Someone is walking. Unhurried.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-862"/>
+    </children>
+  </item>
+  <item nodeId="node-862">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">Somewhere above you, you hear slow footsteps. Someone is walking. Unhurried.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-863"/>
+    </children>
+  </item>
+  <item nodeId="node-863">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">Somewhere above you, you hear slow footsteps. Someone is walking. Unhurried.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-864"/>
+    </children>
+  </item>
+  <item nodeId="node-864">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">Somewhere above you, you hear slow footsteps. Someone is walking. Unhurried.&#x000A;&#x000A;*** LALA VISION ***&#x000A;&#x000A;You see through Lala's eyes in her hidden chamber... She giggles and gestures toward a door above the pit.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-865"/>
+    </children>
+  </item>
+  <item nodeId="node-865">
+    <command xml:space="preserve">help</command>
+    <result xml:space="preserve">What's happening? Am I disappearing?&#x000A;You hear voice through the wind: Knock on the door!&#x000A;You escaped Lala for now. Find a way out.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-866"/>
+    </children>
+  </item>
+  <item nodeId="node-866">
+    <command xml:space="preserve">knock on the door</command>
+    <result xml:space="preserve">Voice through the wind: Knock 4 times!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-867"/>
+    </children>
+  </item>
+  <item nodeId="node-867">
+    <command xml:space="preserve">knock on the door</command>
+    <result xml:space="preserve">Knocked 2 of 4 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-868"/>
+    </children>
+  </item>
+  <item nodeId="node-868">
+    <command xml:space="preserve">knock on the door</command>
+    <result xml:space="preserve">Knocked 3 of 4 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-869"/>
+    </children>
+  </item>
+  <item nodeId="node-869">
+    <command xml:space="preserve">knock on the door</command>
+    <result xml:space="preserve">CLICK! The door unlocks!&#x000A;Huh, did I count right?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-870"/>
+    </children>
+  </item>
+  <item nodeId="node-870">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-871"/>
+    </children>
+  </item>
+  <item nodeId="node-871">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">What do you want to knock?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-872"/>
+    </children>
+  </item>
+  <item nodeId="node-872">
+    <command xml:space="preserve">knock on the door</command>
+    <result xml:space="preserve">The door is already unlocked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-873"/>
+    </children>
+  </item>
+  <item nodeId="node-873">
+    <command xml:space="preserve">knock forestdoor</command>
+    <result xml:space="preserve">Knocked 2 of 4 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-874"/>
+    </children>
+  </item>
+  <item nodeId="node-874">
+    <command xml:space="preserve">knock forestdoor</command>
+    <result xml:space="preserve">Knocked 3 of 4 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-875"/>
+    </children>
+  </item>
+  <item nodeId="node-875">
+    <command xml:space="preserve">knock forestdoor</command>
+    <result xml:space="preserve">CLICK! The door unlocks!&#x000A;Huh, did I count right?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-876"/>
+    </children>
+  </item>
+  <item nodeId="node-876">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;&#x000A;[Your score has just gone down by five points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-576">
     <command xml:space="preserve">light torch</command>
@@ -3582,11 +4502,12 @@
   </item>
   <item nodeId="node-640">
     <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;&#x000A;[Your score has just gone down by five points.]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-641"/>
+      <child nodeId="node-771"/>
     </children>
   </item>
   <item nodeId="node-641">
@@ -3610,6 +4531,39 @@
   <item nodeId="node-713">
     <command xml:space="preserve">go east</command>
     <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-771">
+    <command xml:space="preserve">score</command>
+    <result xml:space="preserve">You have so far scored 25 out of a possible 100, in 7 turns.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-772"/>
+    </children>
+  </item>
+  <item nodeId="node-772">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">(first opening the NorthDoor)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-773"/>
+    </children>
+  </item>
+  <item nodeId="node-773">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-774"/>
+    </children>
+  </item>
+  <item nodeId="node-774">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -4503,6 +5457,7 @@
       <child nodeId="node-382"/>
       <child nodeId="node-232"/>
       <child nodeId="node-476"/>
+      <child nodeId="node-744"/>
     </children>
   </item>
   <item nodeId="node-225">
@@ -4914,8 +5869,78 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-802"/>
       <child nodeId="node-396"/>
     </children>
+  </item>
+  <item nodeId="node-802">
+    <command xml:space="preserve">help</command>
+    <result xml:space="preserve">What's happening? Am I disappearing?&#x000A;You hear voice through the wind: Knock on the door!&#x000A;You escaped Lala for now. Find a way out.&#x000A;&#x000A;The Light Room&#x000A;The room is well-lit and empty except for an old wooden box on the floor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-803"/>
+    </children>
+  </item>
+  <item nodeId="node-803">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;Voice through the wind: Knock 4 times!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-804"/>
+    </children>
+  </item>
+  <item nodeId="node-804">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;Knocked 2 of 4 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-805"/>
+    </children>
+  </item>
+  <item nodeId="node-805">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;Knocked 3 of 4 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-806"/>
+    </children>
+  </item>
+  <item nodeId="node-806">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;CLICK! The door unlocks!&#x000A;Huh, did I count right?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-807"/>
+    </children>
+  </item>
+  <item nodeId="node-807">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-808"/>
+    </children>
+  </item>
+  <item nodeId="node-808">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;&#x000A;[Your score has just gone down by five points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-809"/>
+    </children>
+  </item>
+  <item nodeId="node-809">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">The Light Room&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-396">
     <command xml:space="preserve">listen</command>
@@ -6078,6 +7103,246 @@
   <item nodeId="node-493">
     <command xml:space="preserve">knock northdoor</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-744">
+    <command xml:space="preserve">taste</command>
+    <result xml:space="preserve">(the trap door)&#x000A;Your mouth is dry. The metallic taste of blood still lingers.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-745"/>
+    </children>
+  </item>
+  <item nodeId="node-745">
+    <command xml:space="preserve">eat</command>
+    <result xml:space="preserve">(the trap door)&#x000A;That's plainly inedible.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-746"/>
+    </children>
+  </item>
+  <item nodeId="node-746">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">Somewhere above you, you hear slow footsteps. Someone is walking. Unhurried.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-747"/>
+    </children>
+  </item>
+  <item nodeId="node-747">
+    <command xml:space="preserve">drink</command>
+    <result xml:space="preserve">(the trap door)&#x000A;There's nothing suitable to drink here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-748"/>
+    </children>
+  </item>
+  <item nodeId="node-748">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">(first opening the trap door)&#x000A;It seems to be locked.&#x000A;&#x000A;*** LALA VISION ***&#x000A;&#x000A;You see through Lala's eyes in her hidden chamber... She giggles and gestures toward a door above the pit.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-749"/>
+    </children>
+  </item>
+  <item nodeId="node-749">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Lala laughs: "Be polite!"&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-750"/>
+    </children>
+  </item>
+  <item nodeId="node-750">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Lala whispers: "It's no use..."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-751"/>
+    </children>
+  </item>
+  <item nodeId="node-751">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Lala whispers: "It's no use..."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-752"/>
+    </children>
+  </item>
+  <item nodeId="node-752">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Lala laughs: "Be polite!"&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-753"/>
+    </children>
+  </item>
+  <item nodeId="node-753">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Lala whispers: "It's no use..."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-754"/>
+    </children>
+  </item>
+  <item nodeId="node-754">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Lala whispers: "It's no use..."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-755"/>
+    </children>
+  </item>
+  <item nodeId="node-755">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Lala giggles: "Maybe you should ask for help."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-756"/>
+    </children>
+  </item>
+  <item nodeId="node-756">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Lala laughs: "Be polite!"&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-757"/>
+    </children>
+  </item>
+  <item nodeId="node-757">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Lala giggles: "Maybe you should ask for help."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-758"/>
+    </children>
+  </item>
+  <item nodeId="node-758">
+    <command xml:space="preserve">help?</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-759"/>
+    </children>
+  </item>
+  <item nodeId="node-759">
+    <command xml:space="preserve">help</command>
+    <result xml:space="preserve">What's happening? Am I disappearing?&#x000A;You hear voice through the wind: Knock on the door!&#x000A;You escaped Lala for now. Find a way out.&#x000A;&#x000A;The Light Room&#x000A;The room is well-lit and empty except for an old wooden box on the floor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-760"/>
+    </children>
+  </item>
+  <item nodeId="node-760">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;Voice through the wind: Knock 4 times!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-761"/>
+    </children>
+  </item>
+  <item nodeId="node-761">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;Knocked 2 of 4 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-762"/>
+    </children>
+  </item>
+  <item nodeId="node-762">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;Knocked 3 of 4 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-763"/>
+    </children>
+  </item>
+  <item nodeId="node-763">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;CLICK! The door unlocks!&#x000A;Huh, did I count right?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-764"/>
+    </children>
+  </item>
+  <item nodeId="node-764">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;The door is already unlocked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-765"/>
+    </children>
+  </item>
+  <item nodeId="node-765">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-766"/>
+    </children>
+  </item>
+  <item nodeId="node-766">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">(first opening the NorthDoor)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-767"/>
+    </children>
+  </item>
+  <item nodeId="node-767">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-768"/>
+    </children>
+  </item>
+  <item nodeId="node-768">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-769"/>
+    </children>
+  </item>
+  <item nodeId="node-769">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-770"/>
+    </children>
+  </item>
+  <item nodeId="node-770">
+    <command xml:space="preserve">time</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

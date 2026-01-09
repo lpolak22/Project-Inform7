@@ -70,12 +70,13 @@ The box empty is a truth state that varies. The box empty is true.
 The NorthDoor is a door.
 NorthDoor is south of Forest and north of LightRoom.
 NorthDoor is locked. 
-The description is "A newly appeared wooden door."
+The description is "A newly appeared frozen door."
 NorthDoor is scenery.
 
-ForestDoor is a door. ForestDoor is west of DarkChamber and east of Forest. 
+ForestDoor is a door.
+ForestDoor is west of DarkChamber and east of Forest. 
 ForestDoor is locked.
-ForestDoor is scenery.
+The description is "A newly appeared wooden door."
 
 Forest is a room. "You are in a dense forest. You hear a waterfall nearby and voices talking in the distance."
 
@@ -95,6 +96,8 @@ When Room Exit Scene ends:
 	now ForestDoor is locked;
 	now NorthDoor is locked;
 	say "You hear a soft click behind you.";
+	say "You seem to be hungry, find something to eat.";
+	decrease the score by 5;
 	
 Room Exit Scene ends when the player is in Forest.
 
