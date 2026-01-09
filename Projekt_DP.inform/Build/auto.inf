@@ -556,7 +556,6 @@ Constant Computed_Constant_Value_0_U1 = 1024;
 Constant Computed_Constant_Value_1_U1 = 3;
 Constant MAX_FIGURE_THUMBNAILS_IN_INDEX = 50;
 Constant USE_SCORING = 1;
-Constant PREVENT_UNDO = 0;
 Constant MATCH_LIST_WORDS = 100;
 Constant DONE_INIS = 4;
 Constant RELS_SYMMETRIC = 32768;
@@ -2779,7 +2778,7 @@ Constant line_ref_U173 = 561;
 Constant NO_VERB_VERB_DEFINED = 1;
 Constant line_ref_U174 = 561;
 Constant line_ref_U175 = 561;
-Constant KIT_CONFIGURATION_BITMAP = 323;
+Constant KIT_CONFIGURATION_BITMAP = 321;
 Constant KIT_CONFIGURATION_LOOKMODE = 2;
 Constant MAX_FRAME_SIZE_NEEDED = 6;
 Constant RNG_SEED_AT_START_OF_PLAY = 0;
@@ -3795,7 +3794,7 @@ Constant Computed_Constant_Value_0_U4 = 1;
 Constant EMPTY_TEXT_PACKED = "";
 Constant I7_VERSION_NUMBER = "10.1.2";
 Constant I7_FULL_VERSION_NUMBER = "10.1.2";
-Serial "260108";
+Serial "260109";
 Constant alphabetised_text_0 = ">";
 Constant alphabetised_text_1 = "A newly appeared wooden door.";
 Constant alphabetised_text_2 = "A small stool made of solid gold.";
@@ -11338,9 +11337,6 @@ Global max_z_object;
         rtrue;
     }
     if ((UO == 20)) {
-        rtrue;
-    }
-    if ((UO == 23)) {
         rtrue;
     }
     if ((UO == 27)) {
@@ -57362,7 +57358,7 @@ Global max_z_object;
         if ((noun == I_forestdoor_U1)) {
             if (call_U319(I_forestdoor_U1)) {
                 if (((Global_Vars-->46) == 1)) {
-                    (tmp_0 = (GenerateRandomNumber)(1,5));
+                    (tmp_0 = (GenerateRandomNumber)(2,5));
                     ((Global_Vars-->47) = tmp_0);
                     (say__p = 1);
                     ParaContent();
@@ -57396,19 +57392,21 @@ Global max_z_object;
                         call_U305(I_forestdoor_U1);
                         ((Global_Vars-->46) = 0);
                     } else {
-                        (say__p = 1);
-                        ParaContent();
-                        print "Knocked ";
-                        ParaContent();
-                        print (say__n = (Global_Vars-->46));
-                        ParaContent();
-                        print " of ";
-                        ParaContent();
-                        print (say__n = (Global_Vars-->47));
-                        ParaContent();
-                        print " times.";
-                        ParaContent();
-                        print "^";
+                        if (((Global_Vars-->46) < (Global_Vars-->47))) {
+                            (say__p = 1);
+                            ParaContent();
+                            print "Knocked ";
+                            ParaContent();
+                            print (say__n = (Global_Vars-->46));
+                            ParaContent();
+                            print " of ";
+                            ParaContent();
+                            print (say__n = (Global_Vars-->47));
+                            ParaContent();
+                            print " times.";
+                            ParaContent();
+                            print "^";
+                        }
                     }
                 }
             } else {

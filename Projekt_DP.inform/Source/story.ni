@@ -75,7 +75,7 @@ When play begins:
 Choosing is an action applying to one number.
 Understand "[number]" as choosing.
 
-Use undo prevention.
+[Use undo prevention.]
 
 Carry out choosing:
 	if Character-chosen is true:
@@ -176,7 +176,7 @@ Carry out knocking it:
 	if the noun is ForestDoor:
 		if ForestDoor is locked:
 			if knock count is 1:
-				let N be a random number from 1 to 5;
+				let N be a random number from 2 to 5;
 				now knock number is N;
 				say "[italic type]Voice through the wind: Knock [knock number] times![roman type][line break]";
 			otherwise if knock count is knock number:
@@ -185,7 +185,7 @@ Carry out knocking it:
 				now ForestDoor is unlocked;
 				now ForestDoor is open;
 				now knock count is 0;
-			otherwise:
+			otherwise if knock count < knock number:
 				say "Knocked [knock count] of [knock number] times.[line break]";
 		otherwise:
 			say "The door is already unlocked.[line break]".

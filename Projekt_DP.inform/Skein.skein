@@ -3,17 +3,17 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-1">
     <command xml:space="preserve">Projekt_DP</command>
-    <result xml:space="preserve">You must choose a character first. Type 1 or 2.&#x000A;&#x000A;Welcome to the game! It was created as a project for the Declarative Programming course. However, I hope you will still enjoy playing it.&#x000A;&#x000A; Choose your character:&#x000A;1 - Ivan (has a torch and one gold coin)&#x000A;2 - Petar (has nothing)&#x000A;&#x000A;Type 1 or 2 to continue.&#x000A;&#x000A;Projekt iz kolegija Deklarativno programiranje&#x000A;An Interactive Fiction by Lucija Polak&#x000A;Release 1 / Serial number 260108 / Inform 7 v10.1.2 / D&#x000A;&#x000A;You must choose a character first. Type 1 or 2.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You must choose a character first. Type 1 or 2.&#x000A;&#x000A;Welcome to the game! It was created as a project for the Declarative Programming course. However, I hope you will still enjoy playing it.&#x000A;&#x000A; Choose your character:&#x000A;1 - Ivan (has a torch and one gold coin)&#x000A;2 - Petar (has nothing)&#x000A;&#x000A;Type 1 or 2 to continue.&#x000A;&#x000A;Projekt iz kolegija Deklarativno programiranje&#x000A;An Interactive Fiction by Lucija Polak&#x000A;Release 1 / Serial number 260109 / Inform 7 v10.1.2 / D&#x000A;&#x000A;You must choose a character first. Type 1 or 2.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-2"/>
-      <child nodeId="node-94"/>
-      <child nodeId="node-104"/>
-      <child nodeId="node-112"/>
-      <child nodeId="node-130"/>
-      <child nodeId="node-179"/>
-      <child nodeId="node-115"/>
+      <child nodeId="node-181"/>
+      <child nodeId="node-234"/>
+      <child nodeId="node-242"/>
+      <child nodeId="node-245"/>
+      <child nodeId="node-252"/>
+      <child nodeId="node-253"/>
     </children>
   </item>
   <item nodeId="node-2">
@@ -23,18 +23,19 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-3"/>
-      <child nodeId="node-213"/>
-      <child nodeId="node-137"/>
-      <child nodeId="node-207"/>
       <child nodeId="node-10"/>
-      <child nodeId="node-16"/>
-      <child nodeId="node-22"/>
-      <child nodeId="node-56"/>
-      <child nodeId="node-60"/>
+      <child nodeId="node-11"/>
+      <child nodeId="node-31"/>
       <child nodeId="node-63"/>
-      <child nodeId="node-186"/>
-      <child nodeId="node-87"/>
-      <child nodeId="node-90"/>
+      <child nodeId="node-264"/>
+      <child nodeId="node-69"/>
+      <child nodeId="node-75"/>
+      <child nodeId="node-139"/>
+      <child nodeId="node-143"/>
+      <child nodeId="node-146"/>
+      <child nodeId="node-170"/>
+      <child nodeId="node-174"/>
+      <child nodeId="node-177"/>
     </children>
   </item>
   <item nodeId="node-3">
@@ -97,34 +98,1204 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-213">
+  <item nodeId="node-10">
     <command xml:space="preserve">2</command>
     <result xml:space="preserve">You have already chosen your character.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-137">
+  <item nodeId="node-11">
     <command xml:space="preserve">go north</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-138"/>
-      <child nodeId="node-164"/>
+      <child nodeId="node-12"/>
+      <child nodeId="node-24"/>
     </children>
   </item>
-  <item nodeId="node-138">
+  <item nodeId="node-12">
     <command xml:space="preserve">go south</command>
     <result xml:space="preserve">(first opening the trap door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-139"/>
-      <child nodeId="node-171"/>
+      <child nodeId="node-13"/>
+      <child nodeId="node-17"/>
     </children>
   </item>
-  <item nodeId="node-139">
+  <item nodeId="node-13">
     <command xml:space="preserve">examine apple</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-14"/>
+    </children>
+  </item>
+  <item nodeId="node-14">
+    <command xml:space="preserve">light torch</command>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-15"/>
+    </children>
+  </item>
+  <item nodeId="node-15">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">(first opening the trap door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-16"/>
+    </children>
+  </item>
+  <item nodeId="node-16">
+    <command xml:space="preserve">take apple</command>
+    <result xml:space="preserve">The apple crumbles to dust!&#x000A;The floor collapses! You fall through a hole!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-17">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-18"/>
+    </children>
+  </item>
+  <item nodeId="node-18">
+    <command xml:space="preserve">examine apple</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-19"/>
+    </children>
+  </item>
+  <item nodeId="node-19">
+    <command xml:space="preserve">examine trap door</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-20"/>
+    </children>
+  </item>
+  <item nodeId="node-20">
+    <command xml:space="preserve">light torch</command>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-21"/>
+    </children>
+  </item>
+  <item nodeId="node-21">
+    <command xml:space="preserve">examine trap door</command>
+    <result xml:space="preserve">You see nothing special about the trap door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-22"/>
+    </children>
+  </item>
+  <item nodeId="node-22">
+    <command xml:space="preserve">examine apple</command>
+    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;It seems light for something made of gold.&#x000A;Don't do it... In 3..&#x000A;The floor creaks ominously...&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-23"/>
+    </children>
+  </item>
+  <item nodeId="node-23">
+    <command xml:space="preserve">examine apple</command>
+    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;The floor collapses! You fall through a hole!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-24">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-25"/>
+    </children>
+  </item>
+  <item nodeId="node-25">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">(first opening the trap door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-26"/>
+    </children>
+  </item>
+  <item nodeId="node-26">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-27"/>
+    </children>
+  </item>
+  <item nodeId="node-27">
+    <command xml:space="preserve">light torch</command>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-28"/>
+    </children>
+  </item>
+  <item nodeId="node-28">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">(first opening the trap door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-29"/>
+    </children>
+  </item>
+  <item nodeId="node-29">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-30"/>
+    </children>
+  </item>
+  <item nodeId="node-30">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-31">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">It's too dark, light the torch first!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-32"/>
+      <child nodeId="node-47"/>
+      <child nodeId="node-51"/>
+      <child nodeId="node-54"/>
+      <child nodeId="node-61"/>
+    </children>
+  </item>
+  <item nodeId="node-32">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-33"/>
+    </children>
+  </item>
+  <item nodeId="node-33">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">It's too dark, light the torch first!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-34"/>
+    </children>
+  </item>
+  <item nodeId="node-34">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-35"/>
+    </children>
+  </item>
+  <item nodeId="node-35">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-36"/>
+    </children>
+  </item>
+  <item nodeId="node-36">
+    <command xml:space="preserve">light torch</command>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;You can see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-37"/>
+    </children>
+  </item>
+  <item nodeId="node-37">
+    <command xml:space="preserve">go forestdoor</command>
+    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-38"/>
+    </children>
+  </item>
+  <item nodeId="node-38">
+    <command xml:space="preserve">knock on door</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-39"/>
+    </children>
+  </item>
+  <item nodeId="node-39">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-40"/>
+    </children>
+  </item>
+  <item nodeId="node-40">
+    <command xml:space="preserve">knock ForestDoor</command>
+    <result xml:space="preserve">Voice through the wind: Knock 3 times!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-41"/>
+    </children>
+  </item>
+  <item nodeId="node-41">
+    <command xml:space="preserve">knock ForestDoor</command>
+    <result xml:space="preserve">Knocked 2 of 3 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-42"/>
+    </children>
+  </item>
+  <item nodeId="node-42">
+    <command xml:space="preserve">knock ForestDoor</command>
+    <result xml:space="preserve">CLICK! The door unlocks!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-43"/>
+    </children>
+  </item>
+  <item nodeId="node-43">
+    <command xml:space="preserve">go through</command>
+    <result xml:space="preserve">(the torch)&#x000A;That's not something you can enter.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-44"/>
+    </children>
+  </item>
+  <item nodeId="node-44">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;You can see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-45"/>
+    </children>
+  </item>
+  <item nodeId="node-45">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;You can see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-46"/>
+    </children>
+  </item>
+  <item nodeId="node-46">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;You can see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-47">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">(first opening the trap door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-48"/>
+    </children>
+  </item>
+  <item nodeId="node-48">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-49"/>
+    </children>
+  </item>
+  <item nodeId="node-49">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-50"/>
+    </children>
+  </item>
+  <item nodeId="node-50">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked. Knock as instructed.|&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-51">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-52"/>
+    </children>
+  </item>
+  <item nodeId="node-52">
+    <command xml:space="preserve">knock on forestdppr</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-53"/>
+    </children>
+  </item>
+  <item nodeId="node-53">
+    <command xml:space="preserve">knock on forestdoor</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-54">
+    <command xml:space="preserve">knock door</command>
+    <result xml:space="preserve">You must supply a noun.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-55"/>
+      <child nodeId="node-56"/>
+    </children>
+  </item>
+  <item nodeId="node-55">
+    <command xml:space="preserve">knock ForestDoor</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-56">
+    <command xml:space="preserve">light torch</command>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;You can see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-57"/>
+    </children>
+  </item>
+  <item nodeId="node-57">
+    <command xml:space="preserve">knock door</command>
+    <result xml:space="preserve">You must supply a noun.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-58"/>
+    </children>
+  </item>
+  <item nodeId="node-58">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-59"/>
+    </children>
+  </item>
+  <item nodeId="node-59">
+    <command xml:space="preserve">knock doot</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-60"/>
+    </children>
+  </item>
+  <item nodeId="node-60">
+    <command xml:space="preserve">knock door</command>
+    <result xml:space="preserve">You must supply a noun.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-61">
+    <command xml:space="preserve">light torch</command>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;You can see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-62"/>
+    </children>
+  </item>
+  <item nodeId="node-62">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-259"/>
+    </children>
+  </item>
+  <item nodeId="node-259">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-260"/>
+    </children>
+  </item>
+  <item nodeId="node-260">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">(first opening the trap door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-261"/>
+    </children>
+  </item>
+  <item nodeId="node-261">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-262"/>
+    </children>
+  </item>
+  <item nodeId="node-262">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(ForestDoor)&#x000A;Voice through the wind: Knock 1 times!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-263"/>
+    </children>
+  </item>
+  <item nodeId="node-263">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(ForestDoor)&#x000A;Knocked 2 of 1 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-63">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a torch&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-64"/>
+    </children>
+  </item>
+  <item nodeId="node-64">
+    <command xml:space="preserve">light a torch</command>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-65"/>
+    </children>
+  </item>
+  <item nodeId="node-65">
+    <command xml:space="preserve">examine apple</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-66"/>
+    </children>
+  </item>
+  <item nodeId="node-66">
+    <command xml:space="preserve">examine an golden apple</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-67"/>
+    </children>
+  </item>
+  <item nodeId="node-67">
+    <command xml:space="preserve">extinguish torch</command>
+    <result xml:space="preserve">You extinguish the torch. Darkness surrounds you again.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-68"/>
+    </children>
+  </item>
+  <item nodeId="node-68">
+    <command xml:space="preserve">look.</command>
+    <result xml:space="preserve">The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-264">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-265"/>
+    </children>
+  </item>
+  <item nodeId="node-265">
+    <command xml:space="preserve">light torch</command>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;You can see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-266"/>
+    </children>
+  </item>
+  <item nodeId="node-266">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(ForestDoor)&#x000A;Voice through the wind: Knock 4 times!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-267"/>
+    </children>
+  </item>
+  <item nodeId="node-267">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(ForestDoor)&#x000A;Knocked 2 of 4 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-268"/>
+    </children>
+  </item>
+  <item nodeId="node-268">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(ForestDoor)&#x000A;Knocked 3 of 4 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-269"/>
+    </children>
+  </item>
+  <item nodeId="node-269">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(ForestDoor)&#x000A;CLICK! The door unlocks!&#x000A;Huh, did I count right?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-270"/>
+    </children>
+  </item>
+  <item nodeId="node-270">
+    <command xml:space="preserve">knock knock</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-69">
+    <command xml:space="preserve">light a torch</command>
+    <result xml:space="preserve">This dangerous act would achieve little.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-70"/>
+    </children>
+  </item>
+  <item nodeId="node-70">
+    <command xml:space="preserve">light torch</command>
+    <result xml:space="preserve">This dangerous act would achieve little.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-71"/>
+    </children>
+  </item>
+  <item nodeId="node-71">
+    <command xml:space="preserve">lit torch</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-72"/>
+    </children>
+  </item>
+  <item nodeId="node-72">
+    <command xml:space="preserve">burn torch</command>
+    <result xml:space="preserve">This dangerous act would achieve little.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-73"/>
+    </children>
+  </item>
+  <item nodeId="node-73">
+    <command xml:space="preserve">bimbambum</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-74"/>
+    </children>
+  </item>
+  <item nodeId="node-74">
+    <command xml:space="preserve">light torch</command>
+    <result xml:space="preserve">This dangerous act would achieve little.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-75">
+    <command xml:space="preserve">light torch</command>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;You can see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-76"/>
+      <child nodeId="node-93"/>
+      <child nodeId="node-97"/>
+      <child nodeId="node-100"/>
+      <child nodeId="node-116"/>
+      <child nodeId="node-119"/>
+      <child nodeId="node-124"/>
+      <child nodeId="node-125"/>
+    </children>
+  </item>
+  <item nodeId="node-76">
+    <command xml:space="preserve">examine apple</command>
+    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;It seems light for something made of gold.&#x000A;Don't do it... In 3..&#x000A;The floor creaks ominously...&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-77"/>
+      <child nodeId="node-90"/>
+      <child nodeId="node-91"/>
+    </children>
+  </item>
+  <item nodeId="node-77">
+    <command xml:space="preserve">examine apple</command>
+    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;The floor collapses! You fall through a hole!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Dropped.&#x000A;&#x000A;&#x000A;&#x000A;    *** You succumb to your injuries. Pro tip: drink more water. ***&#x000A;&#x000A;&#x000A;In that game you scored 0 out of a possible 100, in 4 turns.&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-78"/>
+      <child nodeId="node-80"/>
+      <child nodeId="node-81"/>
+      <child nodeId="node-89"/>
+    </children>
+  </item>
+  <item nodeId="node-78">
+    <command xml:space="preserve">examine apple</command>
+    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-79"/>
+    </children>
+  </item>
+  <item nodeId="node-79">
+    <command xml:space="preserve">take apple</command>
+    <result xml:space="preserve">(Ignoring the warning...)&#x000A;&#x000A;The apple crumbles to dust!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-80">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-81">
+    <command xml:space="preserve">restart</command>
+    <result xml:space="preserve">You must choose a character first. Type 1 or 2.&#x000A;&#x000A;Welcome to the game! It was created as a project for the Declarative Programming course. However, I hope you will still enjoy playing it.&#x000A;&#x000A; Choose your character:&#x000A;1 - Ivan (has a torch and one gold coin)&#x000A;2 - Petar (has nothing)&#x000A;&#x000A;Type 1 or 2 to continue.&#x000A;&#x000A;Projekt iz kolegija Deklarativno programiranje&#x000A;An Interactive Fiction by Lucija Polak&#x000A;Release 1 / Serial number 260108 / Inform 7 v10.1.2 / D&#x000A;&#x000A;You must choose a character first. Type 1 or 2.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-82"/>
+    </children>
+  </item>
+  <item nodeId="node-82">
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;You have chosen Ivan. Good luck on your adventure!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-83"/>
+    </children>
+  </item>
+  <item nodeId="node-83">
+    <command xml:space="preserve">light torch</command>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-84"/>
+    </children>
+  </item>
+  <item nodeId="node-84">
+    <command xml:space="preserve">examine stool</command>
+    <result xml:space="preserve">A small stool made of solid gold.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-85"/>
+    </children>
+  </item>
+  <item nodeId="node-85">
+    <command xml:space="preserve">examine stool</command>
+    <result xml:space="preserve">A small stool made of solid gold.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-86"/>
+    </children>
+  </item>
+  <item nodeId="node-86">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-87"/>
+    </children>
+  </item>
+  <item nodeId="node-87">
+    <command xml:space="preserve">examine apple</command>
+    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;It seems light for something made of gold.&#x000A;Don't do it... In 3..&#x000A;The floor creaks ominously...&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-88"/>
+    </children>
+  </item>
+  <item nodeId="node-88">
+    <command xml:space="preserve">take apple</command>
+    <result xml:space="preserve">Ignoring the warning...&#x000A;As you touch it, the floor beneath you collapses!&#x000A;The apple crumbles to dust!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Dropped.&#x000A;&#x000A;&#x000A;&#x000A;    *** You succumb to your injuries. Pro tip: drink more water. ***&#x000A;&#x000A;&#x000A;In that game you scored 0 out of a possible 100, in 7 turns.&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-89">
+    <command xml:space="preserve">take apple</command>
+    <result xml:space="preserve">Ignoring the warning, are you not?...&#x000A;The apple crumbles to dust!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-90">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;The floor collapses! You fall through a hole!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-91">
+    <command xml:space="preserve">take apple</command>
+    <result xml:space="preserve">Ignoring the warning...&#x000A;As you touch it, the floor beneath you collapses!&#x000A;The apple crumbles to dust!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-92"/>
+    </children>
+  </item>
+  <item nodeId="node-92">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-93">
+    <command xml:space="preserve">examine golden stool</command>
+    <result xml:space="preserve">A small stool made of solid gold.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-94"/>
+    </children>
+  </item>
+  <item nodeId="node-94">
+    <command xml:space="preserve">examine apple</command>
+    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;It seems light for something made of gold.&#x000A;Don't do it...&#x000A;The floor creaks ominously...&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-95"/>
+    </children>
+  </item>
+  <item nodeId="node-95">
+    <command xml:space="preserve">examine apple</command>
+    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;The floor collapses! You fall through a hole!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-96"/>
+    </children>
+  </item>
+  <item nodeId="node-96">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-97">
+    <command xml:space="preserve">go ForestDoor</command>
+    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-98"/>
+    </children>
+  </item>
+  <item nodeId="node-98">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(ForestDoor)&#x000A;Voice through the wind: Knock 2 times!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-99"/>
+    </children>
+  </item>
+  <item nodeId="node-99">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(ForestDoor)&#x000A;CLICK! The door unlocks!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-100">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-101"/>
+      <child nodeId="node-107"/>
+    </children>
+  </item>
+  <item nodeId="node-101">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(ForestDoor)&#x000A;Voice through the wind: Knock 5 times!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-102"/>
+    </children>
+  </item>
+  <item nodeId="node-102">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(ForestDoor)&#x000A;Knocked 2 of 5 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-103"/>
+      <child nodeId="node-104"/>
+    </children>
+  </item>
+  <item nodeId="node-103">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;You can see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-104">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(ForestDoor)&#x000A;Knocked 3 of 5 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-105"/>
+    </children>
+  </item>
+  <item nodeId="node-105">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(ForestDoor)&#x000A;Knocked 4 of 5 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-106"/>
+    </children>
+  </item>
+  <item nodeId="node-106">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(ForestDoor)&#x000A;CLICK! The door unlocks!&#x000A;Huh, did I count right?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-107">
+    <command xml:space="preserve">knock door</command>
+    <result xml:space="preserve">You must supply a noun.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-108"/>
+      <child nodeId="node-113"/>
+    </children>
+  </item>
+  <item nodeId="node-108">
+    <command xml:space="preserve">knock on ForestDoor</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-109"/>
+    </children>
+  </item>
+  <item nodeId="node-109">
+    <command xml:space="preserve">knock on door</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-110"/>
+    </children>
+  </item>
+  <item nodeId="node-110">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-111"/>
+    </children>
+  </item>
+  <item nodeId="node-111">
+    <command xml:space="preserve">knock on ForestDoor</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-112"/>
+    </children>
+  </item>
+  <item nodeId="node-112">
+    <command xml:space="preserve">knock ForestDoor</command>
+    <result xml:space="preserve">Voice through the wind: Knock 4 times!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-113">
+    <command xml:space="preserve">knock on the door</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-114"/>
+    </children>
+  </item>
+  <item nodeId="node-114">
+    <command xml:space="preserve">knock the door</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-115"/>
+    </children>
+  </item>
+  <item nodeId="node-115">
+    <command xml:space="preserve">knock on door</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-116">
+    <command xml:space="preserve">light torch</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-117"/>
+    </children>
+  </item>
+  <item nodeId="node-117">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-118"/>
+    </children>
+  </item>
+  <item nodeId="node-118">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-119">
+    <command xml:space="preserve">lit torch</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-120"/>
+    </children>
+  </item>
+  <item nodeId="node-120">
+    <command xml:space="preserve">extinguish torch</command>
+    <result xml:space="preserve">You extinguish the torch. Darkness surrounds you again.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-121"/>
+    </children>
+  </item>
+  <item nodeId="node-121">
+    <command xml:space="preserve">look.</command>
+    <result xml:space="preserve">The Dark Room&#x000A;The room is dark. You can barely make out a small golden stool in the faint light.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-122"/>
+    </children>
+  </item>
+  <item nodeId="node-122">
+    <command xml:space="preserve">light torch</command>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-123"/>
+    </children>
+  </item>
+  <item nodeId="node-123">
+    <command xml:space="preserve">look.</command>
+    <result xml:space="preserve">The Dark Room&#x000A;The room is dark. You can barely make out a small golden stool in the faint light.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-124">
+    <command xml:space="preserve">look.</command>
+    <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-125">
+    <command xml:space="preserve">take apple</command>
+    <result xml:space="preserve">As you touch it, the floor beneath you collapses!&#x000A;The apple crumbles to dust!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-126"/>
+      <child nodeId="node-129"/>
+      <child nodeId="node-131"/>
+      <child nodeId="node-132"/>
+    </children>
+  </item>
+  <item nodeId="node-126">
+    <command xml:space="preserve">a</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-127"/>
+    </children>
+  </item>
+  <item nodeId="node-127">
+    <command xml:space="preserve">look.</command>
+    <result xml:space="preserve">The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-128"/>
+    </children>
+  </item>
+  <item nodeId="node-128">
+    <command xml:space="preserve">take apple</command>
+    <result xml:space="preserve">The apple crumbles to dust!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-129">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-130"/>
+    </children>
+  </item>
+  <item nodeId="node-130">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-131">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-132">
+    <command xml:space="preserve">take apple</command>
+    <result xml:space="preserve">The apple crumbles to dust!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-133"/>
+      <child nodeId="node-135"/>
+    </children>
+  </item>
+  <item nodeId="node-133">
+    <command xml:space="preserve">examine apple</command>
+    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;It seems light for something made of gold.&#x000A;Don't do it...&#x000A;The floor creaks ominously...&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-134"/>
+    </children>
+  </item>
+  <item nodeId="node-134">
+    <command xml:space="preserve">take apple</command>
+    <result xml:space="preserve">Ignoring the warning...&#x000A;The apple crumbles to dust!&#x000A;&#x000A;The floor collapses! You fall through a hole!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-135">
+    <command xml:space="preserve">look.</command>
+    <result xml:space="preserve">The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-136"/>
+    </children>
+  </item>
+  <item nodeId="node-136">
+    <command xml:space="preserve">examine apple</command>
+    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;It seems light for something made of gold.&#x000A;Don't do it...&#x000A;The floor creaks ominously...&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-137"/>
+    </children>
+  </item>
+  <item nodeId="node-137">
+    <command xml:space="preserve">examine apple</command>
+    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;The floor collapses! You fall through a hole!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-138"/>
+    </children>
+  </item>
+  <item nodeId="node-138">
+    <command xml:space="preserve">look.</command>
+    <result xml:space="preserve">Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;You can see a torch here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-139">
+    <command xml:space="preserve">light torxh</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
@@ -142,8 +1313,8 @@
     </children>
   </item>
   <item nodeId="node-141">
-    <command xml:space="preserve">go south</command>
-    <result xml:space="preserve">(first opening the trap door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take apple</command>
+    <result xml:space="preserve">The apple crumbles to dust!&#x000A;The floor collapses! You fall through a hole!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -151,14 +1322,252 @@
     </children>
   </item>
   <item nodeId="node-142">
-    <command xml:space="preserve">take apple</command>
-    <result xml:space="preserve">The apple crumbles to dust!&#x000A;The floor collapses! You fall through a hole!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look.</command>
+    <result xml:space="preserve">Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;You can see a torch here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-171">
+  <item nodeId="node-143">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-144"/>
+    </children>
+  </item>
+  <item nodeId="node-144">
+    <command xml:space="preserve">light torch</command>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-145"/>
+    </children>
+  </item>
+  <item nodeId="node-145">
+    <command xml:space="preserve">examine golden apple</command>
+    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-146">
+    <command xml:space="preserve">look.</command>
+    <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-147"/>
+      <child nodeId="node-154"/>
+      <child nodeId="node-157"/>
+      <child nodeId="node-165"/>
+    </children>
+  </item>
+  <item nodeId="node-147">
+    <command xml:space="preserve">inventory.</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a torch&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-148"/>
+    </children>
+  </item>
+  <item nodeId="node-148">
+    <command xml:space="preserve">light a torch</command>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-149"/>
+    </children>
+  </item>
+  <item nodeId="node-149">
+    <command xml:space="preserve">light torch</command>
+    <result xml:space="preserve">The torch is already lit.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-150"/>
+    </children>
+  </item>
+  <item nodeId="node-150">
+    <command xml:space="preserve">extinguish torch</command>
+    <result xml:space="preserve">You extinguish the torch. Darkness surrounds you again.&#x000A;&#x000A;It is now pitch dark in here!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-151"/>
+    </children>
+  </item>
+  <item nodeId="node-151">
+    <command xml:space="preserve">look.</command>
+    <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-152"/>
+    </children>
+  </item>
+  <item nodeId="node-152">
+    <command xml:space="preserve">light torch</command>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-153"/>
+    </children>
+  </item>
+  <item nodeId="node-153">
+    <command xml:space="preserve">examine apple</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-154">
+    <command xml:space="preserve">light torch</command>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-155"/>
+      <child nodeId="node-156"/>
+    </children>
+  </item>
+  <item nodeId="node-155">
+    <command xml:space="preserve">light a torch</command>
+    <result xml:space="preserve">This dangerous act would achieve little.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-156">
+    <command xml:space="preserve">look.</command>
+    <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-157">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-158"/>
+    </children>
+  </item>
+  <item nodeId="node-158">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a torch&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-159"/>
+    </children>
+  </item>
+  <item nodeId="node-159">
+    <command xml:space="preserve">light torch</command>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-160"/>
+    </children>
+  </item>
+  <item nodeId="node-160">
+    <command xml:space="preserve">extinguish torch</command>
+    <result xml:space="preserve">You extinguish the torch. Darkness surrounds you again.&#x000A;&#x000A;It is now pitch dark in here!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-161"/>
+    </children>
+  </item>
+  <item nodeId="node-161">
+    <command xml:space="preserve">light torch</command>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-162"/>
+    </children>
+  </item>
+  <item nodeId="node-162">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">The use of "undo" is forbidden in this story.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-163"/>
+    </children>
+  </item>
+  <item nodeId="node-163">
+    <command xml:space="preserve">examine golden apple</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-164"/>
+    </children>
+  </item>
+  <item nodeId="node-164">
+    <command xml:space="preserve">move to small golden stool</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-165">
+    <command xml:space="preserve">move to the golden stool</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-166"/>
+    </children>
+  </item>
+  <item nodeId="node-166">
+    <command xml:space="preserve">go to golden stool</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-167"/>
+    </children>
+  </item>
+  <item nodeId="node-167">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a torch&#x000A;  a gold coin&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-168"/>
+    </children>
+  </item>
+  <item nodeId="node-168">
+    <command xml:space="preserve">use torch</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-169"/>
+    </children>
+  </item>
+  <item nodeId="node-169">
+    <command xml:space="preserve">use torch.</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-170">
+    <command xml:space="preserve">take torch</command>
+    <result xml:space="preserve">You already have that.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-171"/>
+    </children>
+  </item>
+  <item nodeId="node-171">
+    <command xml:space="preserve">light torch</command>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -167,7 +1576,7 @@
   </item>
   <item nodeId="node-172">
     <command xml:space="preserve">examine apple</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;It seems light for something made of gold.&#x000A;Don't do it... In 3..&#x000A;The floor creaks ominously...&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -175,17 +1584,14 @@
     </children>
   </item>
   <item nodeId="node-173">
-    <command xml:space="preserve">examine trap door</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">examine apple</command>
+    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;The floor collapses! You fall through a hole!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-174"/>
-    </children>
   </item>
   <item nodeId="node-174">
-    <command xml:space="preserve">light torch</command>
-    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">The use of "undo" is forbidden in this story.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -193,8 +1599,8 @@
     </children>
   </item>
   <item nodeId="node-175">
-    <command xml:space="preserve">examine trap door</command>
-    <result xml:space="preserve">You see nothing special about the trap door.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">2</command>
+    <result xml:space="preserve">You have already chosen your character.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -202,228 +1608,330 @@
     </children>
   </item>
   <item nodeId="node-176">
-    <command xml:space="preserve">examine apple</command>
-    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;It seems light for something made of gold.&#x000A;Don't do it... In 3..&#x000A;The floor creaks ominously...&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Starting Room&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-177"/>
-    </children>
   </item>
   <item nodeId="node-177">
-    <command xml:space="preserve">examine apple</command>
-    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;The floor collapses! You fall through a hole!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-164">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">use torch</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-165"/>
+      <child nodeId="node-178"/>
     </children>
   </item>
-  <item nodeId="node-165">
-    <command xml:space="preserve">go south</command>
-    <result xml:space="preserve">(first opening the trap door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-178">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a torch (providing light)&#x000A;  a gold coin&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-166"/>
+      <child nodeId="node-179"/>
     </children>
   </item>
-  <item nodeId="node-166">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-179">
+    <command xml:space="preserve">look.</command>
+    <result xml:space="preserve">The Dark Room&#x000A;The room is dark. You can barely make out a small golden stool in the faint light.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-167"/>
+      <child nodeId="node-180"/>
     </children>
   </item>
-  <item nodeId="node-167">
-    <command xml:space="preserve">light torch</command>
-    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-168"/>
-    </children>
-  </item>
-  <item nodeId="node-168">
-    <command xml:space="preserve">go south</command>
-    <result xml:space="preserve">(first opening the trap door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-169"/>
-    </children>
-  </item>
-  <item nodeId="node-169">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-170"/>
-    </children>
-  </item>
-  <item nodeId="node-170">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-180">
+    <command xml:space="preserve">lit torch</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-207">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">It's too dark, light the torch first!&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-181">
+    <command xml:space="preserve">2</command>
+    <result xml:space="preserve">The Light Room&#x000A;The room is well-lit and empty except for an old wooden box on the floor.&#x000A;&#x000A;An old, run-down wooden box sits on the floor.&#x000A;&#x000A;You have chosen Petar. Good luck on your adventure!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-225"/>
+      <child nodeId="node-182"/>
+      <child nodeId="node-185"/>
+      <child nodeId="node-191"/>
+      <child nodeId="node-193"/>
+      <child nodeId="node-197"/>
+      <child nodeId="node-199"/>
+      <child nodeId="node-209"/>
       <child nodeId="node-214"/>
-      <child nodeId="node-210"/>
-      <child nodeId="node-218"/>
-      <child nodeId="node-208"/>
+      <child nodeId="node-220"/>
+      <child nodeId="node-224"/>
     </children>
   </item>
-  <item nodeId="node-225">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-182">
+    <command xml:space="preserve">examine box</command>
+    <result xml:space="preserve">Box is empty.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-226"/>
+      <child nodeId="node-183"/>
     </children>
   </item>
-  <item nodeId="node-226">
-    <command xml:space="preserve">go south</command>
-    <result xml:space="preserve">It's too dark, light the torch first!&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-183">
+    <command xml:space="preserve">put coin into box</command>
+    <result xml:space="preserve">You put the gold coin in the box. A door appears to the north!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-227"/>
+      <child nodeId="node-184"/>
     </children>
   </item>
-  <item nodeId="node-227">
+  <item nodeId="node-184">
+    <command xml:space="preserve">take box</command>
+    <result xml:space="preserve">As you lift the box, the floor beneath you collapses!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-185">
     <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">There is no way north.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-228"/>
+      <child nodeId="node-186"/>
     </children>
   </item>
-  <item nodeId="node-228">
+  <item nodeId="node-186">
+    <command xml:space="preserve">examine box</command>
+    <result xml:space="preserve">Box is empty.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-187"/>
+    </children>
+  </item>
+  <item nodeId="node-187">
     <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">There is no way north.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-229"/>
+      <child nodeId="node-188"/>
     </children>
   </item>
-  <item nodeId="node-229">
+  <item nodeId="node-188">
+    <command xml:space="preserve">tako box</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-189"/>
+    </children>
+  </item>
+  <item nodeId="node-189">
+    <command xml:space="preserve">take box</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-190"/>
+    </children>
+  </item>
+  <item nodeId="node-190">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">The Light Room&#x000A;The room is well-lit and empty except for an old wooden box on the floor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-191">
+    <command xml:space="preserve">insert coin into box</command>
+    <result xml:space="preserve">You put the gold coin in the box. A door appears to the north!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-192"/>
+    </children>
+  </item>
+  <item nodeId="node-192">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-193">
+    <command xml:space="preserve">insert gold coin into box</command>
+    <result xml:space="preserve">You put the gold coin in the box. A door appears to the north!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-194"/>
+    </children>
+  </item>
+  <item nodeId="node-194">
+    <command xml:space="preserve">insert coin into box</command>
+    <result xml:space="preserve">The gold coin is already there.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-195"/>
+    </children>
+  </item>
+  <item nodeId="node-195">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-196"/>
+    </children>
+  </item>
+  <item nodeId="node-196">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-197">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a gold coin&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-198"/>
+    </children>
+  </item>
+  <item nodeId="node-198">
     <command xml:space="preserve">light torch</command>
-    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;You can see ForestDoor here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-230"/>
-    </children>
-  </item>
-  <item nodeId="node-230">
-    <command xml:space="preserve">go forestdoor</command>
-    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-231"/>
-    </children>
-  </item>
-  <item nodeId="node-231">
-    <command xml:space="preserve">knock on door</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+  </item>
+  <item nodeId="node-199">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">The Light Room&#x000A;The room is well-lit and empty except for an old wooden box on the floor.&#x000A;&#x000A;An old, run-down wooden box sits on the floor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
     <children>
-      <child nodeId="node-232"/>
+      <child nodeId="node-200"/>
+      <child nodeId="node-204"/>
     </children>
   </item>
-  <item nodeId="node-232">
+  <item nodeId="node-200">
+    <command xml:space="preserve">eamine box</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-201"/>
+    </children>
+  </item>
+  <item nodeId="node-201">
+    <command xml:space="preserve">examine box</command>
+    <result xml:space="preserve">Box is empty.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-202"/>
+    </children>
+  </item>
+  <item nodeId="node-202">
+    <command xml:space="preserve">take box</command>
+    <result xml:space="preserve">As you lift the box, the floor beneath you collapses!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;That isn't available.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-203"/>
+    </children>
+  </item>
+  <item nodeId="node-203">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a gold coin&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-204">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-205"/>
+    </children>
+  </item>
+  <item nodeId="node-205">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-206"/>
+    </children>
+  </item>
+  <item nodeId="node-206">
     <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-233"/>
+      <child nodeId="node-207"/>
     </children>
   </item>
-  <item nodeId="node-233">
-    <command xml:space="preserve">knock ForestDoor</command>
-    <result xml:space="preserve">Voice through the wind: Knock 3 times!&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-234"/>
-    </children>
-  </item>
-  <item nodeId="node-234">
-    <command xml:space="preserve">knock ForestDoor</command>
-    <result xml:space="preserve">Knocked 2 of 3 times.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-235"/>
-    </children>
-  </item>
-  <item nodeId="node-235">
-    <command xml:space="preserve">knock ForestDoor</command>
-    <result xml:space="preserve">CLICK! The door unlocks!&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-236"/>
-    </children>
-  </item>
-  <item nodeId="node-236">
-    <command xml:space="preserve">go through</command>
-    <result xml:space="preserve">(the torch)&#x000A;That's not something you can enter.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-237"/>
-    </children>
-  </item>
-  <item nodeId="node-237">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;You can see ForestDoor here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-238"/>
-    </children>
-  </item>
-  <item nodeId="node-238">
+  <item nodeId="node-207">
     <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;You can see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-239"/>
+      <child nodeId="node-208"/>
     </children>
   </item>
-  <item nodeId="node-239">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;You can see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-208">
+    <command xml:space="preserve">examine the box</command>
+    <result xml:space="preserve">You see nothing special about Wooden box.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-209">
+    <command xml:space="preserve">look.</command>
+    <result xml:space="preserve">The Light Room&#x000A;The room is well-lit and empty except for an old wooden box on the floor.&#x000A;&#x000A;An old, run-down wooden box sits on the floor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-210"/>
+    </children>
+  </item>
+  <item nodeId="node-210">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">There is no way north.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-211"/>
+    </children>
+  </item>
+  <item nodeId="node-211">
+    <command xml:space="preserve">examine box</command>
+    <result xml:space="preserve">Box is empty.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-212"/>
+    </children>
+  </item>
+  <item nodeId="node-212">
+    <command xml:space="preserve">insert coin into the box</command>
+    <result xml:space="preserve">You put the gold coin in the box. A door appears to the north!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-213"/>
+    </children>
+  </item>
+  <item nodeId="node-213">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
   <item nodeId="node-214">
-    <command xml:space="preserve">go south</command>
-    <result xml:space="preserve">(first opening the trap door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">put coin in box</command>
+    <result xml:space="preserve">You put the gold coin in the box. A door appears to the north!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -432,7 +1940,7 @@
   </item>
   <item nodeId="node-215">
     <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -440,8 +1948,8 @@
     </children>
   </item>
   <item nodeId="node-216">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">restart</command>
+    <result xml:space="preserve">Are you sure you want to restart?</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -449,54 +1957,32 @@
     </children>
   </item>
   <item nodeId="node-217">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked. Knock as instructed.|&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-210">
-    <command xml:space="preserve">knock</command>
-    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">yes</command>
+    <result xml:space="preserve">You must choose a character first. Type 1 or 2.&#x000A;&#x000A;Welcome to the game! It was created as a project for the Declarative Programming course. However, I hope you will still enjoy playing it.&#x000A;&#x000A; Choose your character:&#x000A;1 - Ivan (has a torch and one gold coin)&#x000A;2 - Petar (has nothing)&#x000A;&#x000A;Type 1 or 2 to continue.&#x000A;&#x000A;Projekt iz kolegija Deklarativno programiranje&#x000A;An Interactive Fiction by Lucija Polak&#x000A;Release 1 / Serial number 260108 / Inform 7 v10.1.2 / D&#x000A;&#x000A;You must choose a character first. Type 1 or 2.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-211"/>
+      <child nodeId="node-218"/>
     </children>
-  </item>
-  <item nodeId="node-211">
-    <command xml:space="preserve">knock on forestdppr</command>
-    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-212"/>
-    </children>
-  </item>
-  <item nodeId="node-212">
-    <command xml:space="preserve">knock on forestdoor</command>
-    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
   </item>
   <item nodeId="node-218">
-    <command xml:space="preserve">knock door</command>
-    <result xml:space="preserve">You must supply a noun.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;You have chosen Ivan. Good luck on your adventure!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-219"/>
-      <child nodeId="node-220"/>
     </children>
   </item>
   <item nodeId="node-219">
-    <command xml:space="preserve">knock ForestDoor</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">(first opening the trap door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
   <item nodeId="node-220">
-    <command xml:space="preserve">light torch</command>
-    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;You can see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">tak box</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -504,8 +1990,8 @@
     </children>
   </item>
   <item nodeId="node-221">
-    <command xml:space="preserve">knock door</command>
-    <result xml:space="preserve">You must supply a noun.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take box</command>
+    <result xml:space="preserve">As you lift the box, the floor beneath you collapses!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -513,8 +1999,8 @@
     </children>
   </item>
   <item nodeId="node-222">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -522,397 +2008,166 @@
     </children>
   </item>
   <item nodeId="node-223">
-    <command xml:space="preserve">knock doot</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  Box&#x000A;  a gold coin&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-224"/>
-    </children>
   </item>
   <item nodeId="node-224">
-    <command xml:space="preserve">knock door</command>
-    <result xml:space="preserve">You must supply a noun.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-208">
-    <command xml:space="preserve">light torch</command>
-    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take box</command>
+    <result xml:space="preserve">As you touch it, the floor beneath you collapses!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;[Your score has just gone down by ten points.]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-209"/>
+      <child nodeId="node-225"/>
+      <child nodeId="node-229"/>
+      <child nodeId="node-232"/>
     </children>
   </item>
-  <item nodeId="node-209">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-10">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  a torch&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-225">
+    <command xml:space="preserve">UNDO</command>
+    <result xml:space="preserve">The use of "undo" is forbidden in this story.&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-11"/>
+      <child nodeId="node-226"/>
     </children>
   </item>
-  <item nodeId="node-11">
-    <command xml:space="preserve">light a torch</command>
-    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-226">
+    <command xml:space="preserve">RESTORE</command>
+    <result xml:space="preserve">Restore failed.&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-12"/>
+      <child nodeId="node-227"/>
     </children>
   </item>
-  <item nodeId="node-12">
-    <command xml:space="preserve">examine apple</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-227">
+    <command xml:space="preserve">RESTART</command>
+    <result xml:space="preserve">You must choose a character first. Type 1 or 2.&#x000A;&#x000A;Welcome to the game! It was created as a project for the Declarative Programming course. However, I hope you will still enjoy playing it.&#x000A;&#x000A; Choose your character:&#x000A;1 - Ivan (has a torch and one gold coin)&#x000A;2 - Petar (has nothing)&#x000A;&#x000A;Type 1 or 2 to continue.&#x000A;&#x000A;Projekt iz kolegija Deklarativno programiranje&#x000A;An Interactive Fiction by Lucija Polak&#x000A;Release 1 / Serial number 260108 / Inform 7 v10.1.2 / D&#x000A;&#x000A;You must choose a character first. Type 1 or 2.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-13"/>
+      <child nodeId="node-228"/>
     </children>
   </item>
-  <item nodeId="node-13">
-    <command xml:space="preserve">examine an golden apple</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-228">
+    <command xml:space="preserve">2</command>
+    <result xml:space="preserve">The Light Room&#x000A;The room is well-lit and empty except for an old wooden box on the floor.&#x000A;&#x000A;An old, run-down wooden box sits on the floor.&#x000A;&#x000A;You have chosen Petar. Good luck on your adventure!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-229">
+    <command xml:space="preserve">score</command>
+    <result xml:space="preserve">You have so far scored 20 out of a possible 100, in 3 turns.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-14"/>
+      <child nodeId="node-230"/>
     </children>
   </item>
-  <item nodeId="node-14">
-    <command xml:space="preserve">extinguish torch</command>
-    <result xml:space="preserve">You extinguish the torch. Darkness surrounds you again.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-230">
+    <command xml:space="preserve">score</command>
+    <result xml:space="preserve">You have so far scored 20 out of a possible 100, in 3 turns.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-15"/>
+      <child nodeId="node-231"/>
     </children>
   </item>
-  <item nodeId="node-15">
-    <command xml:space="preserve">look.</command>
-    <result xml:space="preserve">The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-16">
-    <command xml:space="preserve">light a torch</command>
-    <result xml:space="preserve">This dangerous act would achieve little.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-17"/>
-    </children>
-  </item>
-  <item nodeId="node-17">
-    <command xml:space="preserve">light torch</command>
-    <result xml:space="preserve">This dangerous act would achieve little.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-18"/>
-    </children>
-  </item>
-  <item nodeId="node-18">
-    <command xml:space="preserve">lit torch</command>
-    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-19"/>
-    </children>
-  </item>
-  <item nodeId="node-19">
-    <command xml:space="preserve">burn torch</command>
-    <result xml:space="preserve">This dangerous act would achieve little.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-20"/>
-    </children>
-  </item>
-  <item nodeId="node-20">
-    <command xml:space="preserve">bimbambum</command>
-    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-21"/>
-    </children>
-  </item>
-  <item nodeId="node-21">
-    <command xml:space="preserve">light torch</command>
-    <result xml:space="preserve">This dangerous act would achieve little.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-22">
-    <command xml:space="preserve">light torch</command>
-    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;You can see ForestDoor here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-23"/>
-      <child nodeId="node-30"/>
-      <child nodeId="node-250"/>
-      <child nodeId="node-240"/>
-      <child nodeId="node-34"/>
-      <child nodeId="node-37"/>
-      <child nodeId="node-42"/>
-      <child nodeId="node-43"/>
-    </children>
-  </item>
-  <item nodeId="node-23">
-    <command xml:space="preserve">examine apple</command>
-    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;It seems light for something made of gold.&#x000A;Don't do it... In 3..&#x000A;The floor creaks ominously...&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-24"/>
-      <child nodeId="node-163"/>
-      <child nodeId="node-29"/>
-    </children>
-  </item>
-  <item nodeId="node-24">
-    <command xml:space="preserve">examine apple</command>
-    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;The floor collapses! You fall through a hole!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Dropped.&#x000A;&#x000A;&#x000A;&#x000A;    *** You succumb to your injuries. Pro tip: drink more water. ***&#x000A;&#x000A;&#x000A;In that game you scored 0 out of a possible 100, in 4 turns.&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-25"/>
-      <child nodeId="node-27"/>
-      <child nodeId="node-190"/>
-      <child nodeId="node-28"/>
-    </children>
-  </item>
-  <item nodeId="node-25">
-    <command xml:space="preserve">examine apple</command>
-    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-26"/>
-    </children>
-  </item>
-  <item nodeId="node-26">
-    <command xml:space="preserve">take apple</command>
-    <result xml:space="preserve">(Ignoring the warning...)&#x000A;&#x000A;The apple crumbles to dust!&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-27">
+  <item nodeId="node-231">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-190">
-    <command xml:space="preserve">restart</command>
-    <result xml:space="preserve">You must choose a character first. Type 1 or 2.&#x000A;&#x000A;Welcome to the game! It was created as a project for the Declarative Programming course. However, I hope you will still enjoy playing it.&#x000A;&#x000A; Choose your character:&#x000A;1 - Ivan (has a torch and one gold coin)&#x000A;2 - Petar (has nothing)&#x000A;&#x000A;Type 1 or 2 to continue.&#x000A;&#x000A;Projekt iz kolegija Deklarativno programiranje&#x000A;An Interactive Fiction by Lucija Polak&#x000A;Release 1 / Serial number 260108 / Inform 7 v10.1.2 / D&#x000A;&#x000A;You must choose a character first. Type 1 or 2.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-191"/>
-    </children>
-  </item>
-  <item nodeId="node-191">
-    <command xml:space="preserve">1</command>
-    <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;You have chosen Ivan. Good luck on your adventure!&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-192"/>
-    </children>
-  </item>
-  <item nodeId="node-192">
-    <command xml:space="preserve">light torch</command>
-    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-193"/>
-    </children>
-  </item>
-  <item nodeId="node-193">
-    <command xml:space="preserve">examine stool</command>
-    <result xml:space="preserve">A small stool made of solid gold.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-194"/>
-    </children>
-  </item>
-  <item nodeId="node-194">
-    <command xml:space="preserve">examine stool</command>
-    <result xml:space="preserve">A small stool made of solid gold.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-195"/>
-    </children>
-  </item>
-  <item nodeId="node-195">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-196"/>
-    </children>
-  </item>
-  <item nodeId="node-196">
-    <command xml:space="preserve">examine apple</command>
-    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;It seems light for something made of gold.&#x000A;Don't do it... In 3..&#x000A;The floor creaks ominously...&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-197"/>
-    </children>
-  </item>
-  <item nodeId="node-197">
-    <command xml:space="preserve">take apple</command>
-    <result xml:space="preserve">Ignoring the warning...&#x000A;As you touch it, the floor beneath you collapses!&#x000A;The apple crumbles to dust!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Dropped.&#x000A;&#x000A;&#x000A;&#x000A;    *** You succumb to your injuries. Pro tip: drink more water. ***&#x000A;&#x000A;&#x000A;In that game you scored 0 out of a possible 100, in 7 turns.&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-28">
-    <command xml:space="preserve">take apple</command>
-    <result xml:space="preserve">Ignoring the warning, are you not?...&#x000A;The apple crumbles to dust!&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-163">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;The floor collapses! You fall through a hole!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-29">
-    <command xml:space="preserve">take apple</command>
-    <result xml:space="preserve">Ignoring the warning...&#x000A;As you touch it, the floor beneath you collapses!&#x000A;The apple crumbles to dust!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-143"/>
-    </children>
-  </item>
-  <item nodeId="node-143">
+  <item nodeId="node-232">
     <command xml:space="preserve">status</command>
     <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-233"/>
+    </children>
   </item>
-  <item nodeId="node-30">
-    <command xml:space="preserve">examine golden stool</command>
-    <result xml:space="preserve">A small stool made of solid gold.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-233">
+    <command xml:space="preserve">score</command>
+    <result xml:space="preserve">You have so far scored 30 out of a possible 100, in 3 turns.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-234">
+    <command xml:space="preserve">4</command>
+    <result xml:space="preserve">Invalid choice. Type 1 or 2.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-31"/>
+      <child nodeId="node-235"/>
     </children>
   </item>
-  <item nodeId="node-31">
-    <command xml:space="preserve">examine apple</command>
-    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;It seems light for something made of gold.&#x000A;Don't do it...&#x000A;The floor creaks ominously...&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-235">
+    <command xml:space="preserve">2</command>
+    <result xml:space="preserve">You have chosen Petar. Good luck on your adventure!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-32"/>
+      <child nodeId="node-236"/>
     </children>
   </item>
-  <item nodeId="node-32">
-    <command xml:space="preserve">examine apple</command>
-    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;The floor collapses! You fall through a hole!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-236">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Starting Room&#x000A;Your adventure begins here.&#x000A;&#x000A;You can see your former self here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-33"/>
+      <child nodeId="node-237"/>
     </children>
   </item>
-  <item nodeId="node-33">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-250">
-    <command xml:space="preserve">go ForestDoor</command>
-    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-237">
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">You have already chosen your character.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-251"/>
+      <child nodeId="node-238"/>
     </children>
   </item>
-  <item nodeId="node-251">
-    <command xml:space="preserve">knock</command>
-    <result xml:space="preserve">(ForestDoor)&#x000A;Voice through the wind: Knock 2 times!&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-238">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">The use of "undo" is forbidden in this story.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-252"/>
+      <child nodeId="node-239"/>
     </children>
   </item>
-  <item nodeId="node-252">
-    <command xml:space="preserve">knock</command>
-    <result xml:space="preserve">(ForestDoor)&#x000A;CLICK! The door unlocks!&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-239">
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">You have already chosen your character.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-240"/>
+    </children>
   </item>
   <item nodeId="node-240">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">clear</command>
+    <result xml:space="preserve">(your former self)&#x000A;Yourself might not like that.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-253"/>
       <child nodeId="node-241"/>
     </children>
   </item>
-  <item nodeId="node-253">
-    <command xml:space="preserve">knock</command>
-    <result xml:space="preserve">(ForestDoor)&#x000A;Voice through the wind: Knock 2 times!&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-254"/>
-    </children>
-  </item>
-  <item nodeId="node-254">
-    <command xml:space="preserve">knock</command>
-    <result xml:space="preserve">(ForestDoor)&#x000A;CLICK! The door unlocks!&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-255"/>
-    </children>
-  </item>
-  <item nodeId="node-255">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;You can see ForestDoor here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
   <item nodeId="node-241">
-    <command xml:space="preserve">knock door</command>
-    <result xml:space="preserve">You must supply a noun.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look.</command>
+    <result xml:space="preserve">Starting Room&#x000A;Your adventure begins here.&#x000A;&#x000A;You can see your former self here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-242"/>
-      <child nodeId="node-247"/>
-    </children>
   </item>
   <item nodeId="node-242">
-    <command xml:space="preserve">knock on ForestDoor</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You must choose a character first. Type 1 or 2.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -920,8 +2175,8 @@
     </children>
   </item>
   <item nodeId="node-243">
-    <command xml:space="preserve">knock on door</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">2</command>
+    <result xml:space="preserve">You have chosen Petar. Good luck on your adventure!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -929,17 +2184,14 @@
     </children>
   </item>
   <item nodeId="node-244">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-245"/>
-    </children>
   </item>
   <item nodeId="node-245">
-    <command xml:space="preserve">knock on ForestDoor</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">You must choose a character first. Type 1 or 2.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -947,14 +2199,17 @@
     </children>
   </item>
   <item nodeId="node-246">
-    <command xml:space="preserve">knock ForestDoor</command>
-    <result xml:space="preserve">Voice through the wind: Knock 4 times!&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;You have chosen Ivan. Good luck on your adventure!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-247"/>
+    </children>
   </item>
   <item nodeId="node-247">
-    <command xml:space="preserve">knock on the door</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -962,8 +2217,8 @@
     </children>
   </item>
   <item nodeId="node-248">
-    <command xml:space="preserve">knock the door</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -971,1205 +2226,81 @@
     </children>
   </item>
   <item nodeId="node-249">
-    <command xml:space="preserve">knock on door</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-34">
     <command xml:space="preserve">light torch</command>
-    <result xml:space="preserve">&gt;</result>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-35"/>
+      <child nodeId="node-250"/>
     </children>
   </item>
-  <item nodeId="node-35">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-36"/>
-    </children>
-  </item>
-  <item nodeId="node-36">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-37">
-    <command xml:space="preserve">lit torch</command>
-    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-38"/>
-    </children>
-  </item>
-  <item nodeId="node-38">
-    <command xml:space="preserve">extinguish torch</command>
-    <result xml:space="preserve">You extinguish the torch. Darkness surrounds you again.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-39"/>
-    </children>
-  </item>
-  <item nodeId="node-39">
-    <command xml:space="preserve">look.</command>
-    <result xml:space="preserve">The Dark Room&#x000A;The room is dark. You can barely make out a small golden stool in the faint light.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-40"/>
-    </children>
-  </item>
-  <item nodeId="node-40">
-    <command xml:space="preserve">light torch</command>
-    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-41"/>
-    </children>
-  </item>
-  <item nodeId="node-41">
-    <command xml:space="preserve">look.</command>
-    <result xml:space="preserve">The Dark Room&#x000A;The room is dark. You can barely make out a small golden stool in the faint light.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-42">
-    <command xml:space="preserve">look.</command>
-    <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-43">
-    <command xml:space="preserve">take apple</command>
-    <result xml:space="preserve">As you touch it, the floor beneath you collapses!&#x000A;The apple crumbles to dust!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-44"/>
-      <child nodeId="node-47"/>
-      <child nodeId="node-48"/>
-      <child nodeId="node-49"/>
-    </children>
-  </item>
-  <item nodeId="node-44">
-    <command xml:space="preserve">a</command>
-    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-45"/>
-    </children>
-  </item>
-  <item nodeId="node-45">
-    <command xml:space="preserve">look.</command>
-    <result xml:space="preserve">The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-46"/>
-    </children>
-  </item>
-  <item nodeId="node-46">
-    <command xml:space="preserve">take apple</command>
-    <result xml:space="preserve">The apple crumbles to dust!&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-47">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-178"/>
-    </children>
-  </item>
-  <item nodeId="node-178">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-48">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-49">
-    <command xml:space="preserve">take apple</command>
-    <result xml:space="preserve">The apple crumbles to dust!&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-50"/>
-      <child nodeId="node-52"/>
-    </children>
-  </item>
-  <item nodeId="node-50">
+  <item nodeId="node-250">
     <command xml:space="preserve">examine apple</command>
     <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;It seems light for something made of gold.&#x000A;Don't do it...&#x000A;The floor creaks ominously...&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-51"/>
+      <child nodeId="node-251"/>
     </children>
   </item>
-  <item nodeId="node-51">
-    <command xml:space="preserve">take apple</command>
-    <result xml:space="preserve">Ignoring the warning...&#x000A;The apple crumbles to dust!&#x000A;&#x000A;The floor collapses! You fall through a hole!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-52">
-    <command xml:space="preserve">look.</command>
-    <result xml:space="preserve">The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-53"/>
-    </children>
-  </item>
-  <item nodeId="node-53">
-    <command xml:space="preserve">examine apple</command>
-    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;It seems light for something made of gold.&#x000A;Don't do it...&#x000A;The floor creaks ominously...&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-54"/>
-    </children>
-  </item>
-  <item nodeId="node-54">
-    <command xml:space="preserve">examine apple</command>
-    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;The floor collapses! You fall through a hole!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-55"/>
-    </children>
-  </item>
-  <item nodeId="node-55">
-    <command xml:space="preserve">look.</command>
-    <result xml:space="preserve">Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;You can see a torch here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-56">
-    <command xml:space="preserve">light torxh</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-57"/>
-    </children>
-  </item>
-  <item nodeId="node-57">
-    <command xml:space="preserve">light torch</command>
-    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-58"/>
-    </children>
-  </item>
-  <item nodeId="node-58">
-    <command xml:space="preserve">take apple</command>
-    <result xml:space="preserve">The apple crumbles to dust!&#x000A;The floor collapses! You fall through a hole!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-59"/>
-    </children>
-  </item>
-  <item nodeId="node-59">
-    <command xml:space="preserve">look.</command>
-    <result xml:space="preserve">Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;You can see a torch here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-60">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-61"/>
-    </children>
-  </item>
-  <item nodeId="node-61">
-    <command xml:space="preserve">light torch</command>
-    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-62"/>
-    </children>
-  </item>
-  <item nodeId="node-62">
-    <command xml:space="preserve">examine golden apple</command>
-    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-63">
-    <command xml:space="preserve">look.</command>
-    <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-64"/>
-      <child nodeId="node-71"/>
-      <child nodeId="node-74"/>
-      <child nodeId="node-82"/>
-    </children>
-  </item>
-  <item nodeId="node-64">
-    <command xml:space="preserve">inventory.</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  a torch&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-65"/>
-    </children>
-  </item>
-  <item nodeId="node-65">
-    <command xml:space="preserve">light a torch</command>
-    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-66"/>
-    </children>
-  </item>
-  <item nodeId="node-66">
-    <command xml:space="preserve">light torch</command>
-    <result xml:space="preserve">The torch is already lit.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-67"/>
-    </children>
-  </item>
-  <item nodeId="node-67">
-    <command xml:space="preserve">extinguish torch</command>
-    <result xml:space="preserve">You extinguish the torch. Darkness surrounds you again.&#x000A;&#x000A;It is now pitch dark in here!&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-68"/>
-    </children>
-  </item>
-  <item nodeId="node-68">
-    <command xml:space="preserve">look.</command>
-    <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-69"/>
-    </children>
-  </item>
-  <item nodeId="node-69">
-    <command xml:space="preserve">light torch</command>
-    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-70"/>
-    </children>
-  </item>
-  <item nodeId="node-70">
-    <command xml:space="preserve">examine apple</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-71">
-    <command xml:space="preserve">light torch</command>
-    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-72"/>
-      <child nodeId="node-73"/>
-    </children>
-  </item>
-  <item nodeId="node-72">
-    <command xml:space="preserve">light a torch</command>
-    <result xml:space="preserve">This dangerous act would achieve little.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-73">
-    <command xml:space="preserve">look.</command>
-    <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-74">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-75"/>
-    </children>
-  </item>
-  <item nodeId="node-75">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  a torch&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-76"/>
-    </children>
-  </item>
-  <item nodeId="node-76">
-    <command xml:space="preserve">light torch</command>
-    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-77"/>
-    </children>
-  </item>
-  <item nodeId="node-77">
-    <command xml:space="preserve">extinguish torch</command>
-    <result xml:space="preserve">You extinguish the torch. Darkness surrounds you again.&#x000A;&#x000A;It is now pitch dark in here!&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-78"/>
-    </children>
-  </item>
-  <item nodeId="node-78">
-    <command xml:space="preserve">light torch</command>
-    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-79"/>
-    </children>
-  </item>
-  <item nodeId="node-79">
-    <command xml:space="preserve">undo</command>
-    <result xml:space="preserve">The use of "undo" is forbidden in this story.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-80"/>
-    </children>
-  </item>
-  <item nodeId="node-80">
-    <command xml:space="preserve">examine golden apple</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-81"/>
-    </children>
-  </item>
-  <item nodeId="node-81">
-    <command xml:space="preserve">move to small golden stool</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-82">
-    <command xml:space="preserve">move to the golden stool</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-83"/>
-    </children>
-  </item>
-  <item nodeId="node-83">
-    <command xml:space="preserve">go to golden stool</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-84"/>
-    </children>
-  </item>
-  <item nodeId="node-84">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  a torch&#x000A;  a gold coin&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-85"/>
-    </children>
-  </item>
-  <item nodeId="node-85">
-    <command xml:space="preserve">use torch</command>
-    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-86"/>
-    </children>
-  </item>
-  <item nodeId="node-86">
-    <command xml:space="preserve">use torch.</command>
-    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-186">
-    <command xml:space="preserve">take torch</command>
-    <result xml:space="preserve">You already have that.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-187"/>
-    </children>
-  </item>
-  <item nodeId="node-187">
-    <command xml:space="preserve">light torch</command>
-    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-188"/>
-    </children>
-  </item>
-  <item nodeId="node-188">
-    <command xml:space="preserve">examine apple</command>
-    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;It seems light for something made of gold.&#x000A;Don't do it... In 3..&#x000A;The floor creaks ominously...&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-189"/>
-    </children>
-  </item>
-  <item nodeId="node-189">
-    <command xml:space="preserve">examine apple</command>
-    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;The floor collapses! You fall through a hole!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-87">
-    <command xml:space="preserve">undo</command>
-    <result xml:space="preserve">The use of "undo" is forbidden in this story.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-88"/>
-    </children>
-  </item>
-  <item nodeId="node-88">
-    <command xml:space="preserve">2</command>
-    <result xml:space="preserve">You have already chosen your character.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-89"/>
-    </children>
-  </item>
-  <item nodeId="node-89">
-    <command xml:space="preserve">undo</command>
-    <result xml:space="preserve">Starting Room&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-90">
-    <command xml:space="preserve">use torch</command>
-    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-91"/>
-    </children>
-  </item>
-  <item nodeId="node-91">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  a torch (providing light)&#x000A;  a gold coin&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-92"/>
-    </children>
-  </item>
-  <item nodeId="node-92">
-    <command xml:space="preserve">look.</command>
-    <result xml:space="preserve">The Dark Room&#x000A;The room is dark. You can barely make out a small golden stool in the faint light.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-93"/>
-    </children>
-  </item>
-  <item nodeId="node-93">
-    <command xml:space="preserve">lit torch</command>
-    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-94">
-    <command xml:space="preserve">2</command>
-    <result xml:space="preserve">The Light Room&#x000A;The room is well-lit and empty except for an old wooden box on the floor.&#x000A;&#x000A;An old, run-down wooden box sits on the floor.&#x000A;&#x000A;You have chosen Petar. Good luck on your adventure!&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-95"/>
-      <child nodeId="node-144"/>
-      <child nodeId="node-159"/>
-      <child nodeId="node-126"/>
-      <child nodeId="node-96"/>
-      <child nodeId="node-98"/>
-      <child nodeId="node-121"/>
-      <child nodeId="node-201"/>
-      <child nodeId="node-150"/>
-      <child nodeId="node-158"/>
-    </children>
-  </item>
-  <item nodeId="node-95">
-    <command xml:space="preserve">examine box</command>
-    <result xml:space="preserve">Box is empty.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-161"/>
-    </children>
-  </item>
-  <item nodeId="node-161">
-    <command xml:space="preserve">put coin into box</command>
-    <result xml:space="preserve">You put the gold coin in the box. A door appears to the north!&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-162"/>
-    </children>
-  </item>
-  <item nodeId="node-162">
-    <command xml:space="preserve">take box</command>
-    <result xml:space="preserve">As you lift the box, the floor beneath you collapses!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-144">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">There is no way north.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-145"/>
-    </children>
-  </item>
-  <item nodeId="node-145">
-    <command xml:space="preserve">examine box</command>
-    <result xml:space="preserve">Box is empty.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-146"/>
-    </children>
-  </item>
-  <item nodeId="node-146">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">There is no way north.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-147"/>
-    </children>
-  </item>
-  <item nodeId="node-147">
-    <command xml:space="preserve">tako box</command>
-    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-148"/>
-    </children>
-  </item>
-  <item nodeId="node-148">
-    <command xml:space="preserve">take box</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-149"/>
-    </children>
-  </item>
-  <item nodeId="node-149">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">The Light Room&#x000A;The room is well-lit and empty except for an old wooden box on the floor.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-159">
-    <command xml:space="preserve">insert coin into box</command>
-    <result xml:space="preserve">You put the gold coin in the box. A door appears to the north!&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-160"/>
-    </children>
-  </item>
-  <item nodeId="node-160">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-126">
-    <command xml:space="preserve">insert gold coin into box</command>
-    <result xml:space="preserve">You put the gold coin in the box. A door appears to the north!&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-127"/>
-    </children>
-  </item>
-  <item nodeId="node-127">
-    <command xml:space="preserve">insert coin into box</command>
-    <result xml:space="preserve">The gold coin is already there.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-128"/>
-    </children>
-  </item>
-  <item nodeId="node-128">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-129"/>
-    </children>
-  </item>
-  <item nodeId="node-129">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-96">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  a gold coin&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-97"/>
-    </children>
-  </item>
-  <item nodeId="node-97">
-    <command xml:space="preserve">light torch</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-98">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">The Light Room&#x000A;The room is well-lit and empty except for an old wooden box on the floor.&#x000A;&#x000A;An old, run-down wooden box sits on the floor.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-154"/>
-      <child nodeId="node-99"/>
-    </children>
-  </item>
-  <item nodeId="node-154">
-    <command xml:space="preserve">eamine box</command>
-    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-155"/>
-    </children>
-  </item>
-  <item nodeId="node-155">
-    <command xml:space="preserve">examine box</command>
-    <result xml:space="preserve">Box is empty.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-156"/>
-    </children>
-  </item>
-  <item nodeId="node-156">
-    <command xml:space="preserve">take box</command>
-    <result xml:space="preserve">As you lift the box, the floor beneath you collapses!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;That isn't available.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-157"/>
-    </children>
-  </item>
-  <item nodeId="node-157">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  a gold coin&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-99">
-    <command xml:space="preserve">go south</command>
-    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-100"/>
-    </children>
-  </item>
-  <item nodeId="node-100">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-101"/>
-    </children>
-  </item>
-  <item nodeId="node-101">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-102"/>
-    </children>
-  </item>
-  <item nodeId="node-102">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-103"/>
-    </children>
-  </item>
-  <item nodeId="node-103">
-    <command xml:space="preserve">examine the box</command>
-    <result xml:space="preserve">You see nothing special about Wooden box.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-121">
-    <command xml:space="preserve">look.</command>
-    <result xml:space="preserve">The Light Room&#x000A;The room is well-lit and empty except for an old wooden box on the floor.&#x000A;&#x000A;An old, run-down wooden box sits on the floor.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-122"/>
-    </children>
-  </item>
-  <item nodeId="node-122">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">There is no way north.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-123"/>
-    </children>
-  </item>
-  <item nodeId="node-123">
-    <command xml:space="preserve">examine box</command>
-    <result xml:space="preserve">Box is empty.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-124"/>
-    </children>
-  </item>
-  <item nodeId="node-124">
-    <command xml:space="preserve">insert coin into the box</command>
-    <result xml:space="preserve">You put the gold coin in the box. A door appears to the north!&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-125"/>
-    </children>
-  </item>
-  <item nodeId="node-125">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-201">
-    <command xml:space="preserve">put coin in box</command>
-    <result xml:space="preserve">You put the gold coin in the box. A door appears to the north!&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-202"/>
-    </children>
-  </item>
-  <item nodeId="node-202">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-203"/>
-    </children>
-  </item>
-  <item nodeId="node-203">
-    <command xml:space="preserve">restart</command>
-    <result xml:space="preserve">Are you sure you want to restart?</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-204"/>
-    </children>
-  </item>
-  <item nodeId="node-204">
-    <command xml:space="preserve">yes</command>
-    <result xml:space="preserve">You must choose a character first. Type 1 or 2.&#x000A;&#x000A;Welcome to the game! It was created as a project for the Declarative Programming course. However, I hope you will still enjoy playing it.&#x000A;&#x000A; Choose your character:&#x000A;1 - Ivan (has a torch and one gold coin)&#x000A;2 - Petar (has nothing)&#x000A;&#x000A;Type 1 or 2 to continue.&#x000A;&#x000A;Projekt iz kolegija Deklarativno programiranje&#x000A;An Interactive Fiction by Lucija Polak&#x000A;Release 1 / Serial number 260108 / Inform 7 v10.1.2 / D&#x000A;&#x000A;You must choose a character first. Type 1 or 2.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-205"/>
-    </children>
-  </item>
-  <item nodeId="node-205">
-    <command xml:space="preserve">1</command>
-    <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;You have chosen Ivan. Good luck on your adventure!&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-206"/>
-    </children>
-  </item>
-  <item nodeId="node-206">
-    <command xml:space="preserve">go south</command>
-    <result xml:space="preserve">(first opening the trap door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-150">
-    <command xml:space="preserve">tak box</command>
-    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-151"/>
-    </children>
-  </item>
-  <item nodeId="node-151">
-    <command xml:space="preserve">take box</command>
-    <result xml:space="preserve">As you lift the box, the floor beneath you collapses!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-152"/>
-    </children>
-  </item>
-  <item nodeId="node-152">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-153"/>
-    </children>
-  </item>
-  <item nodeId="node-153">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  Box&#x000A;  a gold coin&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-158">
-    <command xml:space="preserve">take box</command>
-    <result xml:space="preserve">As you touch it, the floor beneath you collapses!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;[Your score has just gone down by ten points.]&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-182"/>
-      <child nodeId="node-198"/>
-      <child nodeId="node-180"/>
-    </children>
-  </item>
-  <item nodeId="node-182">
-    <command xml:space="preserve">UNDO</command>
-    <result xml:space="preserve">The use of "undo" is forbidden in this story.&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-183"/>
-    </children>
-  </item>
-  <item nodeId="node-183">
-    <command xml:space="preserve">RESTORE</command>
-    <result xml:space="preserve">Restore failed.&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-184"/>
-    </children>
-  </item>
-  <item nodeId="node-184">
-    <command xml:space="preserve">RESTART</command>
-    <result xml:space="preserve">You must choose a character first. Type 1 or 2.&#x000A;&#x000A;Welcome to the game! It was created as a project for the Declarative Programming course. However, I hope you will still enjoy playing it.&#x000A;&#x000A; Choose your character:&#x000A;1 - Ivan (has a torch and one gold coin)&#x000A;2 - Petar (has nothing)&#x000A;&#x000A;Type 1 or 2 to continue.&#x000A;&#x000A;Projekt iz kolegija Deklarativno programiranje&#x000A;An Interactive Fiction by Lucija Polak&#x000A;Release 1 / Serial number 260108 / Inform 7 v10.1.2 / D&#x000A;&#x000A;You must choose a character first. Type 1 or 2.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-185"/>
-    </children>
-  </item>
-  <item nodeId="node-185">
-    <command xml:space="preserve">2</command>
-    <result xml:space="preserve">The Light Room&#x000A;The room is well-lit and empty except for an old wooden box on the floor.&#x000A;&#x000A;An old, run-down wooden box sits on the floor.&#x000A;&#x000A;You have chosen Petar. Good luck on your adventure!&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-198">
-    <command xml:space="preserve">score</command>
-    <result xml:space="preserve">You have so far scored 20 out of a possible 100, in 3 turns.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-199"/>
-    </children>
-  </item>
-  <item nodeId="node-199">
-    <command xml:space="preserve">score</command>
-    <result xml:space="preserve">You have so far scored 20 out of a possible 100, in 3 turns.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-200"/>
-    </children>
-  </item>
-  <item nodeId="node-200">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-180">
-    <command xml:space="preserve">status</command>
-    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-181"/>
-    </children>
-  </item>
-  <item nodeId="node-181">
-    <command xml:space="preserve">score</command>
-    <result xml:space="preserve">You have so far scored 30 out of a possible 100, in 3 turns.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-104">
-    <command xml:space="preserve">4</command>
-    <result xml:space="preserve">Invalid choice. Type 1 or 2.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-105"/>
-    </children>
-  </item>
-  <item nodeId="node-105">
-    <command xml:space="preserve">2</command>
-    <result xml:space="preserve">You have chosen Petar. Good luck on your adventure!&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-106"/>
-    </children>
-  </item>
-  <item nodeId="node-106">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Starting Room&#x000A;Your adventure begins here.&#x000A;&#x000A;You can see your former self here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-107"/>
-    </children>
-  </item>
-  <item nodeId="node-107">
-    <command xml:space="preserve">1</command>
-    <result xml:space="preserve">You have already chosen your character.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-108"/>
-    </children>
-  </item>
-  <item nodeId="node-108">
-    <command xml:space="preserve">undo</command>
-    <result xml:space="preserve">The use of "undo" is forbidden in this story.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-109"/>
-    </children>
-  </item>
-  <item nodeId="node-109">
-    <command xml:space="preserve">1</command>
-    <result xml:space="preserve">You have already chosen your character.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-110"/>
-    </children>
-  </item>
-  <item nodeId="node-110">
-    <command xml:space="preserve">clear</command>
-    <result xml:space="preserve">(your former self)&#x000A;Yourself might not like that.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-111"/>
-    </children>
-  </item>
-  <item nodeId="node-111">
-    <command xml:space="preserve">look.</command>
-    <result xml:space="preserve">Starting Room&#x000A;Your adventure begins here.&#x000A;&#x000A;You can see your former self here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-112">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You must choose a character first. Type 1 or 2.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-113"/>
-    </children>
-  </item>
-  <item nodeId="node-113">
-    <command xml:space="preserve">2</command>
-    <result xml:space="preserve">You have chosen Petar. Good luck on your adventure!&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-114"/>
-    </children>
-  </item>
-  <item nodeId="node-114">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-130">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">You must choose a character first. Type 1 or 2.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-131"/>
-    </children>
-  </item>
-  <item nodeId="node-131">
-    <command xml:space="preserve">1</command>
-    <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;You have chosen Ivan. Good luck on your adventure!&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-132"/>
-    </children>
-  </item>
-  <item nodeId="node-132">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-133"/>
-    </children>
-  </item>
-  <item nodeId="node-133">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-134"/>
-    </children>
-  </item>
-  <item nodeId="node-134">
-    <command xml:space="preserve">light torch</command>
-    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-135"/>
-    </children>
-  </item>
-  <item nodeId="node-135">
-    <command xml:space="preserve">examine apple</command>
-    <result xml:space="preserve">The golden apple has "RUN" inscribed on it!&#x000A;&#x000A;It seems light for something made of gold.&#x000A;Don't do it...&#x000A;The floor creaks ominously...&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-136"/>
-    </children>
-  </item>
-  <item nodeId="node-136">
+  <item nodeId="node-251">
     <command xml:space="preserve">go north</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;The floor collapses! You fall through a hole!&#x000A;&#x000A;Pit Room&#x000A;You fell into a dark pit. A trap door closed above you.&#x000A;&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-179">
+  <item nodeId="node-252">
     <command xml:space="preserve">score</command>
     <result xml:space="preserve">You have so far scored 0 out of a possible 0, in 1 turn.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-115">
+  <item nodeId="node-253">
     <command xml:space="preserve">sdsd</command>
     <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-116"/>
+      <child nodeId="node-254"/>
     </children>
   </item>
-  <item nodeId="node-116">
+  <item nodeId="node-254">
     <command xml:space="preserve">343</command>
     <result xml:space="preserve">Invalid choice. Type 1 or 2.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-117"/>
+      <child nodeId="node-255"/>
     </children>
   </item>
-  <item nodeId="node-117">
+  <item nodeId="node-255">
     <command xml:space="preserve">1</command>
     <result xml:space="preserve">You have chosen Ivan. Good luck on your adventure!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-118"/>
+      <child nodeId="node-256"/>
     </children>
   </item>
-  <item nodeId="node-118">
+  <item nodeId="node-256">
     <command xml:space="preserve">inventory</command>
     <result xml:space="preserve">You are carrying:&#x000A;  a torch&#x000A;  a gold coin&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-119"/>
+      <child nodeId="node-257"/>
     </children>
   </item>
-  <item nodeId="node-119">
+  <item nodeId="node-257">
     <command xml:space="preserve">2</command>
     <result xml:space="preserve">You have already chosen your character.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-120"/>
+      <child nodeId="node-258"/>
     </children>
   </item>
-  <item nodeId="node-120">
+  <item nodeId="node-258">
     <command xml:space="preserve">inventory</command>
     <result xml:space="preserve">You are carrying:&#x000A;  a torch&#x000A;  a gold coin&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
