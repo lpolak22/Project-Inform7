@@ -17,14 +17,14 @@
     </dict>
     <key>2</key><dict>
         <key>Filename</key><string>C:\Users\lucij\Documents\Repozitoriji\Project-Inform7\Projekt_DP.inform\Source\story.ni</string>
-        <key>Line</key><integer>170</integer>
+        <key>Line</key><integer>186</integer>
         <key>Title</key><string>Chapter 1 - Where am I ?</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>3</key><dict>
         <key>Filename</key><string>C:\Users\lucij\Documents\Repozitoriji\Project-Inform7\Projekt_DP.inform\Source\story.ni</string>
-        <key>Line</key><integer>316</integer>
+        <key>Line</key><integer>332</integer>
         <key>Title</key><string>Chapter 2 - A new friend</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
@@ -1259,5 +1259,12 @@
         <key>Title</key><string>Section 9 - Debugging Inform -</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
+    </dict>
+    <key>180</key><dict>
+        <key>Filename</key><string>C:\Program Files\Inform\Internal\Extensions\Graham Nelson\Rideable Vehicles.i7x</string>
+        <key>Line</key><integer>1</integer>
+        <key>Title</key><string>--</string>
+        <key>Level</key><integer>0</integer>
+        <key>Indentation</key><integer>0</integer>
     </dict>
 </dict></plist>

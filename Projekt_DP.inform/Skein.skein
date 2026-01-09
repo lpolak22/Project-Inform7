@@ -3830,6 +3830,7 @@
     <children>
       <child nodeId="node-440"/>
       <child nodeId="node-443"/>
+      <child nodeId="node-1306"/>
       <child nodeId="node-496"/>
       <child nodeId="node-504"/>
       <child nodeId="node-506"/>
@@ -3995,6 +3996,7 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-458"/>
+      <child nodeId="node-1216"/>
     </children>
   </item>
   <item nodeId="node-458">
@@ -4054,6 +4056,237 @@
   <item nodeId="node-464">
     <command xml:space="preserve">go north</command>
     <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;You can see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1216">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;The door is already unlocked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1217"/>
+    </children>
+  </item>
+  <item nodeId="node-1217">
+    <command xml:space="preserve">take berries</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1218"/>
+    </children>
+  </item>
+  <item nodeId="node-1218">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;Food: 4/10.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1219"/>
+    </children>
+  </item>
+  <item nodeId="node-1219">
+    <command xml:space="preserve">take berries</command>
+    <result xml:space="preserve">berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1220"/>
+    </children>
+  </item>
+  <item nodeId="node-1220">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a giant duck here.&#x000A;&#x000A;Voice through the wind: "NAME DUCK AS &lt;name&gt;."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1221"/>
+    </children>
+  </item>
+  <item nodeId="node-1221">
+    <command xml:space="preserve">give berry to duck</command>
+    <result xml:space="preserve">The giant duck doesn't seem interested.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1222"/>
+    </children>
+  </item>
+  <item nodeId="node-1222">
+    <command xml:space="preserve">feed duck</command>
+    <result xml:space="preserve">What do you want to feed the giant duck?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1223"/>
+    </children>
+  </item>
+  <item nodeId="node-1223">
+    <command xml:space="preserve">feed duck with berry</command>
+    <result xml:space="preserve">The giant duck doesn't seem interested.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1224"/>
+    </children>
+  </item>
+  <item nodeId="node-1224">
+    <command xml:space="preserve">give berry to duck</command>
+    <result xml:space="preserve">The giant duck doesn't seem interested.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1225"/>
+    </children>
+  </item>
+  <item nodeId="node-1225">
+    <command xml:space="preserve">name duck as lal</command>
+    <result xml:space="preserve">You name the duck "lal". It seems happy.&#x000A;&#x000A;Voice through the wind: "Try PET DUCK to bond."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1226"/>
+    </children>
+  </item>
+  <item nodeId="node-1226">
+    <command xml:space="preserve">give berry to duck</command>
+    <result xml:space="preserve">The lal doesn't seem interested.&#x000A;&#x000A;Voice through the wind: "Feed it: GIVE BERRY TO DUCK."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1227"/>
+    </children>
+  </item>
+  <item nodeId="node-1227">
+    <command xml:space="preserve">give berry to duck</command>
+    <result xml:space="preserve">The lal doesn't seem interested.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1228"/>
+    </children>
+  </item>
+  <item nodeId="node-1228">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the lal. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1229"/>
+    </children>
+  </item>
+  <item nodeId="node-1229">
+    <command xml:space="preserve">give berry to duck</command>
+    <result xml:space="preserve">The lal doesn't seem interested.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1230"/>
+    </children>
+  </item>
+  <item nodeId="node-1230">
+    <command xml:space="preserve">give berry to duck</command>
+    <result xml:space="preserve">The lal doesn't seem interested.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1231"/>
+    </children>
+  </item>
+  <item nodeId="node-1231">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  ninety-nine berries&#x000A;  a gold coin&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1232"/>
+    </children>
+  </item>
+  <item nodeId="node-1232">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1233"/>
+    </children>
+  </item>
+  <item nodeId="node-1233">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1234"/>
+    </children>
+  </item>
+  <item nodeId="node-1234">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1235"/>
+    </children>
+  </item>
+  <item nodeId="node-1235">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1236"/>
+    </children>
+  </item>
+  <item nodeId="node-1236">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1237"/>
+    </children>
+  </item>
+  <item nodeId="node-1237">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">You are already full and cannot eat any more berries.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1238"/>
+    </children>
+  </item>
+  <item nodeId="node-1238">
+    <command xml:space="preserve">give berry to duck</command>
+    <result xml:space="preserve">The lal doesn't seem interested.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1239"/>
+    </children>
+  </item>
+  <item nodeId="node-1239">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 3/10. Time: 9:25 am.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1240"/>
+    </children>
+  </item>
+  <item nodeId="node-1240">
+    <command xml:space="preserve">feed duck</command>
+    <result xml:space="preserve">What do you want to feed the lal?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1241"/>
+    </children>
+  </item>
+  <item nodeId="node-1241">
+    <command xml:space="preserve">feed duch with berry</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -4330,6 +4563,228 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-1306">
+    <command xml:space="preserve">go weart</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1307"/>
+    </children>
+  </item>
+  <item nodeId="node-1307">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1308"/>
+    </children>
+  </item>
+  <item nodeId="node-1308">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;Voice through the wind: Knock 2 times!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1309"/>
+    </children>
+  </item>
+  <item nodeId="node-1309">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;CLICK! The door unlocks!&#x000A;Huh, did I count right?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1310"/>
+    </children>
+  </item>
+  <item nodeId="node-1310">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1311"/>
+    </children>
+  </item>
+  <item nodeId="node-1311">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;Food: 4/10.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1312"/>
+    </children>
+  </item>
+  <item nodeId="node-1312">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1313"/>
+    </children>
+  </item>
+  <item nodeId="node-1313">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1314"/>
+    </children>
+  </item>
+  <item nodeId="node-1314">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1315"/>
+    </children>
+  </item>
+  <item nodeId="node-1315">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You are already full and cannot eat any more berries.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1316"/>
+    </children>
+  </item>
+  <item nodeId="node-1316">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">You are already full and cannot eat any more berries.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1317"/>
+    </children>
+  </item>
+  <item nodeId="node-1317">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1318"/>
+    </children>
+  </item>
+  <item nodeId="node-1318">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1319"/>
+    </children>
+  </item>
+  <item nodeId="node-1319">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;A giant duck waddles up to you and tilts its head, as if waiting for a name.&#x000A;You can type: name duck as &lt;name&gt;.&#x000A;Tip: you can increase the relationship with your pet.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1320"/>
+    </children>
+  </item>
+  <item nodeId="node-1320">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1321"/>
+    </children>
+  </item>
+  <item nodeId="node-1321">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a giant duck here.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1322"/>
+    </children>
+  </item>
+  <item nodeId="node-1322">
+    <command xml:space="preserve">name duck as la</command>
+    <result xml:space="preserve">You name the duck "la". It seems happy.&#x000A;&#x000A;Voice through the wind: "Try PET DUCK to bond."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1323"/>
+    </children>
+  </item>
+  <item nodeId="node-1323">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1324"/>
+    </children>
+  </item>
+  <item nodeId="node-1324">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a la here.&#x000A;&#x000A;Voice through the wind: "Feed it: GIVE BERRY TO DUCK."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1325"/>
+    </children>
+  </item>
+  <item nodeId="node-1325">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1326"/>
+    </children>
+  </item>
+  <item nodeId="node-1326">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a la here.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1327"/>
+    </children>
+  </item>
+  <item nodeId="node-1327">
+    <command xml:space="preserve">give berry to duck</command>
+    <result xml:space="preserve">The la happily eats the berry. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1328"/>
+    </children>
+  </item>
+  <item nodeId="node-1328">
+    <command xml:space="preserve">pet fuck</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1329"/>
+    </children>
+  </item>
+  <item nodeId="node-1329">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the la. It seems calmer. (Pet +1)&#x000A;Voice through the wind: "Travel together: RIDE DUCK / (DIS)MOUNT DUCK."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1330"/>
+    </children>
+  </item>
+  <item nodeId="node-1330">
+    <command xml:space="preserve">ride duck</command>
+    <result xml:space="preserve">You mount the la.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-496">
     <command xml:space="preserve">gp north</command>
     <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
@@ -4481,6 +4936,7 @@
     <children>
       <child nodeId="node-990"/>
       <child nodeId="node-514"/>
+      <child nodeId="node-1061"/>
       <child nodeId="node-550"/>
     </children>
   </item>
@@ -4489,19 +4945,1922 @@
     <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;Food: 4/10.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-1189"/>
+      <child nodeId="node-1281"/>
+      <child nodeId="node-1140"/>
+    </children>
+  </item>
+  <item nodeId="node-1189">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1242"/>
+      <child nodeId="node-1190"/>
+    </children>
+  </item>
+  <item nodeId="node-1242">
+    <command xml:space="preserve">eat berries</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1243"/>
+    </children>
+  </item>
+  <item nodeId="node-1243">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1244"/>
+    </children>
+  </item>
+  <item nodeId="node-1244">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1245"/>
+    </children>
+  </item>
+  <item nodeId="node-1245">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You are already full and cannot eat any more berries.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1246"/>
+    </children>
+  </item>
+  <item nodeId="node-1246">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1247"/>
+    </children>
+  </item>
+  <item nodeId="node-1247">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  two berries&#x000A;  a gold coin&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1248"/>
+    </children>
+  </item>
+  <item nodeId="node-1248">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1249"/>
+    </children>
+  </item>
+  <item nodeId="node-1249">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  three berries&#x000A;  a gold coin&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1250"/>
+    </children>
+  </item>
+  <item nodeId="node-1250">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a giant duck here.&#x000A;&#x000A;Voice through the wind: "NAME DUCK AS &lt;name&gt;."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1251"/>
+    </children>
+  </item>
+  <item nodeId="node-1251">
+    <command xml:space="preserve">give berry to duck</command>
+    <result xml:space="preserve">The giant duck happily eats the berry. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1252"/>
+    </children>
+  </item>
+  <item nodeId="node-1252">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 1/10. Time: 9:14 am.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1253"/>
+    </children>
+  </item>
+  <item nodeId="node-1253">
+    <command xml:space="preserve">pat duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1254"/>
+    </children>
+  </item>
+  <item nodeId="node-1254">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 2/10. Time: 9:16 am.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1255"/>
+    </children>
+  </item>
+  <item nodeId="node-1255">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1256"/>
+    </children>
+  </item>
+  <item nodeId="node-1256">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a giant duck here.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1257"/>
+    </children>
+  </item>
+  <item nodeId="node-1257">
+    <command xml:space="preserve">name duck as lal</command>
+    <result xml:space="preserve">You name the duck "lal". It seems happy.&#x000A;&#x000A;Voice through the wind: "Try PET DUCK to bond."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1258"/>
+    </children>
+  </item>
+  <item nodeId="node-1258">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 4/10. Time: 9:20 am.&#x000A;&#x000A;Voice through the wind: "Feed it: GIVE BERRY TO DUCK."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1259"/>
+    </children>
+  </item>
+  <item nodeId="node-1259">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1260"/>
+    </children>
+  </item>
+  <item nodeId="node-1260">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a lal here.&#x000A;&#x000A;Voice through the wind: "Travel together: RIDE DUCK / MOUNT DUCK."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1261"/>
+    </children>
+  </item>
+  <item nodeId="node-1261">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 4/10. Time: 9:23 am.&#x000A;&#x000A;Voice through the wind: "To get off: DISMOUNT or GET OFF DUCK."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1262"/>
+    </children>
+  </item>
+  <item nodeId="node-1262">
+    <command xml:space="preserve">pat duck</command>
+    <result xml:space="preserve">You gently pet the lal. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1263"/>
+    </children>
+  </item>
+  <item nodeId="node-1263">
+    <command xml:space="preserve">ride duck</command>
+    <result xml:space="preserve">You mount the lal.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1264"/>
+    </children>
+  </item>
+  <item nodeId="node-1264">
+    <command xml:space="preserve">go to forest</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1265"/>
+    </children>
+  </item>
+  <item nodeId="node-1265">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Forest (on the lal)&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1266"/>
+    </children>
+  </item>
+  <item nodeId="node-1266">
+    <command xml:space="preserve">get off duck</command>
+    <result xml:space="preserve">You dismount the lal.&#x000A;&#x000A;Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see a lal and ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1267"/>
+    </children>
+  </item>
+  <item nodeId="node-1267">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1268"/>
+    </children>
+  </item>
+  <item nodeId="node-1268">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;A giant duck waddles up to you and tilts its head, as if waiting for a name.&#x000A;You can type: name duck as &lt;name&gt;.&#x000A;Tip: you can feed it berries with GIVE BERRY TO DUCK.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1269"/>
+    </children>
+  </item>
+  <item nodeId="node-1269">
+    <command xml:space="preserve">name duck as asdads</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1270"/>
+    </children>
+  </item>
+  <item nodeId="node-1270">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1271"/>
+    </children>
+  </item>
+  <item nodeId="node-1271">
+    <command xml:space="preserve">name duck as asdads</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1272"/>
+    </children>
+  </item>
+  <item nodeId="node-1272">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1273"/>
+    </children>
+  </item>
+  <item nodeId="node-1273">
+    <command xml:space="preserve">go easr</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1274"/>
+    </children>
+  </item>
+  <item nodeId="node-1274">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see a lal and ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1275"/>
+    </children>
+  </item>
+  <item nodeId="node-1275">
+    <command xml:space="preserve">name duck as asdads</command>
+    <result xml:space="preserve">You already named your pet.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1276"/>
+    </children>
+  </item>
+  <item nodeId="node-1276">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 5/10. Time: 9:34 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1277"/>
+    </children>
+  </item>
+  <item nodeId="node-1277">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1278"/>
+    </children>
+  </item>
+  <item nodeId="node-1278">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see a lal and ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1279"/>
+    </children>
+  </item>
+  <item nodeId="node-1279">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1280"/>
+    </children>
+  </item>
+  <item nodeId="node-1280">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1190">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat an unripe berry. Yuck! (-1 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1191"/>
+    </children>
+  </item>
+  <item nodeId="node-1191">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1192"/>
+    </children>
+  </item>
+  <item nodeId="node-1192">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1193"/>
+    </children>
+  </item>
+  <item nodeId="node-1193">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat an unripe berry. Yuck! (-1 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1194"/>
+    </children>
+  </item>
+  <item nodeId="node-1194">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1195"/>
+    </children>
+  </item>
+  <item nodeId="node-1195">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You are already full and cannot eat any more berries.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1196"/>
+    </children>
+  </item>
+  <item nodeId="node-1196">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a giant duck here.&#x000A;&#x000A;Voice through the wind: "NAME DUCK AS &lt;name&gt;."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1197"/>
+    </children>
+  </item>
+  <item nodeId="node-1197">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1198"/>
+    </children>
+  </item>
+  <item nodeId="node-1198">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a giant duck here.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1199"/>
+    </children>
+  </item>
+  <item nodeId="node-1199">
+    <command xml:space="preserve">name duck as lala</command>
+    <result xml:space="preserve">You name the duck "lala". It seems happy.&#x000A;&#x000A;Voice through the wind: "Try PET DUCK to bond."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1200"/>
+    </children>
+  </item>
+  <item nodeId="node-1200">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;Voice through the wind: "Feed it: GIVE BERRY TO DUCK."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1201"/>
+    </children>
+  </item>
+  <item nodeId="node-1201">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1202"/>
+    </children>
+  </item>
+  <item nodeId="node-1202">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a lala here.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1203"/>
+    </children>
+  </item>
+  <item nodeId="node-1203">
+    <command xml:space="preserve">pet fuck</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1204"/>
+    </children>
+  </item>
+  <item nodeId="node-1204">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the lala. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1205"/>
+    </children>
+  </item>
+  <item nodeId="node-1205">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the lala. It seems calmer. (Pet +1)&#x000A;Voice through the wind: "Travel together: RIDE DUCK / MOUNT DUCK."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1206"/>
+    </children>
+  </item>
+  <item nodeId="node-1206">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the lala. It seems calmer. (Pet +1)&#x000A;Voice through the wind: "To get off: DISMOUNT or GET OFF DUCK."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1207"/>
+    </children>
+  </item>
+  <item nodeId="node-1207">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the lala. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1208"/>
+    </children>
+  </item>
+  <item nodeId="node-1208">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the lala. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1209"/>
+    </children>
+  </item>
+  <item nodeId="node-1209">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the lala. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1210"/>
+    </children>
+  </item>
+  <item nodeId="node-1210">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the lala. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1211"/>
+    </children>
+  </item>
+  <item nodeId="node-1211">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the lala. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1212"/>
+    </children>
+  </item>
+  <item nodeId="node-1212">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">The lala seems perfectly bonded with you already.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1213"/>
+    </children>
+  </item>
+  <item nodeId="node-1213">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">The lala seems perfectly bonded with you already.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1214"/>
+    </children>
+  </item>
+  <item nodeId="node-1214">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">FlowerValley&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1215"/>
+    </children>
+  </item>
+  <item nodeId="node-1215">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 10/10. Time: 9:27 am.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1281">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1282"/>
+    </children>
+  </item>
+  <item nodeId="node-1282">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat an unripe berry. Yuck! (-1 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1283"/>
+    </children>
+  </item>
+  <item nodeId="node-1283">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1284"/>
+    </children>
+  </item>
+  <item nodeId="node-1284">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1285"/>
+    </children>
+  </item>
+  <item nodeId="node-1285">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1286"/>
+    </children>
+  </item>
+  <item nodeId="node-1286">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat an unripe berry. Yuck! (-1 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1287"/>
+    </children>
+  </item>
+  <item nodeId="node-1287">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1288"/>
+    </children>
+  </item>
+  <item nodeId="node-1288">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You are already full and cannot eat any more berries.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1289"/>
+    </children>
+  </item>
+  <item nodeId="node-1289">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1290"/>
+    </children>
+  </item>
+  <item nodeId="node-1290">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1291"/>
+    </children>
+  </item>
+  <item nodeId="node-1291">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1292"/>
+    </children>
+  </item>
+  <item nodeId="node-1292">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;A giant duck waddles up to you and tilts its head, as if waiting for a name.&#x000A;You can type: name duck as &lt;name&gt;.&#x000A;Tip: you can increase the relationship with your pet.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1293"/>
+    </children>
+  </item>
+  <item nodeId="node-1293">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1294"/>
+    </children>
+  </item>
+  <item nodeId="node-1294">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a giant duck here.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1295"/>
+    </children>
+  </item>
+  <item nodeId="node-1295">
+    <command xml:space="preserve">name duck as Lal</command>
+    <result xml:space="preserve">You name the duck "Lal". It seems happy.&#x000A;&#x000A;Voice through the wind: "Try PET DUCK to bond."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1296"/>
+    </children>
+  </item>
+  <item nodeId="node-1296">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the Lal. It seems calmer. (Pet +1)&#x000A;Voice through the wind: "Feed it: GIVE BERRY TO DUCK."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1297"/>
+    </children>
+  </item>
+  <item nodeId="node-1297">
+    <command xml:space="preserve">give berry to duck</command>
+    <result xml:space="preserve">The Lal happily eats the berry. (Pet +1)&#x000A;Voice through the wind: "Travel together: RIDE DUCK / MOUNT DUCK."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1298"/>
+    </children>
+  </item>
+  <item nodeId="node-1298">
+    <command xml:space="preserve">ride duck</command>
+    <result xml:space="preserve">You mount the Lal.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1299"/>
+    </children>
+  </item>
+  <item nodeId="node-1299">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1300"/>
+    </children>
+  </item>
+  <item nodeId="node-1300">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Forest (on the Lal)&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1301"/>
+    </children>
+  </item>
+  <item nodeId="node-1301">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley (on the Lal)&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1302"/>
+    </children>
+  </item>
+  <item nodeId="node-1302">
+    <command xml:space="preserve">feed duck</command>
+    <result xml:space="preserve">What do you want to feed the Lal?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1303"/>
+    </children>
+  </item>
+  <item nodeId="node-1303">
+    <command xml:space="preserve">give berry to duck</command>
+    <result xml:space="preserve">The Lal happily eats the berry. (Pet +1)&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1304"/>
+    </children>
+  </item>
+  <item nodeId="node-1304">
+    <command xml:space="preserve">pat duck</command>
+    <result xml:space="preserve">You gently pet the Lal. It seems calmer. (Pet +1)&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1305"/>
+    </children>
+  </item>
+  <item nodeId="node-1305">
+    <command xml:space="preserve">dismount</command>
+    <result xml:space="preserve">You dismount the Lal.&#x000A;&#x000A;FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a Lal here.&#x000A;&#x000A;Voice through the wind: "To get off: DISMOUNT or GET OFF DUCK."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1140">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1141"/>
+    </children>
+  </item>
+  <item nodeId="node-1141">
+    <command xml:space="preserve">take berries</command>
+    <result xml:space="preserve">berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: You're carrying too many things already.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1142"/>
+    </children>
+  </item>
+  <item nodeId="node-1142">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  ninety-nine berries&#x000A;  a gold coin&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1143"/>
+    </children>
+  </item>
+  <item nodeId="node-1143">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">You eat an unripe berry. Yuck! (-1 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1144"/>
+    </children>
+  </item>
+  <item nodeId="node-1144">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  ninety-eight berries&#x000A;  a gold coin&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1145"/>
+    </children>
+  </item>
+  <item nodeId="node-1145">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1146"/>
+    </children>
+  </item>
+  <item nodeId="node-1146">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1147"/>
+    </children>
+  </item>
+  <item nodeId="node-1147">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1148"/>
+    </children>
+  </item>
+  <item nodeId="node-1148">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1149"/>
+    </children>
+  </item>
+  <item nodeId="node-1149">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">You are already full and cannot eat any more berries.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1150"/>
+    </children>
+  </item>
+  <item nodeId="node-1150">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a giant duck here.&#x000A;&#x000A;Voice through the wind: "NAME DUCK AS &lt;name&gt;."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1151"/>
+    </children>
+  </item>
+  <item nodeId="node-1151">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1152"/>
+    </children>
+  </item>
+  <item nodeId="node-1152">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1153"/>
+    </children>
+  </item>
+  <item nodeId="node-1153">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1154"/>
+    </children>
+  </item>
+  <item nodeId="node-1154">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a giant duck here.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1155"/>
+    </children>
+  </item>
+  <item nodeId="node-1155">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1156"/>
+    </children>
+  </item>
+  <item nodeId="node-1156">
+    <command xml:space="preserve">debug hints</command>
+    <result xml:space="preserve">shown=true.&#x000A;shown=false.&#x000A;shown=false.&#x000A;shown=false.&#x000A;shown=false.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1157"/>
+    </children>
+  </item>
+  <item nodeId="node-1157">
+    <command xml:space="preserve">name duck as Ime</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1158"/>
+    </children>
+  </item>
+  <item nodeId="node-1158">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a giant duck here.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1159"/>
+    </children>
+  </item>
+  <item nodeId="node-1159">
+    <command xml:space="preserve">name duck as Ime</command>
+    <result xml:space="preserve">You name the duck "Ime". It seems happy.&#x000A;&#x000A;Voice through the wind: "Try PET DUCK to bond."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1160"/>
+    </children>
+  </item>
+  <item nodeId="node-1160">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the Ime. It seems calmer. (Pet +1)&#x000A;Voice through the wind: "Feed it: GIVE BERRY TO DUCK."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1161"/>
+    </children>
+  </item>
+  <item nodeId="node-1161">
+    <command xml:space="preserve">give berry to duck</command>
+    <result xml:space="preserve">The Ime happily eats the berry. (Pet +1)&#x000A;Voice through the wind: "Travel together: RIDE DUCK / MOUNT DUCK."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1162"/>
+    </children>
+  </item>
+  <item nodeId="node-1162">
+    <command xml:space="preserve">ride duck</command>
+    <result xml:space="preserve">You mount the Ime.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1163"/>
+    </children>
+  </item>
+  <item nodeId="node-1163">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Forest (on the Ime)&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1164"/>
+    </children>
+  </item>
+  <item nodeId="node-1164">
+    <command xml:space="preserve">unride duck</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1165"/>
+    </children>
+  </item>
+  <item nodeId="node-1165">
+    <command xml:space="preserve">dismount duck</command>
+    <result xml:space="preserve">I only understood you as far as wanting to dismount.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1166"/>
+    </children>
+  </item>
+  <item nodeId="node-1166">
+    <command xml:space="preserve">dismount</command>
+    <result xml:space="preserve">You dismount the Ime.&#x000A;&#x000A;Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see an Ime and ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1167"/>
+    </children>
+  </item>
+  <item nodeId="node-1167">
+    <command xml:space="preserve">debug hint</command>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1168"/>
+    </children>
+  </item>
+  <item nodeId="node-1168">
+    <command xml:space="preserve">go wesr</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1169"/>
+    </children>
+  </item>
+  <item nodeId="node-1169">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1170"/>
+    </children>
+  </item>
+  <item nodeId="node-1170">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;Voice through the wind: "To get off: DISMOUNT or GET OFF DUCK."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1171"/>
+    </children>
+  </item>
+  <item nodeId="node-1171">
+    <command xml:space="preserve">dismount</command>
+    <result xml:space="preserve">You are not riding anything.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1172"/>
+    </children>
+  </item>
+  <item nodeId="node-1172">
+    <command xml:space="preserve">debug hints</command>
+    <result xml:space="preserve">shown=true.&#x000A;shown=true.&#x000A;shown=true.&#x000A;shown=true.&#x000A;shown=true.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1173"/>
+    </children>
+  </item>
+  <item nodeId="node-1173">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 11/10. Pet: 4/10. Time: 9:32 am.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1174"/>
+    </children>
+  </item>
+  <item nodeId="node-1174">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see an Ime and ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1175"/>
+    </children>
+  </item>
+  <item nodeId="node-1175">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the Ime. It seems calmer. (Pet +1)&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1176"/>
+    </children>
+  </item>
+  <item nodeId="node-1176">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the Ime. It seems calmer. (Pet +1)&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1177"/>
+    </children>
+  </item>
+  <item nodeId="node-1177">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the Ime. It seems calmer. (Pet +1)&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1178"/>
+    </children>
+  </item>
+  <item nodeId="node-1178">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the Ime. It seems calmer. (Pet +1)&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1179"/>
+    </children>
+  </item>
+  <item nodeId="node-1179">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the Ime. It seems calmer. (Pet +1)&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1180"/>
+    </children>
+  </item>
+  <item nodeId="node-1180">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the Ime. It seems calmer. (Pet +1)&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1181"/>
+    </children>
+  </item>
+  <item nodeId="node-1181">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the Ime. It seems calmer. (Pet +1)&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1182"/>
+    </children>
+  </item>
+  <item nodeId="node-1182">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the Ime. It seems calmer. (Pet +1)&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1183"/>
+    </children>
+  </item>
+  <item nodeId="node-1183">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the Ime. It seems calmer. (Pet +1)&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1184"/>
+    </children>
+  </item>
+  <item nodeId="node-1184">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the Ime. It seems calmer. (Pet +1)&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1185"/>
+    </children>
+  </item>
+  <item nodeId="node-1185">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the Ime. It seems calmer. (Pet +1)&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1186"/>
+    </children>
+  </item>
+  <item nodeId="node-1186">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the Ime. It seems calmer. (Pet +1)&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1187"/>
+    </children>
+  </item>
+  <item nodeId="node-1187">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the Ime. It seems calmer. (Pet +1)&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1188"/>
+    </children>
+  </item>
+  <item nodeId="node-1188">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 11/10. Pet: 10/10. Time: 9:47 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-514">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;CLICK! The door unlocks!&#x000A;Huh, did I count right?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1122"/>
+      <child nodeId="node-1096"/>
+      <child nodeId="node-991"/>
+      <child nodeId="node-515"/>
+    </children>
+  </item>
+  <item nodeId="node-1122">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1123"/>
+    </children>
+  </item>
+  <item nodeId="node-1123">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1124"/>
+    </children>
+  </item>
+  <item nodeId="node-1124">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;Knocked 4 of 5 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1125"/>
+    </children>
+  </item>
+  <item nodeId="node-1125">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;CLICK! The door unlocks!&#x000A;Huh, did I count right?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1126"/>
+    </children>
+  </item>
+  <item nodeId="node-1126">
     <command xml:space="preserve">knock</command>
     <result xml:space="preserve">(the NorthDoor)&#x000A;The door is already unlocked.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-515"/>
+      <child nodeId="node-1127"/>
     </children>
+  </item>
+  <item nodeId="node-1127">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;Food: 4/10.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1128"/>
+    </children>
+  </item>
+  <item nodeId="node-1128">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1129"/>
+    </children>
+  </item>
+  <item nodeId="node-1129">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1130"/>
+    </children>
+  </item>
+  <item nodeId="node-1130">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1131"/>
+    </children>
+  </item>
+  <item nodeId="node-1131">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You are already full and cannot eat any more berries.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1132"/>
+    </children>
+  </item>
+  <item nodeId="node-1132">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1133"/>
+    </children>
+  </item>
+  <item nodeId="node-1133">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Voice through the wind: "NAME DUCK AS &lt;name&gt;."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1134"/>
+    </children>
+  </item>
+  <item nodeId="node-1134">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a giant duck here.&#x000A;&#x000A;A giant duck waddles up to you and tilts its head, as if waiting for a name.&#x000A;You can type: name duck as &lt;name&gt;.&#x000A;Tip: you can feed it berries with GIVE BERRY TO DUCK.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1135"/>
+    </children>
+  </item>
+  <item nodeId="node-1135">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1136"/>
+    </children>
+  </item>
+  <item nodeId="node-1136">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1137"/>
+    </children>
+  </item>
+  <item nodeId="node-1137">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1138"/>
+    </children>
+  </item>
+  <item nodeId="node-1138">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a giant duck here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1096">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;Food: 4/10.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1097"/>
+      <child nodeId="node-1139"/>
+    </children>
+  </item>
+  <item nodeId="node-1097">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1098"/>
+    </children>
+  </item>
+  <item nodeId="node-1098">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1099"/>
+    </children>
+  </item>
+  <item nodeId="node-1099">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1100"/>
+    </children>
+  </item>
+  <item nodeId="node-1100">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You are already full and cannot eat any more berries.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1101"/>
+    </children>
+  </item>
+  <item nodeId="node-1101">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a giant duck here.&#x000A;&#x000A;Voice through the wind: "NAME DUCK AS &lt;name&gt;."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1102"/>
+    </children>
+  </item>
+  <item nodeId="node-1102">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1103"/>
+    </children>
+  </item>
+  <item nodeId="node-1103">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 1/10. Time: 9:11 am.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1104"/>
+    </children>
+  </item>
+  <item nodeId="node-1104">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1105"/>
+    </children>
+  </item>
+  <item nodeId="node-1105">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1106"/>
+    </children>
+  </item>
+  <item nodeId="node-1106">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1107"/>
+    </children>
+  </item>
+  <item nodeId="node-1107">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1108"/>
+    </children>
+  </item>
+  <item nodeId="node-1108">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1109"/>
+    </children>
+  </item>
+  <item nodeId="node-1109">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1110"/>
+    </children>
+  </item>
+  <item nodeId="node-1110">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1111"/>
+    </children>
+  </item>
+  <item nodeId="node-1111">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1112"/>
+    </children>
+  </item>
+  <item nodeId="node-1112">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1113"/>
+    </children>
+  </item>
+  <item nodeId="node-1113">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 10/10. Time: 9:21 am.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1114"/>
+    </children>
+  </item>
+  <item nodeId="node-1114">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1115"/>
+    </children>
+  </item>
+  <item nodeId="node-1115">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a giant duck here.&#x000A;&#x000A;A giant duck waddles up to you and tilts its head, as if waiting for a name.&#x000A;You can type: name duck as &lt;name&gt;.&#x000A;Tip: you can feed it berries with GIVE BERRY TO DUCK.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1116"/>
+    </children>
+  </item>
+  <item nodeId="node-1116">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1117"/>
+    </children>
+  </item>
+  <item nodeId="node-1117">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a giant duck here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1118"/>
+    </children>
+  </item>
+  <item nodeId="node-1118">
+    <command xml:space="preserve">debug hints</command>
+    <result xml:space="preserve">shown=true.&#x000A;shown=false.&#x000A;shown=false.&#x000A;shown=false.&#x000A;shown=false.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1119"/>
+    </children>
+  </item>
+  <item nodeId="node-1119">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1120"/>
+    </children>
+  </item>
+  <item nodeId="node-1120">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a giant duck here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1121"/>
+    </children>
+  </item>
+  <item nodeId="node-1121">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1139">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Voice through the wind: "NAME DUCK AS &lt;name&gt;."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-991">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-992"/>
+    </children>
+  </item>
+  <item nodeId="node-992">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-993"/>
+    </children>
+  </item>
+  <item nodeId="node-993">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;Food: 4/10.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-994"/>
+    </children>
+  </item>
+  <item nodeId="node-994">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat an unripe berry. Yuck! (-1 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-995"/>
+    </children>
+  </item>
+  <item nodeId="node-995">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-996"/>
+    </children>
+  </item>
+  <item nodeId="node-996">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-997"/>
+    </children>
+  </item>
+  <item nodeId="node-997">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat an unripe berry. Yuck! (-1 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-998"/>
+    </children>
+  </item>
+  <item nodeId="node-998">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-999"/>
+    </children>
+  </item>
+  <item nodeId="node-999">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat an unripe berry. Yuck! (-1 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1000"/>
+    </children>
+  </item>
+  <item nodeId="node-1000">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat an unripe berry. Yuck! (-1 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1001"/>
+    </children>
+  </item>
+  <item nodeId="node-1001">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 6/10. Pet: 2/10. Time: 9:14 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1002"/>
+    </children>
+  </item>
+  <item nodeId="node-1002">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat an unripe berry. Yuck! (-1 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1003"/>
+    </children>
+  </item>
+  <item nodeId="node-1003">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 5/10. Pet: 2/10. Time: 9:16 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1004"/>
+    </children>
+  </item>
+  <item nodeId="node-1004">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1005"/>
+    </children>
+  </item>
+  <item nodeId="node-1005">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1006"/>
+    </children>
+  </item>
+  <item nodeId="node-1006">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat an unripe berry. Yuck! (-1 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1007"/>
+    </children>
+  </item>
+  <item nodeId="node-1007">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 8/10. Pet: 2/10. Time: 9:20 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1008"/>
+    </children>
+  </item>
+  <item nodeId="node-1008">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1009"/>
+    </children>
+  </item>
+  <item nodeId="node-1009">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 2/10. Time: 9:22 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1010"/>
+    </children>
+  </item>
+  <item nodeId="node-1010">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You are already full and cannot eat any more berries.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1011"/>
+    </children>
+  </item>
+  <item nodeId="node-1011">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 2/10. Time: 9:24 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1012"/>
+    </children>
+  </item>
+  <item nodeId="node-1012">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">You are already full and cannot eat any more berries.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1013"/>
+    </children>
+  </item>
+  <item nodeId="node-1013">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1014"/>
+    </children>
+  </item>
+  <item nodeId="node-1014">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">(first opening the NorthDoor)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1015"/>
+    </children>
+  </item>
+  <item nodeId="node-1015">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1016"/>
+    </children>
+  </item>
+  <item nodeId="node-1016">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1017"/>
+    </children>
+  </item>
+  <item nodeId="node-1017">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">(first opening the NorthDoor)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1018"/>
+    </children>
+  </item>
+  <item nodeId="node-1018">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1019"/>
+    </children>
+  </item>
+  <item nodeId="node-1019">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-515">
     <command xml:space="preserve">knock</command>
-    <result xml:space="preserve">(the NorthDoor)&#x000A;The door is already unlocked.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;Knocked 4 of 5 times.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -4578,7 +6937,7 @@
   </item>
   <item nodeId="node-524">
     <command xml:space="preserve">knock</command>
-    <result xml:space="preserve">(the NorthDoor)&#x000A;The door is already unlocked.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;CLICK! The door unlocks!&#x000A;Huh, did I count right?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -4614,19 +6973,207 @@
   </item>
   <item nodeId="node-528">
     <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;Food: 4/10.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-529"/>
       <child nodeId="node-530"/>
       <child nodeId="node-533"/>
+      <child nodeId="node-1020"/>
       <child nodeId="node-989"/>
     </children>
   </item>
   <item nodeId="node-529">
     <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1040"/>
+    </children>
+  </item>
+  <item nodeId="node-1040">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1047"/>
+      <child nodeId="node-1041"/>
+    </children>
+  </item>
+  <item nodeId="node-1047">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1048"/>
+    </children>
+  </item>
+  <item nodeId="node-1048">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1049"/>
+    </children>
+  </item>
+  <item nodeId="node-1049">
+    <command xml:space="preserve">eat berry</command>
     <result xml:space="preserve">(first taking the berry)&#x000A;You are already full and cannot eat any more berries.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1050"/>
+    </children>
+  </item>
+  <item nodeId="node-1050">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1051"/>
+    </children>
+  </item>
+  <item nodeId="node-1051">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">A giant duck waddles up to you and tilts its head, as if waiting for a name.&#x000A;You can type: name duck as &lt;name&gt;.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1052"/>
+    </children>
+  </item>
+  <item nodeId="node-1052">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a giant duck here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1053"/>
+    </children>
+  </item>
+  <item nodeId="node-1053">
+    <command xml:space="preserve">give berry to duck</command>
+    <result xml:space="preserve">The giant duck happily eats the berry. (Pet +1)&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1054"/>
+    </children>
+  </item>
+  <item nodeId="node-1054">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 1/10. Time: 9:15 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1055"/>
+    </children>
+  </item>
+  <item nodeId="node-1055">
+    <command xml:space="preserve">name duck as test</command>
+    <result xml:space="preserve">You name the duck "test". It seems happy.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1056"/>
+    </children>
+  </item>
+  <item nodeId="node-1056">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 3/10. Time: 9:17 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1057"/>
+    </children>
+  </item>
+  <item nodeId="node-1057">
+    <command xml:space="preserve">feed duck</command>
+    <result xml:space="preserve">What do you want to feed the test?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1058"/>
+    </children>
+  </item>
+  <item nodeId="node-1058">
+    <command xml:space="preserve">feed duck with berry</command>
+    <result xml:space="preserve">The test happily eats the berry. (Pet +1)&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1059"/>
+    </children>
+  </item>
+  <item nodeId="node-1059">
+    <command xml:space="preserve">feed duck with berry</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1060"/>
+    </children>
+  </item>
+  <item nodeId="node-1060">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 4/10. Time: 9:19 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1041">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1042"/>
+    </children>
+  </item>
+  <item nodeId="node-1042">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You are already full and cannot eat any more berries.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1043"/>
+    </children>
+  </item>
+  <item nodeId="node-1043">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1044"/>
+    </children>
+  </item>
+  <item nodeId="node-1044">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">A giant duck waddles up to you and tilts its head, as if waiting for a name.&#x000A;You can type: name duck as &lt;name&gt;.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1045"/>
+    </children>
+  </item>
+  <item nodeId="node-1045">
+    <command xml:space="preserve">ride duck</command>
+    <result xml:space="preserve">You mount the giant duck.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1046"/>
+    </children>
+  </item>
+  <item nodeId="node-1046">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 2/10. Time: 9:14 am.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -4719,6 +7266,183 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-1020">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1021"/>
+    </children>
+  </item>
+  <item nodeId="node-1021">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1022"/>
+    </children>
+  </item>
+  <item nodeId="node-1022">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1023"/>
+    </children>
+  </item>
+  <item nodeId="node-1023">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1024"/>
+    </children>
+  </item>
+  <item nodeId="node-1024">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You are already full and cannot eat any more berries.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1025"/>
+    </children>
+  </item>
+  <item nodeId="node-1025">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">A giant duck waddles up to you and tilts its head, as if waiting for a name.&#x000A;You can type: name duck as &lt;name&gt;.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1026"/>
+    </children>
+  </item>
+  <item nodeId="node-1026">
+    <command xml:space="preserve">name duck as Poni</command>
+    <result xml:space="preserve">You name the duck "Poni". It seems happy.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1027"/>
+    </children>
+  </item>
+  <item nodeId="node-1027">
+    <command xml:space="preserve">name duck as Ponii</command>
+    <result xml:space="preserve">You already named your pet.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1028"/>
+    </children>
+  </item>
+  <item nodeId="node-1028">
+    <command xml:space="preserve">duck name</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1029"/>
+    </children>
+  </item>
+  <item nodeId="node-1029">
+    <command xml:space="preserve">ride duck</command>
+    <result xml:space="preserve">You mount the Poni.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1030"/>
+    </children>
+  </item>
+  <item nodeId="node-1030">
+    <command xml:space="preserve">mount duck</command>
+    <result xml:space="preserve">You are already riding the Poni.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1031"/>
+    </children>
+  </item>
+  <item nodeId="node-1031">
+    <command xml:space="preserve">get on Poni</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1032"/>
+    </children>
+  </item>
+  <item nodeId="node-1032">
+    <command xml:space="preserve">unride duck</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1033"/>
+    </children>
+  </item>
+  <item nodeId="node-1033">
+    <command xml:space="preserve">get off duck</command>
+    <result xml:space="preserve">You dismount the Poni.&#x000A;&#x000A;FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a Poni here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1034"/>
+    </children>
+  </item>
+  <item nodeId="node-1034">
+    <command xml:space="preserve">go forest</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1035"/>
+    </children>
+  </item>
+  <item nodeId="node-1035">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1036"/>
+    </children>
+  </item>
+  <item nodeId="node-1036">
+    <command xml:space="preserve">take berr</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1037"/>
+    </children>
+  </item>
+  <item nodeId="node-1037">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1038"/>
+    </children>
+  </item>
+  <item nodeId="node-1038">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  two berries&#x000A;  a gold coin&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1039"/>
+    </children>
+  </item>
+  <item nodeId="node-1039">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a Poni here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-989">
     <command xml:space="preserve">status</command>
     <result xml:space="preserve">Score: 30/100. Food: -4/10. Time: 9:07 am.&#x000A;&#x000A;&gt;</result>
@@ -4795,6 +7519,318 @@
   <item nodeId="node-549">
     <command xml:space="preserve">go south</command>
     <result xml:space="preserve">The Light Room&#x000A;The room is well-lit and empty except for an old wooden box on the floor.&#x000A;&#x000A;An old, run-down wooden box sits on the floor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1061">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1062"/>
+    </children>
+  </item>
+  <item nodeId="node-1062">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;Food: 4/10.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1063"/>
+    </children>
+  </item>
+  <item nodeId="node-1063">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1064"/>
+    </children>
+  </item>
+  <item nodeId="node-1064">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1065"/>
+    </children>
+  </item>
+  <item nodeId="node-1065">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1066"/>
+    </children>
+  </item>
+  <item nodeId="node-1066">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You are already full and cannot eat any more berries.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1067"/>
+    </children>
+  </item>
+  <item nodeId="node-1067">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">You are already full and cannot eat any more berries.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1068"/>
+    </children>
+  </item>
+  <item nodeId="node-1068">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1069"/>
+    </children>
+  </item>
+  <item nodeId="node-1069">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1070"/>
+    </children>
+  </item>
+  <item nodeId="node-1070">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  three berries&#x000A;  a gold coin&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1071"/>
+    </children>
+  </item>
+  <item nodeId="node-1071">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  three berries&#x000A;  a gold coin&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1072"/>
+    </children>
+  </item>
+  <item nodeId="node-1072">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1073"/>
+    </children>
+  </item>
+  <item nodeId="node-1073">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  four berries&#x000A;  a gold coin&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1074"/>
+    </children>
+  </item>
+  <item nodeId="node-1074">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a giant duck here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1075"/>
+    </children>
+  </item>
+  <item nodeId="node-1075">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a giant duck here.&#x000A;&#x000A;A giant duck waddles up to you and tilts its head, as if waiting for a name.&#x000A;You can type: name duck as &lt;name&gt;.&#x000A;Tip: you can feed it berries with GIVE BERRY TO DUCK.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1076"/>
+    </children>
+  </item>
+  <item nodeId="node-1076">
+    <command xml:space="preserve">give berry to duck</command>
+    <result xml:space="preserve">The giant duck happily eats the berry. (Pet +1)&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1077"/>
+    </children>
+  </item>
+  <item nodeId="node-1077">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  three berries&#x000A;  a gold coin&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1078"/>
+    </children>
+  </item>
+  <item nodeId="node-1078">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 1/10. Time: 9:19 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1079"/>
+    </children>
+  </item>
+  <item nodeId="node-1079">
+    <command xml:space="preserve">give berry to duck</command>
+    <result xml:space="preserve">The giant duck happily eats the berry. (Pet +1)&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1080"/>
+    </children>
+  </item>
+  <item nodeId="node-1080">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 2/10. Time: 9:21 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1081"/>
+    </children>
+  </item>
+  <item nodeId="node-1081">
+    <command xml:space="preserve">give berry to duck</command>
+    <result xml:space="preserve">The giant duck happily eats the berry. (Pet +1)&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1082"/>
+    </children>
+  </item>
+  <item nodeId="node-1082">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 3/10. Time: 9:23 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1083"/>
+    </children>
+  </item>
+  <item nodeId="node-1083">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">You are already full and cannot eat any more berries.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1084"/>
+    </children>
+  </item>
+  <item nodeId="node-1084">
+    <command xml:space="preserve">mount duck</command>
+    <result xml:space="preserve">You mount the giant duck.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1085"/>
+    </children>
+  </item>
+  <item nodeId="node-1085">
+    <command xml:space="preserve">unride duck</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1086"/>
+    </children>
+  </item>
+  <item nodeId="node-1086">
+    <command xml:space="preserve">dismount duck</command>
+    <result xml:space="preserve">I only understood you as far as wanting to dismount.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1087"/>
+    </children>
+  </item>
+  <item nodeId="node-1087">
+    <command xml:space="preserve">dismount</command>
+    <result xml:space="preserve">You dismount the giant duck.&#x000A;&#x000A;FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a giant duck here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1088"/>
+    </children>
+  </item>
+  <item nodeId="node-1088">
+    <command xml:space="preserve">get on duck</command>
+    <result xml:space="preserve">You mount the giant duck.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1089"/>
+    </children>
+  </item>
+  <item nodeId="node-1089">
+    <command xml:space="preserve">get off the duck</command>
+    <result xml:space="preserve">You dismount the giant duck.&#x000A;&#x000A;FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a giant duck here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1090"/>
+    </children>
+  </item>
+  <item nodeId="node-1090">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 3/10. Time: 9:29 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1091"/>
+    </children>
+  </item>
+  <item nodeId="node-1091">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1092"/>
+    </children>
+  </item>
+  <item nodeId="node-1092">
+    <command xml:space="preserve">mount duck</command>
+    <result xml:space="preserve">You mount the giant duck.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1093"/>
+    </children>
+  </item>
+  <item nodeId="node-1093">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1094"/>
+    </children>
+  </item>
+  <item nodeId="node-1094">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Forest (on the giant duck)&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1095"/>
+    </children>
+  </item>
+  <item nodeId="node-1095">
+    <command xml:space="preserve">dismount</command>
+    <result xml:space="preserve">You dismount the giant duck.&#x000A;&#x000A;Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see a giant duck and ForestDoor here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

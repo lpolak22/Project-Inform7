@@ -1,5 +1,7 @@
 "Projekt iz kolegija Deklarativno programiranje" by Lucija Polak
 
+Include Rideable Vehicles by Graham Nelson.
+
 Use scoring.
 The maximum score is 100.
 
@@ -9,8 +11,14 @@ Max-food-score is a number that varies.
 Status-checking is an action applying to nothing.
 Understand "status" or "stats" as status-checking.
 
+Pet-relationship is a number that varies.
+Max-pet-relationship is a number that varies.
+Pet-named is a truth state that varies. Pet-named is false.
+Special-scene is a truth state that varies. Special-scene is false.
+
 Carry out status-checking:
-	say "Score: [score]/[maximum score]. Food: [Food-score]/[Max-food-score]. Time: [time of day].";
+	say "Score: [score]/[maximum score]. Food: [Food-score]/[Max-food-score]. Pet: [Pet-relationship]/[Max-pet-relationship]. Time: [time of day].";
+
 
 To apply fall damage:
 	decrease the score by 10;
@@ -127,6 +135,8 @@ When play begins:
 	now score is 30;
 	now Food-score is 10;
 	now Max-food-score is 10;
+	now Pet-relationship is 0;
+	now Max-pet-relationship is 10;
 	now the player is in the Starting Room;
 	say "Welcome to the game! It was created as a project for the Declarative Programming course. However, I hope you will still enjoy playing it.[paragraph break] ";
 	say "Choose your character:[line break]";
@@ -166,6 +176,12 @@ Carry out choosing:
 
 Instead of doing something other than choosing when Character-chosen is false:
 	say "You must choose a character first. Type 1 or 2.";
+
+When play ends:
+	if Pet-named is true:
+		now Special-scene is true;
+	otherwise:
+		now Special-scene is false;
 
 Chapter 1 - Where am I?
 
@@ -315,6 +331,16 @@ After inserting something into the box:
 			
 Chapter 2 - A new friend
 
+The FlowerValley is a room. "A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster—the little animal has found its perfect home here, waiting eagerly for playtime."
+FlowerValley is west of Forest.
+
+Hints-unlocked is a truth state that varies. Hints-unlocked is false.
+
+The giant duck is a rideable animal.
+The giant duck is in Hidden Room.
+The description of the giant duck is "A ridiculously large duck with gentle eyes. It looks like it might let you ride it."
+Understand "pet" or "duck" or "animal" as the giant duck.
+
 A berry is a kind of thing. The description is "A small juicy fruit hanging from a bush."
 A berry can be ripe or unripe. A berry is usually ripe.
 A berry is edible.
@@ -324,7 +350,7 @@ Understand "bush" or "berry bush" as the BerryBush.
 
 A bush-container is a container. It is part of the BerryBush. It is open and enterable.
 
-There are 100 berries.
+There are 75 berries.
 
 When play begins:
 	repeat with B running through berries:
@@ -351,3 +377,87 @@ Carry out eating:
 			now Food-score is 0;
 		say "You eat an unripe berry. Yuck! (-1 food).";
 	now the noun is off-stage;
+
+After looking in FlowerValley for the first time:
+	if the giant duck is off-stage:
+		move the giant duck to FlowerValley;
+	say "A giant duck waddles up to you and tilts its head, as if waiting for a name.";
+	say "You can type: name duck as <name>.";
+	say "Tip: you can increase the relationship with your pet.";
+	now Hints-unlocked is true;
+
+To increase pet bond by (N - a number):
+	now Pet-relationship is Pet-relationship + N;
+	if Pet-relationship > Max-pet-relationship:
+		now Pet-relationship is Max-pet-relationship;
+
+Naming it as is an action applying to one thing and one topic.
+Understand "name [something] as [text]" as naming it as.
+
+Check naming it as:
+	if the noun is not the giant duck:
+		say "That doesn't seem like something you can name." instead;
+	if Pet-named is true:
+		say "You already named your pet." instead.
+
+Carry out naming it as:
+	now Pet-named is true;
+	now the printed name of the giant duck is the topic understood;
+	say "You name the duck '[printed name of the giant duck]'. It seems happy.";
+	now the giant duck is proper-named;
+	if Pet-relationship < Max-pet-relationship:
+		increase pet bond by 2;
+	
+Instead of giving a berry to the giant duck:
+	if Pet-relationship >= Max-pet-relationship:
+		say "[The giant duck] turns away—it's already as attached to you as possible.";
+	otherwise:
+		remove the noun from play;
+		increase pet bond by 1;
+		say "[The giant duck] happily eats the berry. (Pet +1)";
+
+Understand "feed [someone] with [something]" as giving it to (with nouns reversed).
+
+Petting is an action applying to one thing.
+Understand "pet [something]" or "pat [something]" or "stroke [something]" as petting.
+
+Check petting:
+	if the noun is not the giant duck:
+		say "That doesn't seem to want petting." instead;
+	if Pet-relationship >= Max-pet-relationship:
+		say "[The giant duck] seems perfectly bonded with you already." instead.
+
+Carry out petting:
+	increase pet bond by 1.
+
+Report petting:
+	say "You gently pet [the giant duck]. It seems calmer. (Pet +1)";
+
+Every turn:
+	if Pet-relationship > Max-pet-relationship:
+		now Pet-relationship is Max-pet-relationship;
+
+Table of Wind Hints
+needed room	min relationship	requires named?	hint text	shown
+FlowerValley	0	true	"[italic type]Voice through the wind:[roman type] 'Try PET DUCK to bond.'"	false
+FlowerValley	2	true	"[italic type]Voice through the wind:[roman type] 'Feed it: GIVE BERRY TO DUCK.'"	false
+FlowerValley	4	true	"[italic type]Voice through the wind:[roman type] 'Travel together: RIDE DUCK / (DIS)MOUNT DUCK.'"	false
+
+To say a new wind hint:
+	let found be false;
+	repeat through the Table of Wind Hints:
+		if found is false:
+			if shown entry is false:
+				if the player is in the needed room entry:
+					if Pet-relationship >= min relationship entry:
+						if requires named? entry is false and Pet-named is false:
+							say hint text entry;
+							now shown entry is true;
+							now found is true;
+						otherwise if requires named? entry is true and Pet-named is true:
+							say hint text entry;
+							now shown entry is true;
+							now found is true;
+
+Every turn when the player is in FlowerValley:
+	say a new wind hint;
