@@ -15,6 +15,15 @@ The Starting Room is a room. "Your adventure begins here."
 Ivan is a man in the Starting Room.
 Petar is a man in the Starting Room.
 
+Hidden chamber is a room.
+The description of Hidden chamber is "[if Pit-Vision-Active  is true]Soft light filters in. You feel powerful, watching the pit from afar. Your laughter echoes.[otherwise]A mysterious hidden space.[end if]".
+
+Lala is a woman in the Hidden chamber. 
+
+The printed name of Lala is "Lala".
+The description of Lala is "You sense her presence, even though she is nowhere nearby."
+Original-Player is a person that varies.
+
 A thing can be trap-triggering.
 
 The box is trap-triggering.
@@ -39,22 +48,60 @@ Trap timer is a number that varies. Trap timer is 0.
 Pit Room is a room. "You fell into a dark pit. A trap door closed above you."
 The trap door is a locked door. The trap door is north of Pit Room and south of DarkChamber. The trap door is locked. It is scenery. Understand "hole" as the trap door when Trap revealed is true.
 
+Pit-Vision-Active is a truth state that varies. Pit-Vision-Active is false.
+
+Instead of listening in Pit Room:
+	say "Somewhere above you, you hear slow footsteps. Someone is walking. Unhurried.";
+
+Instead of smelling in Pit Room:
+	say "The air smells of damp stone, dust, and something faintly metallic.";
+
+Instead of touching in Pit Room:
+	say "Cold stone presses against your fingers, rough and scarred.";
+
+Instead of tasting in Pit Room:
+	say "Your mouth is dry. The metallic taste of blood still lingers.";
+
+Instead of examining the trap door when the player is in Pit Room:
+	say "A heavy metal door. Locked. On the other side, you hear movement.";
+
 The box empty is a truth state that varies. The box empty is true.
 
 The NorthDoor is a door.
-The NorthDoor is scenery. 
 NorthDoor is south of Forest and north of LightRoom.
+NorthDoor is locked. 
 The description is "A newly appeared wooden door."
-
-Forest is a room. "You are in a dense forest. You hear a waterfall nearby and voices talking in the distance."
+NorthDoor is scenery.
 
 ForestDoor is a door. ForestDoor is west of DarkChamber and east of Forest. 
 ForestDoor is locked.
+ForestDoor is scenery.
+
+Forest is a room. "You are in a dense forest. You hear a waterfall nearby and voices talking in the distance."
+
+First-time-forest-question is a truth state that varies. First-time-forest-question is true.
+
+Room Exit Scene is a scene.  
+Room Exit Scene begins when the player is in Forest for the first time.
+
+When Room Exit Scene begins:
+	if First-time-forest-question is true:
+		now First-time-forest-question is false;
+		say "[italic type]Where exactly am I?[roman type][line break]";
+
+When Room Exit Scene ends:
+	now ForestDoor is closed;
+	now NorthDoor is closed;
+	now ForestDoor is locked;
+	now NorthDoor is locked;
+	say "You hear a soft click behind you.";
+	
+Room Exit Scene ends when the player is in Forest.
 
 Knock count is a number that varies. Knock count is 0.
 Knock number is a number that varies.
 
-Understand "knock [ForestDoor]" or "knock on the door" as knocking it.
+Understand "knock [any door]" or "knock on [any door]" as knocking it.
 
 Knocking it is an action applying to one thing.
 
@@ -148,14 +195,19 @@ Before taking the golden apple when Trap revealed is true:
 Instead of taking a trap-triggering thing when the location is in the Trap Zone:
 	say "As you touch it, the floor beneath you collapses!";
 	apply fall damage;
+	now Original-Player is the player;
 	if the noun is the golden apple:
 		say "The apple crumbles to dust!";
 		now Trap timer is 0;
 	now the noun is off-stage;
 	move the player to Pit Room;
+	now the time of day is 11:55 AM;
 	if the player carries the torch:
-		try dropping the torch;
+		try silently dropping the torch;
 		now the torch is off-stage;
+	if the player carries the coin:
+		try silently dropping the coin;
+		now the coin is off-stage;
 	now the trap door is locked.
 
 Every turn when Trap timer > 0:
@@ -165,16 +217,50 @@ Every turn when Trap timer > 0:
 	otherwise if Trap timer is 1:
 		say "The floor collapses! You fall through a hole!";
 		apply fall damage;
+		now Original-Player is the player;
 		move the player to Pit Room;
+		now the time of day is 11:55 AM;
 		if the player carries the torch:
-			try dropping the torch;
+			try silently dropping the torch;
 			now the torch is off-stage;
 		now the trap door is locked.
-		
+
+Every turn when the player is in Pit Room and the time of day is 12:00 PM and Pit-Vision-Active is false:
+	now Pit-Vision-Active is true;
+	now Original-Player is the player;
+	say "[bold type]*** LALA VISION ***[roman type][paragraph break]You see through Lala's eyes in her hidden chamber... She giggles and gestures toward a door above the pit.";
+
+Lala-response is a text that varies.
+
+Before doing something when Pit-Vision-Active is true and the current action is not Helping:
+	let R be a random number from 1 to 3;
+	if R is 1:
+		say "Lala giggles: 'Maybe you should ask for help.'";
+	else if R is 2:
+		say "Lala whispers: 'It's no use...'";
+	else:
+		say "Lala laughs: 'Be polite!'";
+	stop the action.
+
+Helping is an action applying to nothing. Understand "help" as helping.
+
+Carry out Helping:
+	if Pit-Vision-Active is true:
+		now Pit-Vision-Active is false;
+		say "What's happening? Am I disappearing?[line break]";
+		say "You hear [italic type]voice through the wind: Knock on the door!";
+		say "[bold type]You escaped Lala for now. Find a way out.[paragraph break]";
+		if Original-Player is Petar:
+			move Original-Player to LightRoom;
+		otherwise:
+			move Original-Player to DarkChamber;
+	otherwise:
+		say "Help? Try exploring.".
+
 Carry out knocking it:
 	increase knock count by 1;
-	if the noun is ForestDoor:
-		if ForestDoor is locked:
+	if the noun is a door:
+		if the noun is locked:
 			if knock count is 1:
 				let N be a random number from 2 to 5;
 				now knock number is N;
@@ -182,13 +268,15 @@ Carry out knocking it:
 			otherwise if knock count is knock number:
 				say "[italic type]CLICK! The door unlocks![roman type][line break]";
 				say "Huh, did I count right?";
-				now ForestDoor is unlocked;
-				now ForestDoor is open;
+				now the noun is unlocked;
+				now the noun is open;
 				now knock count is 0;
 			otherwise if knock count < knock number:
 				say "Knocked [knock count] of [knock number] times.[line break]";
 		otherwise:
-			say "The door is already unlocked.[line break]".
+			say "The door is already unlocked.[line break]";
+	else:
+		say "Nothing happens when you knock on that.";
 
 Instead of opening the ForestDoor when the ForestDoor is locked:
 	say "It's locked.".
@@ -199,11 +287,7 @@ After inserting something into the box:
 			now the box empty is false;
 			now the NorthDoor is unlocked;
 			now the NorthDoor is open;
-			say "You put the gold coin in the box. A door appears to the north!";
+			say "You put the gold coin in the box. A door opens on the north!";
 		otherwise:
 			say "The box already contains the gold coin.";
-
-Instead of going north in LightRoom when the box empty is true:
-	say "There is no way north.";
-
-
+			
