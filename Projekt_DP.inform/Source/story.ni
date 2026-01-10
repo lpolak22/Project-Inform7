@@ -53,6 +53,16 @@ Carry out status-checking:
 	say "Rank: [player-rank].[paragraph break]";
 	say "Score: [score]/[maximum score].[line break]Food: [HP]/[Max-HP].[line break]Pet: [Pet-relationship]/[Max-pet-relationship].[line break]Carry: [carried-weight]/[the Carry-limit of the player] (left [remaining-capacity]).[line break]Time: [time of day].";
 
+To say final summary:
+	say "[line break]Here’s a summary of your adventure:[line break]";
+	say "Rank: [player-rank].[line break]";
+	say "Score: [score]/[maximum score].[line break]";
+	say "Food (HP): [HP]/[Max-HP].[line break]";
+	say "Pet bond: [Pet-relationship]/[Max-pet-relationship].[line break]";
+	say "Carry: [carried-weight]/[the Carry-limit of the player] (left [remaining-capacity]).[line break]";
+	say "Items carried: [list of things carried by the player].[line break]";
+	say "Time of day: [time of day].[paragraph break]";
+
 To apply fall damage:
 	decrease the HP by 10;
 	if the score <= 0:
@@ -197,29 +207,26 @@ The player is a person.
 Character-chosen is a truth state that varies.
 Character-chosen is false.
 
-When play begins:
-	now score is 30;
-	now HP is 10;
-	now Max-HP is 10;
-	now Pet-relationship is 0;
-	now Max-pet-relationship is 10;
-	now the player is in the Starting Room;
-	say "Welcome to the game! It was created as a project for the Declarative Programming course. However, I hope you will still enjoy playing it.[paragraph break] ";
-	say "Choose your character:[line break]";
-	say "1 - Ivan (has a torch and one gold coin)[line break]";
-	say "2 - Petar (has nothing)[paragraph break]";
-	say "Type 1 or 2 to continue.";
-
 Choosing is an action applying to one number.
 Understand "[number]" as choosing.
 
+Turn-hunger-counter is a number that varies.
+Turn-pet-counter is a number that varies.
+
 Every turn when Character-chosen is true:
-	if the minutes part of the time of day is 0:
+	increase Turn-hunger-counter by 1;
+	increase Turn-pet-counter by 1;
+	if Turn-hunger-counter >= 10:
+		now Turn-hunger-counter is 0;
 		decrease HP by 1;
+	if Pet-named is true and Turn-pet-counter >= 12:
+		now Turn-pet-counter is 0;
 		decrease Pet-relationship by 1;
-	if HP <= 0:
-		now HP is 0;
-		end the story saying "You collapse from exhaustion and hunger.";
+	if Pet-relationship <= 0:
+		now Pet-relationship is 0;
+		if HP <= 0:
+			now HP is 0;
+			end the story saying "You collapse from exhaustion and hunger.".
 
 Carry out choosing:
 	if Character-chosen is true:
@@ -414,13 +421,6 @@ A bush-container is a container. It is part of the BerryBush. It is open and ent
 
 There are 75 berries.
 
-When play begins:
-	repeat with B running through berries:
-		move B to the bush-container;
-		now B is ripe;
-		if a random chance of 1 in 3 succeeds:
-			now B is unripe;
-
 Understand "eat [something]" as eating.
 
 Check eating:
@@ -535,6 +535,46 @@ To say birds chitter:
 
 Forest Clearing is north of Forest. "An open clearing. You hear [river sound] and [birds chitter]."
 
+Forest River is east of Forest Clearing.
+"A fast-flowing river blocks your path. It looks dangerous to cross without help."
+
+River Bank is north of Forest River.
+"You reach the other side of the river. The forest feels quieter here."
+
+A fallen log is a thing in Forest River.
+"The log doesn't looks sturdy enough to cross."
+
+Log-crossing is an action applying to one thing.
+Understand "cross over" as log-crossing.
+Understand "cross over [something]" as log-crossing.
+A thing can be crossed or uncrossed. A thing is usually uncrossed.
+
+Instead of going north in Forest River:
+	if the player is enclosed by the giant duck:
+		say "Your duck paddles you safely across the river.";
+		move the player to River Bank;
+	otherwise:
+		say "The river is too wide and fast to cross by jumping. Maybe something could help you over?[line break]";
+		say "Should I cross over?".
+	
+Check log-crossing:
+	if the player is on the giant duck:
+		say "You're already on the duck—just GO NORTH to cross." instead;
+	if the noun is not the fallen log:
+		say "You can't cross that." instead;
+	if the player is not in Forest River:
+		say "There's nothing to cross here." instead;
+	say "You step onto the fallen log. It rolls, your foot slips, and icy water closes over your head...";
+	now HP is 0;
+	end the story saying "You drown in the raging river.";
+	
+Rule for supplying a missing noun while log-crossing:
+	now the noun is the fallen log;
+
+Instead of mounting the giant duck when the player is in Forest River:
+	say "You hop on your giant duck. It paddles you safely across the river.";
+	move the player to River Bank.
+	
 Some water is a backdrop.
 The water is in Forest Clearing.
 The indefinite article of the water is "some".
@@ -567,14 +607,12 @@ When Bird-Watching ends:
 	now the bird is off-stage;
 	move the egg to Forest Clearing;
 	now the egg is revealed;
-
-After looking in Forest Clearing when the egg is revealed:
-	say "You hear distant wingbeats fade away. The forest feels calmer now. Nearby [a water] and [a branches] make a melody.";
-
-When Bird-Watching ends:
-	if the egg has not been handled:
+	if the egg has not been handled and the player is in Forest Clearing:
 		increase score by 10;
 		say "[italic type]You chose not to interfere.[roman type] (+10)";
+		
+After looking in Forest Clearing when the egg is revealed:
+	say "You hear distant wingbeats fade away. The forest feels calmer now. Nearby [a water] and [a branches] make a melody.";
 
 The description of the egg is
 	"[if concealed]You see nothing unusual.[otherwise]A fragile egg, still warm.[end if]".
@@ -591,7 +629,7 @@ After listening in Forest Clearing for the first time:
 		increase score by 5;
 		say "You listen quietly, respecting the forest. (+5)";
 
-Chapter 4 - Finale
+[Chapter 4 - Finale]
 
 Pet-Finale is a scene.
 Pet-Finale begins when
@@ -619,13 +657,6 @@ Understand "bimbambum" as cheating.
 Carry out cheating:
 	now score is 100;
 	now Pet-relationship is 10;
-	say "Here’s a summary of your adventure:[line break]";
-	say "Rank: [player-rank].[line break]";
-	say "Score: [score]/[maximum score].[line break]";
-	say "Food (HP): [HP]/[Max-HP].[line break]";
-	say "Pet bond: [Pet-relationship]/[Max-pet-relationship].[line break]";
-	say "Items carried: [list of things carried by the player].[line break]";
-	say "Time of day: [time of day].[paragraph break]";
 	end the story finally saying
 	"Congratulations! You used Lala's favourite word. You just said bim bam bum and bum, finished! Well done! [paragraph break]Did you know, the duck is Actually Lala's pet!".
 	
@@ -633,22 +664,28 @@ Finishing is an action applying to nothing.
 Understand "end" or "finish" as Finishing.
 
 Carry out Finishing:
-	say "[bold type]You chose to end the game.[roman type][paragraph break]";
-	say "Here’s a summary of your adventure:[line break]";
-	say "Rank: [player-rank].[line break]";
-	say "Score: [score]/[maximum score].[line break]";
-	say "Food (HP): [HP]/[Max-HP].[line break]";
-	say "Pet bond: [Pet-relationship]/[Max-pet-relationship].[line break]";
-	say "Items carried: [list of things carried by the player].[line break]";
-	say "Time of day: [time of day].[paragraph break]";
 	end the story finally saying "Thanks for playing! You decided to end your adventure here.";
 
 Every turn when score >= maximum score:
-	say "Here’s a summary of your adventure:[line break]";
-	say "Rank: [player-rank].[line break]";
-	say "Score: [score]/[maximum score].[line break]";
-	say "Food (HP): [HP]/[Max-HP].[line break]";
-	say "Pet bond: [Pet-relationship]/[Max-pet-relationship].[line break]";
-	say "Items carried: [list of things carried by the player].[line break]";
-	say "Time of day: [time of day].[paragraph break]";
 	end the story finally saying "Thanks for playing! You reached the maximum points".
+
+When play ends:
+	say final summary.
+	
+When play begins:
+	now score is 30;
+	now HP is 10;
+	now Max-HP is 10;
+	now Pet-relationship is 0;
+	now Max-pet-relationship is 10;
+	now the player is in the Starting Room;
+	say "Welcome to the game! It was created as a project for the Declarative Programming course. However, I hope you will still enjoy playing it.[paragraph break] ";
+	say "Choose your character:[line break]";
+	say "1 - Ivan (has a torch and one gold coin)[line break]";
+	say "2 - Petar (has nothing)[paragraph break]";
+	say "Type 1 or 2 to continue.";
+	repeat with B running through berries:
+		move B to the bush-container;
+		now B is ripe;
+		if a random chance of 1 in 3 succeeds:
+			now B is unripe;
