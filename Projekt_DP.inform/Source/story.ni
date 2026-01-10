@@ -38,6 +38,13 @@ Check taking something:
 	if newtotal > the Carry-limit of the player:
 		say "It's too heavy, you can't take more than [the Carry-limit of the player]." instead.
 
+Listing is an action applying to nothing.
+Understand "check inventory detailed" as listing.
+
+Carry out listing:
+	say "You are carrying: [list of things carried by the player].";
+	say "You are wearing: [list of things worn by the player].";
+	
 Pet-relationship is a number that varies.
 Max-pet-relationship is a number that varies.
 Pet-named is a truth state that varies. Pet-named is false.
@@ -137,6 +144,7 @@ After looking in Forest for the first time:
 	say "Something pink catches your eye beneath the leaves.";
 
 After wearing the pink handbag:
+	increase score by 10;
 	increase the Carry-limit of the player by 4kg;
 	say "With the handbag, you can carry more.";
 
@@ -233,6 +241,7 @@ Instead of doing something other than choosing when Character-chosen is false:
 
 When play ends:
 	if Pet-named is true:
+		increase score by 20;
 		now Special-scene is true;
 	otherwise:
 		now Special-scene is false;
@@ -461,6 +470,7 @@ Carry out naming it as:
 	now Pet-named is true;
 	now the printed name of the giant duck is the topic understood;
 	say "You name the duck '[printed name of the giant duck]'. It seems happy.";
+	increase score by 20;
 	now the giant duck is proper-named;
 	if Pet-relationship < Max-pet-relationship:
 		increase pet bond by 2;
@@ -518,3 +528,56 @@ To say a new wind hint:
 
 Every turn when the player is in FlowerValley:
 	say a new wind hint;
+
+Chapter 3 - Forest Clearing
+
+To say river sound:
+	say "the rush of a nearby river".
+
+To say birds chitter:
+	say "birds chittering in the canopy".
+
+Forest Clearing is north of Forest. "An open clearing. You hear [river sound] and [birds chitter]."
+
+Some water is a backdrop.
+The water is in Forest Clearing.
+The indefinite article of the water is "some".
+
+Some branches are a backdrop.
+The branches are in Forest Clearing.
+The indefinite article is "some".
+
+The bird is an animal in Forest Clearing.
+The egg is a thing.
+The egg is concealed.
+
+The egg can be concealed or revealed.
+The egg is concealed.
+
+After taking the egg when the egg is revealed:
+	say "Maybe I should have left it alone..";
+	decrease score by 20;
+	
+Bird-Watching is a scene.
+Bird-Watching begins when the player is in Forest Clearing.
+Bird-Watching ends when the time since Bird-Watching began is 3 minute.
+
+When Bird-Watching ends:
+	say "You stand there quietly, enjoying the forest, the sound of water and birds.[paragraph break]";
+	say "[italic type]Time seems to pass unnoticed...[roman type][paragraph break]";
+	now the time of day is the time of day plus 10 minutes;
+	say "You realize about ten minutes have passed.";
+	say "Suddenly, the bird flaps its wings and takes off, disappearing into the trees.[paragraph break]";
+	now the bird is off-stage;
+	move the egg to Forest Clearing;
+	now the egg is revealed;
+
+After looking in Forest Clearing when the egg is revealed:
+	say "You hear distant wingbeats fade away. The forest feels calmer now. Nearby [a water] and [a branches] make a melody.";
+
+The description of the egg is
+	"[if concealed]You see nothing unusual.[otherwise]A fragile egg, still warm.[end if]".
+	
+Instead of examining the water:
+	say "You watch [the water].";
+
