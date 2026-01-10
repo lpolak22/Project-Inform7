@@ -1170,25 +1170,30 @@
         <p class="hangingin1"><i>Begins when:</i> the story has not ended</p>
         <p class="hangingin1"><i>Ends when:</i> the story has ended</p>
         <hr>
-        <p class="hangingin1"><a name=A1></a><b>The <i>Bird-Watching</i> scene</b>&nbsp;<a href="source:story.ni#line597"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
-        <p class="hangingin1"><i>Begins when:</i> the player is in Forest Clearing&nbsp;<a href="source:story.ni#line598"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
-        <p class="hangingin1"><i>Ends when:</i> the time since Bird-Watching began is 3 minute&nbsp;<a href="source:story.ni#line599"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
+        <p class="hangingin1"><a name=A1></a><b>The <i>Bird-Watching</i> scene</b>&nbsp;<a href="source:story.ni#line625"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
+        <p class="hangingin1"><i>Begins when:</i> the player is in Forest Clearing&nbsp;<a href="source:story.ni#line626"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
         <p class="hangingin1"><i>What happens</i>:</p>
-        <p class="indentin2">&nbsp;&nbsp;&nbsp;&nbsp;(say "You stand there quietly, enjoying the forest, the sound of water and birds.[paragraph break]"; ...)&nbsp;<a href="source:story.ni#line601"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
+        <p class="indentin2">&nbsp;&nbsp;&nbsp;&nbsp;(now Birdwatch-start-time is the time of day)&nbsp;<a href="source:story.ni#line629"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
+        <p class="hangingin1"><i>During this scene:</i></p>
+        <p class="hangingin2"><i>Every turn rulebook</i></p>
+        <p class="indentin2">&nbsp;&nbsp;&nbsp;&nbsp;<i>during Bird-Watching</i>&nbsp;&nbsp;(now the time of day is Birdwatch-start-time + the time since Bird-Watching began)&nbsp;<a href="source:story.ni#line632"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
+        <p class="hangingin1"><i>Ends when:</i> the time since Bird-Watching began is 3 minutes&nbsp;<a href="source:story.ni#line627"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
+        <p class="hangingin1"><i>What happens</i>:</p>
+        <p class="indentin2">&nbsp;&nbsp;&nbsp;&nbsp;(say "You stand there quietly, enjoying the forest, the sound of water and birds.[paragraph break]"; ...)&nbsp;<a href="source:story.ni#line637"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
         <hr>
-        <p class="hangingin1"><a name=A2></a><b>The <i>Pet-Finale</i> scene</b>&nbsp;<a href="source:story.ni#line634"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
-        <p class="hangingin1"><i>Begins when:</i> Pet-relationship is Max-pet-relationship and the player is in FlowerValley&nbsp;<a href="source:story.ni#line635"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
+        <p class="hangingin1"><a name=A2></a><b>The <i>Pet-Finale</i> scene</b>&nbsp;<a href="source:story.ni#line718"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
+        <p class="hangingin1"><i>Begins when:</i> Pet-relationship is Max-pet-relationship and Special-scene is true&nbsp;<a href="source:story.ni#line719"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
         <p class="hangingin1"><i>What happens</i>:</p>
-        <p class="indentin2">&nbsp;&nbsp;&nbsp;&nbsp;(say "[italic type]Your duck nudges you gently.[roman type][paragraph break]"; ...)&nbsp;<a href="source:story.ni#line639"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
+        <p class="indentin2">&nbsp;&nbsp;&nbsp;&nbsp;(say "[italic type]Your duck nudges you gently.[roman type][paragraph break]"; ...)&nbsp;<a href="source:story.ni#line723"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
         <p class="hangingin1"><i>Ends when:</i> <b>never</b></p>
         <hr>
-        <p class="hangingin1"><a name=A3></a><b>The <i>Room Exit Scene</i> scene</b>&nbsp;<a href="source:story.ni#line176"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
-        <p class="hangingin1"><i>Begins when:</i> the player is in Forest&nbsp;<a href="source:story.ni#line177"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
+        <p class="hangingin1"><a name=A3></a><b>The <i>Room Exit Scene</i> scene</b>&nbsp;<a href="source:story.ni#line181"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
+        <p class="hangingin1"><i>Begins when:</i> the player is in Forest&nbsp;<a href="source:story.ni#line182"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
         <p class="hangingin1"><i>What happens</i>:</p>
-        <p class="indentin2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line179"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
-        <p class="hangingin1"><i>Ends when:</i> the player is in Forest&nbsp;<a href="source:story.ni#line196"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
+        <p class="indentin2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line184"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
+        <p class="hangingin1"><i>Ends when:</i> the player is in Forest&nbsp;<a href="source:story.ni#line201"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
         <p class="hangingin1"><i>What happens</i>:</p>
-        <p class="indentin2">&nbsp;&nbsp;&nbsp;&nbsp;(now ForestDoor is closed; ...)&nbsp;<a href="source:story.ni#line184"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
+        <p class="indentin2">&nbsp;&nbsp;&nbsp;&nbsp;(now ForestDoor is closed; ...)&nbsp;<a href="source:story.ni#line189"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
     </div>
     <div id="segment2">
         <hr>

@@ -64,10 +64,11 @@ To say final summary:
 	say "Time of day: [time of day].[paragraph break]";
 
 To apply fall damage:
-	decrease the HP by 10;
-	if the score <= 0:
-		now the score is 0;
-	if the score is 0:
+	decrease the HP by 5;
+	decrease the score by 15;
+	if the HP <= 0:
+		now the HP is 0;
+	if the HP is 0:
 		end the story saying "You succumb to your injuries. Pro tip: take care of yourself";
 
 The Starting Room is a room. "Your adventure begins here."
@@ -103,6 +104,10 @@ A gold coin is a thing.
 A gold coin has weight 1kg.
 The golden apple has weight 3kg.
 The torch has weight 2kg.
+
+A picture is a thing.
+The description of the picture is "A small picture of your pet. For some reason it feels like a reward.".
+The picture is nowhere.
 
 The torch is carried by Ivan.
 The gold coin is carried by Petar.
@@ -190,7 +195,7 @@ When Room Exit Scene ends:
 	increase score by 20;
 	say "You hear a soft click behind you.";
 	say "You seem to be hungry, find something to eat.";
-	decrease the HP by 5;
+	decrease the HP by 2;
 	say "Food: [HP]/[Max-HP].";
 	
 Room Exit Scene ends when the player is in Forest.
@@ -210,6 +215,9 @@ Character-chosen is false.
 Choosing is an action applying to one number.
 Understand "[number]" as choosing.
 
+Special-scene is a truth state that varies.
+Special-scene is false.
+
 Turn-hunger-counter is a number that varies.
 Turn-pet-counter is a number that varies.
 
@@ -224,9 +232,9 @@ Every turn when Character-chosen is true:
 		decrease Pet-relationship by 1;
 	if Pet-relationship <= 0:
 		now Pet-relationship is 0;
-		if HP <= 0:
-			now HP is 0;
-			end the story saying "You collapse from exhaustion and hunger.".
+	if HP <= 0:
+		now HP is 0;
+		end the story saying "You collapse from exhaustion and hunger.".
 
 Carry out choosing:
 	if Character-chosen is true:
@@ -234,13 +242,15 @@ Carry out choosing:
 	otherwise if the number understood is 1:
 		now the player is Ivan;
 		now Character-chosen is true;
-		now Petar is off-stage;
+		now Petar is in River Bank;
+		now Petar carries the picture;
 		move the player to DarkChamber;
 		say "You have chosen Ivan. Good luck on your adventure!";
 	otherwise if the number understood is 2:
 		now the player is Petar;
 		now Character-chosen is true;
-		now Ivan is off-stage;
+		now Ivan is in River Bank;
+		now Ivan carries the picture;
 		move the player to LightRoom;
 		say "You have chosen Petar. Good luck on your adventure!";
 	otherwise:
@@ -251,17 +261,28 @@ Instead of doing something other than choosing when Character-chosen is false:
 
 Chapter 1 - Where am I?
 
+To say darkchamber-details:
+	if the golden stool is in DarkChamber:
+		say "On a small golden stool ";
+		if the golden apple is on the golden stool:
+			say "sits a golden apple.";
+		otherwise:
+			say "there is nothing.";
+
 DarkChamber is a dark room. The printed name is "The Dark Room".
-The description is "[if DarkChamber is lighted]The room is now illuminated by your torch. On a small golden stool sits a golden apple.[otherwise]The room is dark. You can barely make out a small golden stool in the faint light.[end if]".
+The description of DarkChamber is "[if DarkChamber is lighted] The room is now illuminated by your torch. [darkchamber-details] [otherwise] The room is dark. You can barely make out a small golden stool in the faint light. [end if]".
+
 
 LightRoom is a room. The printed name of LightRoom is "The Light Room".
-"The room is well-lit and empty except for an old wooden box on the floor."
+The description of LightRoom is
+"[if the box is in LightRoom] The room is well-lit. An old wooden box sits on the floor. [otherwise] The room is well-lit and empty. [end if]".
+
 
 Golden stool is a scenery supporter in DarkChamber. Understand "small golden" as Golden stool. "A small stool made of solid gold."
 Golden apple is a scenery thing on the Golden stool."The golden apple has 'RUN' inscribed on it!"
 
 Box is an open container in LightRoom. "An old, run-down wooden box sits on the floor."
-The block burning rule does nothing when the noun is not the torch.
+[The block burning rule does nothing when the noun is not the torch.]
 
 Before going somewhere when in darkness:
 	say "It's too dark, light the torch first!" instead.
@@ -405,7 +426,7 @@ FlowerValley is west of Forest.
 Hints-unlocked is a truth state that varies. Hints-unlocked is false.
 
 The giant duck is a rideable animal.
-The giant duck is in Hidden Room.
+The giant duck is in Hidden chamber.
 The description of the giant duck is "A ridiculously large duck with gentle eyes. It looks like it might let you ride it."
 Understand "pet" or "duck" or "animal" as the giant duck.
 
@@ -552,13 +573,22 @@ A thing can be crossed or uncrossed. A thing is usually uncrossed.
 Instead of going north in Forest River:
 	if the player is enclosed by the giant duck:
 		say "Your duck paddles you safely across the river.";
-		move the player to River Bank;
+		continue the action;
 	otherwise:
 		say "The river is too wide and fast to cross by jumping. Maybe something could help you over?[line break]";
-		say "Should I cross over?".
-	
+		say "Should I still cross over?".
+
+Instead of going south in River Bank:
+	if the player is enclosed by the giant duck:
+		say "Your duck paddles you safely back across the river.";
+		continue the action;
+	otherwise:
+		say "You step into the icy river. The hidden current grabs you and drags you under...";
+		now HP is 0;
+		end the story saying "You drown in the raging river.";
+
 Check log-crossing:
-	if the player is on the giant duck:
+	if the player is enclosed by the giant duck:
 		say "You're already on the duck—just GO NORTH to cross." instead;
 	if the noun is not the fallen log:
 		say "You can't cross that." instead;
@@ -571,10 +601,6 @@ Check log-crossing:
 Rule for supplying a missing noun while log-crossing:
 	now the noun is the fallen log;
 
-Instead of mounting the giant duck when the player is in Forest River:
-	say "You hop on your giant duck. It paddles you safely across the river.";
-	move the player to River Bank.
-	
 Some water is a backdrop.
 The water is in Forest Clearing.
 The indefinite article of the water is "some".
@@ -594,9 +620,19 @@ After taking the egg when the egg is revealed:
 	say "Maybe I should have left it alone..";
 	decrease score by 20;
 	
+Birdwatch-start-time is a time that varies.
+
 Bird-Watching is a scene.
 Bird-Watching begins when the player is in Forest Clearing.
-Bird-Watching ends when the time since Bird-Watching began is 3 minute.
+Bird-Watching ends when the time since Bird-Watching began is 3 minutes.  [bitno: plural minutes]
+
+When Bird-Watching begins:
+	now Birdwatch-start-time is the time of day.
+
+Every turn during Bird-Watching:
+	[now make time within the scene consistent no matter what other rules do]
+	now the time of day is Birdwatch-start-time + the time since Bird-Watching began.
+
 
 When Bird-Watching ends:
 	say "You stand there quietly, enjoying the forest, the sound of water and birds.[paragraph break]";
@@ -628,13 +664,60 @@ After listening in Forest Clearing for the first time:
 		now Bird-respected is true;
 		increase score by 5;
 		say "You listen quietly, respecting the forest. (+5)";
+		
+Chapter 4 - The meeting
 
-[Chapter 4 - Finale]
+Where-querying is an action applying to one topic.
+Understand "where is [text]" as where-querying.
+
+Who-querying is an action applying to nothing.
+Understand "who are you" as who-querying.
+
+Carry out who-querying:
+	let candidate be a random person in the location who is not the player;
+	if candidate is nothing:
+		say "There's no one here to ask.";
+	otherwise:
+		try asking candidate about "who are you".
+
+Carry out where-querying:
+	let candidate be a random person in the location who is not the player;
+	if candidate is nothing:
+		say "There's no one here to ask.";
+	otherwise:
+		try asking candidate about the topic understood.
+
+Rule for supplying a missing noun while asking someone about:
+	let candidate be a random person in the location who is not the player;
+	if candidate is not nothing:
+		now the noun is candidate;
+	otherwise:
+		say "There's no one here to ask." instead.
+
+Instead of asking someone about something when the noun is in River Bank:
+	if the topic understood matches "lala":
+		say "Just an old lady who likes to make silly jokes.. Actually, she lost her pet Ducky. He was a swan once. I wonder where he left.";
+	else if the topic understood matches "who are you":
+		say "We have yet to meet in real life";
+	else if the topic understood matches "where is lala":
+		say "If she's anywhere, it's that hidden chamber vibe - somewhere away from the river and the forest paths.";
+	else if the topic understood matches "where is duck":
+		say "That duck? The last I know - FlowerValley. West of the Forest. If you bond with it, it can be a great companion. Wait.. How did you get here?";
+	else if the topic understood matches "duck" and Pet-relationship is Max-pet-relationship:
+		say "'The best pet you can have,' says [the noun]. Here, a little gift for you two.";
+		if the picture is carried by the noun:
+			now the player carries the picture;
+			say "[The noun] hands you a picture.";
+			now Special-scene is true;
+	else:
+		say "[The noun] doesn't know anything about that topic.".
+
+Chapter 5 - Finale
 
 Pet-Finale is a scene.
 Pet-Finale begins when
 	Pet-relationship is Max-pet-relationship
-	and the player is in FlowerValley.
+	and Special-scene is true.
 
 When Pet-Finale begins:
 	say "[italic type]Your duck nudges you gently.[roman type][paragraph break]";
@@ -643,13 +726,13 @@ When Pet-Finale begins:
 	"You leave the forest together, wiser and kinder than before.";
 
 Rank is a kind of value.
-The ranks are Passerby, Courteous Traveler, Forest Steward, Protector of the Nature.
+The ranks are Passerby, Courteous Traveler, Forest Steward, Protector of Nature.
 
 To decide what rank is the player-rank:
 	if score < 20, decide on Passerby;
 	if score < 60, decide on Courteous Traveler;
 	if score < 90, decide on Forest Steward;
-	decide on Protector of the Nature.
+	decide on Protector of Nature.
 
 Cheating is an action out of world applying to nothing.
 Understand "bimbambum" as cheating.
@@ -681,8 +764,8 @@ When play begins:
 	now the player is in the Starting Room;
 	say "Welcome to the game! It was created as a project for the Declarative Programming course. However, I hope you will still enjoy playing it.[paragraph break] ";
 	say "Choose your character:[line break]";
-	say "1 - Ivan (has a torch and one gold coin)[line break]";
-	say "2 - Petar (has nothing)[paragraph break]";
+	say "1 - Ivan (has a torch)[line break]";
+	say "2 - Petar (has a gold coin)[paragraph break]";
 	say "Type 1 or 2 to continue.";
 	repeat with B running through berries:
 		move B to the bush-container;
