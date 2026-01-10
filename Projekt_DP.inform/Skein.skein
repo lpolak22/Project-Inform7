@@ -11,6 +11,9 @@
       <child nodeId="node-439"/>
       <child nodeId="node-880"/>
       <child nodeId="node-891"/>
+      <child nodeId="node-1687"/>
+      <child nodeId="node-1763"/>
+      <child nodeId="node-1746"/>
       <child nodeId="node-899"/>
       <child nodeId="node-1544"/>
       <child nodeId="node-902"/>
@@ -38,6 +41,7 @@
       <child nodeId="node-130"/>
       <child nodeId="node-137"/>
       <child nodeId="node-338"/>
+      <child nodeId="node-1615"/>
       <child nodeId="node-342"/>
       <child nodeId="node-345"/>
       <child nodeId="node-369"/>
@@ -2982,6 +2986,201 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-1615">
+    <command xml:space="preserve">listing</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1616"/>
+    </children>
+  </item>
+  <item nodeId="node-1616">
+    <command xml:space="preserve">check inventory detailed</command>
+    <result xml:space="preserve">You are carrying: torch.&#x000A;You are wearing: nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1617"/>
+    </children>
+  </item>
+  <item nodeId="node-1617">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(ForestDoor)&#x000A;Voice through the wind: Knock 2 times!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1618"/>
+    </children>
+  </item>
+  <item nodeId="node-1618">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(ForestDoor)&#x000A;CLICK! The door unlocks!&#x000A;Huh, did I count right?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1619"/>
+    </children>
+  </item>
+  <item nodeId="node-1619">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1620"/>
+    </children>
+  </item>
+  <item nodeId="node-1620">
+    <command xml:space="preserve">wear handbag</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1621"/>
+    </children>
+  </item>
+  <item nodeId="node-1621">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">It's too dark, light the torch first!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1622"/>
+    </children>
+  </item>
+  <item nodeId="node-1622">
+    <command xml:space="preserve">light torch</command>
+    <result xml:space="preserve">You light the torch. The room is now illuminated.&#x000A;&#x000A;The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;You can see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1623"/>
+    </children>
+  </item>
+  <item nodeId="node-1623">
+    <command xml:space="preserve">wear handbag</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1624"/>
+    </children>
+  </item>
+  <item nodeId="node-1624">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">The Dark Room&#x000A;The room is now illuminated by your torch. On a small golden stool sits a golden apple.&#x000A;&#x000A;You can see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1625"/>
+    </children>
+  </item>
+  <item nodeId="node-1625">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1626"/>
+    </children>
+  </item>
+  <item nodeId="node-1626">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor and a pink handbag (empty) here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;Food: 4/10.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1627"/>
+    </children>
+  </item>
+  <item nodeId="node-1627">
+    <command xml:space="preserve">wear handbag</command>
+    <result xml:space="preserve">(first taking the pink handbag)&#x000A;With the handbag, you can carry more.&#x000A;&#x000A;[Your score has just gone up by ten points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1628"/>
+    </children>
+  </item>
+  <item nodeId="node-1628">
+    <command xml:space="preserve">check inventory detailed</command>
+    <result xml:space="preserve">You are carrying: torch.&#x000A;You are wearing: pink handbag.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1629"/>
+    </children>
+  </item>
+  <item nodeId="node-1629">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1630"/>
+    </children>
+  </item>
+  <item nodeId="node-1630">
+    <command xml:space="preserve">check inventory detailed</command>
+    <result xml:space="preserve">You are carrying: berry and torch.&#x000A;You are wearing: pink handbag.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1631"/>
+    </children>
+  </item>
+  <item nodeId="node-1631">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1632"/>
+    </children>
+  </item>
+  <item nodeId="node-1632">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest Clearing&#x000A;An open clearing. You hear the rush of a nearby river and birds chittering in the canopy.&#x000A;&#x000A;You can see a bird here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1633"/>
+    </children>
+  </item>
+  <item nodeId="node-1633">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">You hear nothing unexpected.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1634"/>
+    </children>
+  </item>
+  <item nodeId="node-1634">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Forest Clearing&#x000A;An open clearing. You hear the rush of a nearby river and birds chittering in the canopy.&#x000A;&#x000A;You can see a bird here.&#x000A;&#x000A;You stand there quietly, enjoying the forest, the sound of water and birds.&#x000A;&#x000A;Time seems to pass unnoticed...&#x000A;&#x000A;You realize about ten minutes have passed.&#x000A;Suddenly, the bird flaps its wings and takes off, disappearing into the trees.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1635"/>
+    </children>
+  </item>
+  <item nodeId="node-1635">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Forest Clearing&#x000A;An open clearing. You hear the rush of a nearby river and birds chittering in the canopy.&#x000A;&#x000A;You can see an egg here.&#x000A;&#x000A;You hear distant wingbeats fade away. The forest feels calmer now. Nearby some water and some branches make a melody.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1636"/>
+    </children>
+  </item>
+  <item nodeId="node-1636">
+    <command xml:space="preserve">take egg</command>
+    <result xml:space="preserve">Maybe I should have left it alone..&#x000A;&#x000A;[Your score has just gone down by twenty points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-342">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;&gt;</result>
@@ -3830,6 +4029,7 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-1397"/>
+      <child nodeId="node-1790"/>
       <child nodeId="node-440"/>
       <child nodeId="node-443"/>
       <child nodeId="node-1306"/>
@@ -3969,6 +4169,165 @@
   <item nodeId="node-1410">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1790">
+    <command xml:space="preserve">end</command>
+    <result xml:space="preserve">You chose to end the game.&#x000A;&#x000A;Here's a summary of your adventure:&#x000A;Rank: Courteous Traveler.&#x000A;Score: 30/100.&#x000A;Food (HP): 9/10.&#x000A;Pet bond: -1/10.&#x000A;Items carried: gold coin.&#x000A;Time of day: 9:01 am.&#x000A;&#x000A;&#x000A;&#x000A;    *** Thanks for playing! You decided to end your adventure here. ***&#x000A;&#x000A;&#x000A;In that game you scored 30 out of a possible 100, in 2 turns.&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1791"/>
+    </children>
+  </item>
+  <item nodeId="node-1791">
+    <command xml:space="preserve">restart</command>
+    <result xml:space="preserve">You must choose a character first. Type 1 or 2.&#x000A;&#x000A;Welcome to the game! It was created as a project for the Declarative Programming course. However, I hope you will still enjoy playing it.&#x000A;&#x000A; Choose your character:&#x000A;1 - Ivan (has a torch and one gold coin)&#x000A;2 - Petar (has nothing)&#x000A;&#x000A;Type 1 or 2 to continue.&#x000A;&#x000A;Projekt iz kolegija Deklarativno programiranje&#x000A;An Interactive Fiction by Lucija Polak&#x000A;Release 1 / Serial number 260110 / Inform 7 v10.1.2 / D&#x000A;&#x000A;You must choose a character first. Type 1 or 2.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1792"/>
+    </children>
+  </item>
+  <item nodeId="node-1792">
+    <command xml:space="preserve">2</command>
+    <result xml:space="preserve">The Light Room&#x000A;The room is well-lit and empty except for an old wooden box on the floor.&#x000A;&#x000A;An old, run-down wooden box sits on the floor.&#x000A;&#x000A;You have chosen Petar. Good luck on your adventure!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1793"/>
+    </children>
+  </item>
+  <item nodeId="node-1793">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;Voice through the wind: Knock 5 times!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1794"/>
+    </children>
+  </item>
+  <item nodeId="node-1794">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;Knocked 2 of 5 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1795"/>
+    </children>
+  </item>
+  <item nodeId="node-1795">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;Knocked 3 of 5 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1796"/>
+    </children>
+  </item>
+  <item nodeId="node-1796">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;Knocked 4 of 5 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1797"/>
+    </children>
+  </item>
+  <item nodeId="node-1797">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;CLICK! The door unlocks!&#x000A;Huh, did I count right?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1798"/>
+    </children>
+  </item>
+  <item nodeId="node-1798">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor and a pink handbag (empty) here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;Good job escaping!&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;Food: 4/10.&#x000A;&#x000A;[Your score has just gone up by twenty points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1799"/>
+    </children>
+  </item>
+  <item nodeId="node-1799">
+    <command xml:space="preserve">wear handbag</command>
+    <result xml:space="preserve">(first taking the pink handbag)&#x000A;With the handbag, you can carry more.&#x000A;&#x000A;[Your score has just gone up by ten points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1800"/>
+    </children>
+  </item>
+  <item nodeId="node-1800">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1801"/>
+    </children>
+  </item>
+  <item nodeId="node-1801">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;A giant duck waddles up to you and tilts its head, as if waiting for a name.&#x000A;You can type: name duck as &lt;name&gt;.&#x000A;Tip: you can increase the relationship with your pet.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1802"/>
+    </children>
+  </item>
+  <item nodeId="node-1802">
+    <command xml:space="preserve">name duck as asdds</command>
+    <result xml:space="preserve">You name the duck "asdds". It seems happy.&#x000A;&#x000A;Voice through the wind: "Try PET DUCK to bond."&#x000A;[Your score has just gone up by twenty points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1803"/>
+    </children>
+  </item>
+  <item nodeId="node-1803">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1804"/>
+    </children>
+  </item>
+  <item nodeId="node-1804">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest Clearing&#x000A;An open clearing. You hear the rush of a nearby river and birds chittering in the canopy.&#x000A;&#x000A;You can see a bird here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1805"/>
+    </children>
+  </item>
+  <item nodeId="node-1805">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">You listen quietly, respecting the forest. (+5)&#x000A;[Your score has just gone up by five points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1806"/>
+    </children>
+  </item>
+  <item nodeId="node-1806">
+    <command xml:space="preserve">examine water</command>
+    <result xml:space="preserve">You watch the water. It flows peacefully.&#x000A;&#x000A;You stand there quietly, enjoying the forest, the sound of water and birds.&#x000A;&#x000A;Time seems to pass unnoticed...&#x000A;&#x000A;You realize about ten minutes have passed.&#x000A;Suddenly, the bird flaps its wings and takes off, disappearing into the trees.&#x000A;&#x000A;You chose not to interfere. (+10)&#x000A;[Your score has just gone up by fifteen points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1807"/>
+    </children>
+  </item>
+  <item nodeId="node-1807">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Forest Clearing&#x000A;An open clearing. You hear the rush of a nearby river and birds chittering in the canopy.&#x000A;&#x000A;You can see an egg here.&#x000A;&#x000A;You hear distant wingbeats fade away. The forest feels calmer now. Nearby some water and some branches make a melody.&#x000A;&#x000A;Here's a summary of your adventure:&#x000A;Rank: Protector of the Nature.&#x000A;Score: 100/100.&#x000A;Food (HP): 4/10.&#x000A;Pet bond: 1/10.&#x000A;Items carried: gold coin.&#x000A;Time of day: 9:25 am.&#x000A;&#x000A;&#x000A;&#x000A;    *** Thanks for playing! You reached the maximum points ***&#x000A;&#x000A;&#x000A;In that game you scored 100 out of a possible 100, in 16 turns.&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -5476,7 +5835,7 @@
   </item>
   <item nodeId="node-990">
     <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor and a pink handbag (empty) here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;Food: 4/10.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor and a pink handbag (empty) here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;Good job escaping!&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;Food: 4/10.&#x000A;&#x000A;[Your score has just gone up by twenty points.]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -5486,6 +5845,8 @@
       <child nodeId="node-1416"/>
       <child nodeId="node-1140"/>
       <child nodeId="node-1495"/>
+      <child nodeId="node-1752"/>
+      <child nodeId="node-1728"/>
     </children>
   </item>
   <item nodeId="node-1189">
@@ -6606,11 +6967,12 @@
   </item>
   <item nodeId="node-1538">
     <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">Forest Clearing&#x000A;An open clearing. You hear the rush of a nearby river and birds chittering in the canopy. some water&#x000A;&#x000A;You can see a bird here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Forest Clearing&#x000A;An open clearing. You hear the rush of a nearby river and birds chittering in the canopy.&#x000A;&#x000A;You can see a bird here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-1552"/>
+      <child nodeId="node-1637"/>
       <child nodeId="node-1539"/>
       <child nodeId="node-1541"/>
       <child nodeId="node-1565"/>
@@ -6842,6 +7204,57 @@
   <item nodeId="node-1607">
     <command xml:space="preserve">drink water</command>
     <result xml:space="preserve">There's nothing suitable to drink here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1637">
+    <command xml:space="preserve">examine water</command>
+    <result xml:space="preserve">You watch the water. It flows peacefully.&#x000A;&#x000A;[Your score has just gone up by five points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1723"/>
+    </children>
+  </item>
+  <item nodeId="node-1723">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">You listen quietly, respecting the forest. (+5)&#x000A;You stand there quietly, enjoying the forest, the sound of water and birds.&#x000A;&#x000A;Time seems to pass unnoticed...&#x000A;&#x000A;You realize about ten minutes have passed.&#x000A;Suddenly, the bird flaps its wings and takes off, disappearing into the trees.&#x000A;&#x000A;You chose not to interfere. (+10)&#x000A;[Your score has just gone up by fifteen points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1724"/>
+    </children>
+  </item>
+  <item nodeId="node-1724">
+    <command xml:space="preserve">score</command>
+    <result xml:space="preserve">You have so far scored 50 out of a possible 100, in 8 turns.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1725"/>
+    </children>
+  </item>
+  <item nodeId="node-1725">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor and a pink handbag (empty) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1726"/>
+    </children>
+  </item>
+  <item nodeId="node-1726">
+    <command xml:space="preserve">wear handbag</command>
+    <result xml:space="preserve">(first taking the pink handbag)&#x000A;With the handbag, you can carry more.&#x000A;&#x000A;[Your score has just gone up by ten points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1727"/>
+    </children>
+  </item>
+  <item nodeId="node-1727">
+    <command xml:space="preserve">score</command>
+    <result xml:space="preserve">You have so far scored 60 out of a possible 100, in 10 turns.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -8026,8 +8439,447 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-1638"/>
       <child nodeId="node-1496"/>
     </children>
+  </item>
+  <item nodeId="node-1638">
+    <command xml:space="preserve">score</command>
+    <result xml:space="preserve">You have so far scored 30 out of a possible 100, in 6 turns.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1639"/>
+    </children>
+  </item>
+  <item nodeId="node-1639">
+    <command xml:space="preserve">wear handbag</command>
+    <result xml:space="preserve">With the handbag, you can carry more.&#x000A;&#x000A;[Your score has just gone up by ten points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1640"/>
+    </children>
+  </item>
+  <item nodeId="node-1640">
+    <command xml:space="preserve">score</command>
+    <result xml:space="preserve">You have so far scored 40 out of a possible 100, in 7 turns.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1641"/>
+    </children>
+  </item>
+  <item nodeId="node-1641">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest Clearing&#x000A;An open clearing. You hear the rush of a nearby river and birds chittering in the canopy.&#x000A;&#x000A;You can see a bird here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1642"/>
+    </children>
+  </item>
+  <item nodeId="node-1642">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">You listen quietly, respecting the forest. (+5)&#x000A;[Your score has just gone up by five points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1643"/>
+    </children>
+  </item>
+  <item nodeId="node-1643">
+    <command xml:space="preserve">examine water</command>
+    <result xml:space="preserve">You watch the water. It flows peacefully.&#x000A;&#x000A;You stand there quietly, enjoying the forest, the sound of water and birds.&#x000A;&#x000A;Time seems to pass unnoticed...&#x000A;&#x000A;You realize about ten minutes have passed.&#x000A;Suddenly, the bird flaps its wings and takes off, disappearing into the trees.&#x000A;&#x000A;You chose not to interfere. (+10)&#x000A;[Your score has just gone up by fifteen points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1644"/>
+    </children>
+  </item>
+  <item nodeId="node-1644">
+    <command xml:space="preserve">score</command>
+    <result xml:space="preserve">You have so far scored 60 out of a possible 100, in 10 turns.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1645"/>
+    </children>
+  </item>
+  <item nodeId="node-1645">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1646"/>
+    </children>
+  </item>
+  <item nodeId="node-1646">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1647"/>
+    </children>
+  </item>
+  <item nodeId="node-1647">
+    <command xml:space="preserve">name duck as lala</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1648"/>
+    </children>
+  </item>
+  <item nodeId="node-1648">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;A giant duck waddles up to you and tilts its head, as if waiting for a name.&#x000A;You can type: name duck as &lt;name&gt;.&#x000A;Tip: you can increase the relationship with your pet.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1649"/>
+    </children>
+  </item>
+  <item nodeId="node-1649">
+    <command xml:space="preserve">name duck as lala</command>
+    <result xml:space="preserve">You name the duck "lala". It seems happy.&#x000A;&#x000A;Voice through the wind: "Try PET DUCK to bond."&#x000A;[Your score has just gone up by twenty points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1650"/>
+    </children>
+  </item>
+  <item nodeId="node-1650">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see lala here.&#x000A;&#x000A;Voice through the wind: "Feed it: GIVE BERRY TO DUCK."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1651"/>
+    </children>
+  </item>
+  <item nodeId="node-1651">
+    <command xml:space="preserve">give berry to duck</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1652"/>
+    </children>
+  </item>
+  <item nodeId="node-1652">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1653"/>
+    </children>
+  </item>
+  <item nodeId="node-1653">
+    <command xml:space="preserve">score</command>
+    <result xml:space="preserve">You have so far scored 80 out of a possible 100, in 16 turns.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1654"/>
+    </children>
+  </item>
+  <item nodeId="node-1654">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 80/100. Food: 4/10. Pet: 2/10. Carry: 2kg/10kg (left 8kg). Time: 9:25 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1655"/>
+    </children>
+  </item>
+  <item nodeId="node-1655">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see lala here.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1656"/>
+    </children>
+  </item>
+  <item nodeId="node-1656">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet lala. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1657"/>
+    </children>
+  </item>
+  <item nodeId="node-1657">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet lala. It seems calmer. (Pet +1)&#x000A;Voice through the wind: "Travel together: RIDE DUCK / (DIS)MOUNT DUCK."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1658"/>
+    </children>
+  </item>
+  <item nodeId="node-1658">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet lala. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1659"/>
+    </children>
+  </item>
+  <item nodeId="node-1659">
+    <command xml:space="preserve">ride duck</command>
+    <result xml:space="preserve">You mount lala.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1660"/>
+    </children>
+  </item>
+  <item nodeId="node-1660">
+    <command xml:space="preserve">dismount</command>
+    <result xml:space="preserve">You dismount lala.&#x000A;&#x000A;FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see lala here.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1661"/>
+    </children>
+  </item>
+  <item nodeId="node-1661">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet lala. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1662"/>
+    </children>
+  </item>
+  <item nodeId="node-1662">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet lala. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1663"/>
+    </children>
+  </item>
+  <item nodeId="node-1663">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet lala. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1664"/>
+    </children>
+  </item>
+  <item nodeId="node-1664">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet lala. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1665"/>
+    </children>
+  </item>
+  <item nodeId="node-1665">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet lala. It seems calmer. (Pet +1)&#x000A;Your duck nudges you gently.&#x000A;&#x000A;You realize you've earned its trust.&#x000A;&#x000A;&#x000A;&#x000A;    *** You leave the forest together, wiser and kinder than before. ***&#x000A;&#x000A;&#x000A;In that game you scored 120 out of a possible 100, in 27 turns.&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1666"/>
+    </children>
+  </item>
+  <item nodeId="node-1666">
+    <command xml:space="preserve">restart</command>
+    <result xml:space="preserve">You must choose a character first. Type 1 or 2.&#x000A;&#x000A;Welcome to the game! It was created as a project for the Declarative Programming course. However, I hope you will still enjoy playing it.&#x000A;&#x000A; Choose your character:&#x000A;1 - Ivan (has a torch and one gold coin)&#x000A;2 - Petar (has nothing)&#x000A;&#x000A;Type 1 or 2 to continue.&#x000A;&#x000A;Projekt iz kolegija Deklarativno programiranje&#x000A;An Interactive Fiction by Lucija Polak&#x000A;Release 1 / Serial number 260110 / Inform 7 v10.1.2 / D&#x000A;&#x000A;You must choose a character first. Type 1 or 2.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1667"/>
+    </children>
+  </item>
+  <item nodeId="node-1667">
+    <command xml:space="preserve">2</command>
+    <result xml:space="preserve">The Light Room&#x000A;The room is well-lit and empty except for an old wooden box on the floor.&#x000A;&#x000A;An old, run-down wooden box sits on the floor.&#x000A;&#x000A;You have chosen Petar. Good luck on your adventure!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1668"/>
+    </children>
+  </item>
+  <item nodeId="node-1668">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">(first opening the NorthDoor)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1669"/>
+    </children>
+  </item>
+  <item nodeId="node-1669">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;Voice through the wind: Knock 2 times!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1670"/>
+    </children>
+  </item>
+  <item nodeId="node-1670">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;CLICK! The door unlocks!&#x000A;Huh, did I count right?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1671"/>
+    </children>
+  </item>
+  <item nodeId="node-1671">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor and a pink handbag (empty) here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;Food: 4/10.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1672"/>
+    </children>
+  </item>
+  <item nodeId="node-1672">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1673"/>
+    </children>
+  </item>
+  <item nodeId="node-1673">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;A giant duck waddles up to you and tilts its head, as if waiting for a name.&#x000A;You can type: name duck as &lt;name&gt;.&#x000A;Tip: you can increase the relationship with your pet.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1674"/>
+    </children>
+  </item>
+  <item nodeId="node-1674">
+    <command xml:space="preserve">name duck as lala</command>
+    <result xml:space="preserve">You name the duck "lala". It seems happy.&#x000A;&#x000A;Voice through the wind: "Try PET DUCK to bond."&#x000A;[Your score has just gone up by twenty points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1675"/>
+    </children>
+  </item>
+  <item nodeId="node-1675">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet lala. It seems calmer. (Pet +1)&#x000A;Voice through the wind: "Feed it: GIVE BERRY TO DUCK."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1676"/>
+    </children>
+  </item>
+  <item nodeId="node-1676">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet lala. It seems calmer. (Pet +1)&#x000A;Voice through the wind: "Travel together: RIDE DUCK / (DIS)MOUNT DUCK."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1677"/>
+    </children>
+  </item>
+  <item nodeId="node-1677">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet lala. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1678"/>
+    </children>
+  </item>
+  <item nodeId="node-1678">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet lala. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1679"/>
+    </children>
+  </item>
+  <item nodeId="node-1679">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet lala. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1680"/>
+    </children>
+  </item>
+  <item nodeId="node-1680">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet lala. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1681"/>
+    </children>
+  </item>
+  <item nodeId="node-1681">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet lala. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1682"/>
+    </children>
+  </item>
+  <item nodeId="node-1682">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet lala. It seems calmer. (Pet +1)&#x000A;Your duck nudges you gently.&#x000A;&#x000A;You realize you've earned its trust.&#x000A;&#x000A;&#x000A;&#x000A;    *** You leave the forest together, wiser and kinder than before. ***&#x000A;&#x000A;&#x000A;In that game you scored 90 out of a possible 100, in 16 turns.&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1683"/>
+    </children>
+  </item>
+  <item nodeId="node-1683">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">FlowerValley&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1684"/>
+    </children>
+  </item>
+  <item nodeId="node-1684">
+    <command xml:space="preserve">score</command>
+    <result xml:space="preserve">You have so far scored 50 out of a possible 100, in 16 turns.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1685"/>
+    </children>
+  </item>
+  <item nodeId="node-1685">
+    <command xml:space="preserve">hit duck</command>
+    <result xml:space="preserve">Violence isn't the answer to this one.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1686"/>
+    </children>
+  </item>
+  <item nodeId="node-1686">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet lala. It seems calmer. (Pet +1)&#x000A;Your duck nudges you gently.&#x000A;&#x000A;You realize you've earned its trust.&#x000A;&#x000A;&#x000A;&#x000A;    *** You leave the forest together, wiser and kinder than before. ***&#x000A;&#x000A;&#x000A;In that game you scored 90 out of a possible 100, in 17 turns.&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-1496">
     <command xml:space="preserve">take berry</command>
@@ -8401,6 +9253,261 @@
   <item nodeId="node-1537">
     <command xml:space="preserve">status</command>
     <result xml:space="preserve">Score: 30/100. Food: 4/10. Pet: 0/10. Carry: 4kg/6kg (left 2kg). Time: 9:46 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1752">
+    <command xml:space="preserve">wear backpack</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1753"/>
+    </children>
+  </item>
+  <item nodeId="node-1753">
+    <command xml:space="preserve">wear handbag</command>
+    <result xml:space="preserve">(first taking the pink handbag)&#x000A;With the handbag, you can carry more.&#x000A;&#x000A;[Your score has just gone up by ten points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1754"/>
+    </children>
+  </item>
+  <item nodeId="node-1754">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1755"/>
+    </children>
+  </item>
+  <item nodeId="node-1755">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;A giant duck waddles up to you and tilts its head, as if waiting for a name.&#x000A;You can type: name duck as &lt;name&gt;.&#x000A;Tip: you can increase the relationship with your pet.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1756"/>
+    </children>
+  </item>
+  <item nodeId="node-1756">
+    <command xml:space="preserve">name duck as</command>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1757"/>
+    </children>
+  </item>
+  <item nodeId="node-1757">
+    <command xml:space="preserve">name duck as sa</command>
+    <result xml:space="preserve">You name the duck "sa". It seems happy.&#x000A;&#x000A;Voice through the wind: "Try PET DUCK to bond."&#x000A;[Your score has just gone up by twenty points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1758"/>
+    </children>
+  </item>
+  <item nodeId="node-1758">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1759"/>
+    </children>
+  </item>
+  <item nodeId="node-1759">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest Clearing&#x000A;An open clearing. You hear the rush of a nearby river and birds chittering in the canopy.&#x000A;&#x000A;You can see a bird here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1760"/>
+    </children>
+  </item>
+  <item nodeId="node-1760">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">You listen quietly, respecting the forest. (+5)&#x000A;[Your score has just gone up by five points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1761"/>
+    </children>
+  </item>
+  <item nodeId="node-1761">
+    <command xml:space="preserve">examine water</command>
+    <result xml:space="preserve">You watch the water. It flows peacefully.&#x000A;&#x000A;You stand there quietly, enjoying the forest, the sound of water and birds.&#x000A;&#x000A;Time seems to pass unnoticed...&#x000A;&#x000A;You realize about ten minutes have passed.&#x000A;Suddenly, the bird flaps its wings and takes off, disappearing into the trees.&#x000A;&#x000A;You chose not to interfere. (+10)&#x000A;[Your score has just gone up by fifteen points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1762"/>
+    </children>
+  </item>
+  <item nodeId="node-1762">
+    <command xml:space="preserve">score</command>
+    <result xml:space="preserve">You have so far scored 100 out of a possible 100, in 13 turns.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1728">
+    <command xml:space="preserve">wear handbag</command>
+    <result xml:space="preserve">(first taking the pink handbag)&#x000A;With the handbag, you can carry more.&#x000A;&#x000A;[Your score has just gone up by ten points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1729"/>
+    </children>
+  </item>
+  <item nodeId="node-1729">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1730"/>
+    </children>
+  </item>
+  <item nodeId="node-1730">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;A giant duck waddles up to you and tilts its head, as if waiting for a name.&#x000A;You can type: name duck as &lt;name&gt;.&#x000A;Tip: you can increase the relationship with your pet.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1731"/>
+    </children>
+  </item>
+  <item nodeId="node-1731">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1732"/>
+    </children>
+  </item>
+  <item nodeId="node-1732">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1733"/>
+    </children>
+  </item>
+  <item nodeId="node-1733">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1734"/>
+    </children>
+  </item>
+  <item nodeId="node-1734">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1735"/>
+    </children>
+  </item>
+  <item nodeId="node-1735">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1736"/>
+    </children>
+  </item>
+  <item nodeId="node-1736">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1737"/>
+    </children>
+  </item>
+  <item nodeId="node-1737">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1738"/>
+    </children>
+  </item>
+  <item nodeId="node-1738">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1739"/>
+    </children>
+  </item>
+  <item nodeId="node-1739">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1740"/>
+    </children>
+  </item>
+  <item nodeId="node-1740">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1741"/>
+    </children>
+  </item>
+  <item nodeId="node-1741">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;Your duck nudges you gently.&#x000A;&#x000A;You realize you've earned its trust.&#x000A;&#x000A;&#x000A;&#x000A;    *** You leave the forest together, wiser and kinder than before. ***&#x000A;&#x000A;&#x000A;In that game you scored 60 out of a possible 100, in 18 turns.&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1742"/>
+    </children>
+  </item>
+  <item nodeId="node-1742">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">FlowerValley&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1743"/>
+    </children>
+  </item>
+  <item nodeId="node-1743">
+    <command xml:space="preserve">wnd</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1744"/>
+    </children>
+  </item>
+  <item nodeId="node-1744">
+    <command xml:space="preserve">end</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1745"/>
+    </children>
+  </item>
+  <item nodeId="node-1745">
+    <command xml:space="preserve">finish</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -10789,7 +11896,7 @@
   </item>
   <item nodeId="node-631">
     <command xml:space="preserve">status</command>
-    <result xml:space="preserve">Score: 30/100. Food: 9/10. Pet: 0/10. Carry: 1kg/6kg (left 5kg). Time: 9:01 am.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Rank: Explorer.&#x000A;&#x000A;Score: 30/100.&#x000A;Food: 9/10.&#x000A;Pet: 0/10.&#x000A;Carry: 1kg/6kg (left 5kg).&#x000A;Time: 9:01 am.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -13200,6 +14307,616 @@
   <item nodeId="node-898">
     <command xml:space="preserve">look.</command>
     <result xml:space="preserve">Starting Room&#x000A;Your adventure begins here.&#x000A;&#x000A;You can see your former self here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1687">
+    <command xml:space="preserve">bimbambum</command>
+    <result xml:space="preserve">*** Congratulations! You used Lala's favourite word. You just said bim bam bum and bum, finished! Well done! &#x000A;&#x000A;Did you know, the duck is Actually Lala's pet! ***&#x000A;&#x000A;&#x000A;In that game you scored 100 out of a possible 100, in 1 turn.&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1688"/>
+      <child nodeId="node-1716"/>
+    </children>
+  </item>
+  <item nodeId="node-1688">
+    <command xml:space="preserve">2</command>
+    <result xml:space="preserve">The Light Room&#x000A;The room is well-lit and empty except for an old wooden box on the floor.&#x000A;&#x000A;An old, run-down wooden box sits on the floor.&#x000A;&#x000A;You have chosen Petar. Good luck on your adventure!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1689"/>
+    </children>
+  </item>
+  <item nodeId="node-1689">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;Voice through the wind: Knock 2 times!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1690"/>
+    </children>
+  </item>
+  <item nodeId="node-1690">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;CLICK! The door unlocks!&#x000A;Huh, did I count right?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1691"/>
+    </children>
+  </item>
+  <item nodeId="node-1691">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor and a pink handbag (empty) here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;Food: 5/10.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1692"/>
+    </children>
+  </item>
+  <item nodeId="node-1692">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest Clearing&#x000A;An open clearing. You hear the rush of a nearby river and birds chittering in the canopy.&#x000A;&#x000A;You can see a bird here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1693"/>
+    </children>
+  </item>
+  <item nodeId="node-1693">
+    <command xml:space="preserve">examine water</command>
+    <result xml:space="preserve">You watch the water. It flows peacefully.&#x000A;&#x000A;[Your score has just gone up by five points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1694"/>
+    </children>
+  </item>
+  <item nodeId="node-1694">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">You listen quietly, respecting the forest. (+5)&#x000A;You stand there quietly, enjoying the forest, the sound of water and birds.&#x000A;&#x000A;Time seems to pass unnoticed...&#x000A;&#x000A;You realize about ten minutes have passed.&#x000A;Suddenly, the bird flaps its wings and takes off, disappearing into the trees.&#x000A;&#x000A;You chose not to interfere. (+10)&#x000A;[Your score has just gone up by fifteen points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1695"/>
+    </children>
+  </item>
+  <item nodeId="node-1695">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">You hear nothing unexpected.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1696"/>
+    </children>
+  </item>
+  <item nodeId="node-1696">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Forest Clearing&#x000A;An open clearing. You hear the rush of a nearby river and birds chittering in the canopy.&#x000A;&#x000A;You can see an egg here.&#x000A;&#x000A;You hear distant wingbeats fade away. The forest feels calmer now. Nearby some water and some branches make a melody.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1697"/>
+    </children>
+  </item>
+  <item nodeId="node-1697">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor and a pink handbag (empty) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1698"/>
+    </children>
+  </item>
+  <item nodeId="node-1698">
+    <command xml:space="preserve">score</command>
+    <result xml:space="preserve">You have so far scored 50 out of a possible 100, in 12 turns.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1699"/>
+    </children>
+  </item>
+  <item nodeId="node-1699">
+    <command xml:space="preserve">wear handbag</command>
+    <result xml:space="preserve">(first taking the pink handbag)&#x000A;With the handbag, you can carry more.&#x000A;&#x000A;[Your score has just gone up by ten points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1700"/>
+    </children>
+  </item>
+  <item nodeId="node-1700">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1701"/>
+    </children>
+  </item>
+  <item nodeId="node-1701">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1702"/>
+    </children>
+  </item>
+  <item nodeId="node-1702">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;A giant duck waddles up to you and tilts its head, as if waiting for a name.&#x000A;You can type: name duck as &lt;name&gt;.&#x000A;Tip: you can increase the relationship with your pet.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1703"/>
+    </children>
+  </item>
+  <item nodeId="node-1703">
+    <command xml:space="preserve">examine water</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1704"/>
+    </children>
+  </item>
+  <item nodeId="node-1704">
+    <command xml:space="preserve">name duck as lala</command>
+    <result xml:space="preserve">You name the duck "lala". It seems happy.&#x000A;&#x000A;Voice through the wind: "Try PET DUCK to bond."&#x000A;[Your score has just gone up by twenty points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1705"/>
+    </children>
+  </item>
+  <item nodeId="node-1705">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet lala. It seems calmer. (Pet +1)&#x000A;Voice through the wind: "Feed it: GIVE BERRY TO DUCK."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1706"/>
+    </children>
+  </item>
+  <item nodeId="node-1706">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1707"/>
+    </children>
+  </item>
+  <item nodeId="node-1707">
+    <command xml:space="preserve">give berry to duck</command>
+    <result xml:space="preserve">lala happily eats the berry. (Pet +1)&#x000A;Voice through the wind: "Travel together: RIDE DUCK / (DIS)MOUNT DUCK."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1708"/>
+    </children>
+  </item>
+  <item nodeId="node-1708">
+    <command xml:space="preserve">ride duck</command>
+    <result xml:space="preserve">You mount lala.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1709"/>
+    </children>
+  </item>
+  <item nodeId="node-1709">
+    <command xml:space="preserve">dismount</command>
+    <result xml:space="preserve">You dismount lala.&#x000A;&#x000A;FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see lala here.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1710"/>
+    </children>
+  </item>
+  <item nodeId="node-1710">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet lala. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1711"/>
+    </children>
+  </item>
+  <item nodeId="node-1711">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet lala. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1712"/>
+    </children>
+  </item>
+  <item nodeId="node-1712">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet lala. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1713"/>
+    </children>
+  </item>
+  <item nodeId="node-1713">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet lala. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1714"/>
+    </children>
+  </item>
+  <item nodeId="node-1714">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet lala. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1715"/>
+    </children>
+  </item>
+  <item nodeId="node-1715">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet lala. It seems calmer. (Pet +1)&#x000A;Your duck nudges you gently.&#x000A;&#x000A;You realize you've earned its trust.&#x000A;&#x000A;&#x000A;&#x000A;    *** You leave the forest together, wiser and kinder than before. ***&#x000A;&#x000A;&#x000A;In that game you scored 100 out of a possible 100, in 26 turns.&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1716">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Starting Room&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1717"/>
+    </children>
+  </item>
+  <item nodeId="node-1717">
+    <command xml:space="preserve">finish</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1718"/>
+    </children>
+  </item>
+  <item nodeId="node-1718">
+    <command xml:space="preserve">enf</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1719"/>
+    </children>
+  </item>
+  <item nodeId="node-1719">
+    <command xml:space="preserve">end</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1720"/>
+    </children>
+  </item>
+  <item nodeId="node-1720">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">You must choose a character first. Type 1 or 2.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1721"/>
+    </children>
+  </item>
+  <item nodeId="node-1721">
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;You have chosen Ivan. Good luck on your adventure!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1722"/>
+    </children>
+  </item>
+  <item nodeId="node-1722">
+    <command xml:space="preserve">end</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1763">
+    <command xml:space="preserve">end</command>
+    <result xml:space="preserve">You must choose a character first. Type 1 or 2.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1764"/>
+    </children>
+  </item>
+  <item nodeId="node-1764">
+    <command xml:space="preserve">2</command>
+    <result xml:space="preserve">The Light Room&#x000A;The room is well-lit and empty except for an old wooden box on the floor.&#x000A;&#x000A;An old, run-down wooden box sits on the floor.&#x000A;&#x000A;You have chosen Petar. Good luck on your adventure!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1765"/>
+    </children>
+  </item>
+  <item nodeId="node-1765">
+    <command xml:space="preserve">end</command>
+    <result xml:space="preserve">You chose to end the game.&#x000A;&#x000A;Here's a summary of your adventure:&#x000A;Rank: Courteous Traveler.&#x000A;Score: 30/100.&#x000A;Food (HP): 10/10.&#x000A;Pet bond: 0/10.&#x000A;Items carried: gold coin.&#x000A;Time of day: 9:02 am.&#x000A;&#x000A;&#x000A;&#x000A;    *** Thanks for playing! You decided to end your adventure here. ***&#x000A;&#x000A;&#x000A;In that game you scored 30 out of a possible 100, in 3 turns.&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1766"/>
+    </children>
+  </item>
+  <item nodeId="node-1766">
+    <command xml:space="preserve">restart</command>
+    <result xml:space="preserve">You must choose a character first. Type 1 or 2.&#x000A;&#x000A;Welcome to the game! It was created as a project for the Declarative Programming course. However, I hope you will still enjoy playing it.&#x000A;&#x000A; Choose your character:&#x000A;1 - Ivan (has a torch and one gold coin)&#x000A;2 - Petar (has nothing)&#x000A;&#x000A;Type 1 or 2 to continue.&#x000A;&#x000A;Projekt iz kolegija Deklarativno programiranje&#x000A;An Interactive Fiction by Lucija Polak&#x000A;Release 1 / Serial number 260110 / Inform 7 v10.1.2 / D&#x000A;&#x000A;You must choose a character first. Type 1 or 2.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1767"/>
+    </children>
+  </item>
+  <item nodeId="node-1767">
+    <command xml:space="preserve">2</command>
+    <result xml:space="preserve">The Light Room&#x000A;The room is well-lit and empty except for an old wooden box on the floor.&#x000A;&#x000A;An old, run-down wooden box sits on the floor.&#x000A;&#x000A;You have chosen Petar. Good luck on your adventure!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1768"/>
+    </children>
+  </item>
+  <item nodeId="node-1768">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;Voice through the wind: Knock 5 times!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1769"/>
+    </children>
+  </item>
+  <item nodeId="node-1769">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;Knocked 2 of 5 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1770"/>
+    </children>
+  </item>
+  <item nodeId="node-1770">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;Knocked 3 of 5 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1771"/>
+    </children>
+  </item>
+  <item nodeId="node-1771">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;Knocked 4 of 5 times.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1772"/>
+    </children>
+  </item>
+  <item nodeId="node-1772">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;CLICK! The door unlocks!&#x000A;Huh, did I count right?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1773"/>
+    </children>
+  </item>
+  <item nodeId="node-1773">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor and a pink handbag (empty) here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;Good job escaping!&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;Food: 4/10.&#x000A;&#x000A;[Your score has just gone up by twenty points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1774"/>
+    </children>
+  </item>
+  <item nodeId="node-1774">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1775"/>
+    </children>
+  </item>
+  <item nodeId="node-1775">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;A giant duck waddles up to you and tilts its head, as if waiting for a name.&#x000A;You can type: name duck as &lt;name&gt;.&#x000A;Tip: you can increase the relationship with your pet.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1776"/>
+    </children>
+  </item>
+  <item nodeId="node-1776">
+    <command xml:space="preserve">name duck as sdaads</command>
+    <result xml:space="preserve">You name the duck "sdaads". It seems happy.&#x000A;&#x000A;Voice through the wind: "Try PET DUCK to bond."&#x000A;[Your score has just gone up by twenty points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1777"/>
+    </children>
+  </item>
+  <item nodeId="node-1777">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet sdaads. It seems calmer. (Pet +1)&#x000A;Voice through the wind: "Feed it: GIVE BERRY TO DUCK."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1778"/>
+    </children>
+  </item>
+  <item nodeId="node-1778">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1779"/>
+    </children>
+  </item>
+  <item nodeId="node-1779">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor and a pink handbag (empty) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1780"/>
+    </children>
+  </item>
+  <item nodeId="node-1780">
+    <command xml:space="preserve">go northh</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1781"/>
+    </children>
+  </item>
+  <item nodeId="node-1781">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest Clearing&#x000A;An open clearing. You hear the rush of a nearby river and birds chittering in the canopy.&#x000A;&#x000A;You can see a bird here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1782"/>
+    </children>
+  </item>
+  <item nodeId="node-1782">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">You listen quietly, respecting the forest. (+5)&#x000A;[Your score has just gone up by five points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1783"/>
+    </children>
+  </item>
+  <item nodeId="node-1783">
+    <command xml:space="preserve">examine water</command>
+    <result xml:space="preserve">You watch the water. It flows peacefully.&#x000A;&#x000A;You stand there quietly, enjoying the forest, the sound of water and birds.&#x000A;&#x000A;Time seems to pass unnoticed...&#x000A;&#x000A;You realize about ten minutes have passed.&#x000A;Suddenly, the bird flaps its wings and takes off, disappearing into the trees.&#x000A;&#x000A;You chose not to interfere. (+10)&#x000A;[Your score has just gone up by fifteen points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1784"/>
+    </children>
+  </item>
+  <item nodeId="node-1784">
+    <command xml:space="preserve">score</command>
+    <result xml:space="preserve">You have so far scored 90 out of a possible 100, in 17 turns.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1785"/>
+    </children>
+  </item>
+  <item nodeId="node-1785">
+    <command xml:space="preserve">go suth</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1786"/>
+    </children>
+  </item>
+  <item nodeId="node-1786">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor and a pink handbag (empty) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1787"/>
+    </children>
+  </item>
+  <item nodeId="node-1787">
+    <command xml:space="preserve">wear handbag</command>
+    <result xml:space="preserve">(first taking the pink handbag)&#x000A;With the handbag, you can carry more.&#x000A;&#x000A;[Your score has just gone up by ten points.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1788"/>
+    </children>
+  </item>
+  <item nodeId="node-1788">
+    <command xml:space="preserve">score</command>
+    <result xml:space="preserve">You have so far scored 100 out of a possible 100, in 19 turns.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1789"/>
+    </children>
+  </item>
+  <item nodeId="node-1789">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">You hear nothing unexpected.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1746">
+    <command xml:space="preserve">finish</command>
+    <result xml:space="preserve">You must choose a character first. Type 1 or 2.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1747"/>
+    </children>
+  </item>
+  <item nodeId="node-1747">
+    <command xml:space="preserve">end</command>
+    <result xml:space="preserve">You must choose a character first. Type 1 or 2.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1748"/>
+    </children>
+  </item>
+  <item nodeId="node-1748">
+    <command xml:space="preserve">2</command>
+    <result xml:space="preserve">The Light Room&#x000A;The room is well-lit and empty except for an old wooden box on the floor.&#x000A;&#x000A;An old, run-down wooden box sits on the floor.&#x000A;&#x000A;You have chosen Petar. Good luck on your adventure!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1749"/>
+    </children>
+  </item>
+  <item nodeId="node-1749">
+    <command xml:space="preserve">finish</command>
+    <result xml:space="preserve">You chose to end the game.&#x000A;&#x000A;Here's a summary of your adventure:&#x000A;Rank: Courteous Traveler.&#x000A;Score: 30/100.&#x000A;Food (HP): 10/10.&#x000A;Pet bond: 0/10.&#x000A;Items carried: gold coin.&#x000A;Time of day: 9:03 am.&#x000A;&#x000A;&#x000A;&#x000A;    *** Thanks for playing! You decided to end your adventure here. ***&#x000A;&#x000A;&#x000A;In that game you scored 30 out of a possible 100, in 4 turns.&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1750"/>
+    </children>
+  </item>
+  <item nodeId="node-1750">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">The Light Room&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1751"/>
+    </children>
+  </item>
+  <item nodeId="node-1751">
+    <command xml:space="preserve">end</command>
+    <result xml:space="preserve">You chose to end the game.&#x000A;&#x000A;Here's a summary of your adventure:&#x000A;Rank: Courteous Traveler.&#x000A;Score: 30/100.&#x000A;Food (HP): 10/10.&#x000A;Pet bond: 0/10.&#x000A;Items carried: gold coin.&#x000A;Time of day: 9:03 am.&#x000A;&#x000A;&#x000A;&#x000A;    *** Thanks for playing! You decided to end your adventure here. ***&#x000A;&#x000A;&#x000A;In that game you scored 30 out of a possible 100, in 4 turns.&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

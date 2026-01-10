@@ -48,10 +48,10 @@ Carry out listing:
 Pet-relationship is a number that varies.
 Max-pet-relationship is a number that varies.
 Pet-named is a truth state that varies. Pet-named is false.
-Special-scene is a truth state that varies. Special-scene is false.
 
 Carry out status-checking:
-	say "Score: [score]/[maximum score]. Food: [HP]/[Max-HP]. Pet: [Pet-relationship]/[Max-pet-relationship]. Carry: [carried-weight]/[the Carry-limit of the player] (left [remaining-capacity]). Time: [time of day].";
+	say "Rank: [player-rank].[paragraph break]";
+	say "Score: [score]/[maximum score].[line break]Food: [HP]/[Max-HP].[line break]Pet: [Pet-relationship]/[Max-pet-relationship].[line break]Carry: [carried-weight]/[the Carry-limit of the player] (left [remaining-capacity]).[line break]Time: [time of day].";
 
 To apply fall damage:
 	decrease the HP by 10;
@@ -176,6 +176,8 @@ When Room Exit Scene ends:
 	now NorthDoor is closed;
 	now ForestDoor is locked;
 	now NorthDoor is locked;
+	say "Good job escaping!";
+	increase score by 20;
 	say "You hear a soft click behind you.";
 	say "You seem to be hungry, find something to eat.";
 	decrease the HP by 5;
@@ -214,6 +216,7 @@ Understand "[number]" as choosing.
 Every turn when Character-chosen is true:
 	if the minutes part of the time of day is 0:
 		decrease HP by 1;
+		decrease Pet-relationship by 1;
 	if HP <= 0:
 		now HP is 0;
 		end the story saying "You collapse from exhaustion and hunger.";
@@ -238,13 +241,6 @@ Carry out choosing:
 
 Instead of doing something other than choosing when Character-chosen is false:
 	say "You must choose a character first. Type 1 or 2.";
-
-When play ends:
-	if Pet-named is true:
-		increase score by 20;
-		now Special-scene is true;
-	otherwise:
-		now Special-scene is false;
 
 Chapter 1 - Where am I?
 
@@ -575,9 +571,84 @@ When Bird-Watching ends:
 After looking in Forest Clearing when the egg is revealed:
 	say "You hear distant wingbeats fade away. The forest feels calmer now. Nearby [a water] and [a branches] make a melody.";
 
+When Bird-Watching ends:
+	if the egg has not been handled:
+		increase score by 10;
+		say "[italic type]You chose not to interfere.[roman type] (+10)";
+
 The description of the egg is
 	"[if concealed]You see nothing unusual.[otherwise]A fragile egg, still warm.[end if]".
-	
-Instead of examining the water:
-	say "You watch [the water].";
 
+Instead of examining the water:
+	say "You watch [the water]. It flows peacefully.";
+	increase score by 5;
+
+Bird-respected is a truth state that varies. Bird-respected is false.
+
+After listening in Forest Clearing for the first time:
+	if Bird-respected is false:
+		now Bird-respected is true;
+		increase score by 5;
+		say "You listen quietly, respecting the forest. (+5)";
+
+Chapter 4 - Finale
+
+Pet-Finale is a scene.
+Pet-Finale begins when
+	Pet-relationship is Max-pet-relationship
+	and the player is in FlowerValley.
+
+When Pet-Finale begins:
+	say "[italic type]Your duck nudges you gently.[roman type][paragraph break]";
+	say "You realize you've earned its trust.";
+	end the story finally saying
+	"You leave the forest together, wiser and kinder than before.";
+
+Rank is a kind of value.
+The ranks are Passerby, Courteous Traveler, Forest Steward, Protector of the Nature.
+
+To decide what rank is the player-rank:
+	if score < 20, decide on Passerby;
+	if score < 60, decide on Courteous Traveler;
+	if score < 90, decide on Forest Steward;
+	decide on Protector of the Nature.
+
+Cheating is an action out of world applying to nothing.
+Understand "bimbambum" as cheating.
+
+Carry out cheating:
+	now score is 100;
+	now Pet-relationship is 10;
+	say "Here’s a summary of your adventure:[line break]";
+	say "Rank: [player-rank].[line break]";
+	say "Score: [score]/[maximum score].[line break]";
+	say "Food (HP): [HP]/[Max-HP].[line break]";
+	say "Pet bond: [Pet-relationship]/[Max-pet-relationship].[line break]";
+	say "Items carried: [list of things carried by the player].[line break]";
+	say "Time of day: [time of day].[paragraph break]";
+	end the story finally saying
+	"Congratulations! You used Lala's favourite word. You just said bim bam bum and bum, finished! Well done! [paragraph break]Did you know, the duck is Actually Lala's pet!".
+	
+Finishing is an action applying to nothing.
+Understand "end" or "finish" as Finishing.
+
+Carry out Finishing:
+	say "[bold type]You chose to end the game.[roman type][paragraph break]";
+	say "Here’s a summary of your adventure:[line break]";
+	say "Rank: [player-rank].[line break]";
+	say "Score: [score]/[maximum score].[line break]";
+	say "Food (HP): [HP]/[Max-HP].[line break]";
+	say "Pet bond: [Pet-relationship]/[Max-pet-relationship].[line break]";
+	say "Items carried: [list of things carried by the player].[line break]";
+	say "Time of day: [time of day].[paragraph break]";
+	end the story finally saying "Thanks for playing! You decided to end your adventure here.";
+
+Every turn when score >= maximum score:
+	say "Here’s a summary of your adventure:[line break]";
+	say "Rank: [player-rank].[line break]";
+	say "Score: [score]/[maximum score].[line break]";
+	say "Food (HP): [HP]/[Max-HP].[line break]";
+	say "Pet bond: [Pet-relationship]/[Max-pet-relationship].[line break]";
+	say "Items carried: [list of things carried by the player].[line break]";
+	say "Time of day: [time of day].[paragraph break]";
+	end the story finally saying "Thanks for playing! You reached the maximum points".
