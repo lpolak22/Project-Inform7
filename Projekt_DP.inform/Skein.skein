@@ -3,7 +3,7 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-1">
     <command xml:space="preserve">Projekt_DP</command>
-    <result xml:space="preserve">You must choose a character first. Type 1 or 2.&#x000A;&#x000A;Welcome to the game! It was created as a project for the Declarative Programming course. However, I hope you will still enjoy playing it.&#x000A;&#x000A; Choose your character:&#x000A;1 - Ivan (has a torch and one gold coin)&#x000A;2 - Petar (has nothing)&#x000A;&#x000A;Type 1 or 2 to continue.&#x000A;&#x000A;Projekt iz kolegija Deklarativno programiranje&#x000A;An Interactive Fiction by Lucija Polak&#x000A;Release 1 / Serial number 260109 / Inform 7 v10.1.2 / D&#x000A;&#x000A;You must choose a character first. Type 1 or 2.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You must choose a character first. Type 1 or 2.&#x000A;&#x000A;Welcome to the game! It was created as a project for the Declarative Programming course. However, I hope you will still enjoy playing it.&#x000A;&#x000A; Choose your character:&#x000A;1 - Ivan (has a torch and one gold coin)&#x000A;2 - Petar (has nothing)&#x000A;&#x000A;Type 1 or 2 to continue.&#x000A;&#x000A;Projekt iz kolegija Deklarativno programiranje&#x000A;An Interactive Fiction by Lucija Polak&#x000A;Release 1 / Serial number 260110 / Inform 7 v10.1.2 / D&#x000A;&#x000A;You must choose a character first. Type 1 or 2.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -3828,14 +3828,17 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-1397"/>
       <child nodeId="node-440"/>
       <child nodeId="node-443"/>
       <child nodeId="node-1306"/>
+      <child nodeId="node-1331"/>
       <child nodeId="node-496"/>
       <child nodeId="node-504"/>
       <child nodeId="node-506"/>
       <child nodeId="node-510"/>
       <child nodeId="node-512"/>
+      <child nodeId="node-1411"/>
       <child nodeId="node-610"/>
       <child nodeId="node-620"/>
       <child nodeId="node-625"/>
@@ -3845,14 +3848,189 @@
       <child nodeId="node-871"/>
     </children>
   </item>
-  <item nodeId="node-440">
-    <command xml:space="preserve">examine box</command>
-    <result xml:space="preserve">Box is empty.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-1397">
+    <command xml:space="preserve">drop coin</command>
+    <result xml:space="preserve">Dropped.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-1398"/>
+    </children>
+  </item>
+  <item nodeId="node-1398">
+    <command xml:space="preserve">put coin in box</command>
+    <result xml:space="preserve">(first taking the gold coin)&#x000A;You put the gold coin in the box. A door opens on the north!&#x000A;&#x000A; As soon as you drop a gold coin into the box, it sparkles and evaporates into the air! A door opens in the north.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1399"/>
+    </children>
+  </item>
+  <item nodeId="node-1399">
+    <command xml:space="preserve">examine box</command>
+    <result xml:space="preserve">The box is empty.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1400"/>
+    </children>
+  </item>
+  <item nodeId="node-1400">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1401"/>
+    </children>
+  </item>
+  <item nodeId="node-1401">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">The Light Room&#x000A;The room is well-lit and empty except for an old wooden box on the floor.&#x000A;&#x000A;An old, run-down wooden box sits on the floor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1402"/>
+    </children>
+  </item>
+  <item nodeId="node-1402">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;Food: 4/10.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1403"/>
+    </children>
+  </item>
+  <item nodeId="node-1403">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat an unripe berry. Yuck! (-1 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1404"/>
+    </children>
+  </item>
+  <item nodeId="node-1404">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1405"/>
+    </children>
+  </item>
+  <item nodeId="node-1405">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1406"/>
+    </children>
+  </item>
+  <item nodeId="node-1406">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1407"/>
+    </children>
+  </item>
+  <item nodeId="node-1407">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1408"/>
+    </children>
+  </item>
+  <item nodeId="node-1408">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You are already full and cannot eat any more berries.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1409"/>
+    </children>
+  </item>
+  <item nodeId="node-1409">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">You are already full and cannot eat any more berries.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1410"/>
+    </children>
+  </item>
+  <item nodeId="node-1410">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-440">
+    <command xml:space="preserve">examine box</command>
+    <result xml:space="preserve">The box is empty.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1383"/>
       <child nodeId="node-441"/>
     </children>
+  </item>
+  <item nodeId="node-1383">
+    <command xml:space="preserve">put coin in box</command>
+    <result xml:space="preserve">You put the gold coin in the box. A door opens on the north!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1384"/>
+    </children>
+  </item>
+  <item nodeId="node-1384">
+    <command xml:space="preserve">examine box</command>
+    <result xml:space="preserve">In the box is a gold coin.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1385"/>
+    </children>
+  </item>
+  <item nodeId="node-1385">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1386"/>
+    </children>
+  </item>
+  <item nodeId="node-1386">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;Food: 4/10.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1387"/>
+    </children>
+  </item>
+  <item nodeId="node-1387">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1388"/>
+    </children>
+  </item>
+  <item nodeId="node-1388">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 4/10. Pet: 0/10. Carry: 0kg/6kg (left 6kg). Time: 9:07 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-441">
     <command xml:space="preserve">put coin into box</command>
@@ -4785,6 +4963,264 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-1331">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1332"/>
+    </children>
+  </item>
+  <item nodeId="node-1332">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;Voice through the wind: Knock 2 times!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1333"/>
+    </children>
+  </item>
+  <item nodeId="node-1333">
+    <command xml:space="preserve">knock</command>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;CLICK! The door unlocks!&#x000A;Huh, did I count right?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1334"/>
+    </children>
+  </item>
+  <item nodeId="node-1334">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;Food: 4/10.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1335"/>
+    </children>
+  </item>
+  <item nodeId="node-1335">
+    <command xml:space="preserve">eat</command>
+    <result xml:space="preserve">(the gold coin)&#x000A;That's plainly inedible.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1336"/>
+    </children>
+  </item>
+  <item nodeId="node-1336">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat an unripe berry. Yuck! (-1 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1337"/>
+    </children>
+  </item>
+  <item nodeId="node-1337">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1338"/>
+    </children>
+  </item>
+  <item nodeId="node-1338">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat an unripe berry. Yuck! (-1 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1339"/>
+    </children>
+  </item>
+  <item nodeId="node-1339">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat an unripe berry. Yuck! (-1 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1340"/>
+    </children>
+  </item>
+  <item nodeId="node-1340">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1341"/>
+    </children>
+  </item>
+  <item nodeId="node-1341">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1342"/>
+    </children>
+  </item>
+  <item nodeId="node-1342">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1343"/>
+    </children>
+  </item>
+  <item nodeId="node-1343">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1344"/>
+    </children>
+  </item>
+  <item nodeId="node-1344">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You are already full and cannot eat any more berries.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1345"/>
+    </children>
+  </item>
+  <item nodeId="node-1345">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1346"/>
+    </children>
+  </item>
+  <item nodeId="node-1346">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">(first opening ForestDoor)&#x000A;It's locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1347"/>
+    </children>
+  </item>
+  <item nodeId="node-1347">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1348"/>
+    </children>
+  </item>
+  <item nodeId="node-1348">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;A giant duck waddles up to you and tilts its head, as if waiting for a name.&#x000A;You can type: name duck as &lt;name&gt;.&#x000A;Tip: you can increase the relationship with your pet.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1349"/>
+    </children>
+  </item>
+  <item nodeId="node-1349">
+    <command xml:space="preserve">mount duck</command>
+    <result xml:space="preserve">You mount the giant duck.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1350"/>
+    </children>
+  </item>
+  <item nodeId="node-1350">
+    <command xml:space="preserve">dismount</command>
+    <result xml:space="preserve">You dismount the giant duck.&#x000A;&#x000A;FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a giant duck here.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1351"/>
+    </children>
+  </item>
+  <item nodeId="node-1351">
+    <command xml:space="preserve">pet duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1352"/>
+    </children>
+  </item>
+  <item nodeId="node-1352">
+    <command xml:space="preserve">pat duck</command>
+    <result xml:space="preserve">You gently pet the giant duck. It seems calmer. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1353"/>
+    </children>
+  </item>
+  <item nodeId="node-1353">
+    <command xml:space="preserve">give berry to duck</command>
+    <result xml:space="preserve">The giant duck happily eats the berry. (Pet +1)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1354"/>
+    </children>
+  </item>
+  <item nodeId="node-1354">
+    <command xml:space="preserve">name duck as La</command>
+    <result xml:space="preserve">You name the duck "La". It seems happy.&#x000A;&#x000A;Voice through the wind: "Try PET DUCK to bond."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1355"/>
+    </children>
+  </item>
+  <item nodeId="node-1355">
+    <command xml:space="preserve">name duck as La</command>
+    <result xml:space="preserve">You already named your pet.&#x000A;&#x000A;Voice through the wind: "Feed it: GIVE BERRY TO DUCK."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1356"/>
+    </children>
+  </item>
+  <item nodeId="node-1356">
+    <command xml:space="preserve">name duck as La</command>
+    <result xml:space="preserve">You already named your pet.&#x000A;&#x000A;Voice through the wind: "Travel together: RIDE DUCK / (DIS)MOUNT DUCK."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1357"/>
+    </children>
+  </item>
+  <item nodeId="node-1357">
+    <command xml:space="preserve">name duck as La</command>
+    <result xml:space="preserve">You already named your pet.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1358"/>
+    </children>
+  </item>
+  <item nodeId="node-1358">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see La here.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1359"/>
+    </children>
+  </item>
+  <item nodeId="node-1359">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-496">
     <command xml:space="preserve">gp north</command>
     <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
@@ -4942,12 +5378,13 @@
   </item>
   <item nodeId="node-990">
     <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;Food: 4/10.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor and a pink handbag (empty) here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;Food: 4/10.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-1189"/>
       <child nodeId="node-1281"/>
+      <child nodeId="node-1416"/>
       <child nodeId="node-1140"/>
     </children>
   </item>
@@ -5311,7 +5748,7 @@
   </item>
   <item nodeId="node-1190">
     <command xml:space="preserve">eat berry</command>
-    <result xml:space="preserve">(first taking the berry)&#x000A;You eat an unripe berry. Yuck! (-1 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -5329,20 +5766,22 @@
   </item>
   <item nodeId="node-1192">
     <command xml:space="preserve">eat berry</command>
-    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You are already full and cannot eat any more berries.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-1193"/>
+      <child nodeId="node-1360"/>
     </children>
   </item>
   <item nodeId="node-1193">
     <command xml:space="preserve">eat berry</command>
-    <result xml:space="preserve">(first taking the berry)&#x000A;You eat an unripe berry. Yuck! (-1 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You are already full and cannot eat any more berries.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-1194"/>
+      <child nodeId="node-1444"/>
     </children>
   </item>
   <item nodeId="node-1194">
@@ -5537,6 +5976,531 @@
   <item nodeId="node-1215">
     <command xml:space="preserve">status</command>
     <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 10/10. Time: 9:27 am.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1444">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1445"/>
+    </children>
+  </item>
+  <item nodeId="node-1445">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1446"/>
+    </children>
+  </item>
+  <item nodeId="node-1446">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1447"/>
+    </children>
+  </item>
+  <item nodeId="node-1447">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1448"/>
+    </children>
+  </item>
+  <item nodeId="node-1448">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">It's too heavy, you can take more than 6kg kg.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1449"/>
+    </children>
+  </item>
+  <item nodeId="node-1449">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">It's too heavy, you can take more than 6kg kg.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1450"/>
+    </children>
+  </item>
+  <item nodeId="node-1450">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">It's too heavy, you can take more than 6kg kg.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1451"/>
+    </children>
+  </item>
+  <item nodeId="node-1451">
+    <command xml:space="preserve">take bag</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1452"/>
+    </children>
+  </item>
+  <item nodeId="node-1452">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor and a pink handbag (empty) here.&#x000A;&#x000A;Something pink catches your eye beneath the leaves.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1453"/>
+    </children>
+  </item>
+  <item nodeId="node-1453">
+    <command xml:space="preserve">take handbag</command>
+    <result xml:space="preserve">It's too heavy, you can take more than 6kg kg.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1454"/>
+    </children>
+  </item>
+  <item nodeId="node-1454">
+    <command xml:space="preserve">drop berry</command>
+    <result xml:space="preserve">Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1455"/>
+    </children>
+  </item>
+  <item nodeId="node-1455">
+    <command xml:space="preserve">take handbag</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1456"/>
+    </children>
+  </item>
+  <item nodeId="node-1456">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see a berry and ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1457"/>
+    </children>
+  </item>
+  <item nodeId="node-1457">
+    <command xml:space="preserve">take handbag</command>
+    <result xml:space="preserve">It's too heavy, you can take more than 6kg kg.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1458"/>
+    </children>
+  </item>
+  <item nodeId="node-1458">
+    <command xml:space="preserve">drop berry</command>
+    <result xml:space="preserve">Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1459"/>
+    </children>
+  </item>
+  <item nodeId="node-1459">
+    <command xml:space="preserve">take handbag</command>
+    <result xml:space="preserve">You already have that.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1460"/>
+    </children>
+  </item>
+  <item nodeId="node-1460">
+    <command xml:space="preserve">take handbag</command>
+    <result xml:space="preserve">You already have that.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1461"/>
+    </children>
+  </item>
+  <item nodeId="node-1461">
+    <command xml:space="preserve">drop berry</command>
+    <result xml:space="preserve">Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1462"/>
+    </children>
+  </item>
+  <item nodeId="node-1462">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 0/10. Carry: 4kg/6kg (left 2kg). Time: 9:26 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1463"/>
+    </children>
+  </item>
+  <item nodeId="node-1463">
+    <command xml:space="preserve">wear handbag</command>
+    <result xml:space="preserve">With the handbag, you can carry more.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1464"/>
+    </children>
+  </item>
+  <item nodeId="node-1464">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 0/10. Carry: 4kg/10kg (left 6kg). Time: 9:28 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1465"/>
+    </children>
+  </item>
+  <item nodeId="node-1465">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1466"/>
+    </children>
+  </item>
+  <item nodeId="node-1466">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1467"/>
+    </children>
+  </item>
+  <item nodeId="node-1467">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1468"/>
+    </children>
+  </item>
+  <item nodeId="node-1468">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1469"/>
+    </children>
+  </item>
+  <item nodeId="node-1469">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1470"/>
+    </children>
+  </item>
+  <item nodeId="node-1470">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1471"/>
+    </children>
+  </item>
+  <item nodeId="node-1471">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">It's too heavy, you can take more than 10kg kg.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1472"/>
+    </children>
+  </item>
+  <item nodeId="node-1472">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 0/10. Carry: 10kg/10kg (left 0kg). Time: 9:36 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1473"/>
+    </children>
+  </item>
+  <item nodeId="node-1473">
+    <command xml:space="preserve">unwear handbag</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1474"/>
+    </children>
+  </item>
+  <item nodeId="node-1474">
+    <command xml:space="preserve">drop handbag</command>
+    <result xml:space="preserve">(first taking the pink handbag off)&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1475"/>
+    </children>
+  </item>
+  <item nodeId="node-1475">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 0/10. Carry: 9kg/6kg (left 0kg). Time: 9:38 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1476"/>
+    </children>
+  </item>
+  <item nodeId="node-1476">
+    <command xml:space="preserve">take handbag</command>
+    <result xml:space="preserve">It's too heavy, you can take more than 6kg kg.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1477"/>
+    </children>
+  </item>
+  <item nodeId="node-1477">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 0/10. Carry: 9kg/6kg (left 0kg). Time: 9:40 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1478"/>
+    </children>
+  </item>
+  <item nodeId="node-1478">
+    <command xml:space="preserve">dro berry</command>
+    <result xml:space="preserve">I didn't understand that number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1479"/>
+    </children>
+  </item>
+  <item nodeId="node-1479">
+    <command xml:space="preserve">drop berry</command>
+    <result xml:space="preserve">Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1480"/>
+    </children>
+  </item>
+  <item nodeId="node-1480">
+    <command xml:space="preserve">drop berry</command>
+    <result xml:space="preserve">Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1481"/>
+    </children>
+  </item>
+  <item nodeId="node-1481">
+    <command xml:space="preserve">drop berry</command>
+    <result xml:space="preserve">Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1482"/>
+    </children>
+  </item>
+  <item nodeId="node-1482">
+    <command xml:space="preserve">drop berry</command>
+    <result xml:space="preserve">Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1483"/>
+    </children>
+  </item>
+  <item nodeId="node-1483">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 0/10. Carry: 5kg/6kg (left 1kg). Time: 9:45 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1484"/>
+    </children>
+  </item>
+  <item nodeId="node-1484">
+    <command xml:space="preserve">take handbag</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1485"/>
+    </children>
+  </item>
+  <item nodeId="node-1485">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 0/10. Carry: 6kg/6kg (left 0kg). Time: 9:47 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1486"/>
+    </children>
+  </item>
+  <item nodeId="node-1486">
+    <command xml:space="preserve">wear handbag</command>
+    <result xml:space="preserve">With the handbag, you can carry more.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1487"/>
+    </children>
+  </item>
+  <item nodeId="node-1487">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 0/10. Carry: 6kg/10kg (left 4kg). Time: 9:49 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1488"/>
+    </children>
+  </item>
+  <item nodeId="node-1488">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1489"/>
+    </children>
+  </item>
+  <item nodeId="node-1489">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1490"/>
+    </children>
+  </item>
+  <item nodeId="node-1490">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1491"/>
+    </children>
+  </item>
+  <item nodeId="node-1491">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1492"/>
+    </children>
+  </item>
+  <item nodeId="node-1492">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 0/10. Carry: 10kg/10kg (left 0kg). Time: 9:54 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1493"/>
+    </children>
+  </item>
+  <item nodeId="node-1493">
+    <command xml:space="preserve">drop handbag</command>
+    <result xml:space="preserve">(first taking the pink handbag off)&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1494"/>
+    </children>
+  </item>
+  <item nodeId="node-1494">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 0/10. Carry: 9kg/6kg (left 0kg). Time: 9:56 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1360">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1361"/>
+    </children>
+  </item>
+  <item nodeId="node-1361">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1362"/>
+    </children>
+  </item>
+  <item nodeId="node-1362">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1363"/>
+    </children>
+  </item>
+  <item nodeId="node-1363">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1364"/>
+    </children>
+  </item>
+  <item nodeId="node-1364">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1365"/>
+    </children>
+  </item>
+  <item nodeId="node-1365">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1366"/>
+    </children>
+  </item>
+  <item nodeId="node-1366">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1367"/>
+    </children>
+  </item>
+  <item nodeId="node-1367">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 8/10. Pet: 0/10. Time: 9:15 am.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -5759,6 +6723,255 @@
   <item nodeId="node-1305">
     <command xml:space="preserve">dismount</command>
     <result xml:space="preserve">You dismount the Lal.&#x000A;&#x000A;FlowerValley&#x000A;A vibrant valley bursting with colorful wildflowers stretches before you in every direction. Petals of red, yellow, and purple sway gently in the breeze, filling the air with sweet scents. Amid the blooms, a small furry creature with big curious eyes peeks from behind a daisy cluster-the little animal has found its perfect home here, waiting eagerly for playtime.&#x000A;&#x000A;You can see a Lal here.&#x000A;&#x000A;Voice through the wind: "To get off: DISMOUNT or GET OFF DUCK."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1416">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 4/10. Pet: 0/10. Carry: 1kg/6kg (left 5kg). Time: 9:04 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1417"/>
+    </children>
+  </item>
+  <item nodeId="node-1417">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor and a pink handbag (empty) here.&#x000A;&#x000A;Something pink catches your eye beneath the leaves.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1418"/>
+    </children>
+  </item>
+  <item nodeId="node-1418">
+    <command xml:space="preserve">take handbag</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1419"/>
+    </children>
+  </item>
+  <item nodeId="node-1419">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 4/10. Pet: 0/10. Carry: 2kg/6kg (left 4kg). Time: 9:07 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1420"/>
+    </children>
+  </item>
+  <item nodeId="node-1420">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1421"/>
+    </children>
+  </item>
+  <item nodeId="node-1421">
+    <command xml:space="preserve">wear handbag</command>
+    <result xml:space="preserve">With the handbag, you can carry more.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1422"/>
+    </children>
+  </item>
+  <item nodeId="node-1422">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 4/10. Pet: 0/10. Carry: 2kg/10kg (left 8kg). Time: 9:10 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1423"/>
+    </children>
+  </item>
+  <item nodeId="node-1423">
+    <command xml:space="preserve">take berries</command>
+    <result xml:space="preserve">berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;berry: You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;&#x000A;&#x000A;&#x000A;    *** You collapse from exhaustion and hunger. ***&#x000A;&#x000A;&#x000A;In that game you scored 30 out of a possible 100, in 12 turns.&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1424"/>
+    </children>
+  </item>
+  <item nodeId="node-1424">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Forest&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1425"/>
+    </children>
+  </item>
+  <item nodeId="node-1425">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1426"/>
+    </children>
+  </item>
+  <item nodeId="node-1426">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 4/10. Pet: 0/10. Carry: 3kg/10kg (left 7kg). Time: 9:12 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1427"/>
+    </children>
+  </item>
+  <item nodeId="node-1427">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1428"/>
+    </children>
+  </item>
+  <item nodeId="node-1428">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1429"/>
+    </children>
+  </item>
+  <item nodeId="node-1429">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1430"/>
+    </children>
+  </item>
+  <item nodeId="node-1430">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1431"/>
+    </children>
+  </item>
+  <item nodeId="node-1431">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 4/10. Pet: 0/10. Carry: 7kg/10kg (left 3kg). Time: 9:17 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1432"/>
+    </children>
+  </item>
+  <item nodeId="node-1432">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 4/10. Pet: 0/10. Carry: 7kg/10kg (left 3kg). Time: 9:18 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1433"/>
+    </children>
+  </item>
+  <item nodeId="node-1433">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1434"/>
+    </children>
+  </item>
+  <item nodeId="node-1434">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1435"/>
+    </children>
+  </item>
+  <item nodeId="node-1435">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1436"/>
+    </children>
+  </item>
+  <item nodeId="node-1436">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 4/10. Pet: 0/10. Carry: 10kg/10kg (left 0kg). Time: 9:22 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1437"/>
+    </children>
+  </item>
+  <item nodeId="node-1437">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1438"/>
+    </children>
+  </item>
+  <item nodeId="node-1438">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 3/10. Pet: 0/10. Carry: 11kg/10kg (left 0kg). Time: 9:24 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1439"/>
+    </children>
+  </item>
+  <item nodeId="node-1439">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1440"/>
+    </children>
+  </item>
+  <item nodeId="node-1440">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Forest&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1441"/>
+    </children>
+  </item>
+  <item nodeId="node-1441">
+    <command xml:space="preserve">drop berry</command>
+    <result xml:space="preserve">Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1442"/>
+    </children>
+  </item>
+  <item nodeId="node-1442">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">You are carrying too much. It's exhausting.&#x000A;&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1443"/>
+    </children>
+  </item>
+  <item nodeId="node-1443">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 2/10. Pet: 0/10. Carry: 11kg/10kg (left 0kg). Time: 9:26 am.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -6202,7 +7415,7 @@
   </item>
   <item nodeId="node-514">
     <command xml:space="preserve">knock</command>
-    <result xml:space="preserve">(the NorthDoor)&#x000A;CLICK! The door unlocks!&#x000A;Huh, did I count right?&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">(the NorthDoor)&#x000A;The door is already unlocked.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -6364,12 +7577,13 @@
   </item>
   <item nodeId="node-1096">
     <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;Food: 4/10.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor and a pink handbag (empty) here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;Food: 4/10.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-1097"/>
       <child nodeId="node-1139"/>
+      <child nodeId="node-1413"/>
     </children>
   </item>
   <item nodeId="node-1097">
@@ -6597,6 +7811,30 @@
   <item nodeId="node-1139">
     <command xml:space="preserve">go west</command>
     <result xml:space="preserve">Voice through the wind: "NAME DUCK AS &lt;name&gt;."&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1413">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor and a pink handbag (empty) here.&#x000A;&#x000A;Something pink catches your eye beneath the leaves.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1414"/>
+    </children>
+  </item>
+  <item nodeId="node-1414">
+    <command xml:space="preserve">take handbag</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1415"/>
+    </children>
+  </item>
+  <item nodeId="node-1415">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 4/10. Pet: 0/10. Carry: 2kg/6kg (left 4kg). Time: 9:07 am.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -8365,6 +9603,21 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-1411">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">You hear nothing unexpected.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1412"/>
+    </children>
+  </item>
+  <item nodeId="node-1412">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">The Light Room&#x000A;The room is well-lit and empty except for an old wooden box on the floor.&#x000A;&#x000A;An old, run-down wooden box sits on the floor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-610">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">The Light Room&#x000A;The room is well-lit and empty except for an old wooden box on the floor.&#x000A;&#x000A;An old, run-down wooden box sits on the floor.&#x000A;&#x000A;&gt;</result>
@@ -8545,12 +9798,82 @@
   </item>
   <item nodeId="node-631">
     <command xml:space="preserve">status</command>
-    <result xml:space="preserve">Score: 30/100. Food: 2/10. Time: 9:01 am.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Score: 30/100. Food: 9/10. Pet: 0/10. Carry: 1kg/6kg (left 5kg). Time: 9:01 am.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-1389"/>
       <child nodeId="node-632"/>
     </children>
+  </item>
+  <item nodeId="node-1389">
+    <command xml:space="preserve">drop coin</command>
+    <result xml:space="preserve">Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1390"/>
+    </children>
+  </item>
+  <item nodeId="node-1390">
+    <command xml:space="preserve">put coin in box</command>
+    <result xml:space="preserve">(first taking the gold coin)&#x000A;You put the gold coin in the box. A door opens on the north!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1391"/>
+    </children>
+  </item>
+  <item nodeId="node-1391">
+    <command xml:space="preserve">take coin</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1392"/>
+    </children>
+  </item>
+  <item nodeId="node-1392">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 9/10. Pet: 0/10. Carry: 1kg/6kg (left 5kg). Time: 9:05 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1393"/>
+    </children>
+  </item>
+  <item nodeId="node-1393">
+    <command xml:space="preserve">drop coin</command>
+    <result xml:space="preserve">Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1394"/>
+    </children>
+  </item>
+  <item nodeId="node-1394">
+    <command xml:space="preserve">take coin</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1395"/>
+    </children>
+  </item>
+  <item nodeId="node-1395">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;Food: 4/10.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1396"/>
+    </children>
+  </item>
+  <item nodeId="node-1396">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a gold coin&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-632">
     <command xml:space="preserve">knock</command>
@@ -11058,13 +12381,146 @@
   </item>
   <item nodeId="node-919">
     <command xml:space="preserve">status</command>
-    <result xml:space="preserve">Score: 30/100. Food: 10/10. Time: 9:02 am.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Score: 30/100. Food: 10/10. Pet: 0/10. Carry: 1kg/6kg (left 5kg). Time: 9:02 am.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-1368"/>
       <child nodeId="node-920"/>
       <child nodeId="node-937"/>
     </children>
+  </item>
+  <item nodeId="node-1368">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a gold coin&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1369"/>
+    </children>
+  </item>
+  <item nodeId="node-1369">
+    <command xml:space="preserve">drop gold coin</command>
+    <result xml:space="preserve">Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1370"/>
+    </children>
+  </item>
+  <item nodeId="node-1370">
+    <command xml:space="preserve">put coin in box</command>
+    <result xml:space="preserve">(first taking the gold coin)&#x000A;You put the gold coin in the box. A door opens on the north!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1371"/>
+    </children>
+  </item>
+  <item nodeId="node-1371">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Forest&#x000A;You are in a dense forest. You hear a waterfall nearby and voices talking in the distance.&#x000A;&#x000A;A bush heavy with small berries. Some look ripe, some unripe.&#x000A;&#x000A;You can also see ForestDoor here.&#x000A;&#x000A;Where exactly am I?&#x000A;&#x000A;You hear a soft click behind you.&#x000A;You seem to be hungry, find something to eat.&#x000A;Food: 5/10.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1372"/>
+    </children>
+  </item>
+  <item nodeId="node-1372">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1373"/>
+    </children>
+  </item>
+  <item nodeId="node-1373">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1374"/>
+    </children>
+  </item>
+  <item nodeId="node-1374">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You eat the ripe berry. You feel fuller (+2 food).&#x000A;&#x000A;You eat the berry. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1375"/>
+    </children>
+  </item>
+  <item nodeId="node-1375">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">(first taking the berry)&#x000A;You are already full and cannot eat any more berries.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1376"/>
+    </children>
+  </item>
+  <item nodeId="node-1376">
+    <command xml:space="preserve">eat berry</command>
+    <result xml:space="preserve">You are already full and cannot eat any more berries.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1377"/>
+    </children>
+  </item>
+  <item nodeId="node-1377">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 11/10. Pet: 0/10. Carry: 1kg/6kg (left 5kg). Time: 9:12 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1378"/>
+    </children>
+  </item>
+  <item nodeId="node-1378">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1379"/>
+    </children>
+  </item>
+  <item nodeId="node-1379">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 11/10. Pet: 0/10. Carry: 2kg/6kg (left 4kg). Time: 9:14 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1380"/>
+    </children>
+  </item>
+  <item nodeId="node-1380">
+    <command xml:space="preserve">drop berry</command>
+    <result xml:space="preserve">Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1381"/>
+    </children>
+  </item>
+  <item nodeId="node-1381">
+    <command xml:space="preserve">status</command>
+    <result xml:space="preserve">Score: 30/100. Food: 11/10. Pet: 0/10. Carry: 1kg/6kg (left 5kg). Time: 9:16 am.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1382"/>
+    </children>
+  </item>
+  <item nodeId="node-1382">
+    <command xml:space="preserve">take berry</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-920">
     <command xml:space="preserve">knock</command>

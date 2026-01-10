@@ -2,14 +2,41 @@
 
 Include Rideable Vehicles by Graham Nelson.
 
+[Use undo prevention.]
+
 Use scoring.
 The maximum score is 100.
 
-Food-score is a number that varies.
-Max-food-score is a number that varies.
+The speed limit is always 20.
+
+HP is a number that varies.
+Max-HP is a number that varies.
 
 Status-checking is an action applying to nothing.
 Understand "status" or "stats" as status-checking.
+
+A weight is a kind of value. 1kg specifies a weight.
+A thing has a weight. The weight of a thing is usually 1kg.
+
+A person has a weight called Carry-limit.
+The Carry-limit of a person is usually 6kg.
+
+To decide what weight is the carried-weight:
+	let total be 0kg;
+	repeat with item running through things enclosed by the player:
+		if item is not the player:
+			increase total by the weight of item;
+	decide on total.
+
+To decide what weight is the remaining-capacity:
+	let left be (the Carry-limit of the player) minus the carried-weight;
+	if left < 0kg, decide on 0kg;
+	decide on left.
+
+Check taking something:
+	let newtotal be carried-weight + the weight of the noun;
+	if newtotal > the Carry-limit of the player:
+		say "It's too heavy, you can't take more than [the Carry-limit of the player]." instead.
 
 Pet-relationship is a number that varies.
 Max-pet-relationship is a number that varies.
@@ -17,12 +44,11 @@ Pet-named is a truth state that varies. Pet-named is false.
 Special-scene is a truth state that varies. Special-scene is false.
 
 Carry out status-checking:
-	say "Score: [score]/[maximum score]. Food: [Food-score]/[Max-food-score]. Pet: [Pet-relationship]/[Max-pet-relationship]. Time: [time of day].";
-
+	say "Score: [score]/[maximum score]. Food: [HP]/[Max-HP]. Pet: [Pet-relationship]/[Max-pet-relationship]. Carry: [carried-weight]/[the Carry-limit of the player] (left [remaining-capacity]). Time: [time of day].";
 
 To apply fall damage:
-	decrease the score by 10;
-	if the score < 0:
+	decrease the HP by 10;
+	if the score <= 0:
 		now the score is 0;
 	if the score is 0:
 		end the story saying "You succumb to your injuries. Pro tip: take care of yourself";
@@ -56,6 +82,10 @@ Every turn when the torch is lit and the location is DarkChamber:
 	now DarkChamber is lighted.
 	
 A gold coin is a thing.
+
+A gold coin has weight 1kg.
+The golden apple has weight 3kg.
+The torch has weight 2kg.
 
 The torch is carried by Ivan.
 The gold coin is carried by Petar.
@@ -97,6 +127,32 @@ The description is "A newly appeared wooden door."
 
 Forest is a room. "You are in a dense forest. You hear a waterfall nearby and voices talking in the distance."
 
+The pink handbag is a wearable container in Forest.
+The carrying capacity of the pink handbag is 5.
+
+The pink handbag is wearable.
+The description is "A pink handbag, surprisingly sturdy.";
+
+After looking in Forest for the first time:
+	say "Something pink catches your eye beneath the leaves.";
+
+After wearing the pink handbag:
+	increase the Carry-limit of the player by 4kg;
+	say "With the handbag, you can carry more.";
+
+After taking off the pink handbag:
+	decrease the Carry-limit of the player by 4kg;
+
+Check taking off the pink handbag:
+	let newlimit be (the Carry-limit of the player) - 4kg;
+	if carried-weight > newlimit:
+		say "You can't take off the handbag: without it you'd be carrying [carried-weight] but your limit would drop to [newlimit]. Drop something first." instead;
+
+Check dropping the pink handbag:
+	let newlimit be (the Carry-limit of the player) - 4kg;
+	if carried-weight > newlimit:
+		say "You can't take off the handbag: without it you'd be carrying [carried-weight] but your limit would drop to [newlimit]. Drop something first." instead;
+		
 First-time-forest-question is a truth state that varies. First-time-forest-question is true.
 
 Room Exit Scene is a scene.  
@@ -114,8 +170,8 @@ When Room Exit Scene ends:
 	now NorthDoor is locked;
 	say "You hear a soft click behind you.";
 	say "You seem to be hungry, find something to eat.";
-	decrease the Food-score by 5;
-	say "Food: [Food-score]/[Max-food-score].";
+	decrease the HP by 5;
+	say "Food: [HP]/[Max-HP].";
 	
 Room Exit Scene ends when the player is in Forest.
 
@@ -133,8 +189,8 @@ Character-chosen is false.
 
 When play begins:
 	now score is 30;
-	now Food-score is 10;
-	now Max-food-score is 10;
+	now HP is 10;
+	now Max-HP is 10;
 	now Pet-relationship is 0;
 	now Max-pet-relationship is 10;
 	now the player is in the Starting Room;
@@ -149,12 +205,10 @@ Understand "[number]" as choosing.
 
 Every turn when Character-chosen is true:
 	if the minutes part of the time of day is 0:
-		decrease Food-score by 1;
-	if Food-score <= 0:
-		now Food-score is 0;
-		end the story saying "You have starved to death. Next time, eat more";
-
-[Use undo prevention.]
+		decrease HP by 1;
+	if HP <= 0:
+		now HP is 0;
+		end the story saying "You collapse from exhaustion and hunger.";
 
 Carry out choosing:
 	if Character-chosen is true:
@@ -326,6 +380,8 @@ After inserting something into the box:
 			now the NorthDoor is unlocked;
 			now the NorthDoor is open;
 			say "You put the gold coin in the box. A door opens on the north!";
+			say "[line break] As soon as you drop a gold coin into the box, it sparkles and evaporates into the air! A door opens in the north.";
+			remove the gold coin from play;
 		otherwise:
 			say "The box already contains the gold coin.";
 			
@@ -344,6 +400,7 @@ Understand "pet" or "duck" or "animal" as the giant duck.
 A berry is a kind of thing. The description is "A small juicy fruit hanging from a bush."
 A berry can be ripe or unripe. A berry is usually ripe.
 A berry is edible.
+A berry has weight 1kg.
 
 The BerryBush is a supporter in Forest. "A bush heavy with small berries. Some look ripe, some unripe."
 Understand "bush" or "berry bush" as the BerryBush.
@@ -364,17 +421,17 @@ Understand "eat [something]" as eating.
 Check eating:
 	if the noun is not a berry:
 		say "You can't eat that." instead;
-	if Food-score >= Max-food-score:
+	if HP >= Max-HP:
 		say "You are already full and cannot eat any more berries." instead.
 
 Carry out eating:
 	if the noun is ripe:
-		increase Food-score by 2;
+		increase HP by 2;
 		say "You eat the ripe berry. You feel fuller (+2 food).";
 	otherwise:
-		decrease Food-score by 1;
-		if Food-score < 0:
-			now Food-score is 0;
+		decrease HP by 1;
+		if HP < 0:
+			now HP is 0;
 		say "You eat an unripe berry. Yuck! (-1 food).";
 	now the noun is off-stage;
 
