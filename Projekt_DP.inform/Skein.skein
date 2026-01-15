@@ -23782,11 +23782,12 @@
   </item>
   <item nodeId="node-2272">
     <command xml:space="preserve">bimbambum</command>
-    <result xml:space="preserve">Here's a summary of your adventure:&#x000A;Rank: Protector of the Nature.&#x000A;Score: 100/100.&#x000A;Food (HP): 10/10.&#x000A;Pet bond: 10/10.&#x000A;Carry: 0kg/6kg (left 6kg).&#x000A;Items carried: nothing.&#x000A;Time of day: 9:00 am.&#x000A;&#x000A;&#x000A;&#x000A;    *** Congratulations! You used Lala's favourite word. You just said bim bam bum and bum, finished! Well done! &#x000A;&#x000A;Did you know, the duck is Actually Lala's pet! ***&#x000A;&#x000A;&#x000A;In that game you scored 100 out of a possible 100, in 1 turn.&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <result xml:space="preserve">Here's a summary of your adventure:&#x000A;Rank: Protector of Nature.&#x000A;Score: 100/100.&#x000A;Food (HP): 10/10.&#x000A;Pet bond: 10/10.&#x000A;Carry: 0kg/6kg (left 6kg).&#x000A;Items carried: nothing.&#x000A;Time of day: 9:00 am.&#x000A;&#x000A;&#x000A;&#x000A;    *** Congratulations! You used Lala's favourite word. You just said bim bam bum and bum, finished! Well done! &#x000A;&#x000A;Did you know, the duck is Actually Lala's pet! ***&#x000A;&#x000A;&#x000A;In that game you scored 100 out of a possible 100, in 1 turn.&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-2273"/>
+      <child nodeId="node-3175"/>
       <child nodeId="node-2301"/>
     </children>
   </item>
@@ -24036,6 +24037,30 @@
   <item nodeId="node-2300">
     <command xml:space="preserve">pet duck</command>
     <result xml:space="preserve">You gently pet lala. It seems calmer. (Pet +1)&#x000A;Your duck nudges you gently.&#x000A;&#x000A;You realize you've earned its trust.&#x000A;&#x000A;&#x000A;&#x000A;    *** You leave the forest together, wiser and kinder than before. ***&#x000A;&#x000A;&#x000A;In that game you scored 100 out of a possible 100, in 26 turns.&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-3175">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">Please give one of the answers above.&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3176"/>
+    </children>
+  </item>
+  <item nodeId="node-3176">
+    <command xml:space="preserve">restart</command>
+    <result xml:space="preserve">You must choose a character first. Type 1 or 2.&#x000A;&#x000A;Welcome to the game! It was created as a project for the Declarative Programming course. However, I hope you will still enjoy playing it. If you decide to end the game at any time type END / FINISH.&#x000A;&#x000A; Choose your character:&#x000A;1 - Ivan (has a torch)&#x000A;2 - Petar (has a gold coin)&#x000A;&#x000A;Type 1 or 2 to continue.&#x000A;&#x000A;Projekt iz kolegija Deklarativno programiranje&#x000A;An Interactive Fiction by Lucija Polak&#x000A;Release 1 / Serial number 260115 / Inform 7 v10.1.2 / D&#x000A;&#x000A;You must choose a character first. Type 1 or 2.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3177"/>
+    </children>
+  </item>
+  <item nodeId="node-3177">
+    <command xml:space="preserve">topics</command>
+    <result xml:space="preserve">You can try asking: WHO ARE YOU / ASK IVAN ABOUT LALA / ASK __ ABOUT WHERE IS LALA / ASK __ ABOUT DUCK / ASK __ ABOUT WHERE IS DUCK&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -24801,7 +24826,7 @@
   </item>
   <item nodeId="node-2386">
     <command xml:space="preserve">2</command>
-    <result xml:space="preserve">The Light Room&#x000A;The room is well-lit and empty except for an old wooden box on the floor.&#x000A;&#x000A;An old, run-down wooden box sits on the floor.&#x000A;&#x000A;You have chosen Petar. Good luck on your adventure!&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The Light Room&#x000A; The room is well-lit. An old wooden box sits on the floor. &#x000A;&#x000A;An old, run-down wooden box sits on the floor.&#x000A;&#x000A;You have chosen Petar. Good luck on your adventure!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -24810,7 +24835,7 @@
   </item>
   <item nodeId="node-2387">
     <command xml:space="preserve">end</command>
-    <result xml:space="preserve">You chose to end the game.&#x000A;&#x000A;Here's a summary of your adventure:&#x000A;Rank: Courteous Traveler.&#x000A;Score: 30/100.&#x000A;Food (HP): 10/10.&#x000A;Pet bond: 0/10.&#x000A;Items carried: gold coin.&#x000A;Time of day: 9:02 am.&#x000A;&#x000A;&#x000A;&#x000A;    *** Thanks for playing! You decided to end your adventure here. ***&#x000A;&#x000A;&#x000A;In that game you scored 30 out of a possible 100, in 3 turns.&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <result xml:space="preserve">Here's a summary of your adventure:&#x000A;Rank: Courteous Traveler.&#x000A;Score: 30/100.&#x000A;Food (HP): 10/10.&#x000A;Pet bond: 0/10.&#x000A;Carry: 1kg/6kg (left 5kg).&#x000A;Items carried: gold coin.&#x000A;Time of day: 9:02 am.&#x000A;&#x000A;&#x000A;&#x000A;    *** Thanks for playing! You decided to end your adventure here. ***&#x000A;&#x000A;&#x000A;In that game you scored 30 out of a possible 100, in 3 turns.&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
