@@ -2,7 +2,9 @@
 
 Include Rideable Vehicles by Graham Nelson.
 
-[Use undo prevention.]
+Release along with a website
+
+Use undo prevention.
 
 Use scoring.
 The maximum score is 100.
@@ -99,6 +101,9 @@ A torch is a unlit thing.
 Every turn when the torch is lit and the location is DarkChamber:
 	now DarkChamber is lighted.
 	
+Report looking in DarkChamber for the first time:
+	say "Maybe I should LIGHT the TORCH.";
+	
 A gold coin is a thing.
 
 A gold coin has weight 1kg.
@@ -114,7 +119,7 @@ The gold coin is carried by Petar.
 
 Trap revealed is a truth state that varies. Trap revealed is false.
 Trap timer is a number that varies. Trap timer is 0.
-Pit Room is a room. "You fell into a dark pit. A trap door closed above you."
+Pit Room is a room. "You fell into a dark pit. A trap door closed above you. Your senses are sharper in the dark.[line break]Maybe try using them: LISTEN / SMELL / TOUCH / TASTE / EXAMINE."
 The trap door is a locked door. The trap door is north of Pit Room and south of DarkChamber. The trap door is locked. It is scenery. Understand "hole" as the trap door when Trap revealed is true.
 
 Pit-Vision-Active is a truth state that varies. Pit-Vision-Active is false.
@@ -149,14 +154,23 @@ The description is "A newly appeared wooden door."
 
 Forest is a room. "You are in a dense forest. You hear a waterfall nearby and voices talking in the distance."
 
+Instead of going south from Forest through NorthDoor:
+	say "You feel that going back is no longer an option.";
+
+Instead of going east from Forest through ForestDoor:
+	say "The forest seems to block your way back.";
+
 The pink handbag is a wearable container in Forest.
 The carrying capacity of the pink handbag is 5.
 
 The pink handbag is wearable.
-The description is "A pink handbag, surprisingly sturdy.";
+The description is "A pink handbag, surprisingly sturdy.".
+The pink handbag is undescribed.
 
-After looking in Forest for the first time:
-	say "Something pink catches your eye beneath the leaves.";
+After looking in Forest:
+	if the pink handbag is not carried by the player and the pink handbag is not worn by the player:
+		say "Something pink catches your eye beneath the leaves.";
+		say "Do you want to take it? Tip: TAKE / WEAR HANDBAG"
 
 After wearing the pink handbag:
 	increase score by 10;
@@ -277,12 +291,13 @@ LightRoom is a room. The printed name of LightRoom is "The Light Room".
 The description of LightRoom is
 "[if the box is in LightRoom] The room is well-lit. An old wooden box sits on the floor. [otherwise] The room is well-lit and empty. [end if]".
 
-
-Golden stool is a scenery supporter in DarkChamber. Understand "small golden" as Golden stool. "A small stool made of solid gold."
+Golden stool is a scenery supporter in DarkChamber. "A small stool made of solid gold."
 Golden apple is a scenery thing on the Golden stool."The golden apple has 'RUN' inscribed on it!"
 
 Box is an open container in LightRoom. "An old, run-down wooden box sits on the floor."
-[The block burning rule does nothing when the noun is not the torch.]
+
+Report examining the box:
+	say "Maybe I have to do something with it? Tip: TAKE BOX / PUT __ IN BOX";
 
 Before going somewhere when in darkness:
 	say "It's too dark, light the torch first!" instead.
@@ -291,6 +306,9 @@ Check burning the torch:
 	if the torch is lit, say "The torch is already lit." instead;
 	now the torch is lit;
 	say "You light the torch. The room is now illuminated." instead.
+
+After looking when the location is DarkChamber and DarkChamber is lighted:
+	say "[paragraph break](Tip: try EXAMINE STOOL / EXAMINE APPLE, and maybe TAKE something.)";
 
 Check burning something:
 	say "You can't light that." instead.
@@ -360,7 +378,7 @@ Lala-response is a text that varies.
 Before doing something when Pit-Vision-Active is true and the current action is not Helping:
 	let R be a random number from 1 to 3;
 	if R is 1:
-		say "Lala giggles: 'Maybe you should ask for help.'";
+		say "Lala giggles: 'Maybe you should ask for HELP.'";
 	else if R is 2:
 		say "Lala whispers: 'It's no use...'";
 	else:
@@ -435,7 +453,7 @@ A berry can be ripe or unripe. A berry is usually ripe.
 A berry is edible.
 A berry has weight 1kg.
 
-The BerryBush is a supporter in Forest. "A bush heavy with small berries. Some look ripe, some unripe."
+The BerryBush is a supporter in Forest. "A bush heavy with small berries. Some look ripe, some unripe. Maybe you could try EATing one BERRY?"
 Understand "bush" or "berry bush" as the BerryBush.
 
 A bush-container is a container. It is part of the BerryBush. It is open and enterable.
@@ -462,8 +480,7 @@ Carry out eating:
 	now the noun is off-stage;
 
 After looking in FlowerValley for the first time:
-	if the giant duck is off-stage:
-		move the giant duck to FlowerValley;
+	move the giant duck to FlowerValley;
 	say "A giant duck waddles up to you and tilts its head, as if waiting for a name.";
 	say "You can type: name duck as <name>.";
 	say "Tip: you can increase the relationship with your pet.";
@@ -503,7 +520,7 @@ Instead of giving a berry to the giant duck:
 Understand "feed [someone] with [something]" as giving it to (with nouns reversed).
 
 Petting is an action applying to one thing.
-Understand "pet [something]" or "pat [something]" or "stroke [something]" as petting.
+Understand "pet [something]" or "pat [something]" as petting.
 
 Check petting:
 	if the noun is not the giant duck:
@@ -624,15 +641,13 @@ Birdwatch-start-time is a time that varies.
 
 Bird-Watching is a scene.
 Bird-Watching begins when the player is in Forest Clearing.
-Bird-Watching ends when the time since Bird-Watching began is 3 minutes.  [bitno: plural minutes]
+Bird-Watching ends when the time since Bird-Watching began is 3 minutes.
 
 When Bird-Watching begins:
 	now Birdwatch-start-time is the time of day.
 
 Every turn during Bird-Watching:
-	[now make time within the scene consistent no matter what other rules do]
 	now the time of day is Birdwatch-start-time + the time since Bird-Watching began.
-
 
 When Bird-Watching ends:
 	say "You stand there quietly, enjoying the forest, the sound of water and birds.[paragraph break]";
@@ -703,7 +718,7 @@ Instead of asking someone about something when the noun is in River Bank:
 		say "If she's anywhere, it's that hidden chamber vibe - somewhere away from the river and the forest paths.";
 	else if the topic understood matches "where is duck":
 		say "That duck? The last I know - FlowerValley. West of the Forest. If you bond with it, it can be a great companion. Wait.. How did you get here?";
-	else if the topic understood matches "duck" and Pet-relationship is Max-pet-relationship:
+	else if Pet-relationship is Max-pet-relationship and (the topic understood matches "duck" or the topic understood matches "ask about duck"):
 		say "'The best pet you can have,' says [the noun]. Here, a little gift for you two.";
 		if the picture is carried by the noun:
 			now the player carries the picture;
@@ -711,6 +726,17 @@ Instead of asking someone about something when the noun is in River Bank:
 			now Special-scene is true;
 	else:
 		say "[The noun] doesn't know anything about that topic.".
+
+
+Topics-checking is an action out of world applying to nothing.
+Understand "topics" or "ask options" as topics-checking.
+
+Carry out topics-checking:
+	say "You can try asking: WHO ARE YOU / ASK IVAN ABOUT LALA / ASK __ ABOUT WHERE IS LALA / ASK __ ABOUT DUCK / ASK __ ABOUT WHERE IS DUCK";
+
+After going to River Bank for the first time:
+	say "[paragraph break][italic type]You spot someone here. Maybe you can ask questions.[roman type][line break]";
+	say “Type TOPICS to see what you can ask here.”.
 
 Chapter 5 - Finale
 
@@ -762,7 +788,7 @@ When play begins:
 	now Pet-relationship is 0;
 	now Max-pet-relationship is 10;
 	now the player is in the Starting Room;
-	say "Welcome to the game! It was created as a project for the Declarative Programming course. However, I hope you will still enjoy playing it.[paragraph break] ";
+	say "Welcome to the game! It was created as a project for the Declarative Programming course. However, I hope you will still enjoy playing it. If you decide to end the game at any time type END / FINISH.[paragraph break] ";
 	say "Choose your character:[line break]";
 	say "1 - Ivan (has a torch)[line break]";
 	say "2 - Petar (has a gold coin)[paragraph break]";

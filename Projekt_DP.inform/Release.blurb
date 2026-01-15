@@ -15,6 +15,8 @@ storyfile "C:\Users\lucij\Documents\Repozitoriji\Project-Inform7\Projekt_DP.info
 ifiction "C:\Users\lucij\Documents\Repozitoriji\Project-Inform7\Projekt_DP.inform\Metadata.iFiction" include
 cover "C:\Program Files\Inform\Internal\Miscellany\DefaultCover.jpg"
 picture 1 "C:\Program Files\Inform\Internal\Miscellany\DefaultCover.jpg"
+release file "C:\Program Files\Inform\Internal\Miscellany\DefaultCover.jpg"
+release file "C:\Program Files\Inform\Internal\Miscellany\Small Cover.jpg"
 
 ! Placeholder variables
 
@@ -27,8 +29,17 @@ placeholder [BLURB] = "A work of interactive fiction."
 
 ! Other material to release
 
+
+! Website instructions
+
+template path "C:\Users\lucij\Documents\Repozitoriji\Project-Inform7\Projekt_DP.materials\Templates"
+template path "C:\Users\lucij\Documents\Repozitoriji\Project-Inform7\Projekt_DP.materials\Templates"
+template path "C:\Users\lucij\Documents\Inform\Templates"
+template path "C:\Program Files\Inform\Internal\Templates"
+css
+website "Standard"
+status instruction ||&nbsp;<a href="source:story.ni#line5"><img border=0 src=inform:/doc_images/Reveal.png></a>||
 status alternative ||Using 'Release along with cover art', to provide something more distinctive than the default artwork above&nbsp;<a href=inform:/doc401.html><img border=0 src=inform:/doc_images/help.png></a>||
-status alternative ||Using 'Release along with a website'&nbsp;<a href=inform:/doc403.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with an interpreter', for in-browser play on your website&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc399.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc410.html><img border=0 src=inform:/doc_images/help.png></a>||
